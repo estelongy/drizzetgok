@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/pages/bio",
+      "destination": "/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/"
     }

@@ -10,7 +10,7 @@ function App() {
         {/* Ana sayfa linki hem boş hem de #anasayfa için çalışsın */}
         <Route path="/" element={<Home />} />
         <Route path="/anasayfa" element={<Home />} />
-        <Route path="/bio" element={<Bio />} />
+        <Route path="/pages/bio" element={<Bio />} />
         {/* Eğer başka özel sayfaların varsa buraya ekleyeceğiz */}
       </Routes>
     </Router>

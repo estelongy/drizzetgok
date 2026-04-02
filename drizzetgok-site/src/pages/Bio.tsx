@@ -13,7 +13,7 @@ const Bio = () => {
   const links = [
     {
       icon: <Globe className="w-6 h-6" />,
-      title: 'Web Sitem',
+      title: 'https://www.drizzetgok.com/',
       href: '#/',
       color: 'bg-emerald-500 hover:bg-emerald-600'
     },

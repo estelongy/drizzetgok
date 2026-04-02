@@ -13,8 +13,8 @@ const Bio = () => {
   const links = [
     {
       icon: <Globe className="w-6 h-6" />,
-      title: 'Web Sitemiz',
-      href: 'https://www.drizzetgok.com',
+      title: 'Online Randevu Al',
+      href: 'https://www.doktortakvimi.com/izzet-gok',
       color: 'bg-emerald-500 hover:bg-emerald-600'
     },
     {

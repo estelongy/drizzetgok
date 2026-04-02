@@ -31,7 +31,7 @@ const Bio = () => {
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: 'Klinik Konumu',
+      title: 'Konumumuz',
       href: 'https://maps.app.goo.gl/5wG7EhGQkanN1vuv5',
       color: 'bg-red-500 hover:bg-red-600'
     },

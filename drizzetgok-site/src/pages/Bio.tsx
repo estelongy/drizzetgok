@@ -60,9 +60,13 @@ const Bio = () => {
       <div className="w-full max-w-md">
         {/* Profile Section */}
         <div className="text-center mb-8">
-          <div className="w-24 h-24 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
-            <span className="text-white text-3xl font-bold">İG</span>
-          </div>
+         <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 border-slate-200 shadow-md">
+  <img 
+    src="/assets/LOGO.jpg" 
+    alt="Dr. İzzet Gök" 
+    className="w-full h-full object-cover"
+  />
+</div>
           <h1 className="text-2xl font-bold text-slate-800 mb-1">Dr. İzzet Gök</h1>
           <p className="text-slate-600 mb-2">Medikal Estetik | 17 Yıllık Deneyim</p>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">

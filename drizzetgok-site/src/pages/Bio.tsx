@@ -19,7 +19,7 @@ const Bio = () => {
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
-      title: "WhatsApp'tan Yazın",
+      title: "Bize Ulaş & Bilgi Al",
       href: 'https://wa.me/905524228485',
       color: 'bg-green-500 hover:bg-green-600'
     },

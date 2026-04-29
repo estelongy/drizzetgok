@@ -44,7 +44,7 @@ const Bio = () => {
     {
       icon: <Instagram className="w-6 h-6" />,
       title: 'Instagram',
-      href: 'https://instagram.com/drizzetgok',
+      href: 'https://instagram.com/dr.izzetgok',
       color: 'bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90'
     },
     {

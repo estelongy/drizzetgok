@@ -1,0 +1,15 @@
+{
+  "name": "Dr. İzzet Gök — Medikal Estetik",
+  "short_name": "Dr. İzzet Gök",
+  "description": "Beylikdüzü İstanbul'da etik ve doğal medikal estetik uygulamaları",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "lang": "tr-TR",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,15 +1,22 @@
-import { 
-  Globe, 
-  MessageCircle, 
-  Phone, 
-  MapPin, 
+import {
+  Globe,
+  MessageCircle,
+  Phone,
+  MapPin,
   Syringe,
   Clock,
   Instagram,
   Facebook
 } from 'lucide-react';
+import { useSeo } from '../hooks/useSeo';
 
 const Bio = () => {
+  useSeo({
+    title: 'Dr. İzzet Gök — Bağlantılar | Randevu, WhatsApp, Sosyal Medya',
+    description: 'Dr. İzzet Gök ile iletişim ve randevu bağlantıları. WhatsApp, online randevu, telefon, konum ve sosyal medya tek sayfada.',
+    canonical: 'https://www.drizzetgok.com/pages/bio',
+  });
+
   const links = [
     {
       icon: <Globe className="w-6 h-6" />,

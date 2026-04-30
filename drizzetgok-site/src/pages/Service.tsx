@@ -39,6 +39,7 @@ const Service = () => {
       preparation: service.process[0] || 'Konsültasyon',
       followup: service.process[service.process.length - 1] || 'Kontrol',
       url: `https://www.drizzetgok.com/hizmetlerimiz/${service.slug}`,
+      image: 'https://www.drizzetgok.com/images/dr-portrait.jpg',
       provider: { '@id': 'https://www.drizzetgok.com/#clinic' },
     });
     document.head.appendChild(script);
@@ -73,20 +74,16 @@ const Service = () => {
     <main className="min-h-screen bg-white">
       <Navigation />
 
-      {/* Hero with image */}
+      {/* Hero — gradient + decorative pattern (no photo, anonymous & professional) */}
       <section className={`relative bg-gradient-to-br ${service.color} pt-24 overflow-hidden`}>
-        <div className="absolute inset-0 opacity-20">
-          <img
-            src={service.image}
-            alt={service.imageAlt}
-            className="w-full h-full object-cover"
-            width="1600"
-            height="600"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20" />
+        {/* Soft dot pattern */}
+        <div className="absolute inset-0 opacity-15" style={{
+          backgroundImage: 'radial-gradient(circle at 20% 30%, white 1.5px, transparent 1.5px), radial-gradient(circle at 70% 60%, white 1px, transparent 1px)',
+          backgroundSize: '40px 40px, 28px 28px'
+        }} />
+        {/* Glow orbs */}
+        <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-32 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         <div className="relative max-w-5xl mx-auto px-4 pt-8 pb-16">
           <Link to="/#hizmetler" className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-8 text-sm">
             <ArrowLeft className="w-4 h-4" /> Tüm Hizmetler

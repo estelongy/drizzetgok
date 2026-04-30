@@ -32,56 +32,66 @@ const Services = () => {
                 key={service.slug}
                 className="group bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.imageAlt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    width="600"
-                    height="375"
-                    loading="lazy"
-                  />
-                  <div className={`absolute top-4 left-4 w-12 h-12 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center text-white shadow-lg`}>
-                    <Icon className="w-6 h-6" />
+                {/* Decorative header — gradient + pattern + icon */}
+                <div className={`relative h-44 bg-gradient-to-br ${service.color} overflow-hidden`}>
+                  {/* Soft pattern overlay */}
+                  <div className="absolute inset-0 opacity-20" style={{
+                    backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px)',
+                    backgroundSize: '24px 24px'
+                  }} />
+                  {/* Glow blobs */}
+                  <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-2xl" />
+                  <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
+                  {/* Icon */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform duration-500">
+                      <Icon className="w-10 h-10" />
+                    </div>
+                  </div>
+                  {/* Service short title pill */}
+                  <div className="absolute bottom-3 left-3">
+                    <span className="text-xs uppercase tracking-wider text-white/90 font-semibold bg-black/15 backdrop-blur px-2.5 py-1 rounded-full">
+                      {service.shortTitle}
+                    </span>
                   </div>
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-slate-800 mb-3">{service.title}</h3>
-                {service.synonyms.length > 0 && (
-                  <p className="text-xs text-slate-400 mb-2 uppercase tracking-wide">
-                    {service.synonyms.slice(0, 2).join(' · ')}
-                  </p>
-                )}
-                <p className="text-slate-600 mb-4 flex-1">{service.shortDescription}</p>
+                  <h3 className="text-xl font-bold text-slate-800 mb-3">{service.title}</h3>
+                  {service.synonyms.length > 0 && (
+                    <p className="text-xs text-slate-400 mb-3 uppercase tracking-wide">
+                      {service.synonyms.slice(0, 2).join(' · ')}
+                    </p>
+                  )}
+                  <p className="text-slate-600 mb-4 flex-1">{service.shortDescription}</p>
 
-                <ul className="space-y-2 mb-6">
-                  {service.features.slice(0, 3).map((feature, fIndex) => (
-                    <li key={fIndex} className="flex items-center gap-2 text-sm text-slate-500">
-                      <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${service.color}`} />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.slice(0, 3).map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-center gap-2 text-sm text-slate-500">
+                        <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${service.color}`} />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className="flex items-center justify-between gap-2 mt-auto pt-4 border-t border-slate-100">
-                  <Link
-                    to={`/hizmetlerimiz/${service.slug}`}
-                    className="inline-flex items-center gap-2 text-emerald-600 font-medium hover:text-emerald-700 transition-colors"
-                  >
-                    <span>Detayını Gör</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                  <a
-                    href="https://wa.me/905524228485"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-slate-500 hover:text-emerald-600"
-                    aria-label={`${service.shortTitle} için WhatsApp`}
-                  >
-                    Bilgi Al
-                  </a>
-                </div>
+                  <div className="flex items-center justify-between gap-2 mt-auto pt-4 border-t border-slate-100">
+                    <Link
+                      to={`/hizmetlerimiz/${service.slug}`}
+                      className="inline-flex items-center gap-2 text-emerald-600 font-medium hover:text-emerald-700 transition-colors"
+                    >
+                      <span>Detayını Gör</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <a
+                      href="https://wa.me/905524228485"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-slate-500 hover:text-emerald-600"
+                      aria-label={`${service.shortTitle} için WhatsApp`}
+                    >
+                      Bilgi Al
+                    </a>
+                  </div>
                 </div>
               </article>
             );

@@ -7,10 +7,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/hizmetlerimiz/:slug", "destination": "/index.html" },
-    { "source": "/anasayfa", "destination": "/index.html" },
-    { "source": "/pages/bio", "destination": "/index.html" },
-    { "source": "/((?!api|assets|_next|favicon|.*\\.).*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {

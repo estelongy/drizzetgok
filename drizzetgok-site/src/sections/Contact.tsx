@@ -16,7 +16,7 @@ const Contact = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Adres',
       content: 'Beylikdüzü, İstanbul',
-      href: 'https://maps.google.com/?q=Beylikdüzü,İstanbul'
+      href: 'https://maps.app.goo.gl/RfHDaLXdCgXaqbvo8'
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -199,7 +199,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://maps.google.com/?q=Beylikdüzü,İstanbul"
+                href="https://maps.app.goo.gl/RfHDaLXdCgXaqbvo8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-6 bg-red-50 hover:bg-red-100 rounded-2xl transition-colors group"
@@ -213,6 +213,23 @@ const Contact = () => {
                 </div>
               </a>
             </div>
+          </div>
+        </div>
+
+        {/* Embedded Map */}
+        <div className="mt-16">
+          <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-100">
+            <iframe
+              src="https://www.google.com/maps?q=40.986762,28.6622249&hl=tr&z=16&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Dr. İzzet Gök Kliniği — Konum"
+              aria-label="Klinik konumu Google Maps'te"
+            />
           </div>
         </div>
       </div>

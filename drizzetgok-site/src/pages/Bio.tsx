@@ -39,7 +39,7 @@ const Bio = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Konumumuz',
-      href: 'https://maps.app.goo.gl/5wG7EhGQkanN1vuv5',
+      href: 'https://maps.app.goo.gl/RfHDaLXdCgXaqbvo8',
       color: 'bg-red-500 hover:bg-red-600'
     },
     {

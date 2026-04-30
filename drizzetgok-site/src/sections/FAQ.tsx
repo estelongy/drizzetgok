@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Klinik nerede, nasıl ulaşırım?',
-    a: 'Klinik Beylikdüzü, İstanbul\'da yer almaktadır; Bahçeşehir, Başakşehir, Avcılar, Esenyurt, Yakuplu, Büyükçekmece, Küçükçekmece ile Kocaeli (Gebze, Darıca, Çayırova, Dilovası) bölgelerine kolay ulaşım sağlar. Pazartesi-Cumartesi 10:00-18:00 saatleri arasında hizmet veriyoruz.'
+    a: 'Klinik Beylikdüzü, İstanbul\'da yer almaktadır; Bahçeşehir, Başakşehir, Avcılar, Esenyurt, Yakuplu, Büyükçekmece ve Küçükçekmece bölgelerine kolay ulaşım sağlar. Pazartesi-Cumartesi 10:00-18:00 saatleri arasında hizmet veriyoruz.'
   },
   {
     q: 'Mezoterapi sonrası ne kadar sürede normal yaşama dönülür?',

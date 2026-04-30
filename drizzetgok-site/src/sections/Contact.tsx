@@ -74,20 +74,44 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Clinic Image */}
-        <div className="mb-16 relative aspect-[21/9] rounded-3xl overflow-hidden shadow-xl">
-          <img
-            src="https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?auto=format&fit=crop&w=1600&q=80"
-            alt="Dr. İzzet Gök Medikal Estetik Kliniği iç mekan — Beylikdüzü, İstanbul"
-            className="w-full h-full object-cover"
-            width="1600"
-            height="686"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/40 via-transparent to-transparent" />
-          <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
-            <p className="text-sm font-medium mb-1 opacity-90">Modern Klinik</p>
-            <p className="text-2xl md:text-3xl font-bold">Steril & Profesyonel Ortam</p>
+        {/* Clinic Gallery */}
+        <div className="mb-16 grid md:grid-cols-2 gap-6">
+          <div className="relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden shadow-xl group">
+            <picture>
+              <source srcSet="/images/dr-clinic.webp" type="image/webp" />
+              <img
+                src="/images/dr-clinic.jpg"
+                alt="Dr. İzzet Gök muayene odası — Beylikdüzü, İstanbul"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                width="800"
+                height="1000"
+                loading="lazy"
+              />
+            </picture>
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 text-white">
+              <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Muayene Odası</p>
+              <p className="text-xl font-bold">Steril & Konforlu</p>
+            </div>
+          </div>
+
+          <div className="relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden shadow-xl group">
+            <picture>
+              <source srcSet="/images/dr-clinic-2.webp" type="image/webp" />
+              <img
+                src="/images/dr-clinic-2.jpg"
+                alt="Dr. İzzet Gök kliniği — modern ve profesyonel ortam"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                width="800"
+                height="1000"
+                loading="lazy"
+              />
+            </picture>
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 text-white">
+              <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Modern Klinik</p>
+              <p className="text-xl font-bold">Profesyonel Hizmet</p>
+            </div>
           </div>
         </div>
 

@@ -70,17 +70,20 @@ const Hero = () => {
           <div className="relative hidden lg:block">
             <div className="relative w-full aspect-[4/5] max-w-lg mx-auto">
               {/* Main image */}
-              <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
-                  alt="Dr. İzzet Gök Medikal Estetik Kliniği — Beylikdüzü, İstanbul"
-                  className="w-full h-full object-cover"
-                  width="800"
-                  height="1000"
-                  loading="eager"
-                  fetchPriority="high"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 via-transparent to-transparent" />
+              <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
+                <picture>
+                  <source srcSet="/images/dr-portrait.webp" type="image/webp" />
+                  <img
+                    src="/images/dr-portrait.jpg"
+                    alt="Dr. İzzet Gök — Beylikdüzü Medikal Estetik Hekimi, 17 yıllık deneyim"
+                    className="w-full h-full object-cover"
+                    width="800"
+                    height="1000"
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                </picture>
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/40 via-transparent to-transparent" />
               </div>
 
               {/* Floating Badges */}

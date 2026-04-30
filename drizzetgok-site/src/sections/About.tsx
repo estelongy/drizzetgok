@@ -101,16 +101,19 @@ const About = () => {
               </ul>
             </div>
             <div className="hidden md:block">
-              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/30">
-                <img
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1000&q=80"
-                  alt="Dr. İzzet Gök — Medikal estetik hekim, etik ve doğal yaklaşım"
-                  className="w-full h-full object-cover"
-                  width="800"
-                  height="1000"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent" />
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/40">
+                <picture>
+                  <source srcSet="/images/dr-fullbody.webp" type="image/webp" />
+                  <img
+                    src="/images/dr-fullbody.jpg"
+                    alt="Dr. İzzet Gök — Medikal estetik hekim, etik ve doğal yaklaşım, kliniğinde"
+                    className="w-full h-full object-cover"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                  />
+                </picture>
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 to-transparent" />
               </div>
             </div>
           </div>

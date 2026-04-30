@@ -117,7 +117,7 @@ const Service = () => {
             <CheckCircle className="w-6 h-6 text-emerald-500" />
             <div>
               <p className="text-xs text-slate-500">Hizmet Bölgeleri</p>
-              <p className="font-semibold text-slate-800">Beylikdüzü, Bahçeşehir, Avcılar</p>
+              <p className="font-semibold text-slate-800">Beylikdüzü, Bahçeşehir, Gebze</p>
             </div>
           </div>
         </div>

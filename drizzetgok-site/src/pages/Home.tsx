@@ -9,7 +9,7 @@ import { useSeo } from '../hooks/useSeo';
 function Home() {
   useSeo({
     title: 'Dr. İzzet Gök | Beylikdüzü, Bahçeşehir, Avcılar Medikal Estetik — Botoks, Dolgu, Mezoterapi, PRP',
-    description: 'Beylikdüzü, Bahçeşehir, Başakşehir, Avcılar, Esenyurt, Yakuplu, Büyükçekmece ve Küçükçekmece\'ye hizmet veren İstanbul medikal estetik kliniği. 17 yıllık deneyim. Ücretsiz konsültasyon.',
+    description: 'Beylikdüzü, Bahçeşehir, Başakşehir, Avcılar, Esenyurt, Yakuplu, Büyükçekmece, Küçükçekmece ile Kocaeli (Gebze, Darıca, Çayırova, Dilovası) bölgelerine hizmet veren medikal estetik kliniği. 17 yıllık deneyim. Ücretsiz konsültasyon.',
     canonical: 'https://www.drizzetgok.com/',
   });
 

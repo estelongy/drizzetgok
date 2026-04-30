@@ -78,10 +78,10 @@ const Contact = () => {
         <div className="mb-16 grid md:grid-cols-2 gap-6">
           <div className="relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden shadow-xl group">
             <picture>
-              <source srcSet="/images/dr-clinic.webp" type="image/webp" />
+              <source srcSet="/images/dr-fullbody.webp" type="image/webp" />
               <img
-                src="/images/dr-clinic.jpg"
-                alt="Dr. İzzet Gök muayene odası — Beylikdüzü, İstanbul"
+                src="/images/dr-fullbody.jpg"
+                alt="Dr. İzzet Gök kliniğinde — etik ve doğal yaklaşım, 17 yıllık deneyim"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 width="800"
                 height="1000"
@@ -90,8 +90,8 @@ const Contact = () => {
             </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 text-white">
-              <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Muayene Odası</p>
-              <p className="text-xl font-bold">Steril & Konforlu</p>
+              <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Uzman Hekim</p>
+              <p className="text-xl font-bold">17 Yıllık Deneyim</p>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
               <source srcSet="/images/dr-clinic-2.webp" type="image/webp" />
               <img
                 src="/images/dr-clinic-2.jpg"
-                alt="Dr. İzzet Gök kliniği — modern ve profesyonel ortam"
+                alt="Dr. İzzet Gök muayene odası — modern ve steril ortam"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 width="800"
                 height="1000"
@@ -110,7 +110,7 @@ const Contact = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 text-white">
               <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Modern Klinik</p>
-              <p className="text-xl font-bold">Profesyonel Hizmet</p>
+              <p className="text-xl font-bold">Steril & Profesyonel</p>
             </div>
           </div>
         </div>

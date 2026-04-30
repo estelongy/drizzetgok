@@ -103,10 +103,10 @@ const About = () => {
             <div className="hidden md:block">
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/40">
                 <picture>
-                  <source srcSet="/images/dr-fullbody.webp" type="image/webp" />
+                  <source srcSet="/images/dr-portrait.webp" type="image/webp" />
                   <img
-                    src="/images/dr-fullbody.jpg"
-                    alt="Dr. İzzet Gök — Medikal estetik hekim, etik ve doğal yaklaşım, kliniğinde"
+                    src="/images/dr-portrait.jpg"
+                    alt="Dr. İzzet Gök — Beylikdüzü Medikal Estetik Hekimi, 17 yıllık deneyim"
                     className="w-full h-full object-cover"
                     width="800"
                     height="1000"

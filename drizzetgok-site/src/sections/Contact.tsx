@@ -15,7 +15,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Adres',
-      content: 'Kavaklı Mah. Olimpiyat Cad. Marmara Evleri-4 Sitesi altı No:11/A, Beylikdüzü/İstanbul (34540)',
+      content: 'Kavaklı Mahallesi Olimpiyat Caddesi Marmara Evleri-4 Sitesi Altı No: 11/1A, 34540 Beylikdüzü/İstanbul',
       href: 'https://maps.app.goo.gl/RfHDaLXdCgXaqbvo8'
     },
     {

@@ -116,9 +116,27 @@
         "@type": "Person",
         "@id": "https://www.drizzetgok.com/#person",
         "name": "Dr. İzzet Gök",
+        "givenName": "İzzet",
+        "familyName": "Gök",
+        "honorificPrefix": "Dr.",
         "jobTitle": "Medikal Estetik Hekimi",
+        "description": "17 yıllık medikal estetik deneyimi ile etik ve doğal yaklaşımı benimseyen hekim.",
+        "image": "https://www.drizzetgok.com/images/dr-portrait.jpg",
         "worksFor": { "@id": "https://www.drizzetgok.com/#clinic" },
-        "knowsAbout": ["Medikal Estetik","Botoks","Hyaluronik Asit Dolgu","Mezoterapi","PRP","Kimyasal Peeling","Cilt Bakımı"],
+        "knowsAbout": ["Medikal Estetik","Botoks","Botox","Hyaluronik Asit Dolgu","Filler","Dudak Dolgusu","Sıvı Yüz Germe","Liquid Facelift","Full Face Estetik","Mezoterapi","PRP","Kimyasal Peeling","Cilt Bakımı"],
+        "knowsLanguage": ["tr","en"],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "name": "Tıp Doktoru"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "Medikal Estetik — 17 Yıllık Klinik Deneyim"
+          }
+        ],
         "url": "https://www.drizzetgok.com/pages/bio"
       },
       "hasOfferCatalog": {
@@ -166,11 +184,15 @@
     }
     </script>
 
-    <!-- JSON-LD: FAQ (zero-click SERP avantajı) -->
+    <!-- JSON-LD: FAQ (zero-click SERP avantajı + sesli arama) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#sss h2", "#sss h3", "#sss [id^=faq-answer-]"]
+      },
       "mainEntity": [
         {
           "@type": "Question",

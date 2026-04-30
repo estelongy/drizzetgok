@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.drizzetgok.com/</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.drizzetgok.com/" />
+    <image:image>
+      <image:loc>https://www.drizzetgok.com/images/dr-portrait.jpg</image:loc>
+      <image:title>Dr. İzzet Gök — Beylikdüzü Medikal Estetik Hekimi</image:title>
+      <image:caption>17 yıllık deneyimli medikal estetik hekimi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drizzetgok.com/images/dr-fullbody.jpg</image:loc>
+      <image:title>Dr. İzzet Gök kliniğinde</image:title>
+      <image:caption>Etik ve doğal yaklaşım, profesyonel ortam</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drizzetgok.com/images/dr-clinic.jpg</image:loc>
+      <image:title>Dr. İzzet Gök muayene odası — Beylikdüzü</image:title>
+      <image:caption>Steril ve konforlu klinik ortamı</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.drizzetgok.com/images/dr-clinic-2.jpg</image:loc>
+      <image:title>Dr. İzzet Gök kliniği — modern medikal estetik</image:title>
+      <image:caption>Modern ve profesyonel klinik</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.drizzetgok.com/hizmetlerimiz/botoks</loc>

@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Bio from './pages/Bio';
 import Service from './pages/Service';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/iletisim" element={<Home section="iletisim" />} />
         <Route path="/pages/bio" element={<Bio />} />
         <Route path="/hizmetlerimiz/:slug" element={<Service />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

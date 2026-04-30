@@ -2,9 +2,10 @@ import { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace,
-  Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowLeft, MessageCircle
+  Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowLeft, ArrowRight,
+  ChevronRight, MessageCircle, Home as HomeIcon
 } from 'lucide-react';
-import { getServiceBySlug } from '../lib/services-data';
+import { getServiceBySlug, SERVICES } from '../lib/services-data';
 import { useSeo } from '../hooks/useSeo';
 import Navigation from '../sections/Navigation';
 
@@ -85,6 +86,17 @@ const Service = () => {
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-32 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         <div className="relative max-w-5xl mx-auto px-4 pt-8 pb-16">
+          {/* Visible breadcrumb */}
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-sm text-white/80 mb-6">
+            <Link to="/" className="inline-flex items-center gap-1 hover:text-white transition-colors">
+              <HomeIcon className="w-3.5 h-3.5" />
+              <span>Ana Sayfa</span>
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 opacity-60" />
+            <Link to="/hizmetler" className="hover:text-white transition-colors">Hizmetler</Link>
+            <ChevronRight className="w-3.5 h-3.5 opacity-60" />
+            <span className="text-white font-medium">{service.shortTitle}</span>
+          </nav>
           <Link to="/hizmetler" className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-8 text-sm">
             <ArrowLeft className="w-4 h-4" /> Tüm Hizmetler
           </Link>
@@ -201,6 +213,36 @@ const Service = () => {
               <MessageCircle className="w-5 h-5" />
               WhatsApp ile İletişim
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-slate-50 border-t border-slate-100" aria-labelledby="related-heading">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 id="related-heading" className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 text-center">
+            İlgili Hizmetler
+          </h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {SERVICES.filter(s => s.slug !== service.slug).slice(0, 3).map((s) => {
+              const SIcon = ICONS[s.iconName];
+              return (
+                <Link
+                  key={s.slug}
+                  to={`/hizmetlerimiz/${s.slug}`}
+                  className="group bg-white rounded-2xl p-5 border border-slate-100 hover:shadow-lg hover:border-emerald-200 transition-all"
+                >
+                  <div className={`w-12 h-12 bg-gradient-to-br ${s.color} rounded-xl flex items-center justify-center text-white mb-3`}>
+                    <SIcon className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-slate-800 mb-1">{s.title}</h3>
+                  <p className="text-sm text-slate-500 mb-2 line-clamp-2">{s.shortDescription}</p>
+                  <span className="inline-flex items-center gap-1 text-xs text-emerald-600 font-medium">
+                    Detaya bak <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

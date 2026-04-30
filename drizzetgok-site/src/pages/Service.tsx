@@ -85,7 +85,7 @@ const Service = () => {
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-32 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         <div className="relative max-w-5xl mx-auto px-4 pt-8 pb-16">
-          <Link to="/#hizmetler" className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-8 text-sm">
+          <Link to="/hizmetler" className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-8 text-sm">
             <ArrowLeft className="w-4 h-4" /> Tüm Hizmetler
           </Link>
           <div className="flex flex-col md:flex-row items-start gap-8">

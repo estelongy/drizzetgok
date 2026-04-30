@@ -1,4 +1,5 @@
 import { ArrowRight, Calendar, Award, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -40,13 +41,13 @@ const Hero = () => {
                 <Calendar className="w-5 h-5" />
                 <span>Randevu Al</span>
               </a>
-              <a
-                href="#hizmetler"
+              <Link
+                to="/hizmetler"
                 className="flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border-2 border-slate-200 px-8 py-4 rounded-full font-medium transition-all hover:border-emerald-300"
               >
                 <span>Hizmetlerimiz</span>
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
 
             {/* Trust Badges */}

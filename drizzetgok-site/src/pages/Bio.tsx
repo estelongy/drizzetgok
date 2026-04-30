@@ -45,7 +45,7 @@ const Bio = () => {
     {
       icon: <Syringe className="w-6 h-6" />,
       title: 'Hizmetlerimiz',
-      href: 'https://www.drizzetgok.com/#hizmetler',
+      href: 'https://www.drizzetgok.com/hizmetler',
       color: 'bg-purple-500 hover:bg-purple-600'
     },
     {

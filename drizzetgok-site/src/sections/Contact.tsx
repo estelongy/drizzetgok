@@ -1,13 +1,14 @@
-import { 
-  MapPin, 
-  Phone, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Clock,
   MessageCircle,
   Instagram,
   Facebook,
   Mail,
   ExternalLink
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const contactInfo = [
@@ -233,11 +234,11 @@ const Contact = () => {
 
             {/* Quick Links */}
             <div className="flex flex-wrap justify-center gap-6">
-              <a href="#anasayfa" className="text-slate-600 hover:text-emerald-600 transition-colors">Ana Sayfa</a>
-              <a href="#hakkimda" className="text-slate-600 hover:text-emerald-600 transition-colors">Hakkımda</a>
-              <a href="#hizmetler" className="text-slate-600 hover:text-emerald-600 transition-colors">Hizmetler</a>
-              <a href="#iletisim" className="text-slate-600 hover:text-emerald-600 transition-colors">İletişim</a>
-              <a href="#/bio" className="text-slate-600 hover:text-emerald-600 transition-colors">Linkler</a>
+              <Link to="/" className="text-slate-600 hover:text-emerald-600 transition-colors">Ana Sayfa</Link>
+              <Link to="/hakkimda" className="text-slate-600 hover:text-emerald-600 transition-colors">Hakkımda</Link>
+              <Link to="/hizmetler" className="text-slate-600 hover:text-emerald-600 transition-colors">Hizmetler</Link>
+              <Link to="/iletisim" className="text-slate-600 hover:text-emerald-600 transition-colors">İletişim</Link>
+              <Link to="/pages/bio" className="text-slate-600 hover:text-emerald-600 transition-colors">Linkler</Link>
             </div>
 
             {/* Copyright */}

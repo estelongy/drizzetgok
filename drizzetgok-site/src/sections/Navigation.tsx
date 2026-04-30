@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 
 const Navigation = () => {
@@ -14,10 +15,10 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Ana Sayfa', href: '#anasayfa' },
-    { label: 'Hakkımda', href: '#hakkimda' },
-    { label: 'Hizmetler', href: '#hizmetler' },
-    { label: 'İletişim', href: '#iletisim' },
+    { label: 'Ana Sayfa', to: '/' },
+    { label: 'Hakkımda', to: '/hakkimda' },
+    { label: 'Hizmetler', to: '/hizmetler' },
+    { label: 'İletişim', to: '/iletisim' },
   ];
 
   return (
@@ -29,29 +30,27 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#anasayfa" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">İG</span>
             </div>
             <div className="hidden sm:block">
-              <span className={`font-bold text-lg ${isScrolled ? 'text-slate-800' : 'text-slate-800'}`}>
+              <span className="font-bold text-lg text-slate-800">
                 Dr. İzzet Gök
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className={`font-medium transition-colors hover:text-emerald-600 ${
-                  isScrolled ? 'text-slate-700' : 'text-slate-700'
-                }`}
+              <Link
+                key={link.to}
+                to={link.to}
+                className="font-medium text-slate-700 transition-colors hover:text-emerald-600"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -70,6 +69,7 @@ const Navigation = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+            aria-label="Menü"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6 text-slate-700" />
@@ -84,14 +84,14 @@ const Navigation = () => {
           <div className="md:hidden bg-white rounded-2xl shadow-lg mt-2 p-4 mb-4">
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
+                <Link
+                  key={link.to}
+                  to={link.to}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="px-4 py-3 rounded-xl text-slate-700 font-medium hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               <a
                 href="tel:+905524228485"

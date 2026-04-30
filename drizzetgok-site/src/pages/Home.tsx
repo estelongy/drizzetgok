@@ -7,8 +7,8 @@ import { useSeo } from '../hooks/useSeo';
 
 function Home() {
   useSeo({
-    title: 'Dr. İzzet Gök | Beylikdüzü Medikal Estetik — Botoks, Dolgu, Mezoterapi, PRP',
-    description: 'Beylikdüzü İstanbul\'da 17 yıllık deneyim ile etik ve doğal medikal estetik. Botoks, dolgu, mezoterapi, PRP, kimyasal peeling ve cilt bakımı. Ücretsiz konsültasyon.',
+    title: 'Dr. İzzet Gök | Beylikdüzü, Bahçeşehir, Avcılar Medikal Estetik — Botoks, Dolgu, Mezoterapi, PRP',
+    description: 'Beylikdüzü, Bahçeşehir, Başakşehir, Avcılar, Esenyurt, Yakuplu, Büyükçekmece ve Küçükçekmece\'ye hizmet veren İstanbul medikal estetik kliniği. 17 yıllık deneyim. Ücretsiz konsültasyon.',
     canonical: 'https://www.drizzetgok.com/',
   });
 

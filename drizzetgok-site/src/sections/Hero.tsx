@@ -68,46 +68,42 @@ const Hero = () => {
 
           {/* Image/Visual */}
           <div className="relative hidden lg:block">
-            <div className="relative">
-              <div className="w-full aspect-square max-w-lg mx-auto relative">
-                {/* Main Circle */}
-                <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-full opacity-10 animate-pulse" />
-                <div className="absolute inset-4 bg-gradient-to-br from-emerald-300 to-teal-500 rounded-full opacity-20" />
-                <div className="absolute inset-8 bg-gradient-to-br from-emerald-200 to-teal-400 rounded-full opacity-30" />
-                
-                {/* Center Content */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-2xl">
-                      <span className="text-white text-5xl font-bold">İG</span>
-                    </div>
-                    <p className="text-slate-600 font-medium">Dr. İzzet Gök</p>
-                    <p className="text-emerald-600 text-sm">Medikal Estetik</p>
+            <div className="relative w-full aspect-[4/5] max-w-lg mx-auto">
+              {/* Main image */}
+              <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
+                  alt="Dr. İzzet Gök Medikal Estetik Kliniği — Beylikdüzü, İstanbul"
+                  className="w-full h-full object-cover"
+                  width="800"
+                  height="1000"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 via-transparent to-transparent" />
+              </div>
+
+              {/* Floating Badges */}
+              <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl animate-bounce" style={{ animationDuration: '3s' }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <Award className="w-6 h-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-500">Deneyim</p>
+                    <p className="font-bold text-slate-800">17 Yıl</p>
                   </div>
                 </div>
+              </div>
 
-                {/* Floating Elements */}
-                <div className="absolute top-10 right-10 bg-white rounded-2xl p-4 shadow-lg animate-bounce" style={{ animationDuration: '3s' }}>
-                  <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                      <Award className="w-5 h-5 text-emerald-600" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-slate-500">Deneyim</p>
-                      <p className="font-bold text-slate-800">17 Yıl</p>
-                    </div>
+              <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl animate-bounce" style={{ animationDuration: '4s' }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-teal-600" />
                   </div>
-                </div>
-
-                <div className="absolute bottom-20 left-0 bg-white rounded-2xl p-4 shadow-lg animate-bounce" style={{ animationDuration: '4s' }}>
-                  <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
-                      <Shield className="w-5 h-5 text-teal-600" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-slate-500">Güven</p>
-                      <p className="font-bold text-slate-800">%100</p>
-                    </div>
+                  <div>
+                    <p className="text-xs text-slate-500">Güven</p>
+                    <p className="font-bold text-slate-800">%100</p>
                   </div>
                 </div>
               </div>

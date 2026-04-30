@@ -30,12 +30,23 @@ const Services = () => {
             return (
               <article
                 key={service.slug}
-                className="group bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col"
+                className="group bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col"
               >
-                <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform`}>
-                  <Icon className="w-8 h-8" />
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.imageAlt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                  />
+                  <div className={`absolute top-4 left-4 w-12 h-12 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center text-white shadow-lg`}>
+                    <Icon className="w-6 h-6" />
+                  </div>
                 </div>
 
+                <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-800 mb-3">{service.title}</h3>
                 {service.synonyms.length > 0 && (
                   <p className="text-xs text-slate-400 mb-2 uppercase tracking-wide">
@@ -70,6 +81,7 @@ const Services = () => {
                   >
                     Bilgi Al
                   </a>
+                </div>
                 </div>
               </article>
             );

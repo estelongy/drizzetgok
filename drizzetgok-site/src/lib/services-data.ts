@@ -5,6 +5,8 @@ export type ServiceData = {
   synonyms: string[];
   iconName: 'Syringe' | 'Droplets' | 'Sparkles' | 'Zap' | 'FlaskConical' | 'ScanFace' | 'Smile' | 'Star' | 'Wand2';
   color: string;
+  image: string;
+  imageAlt: string;
   shortDescription: string;
   longDescription: string;
   intro: string;
@@ -24,6 +26,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['botox', 'btx', 'botulinum'],
     iconName: 'Syringe',
     color: 'from-blue-500 to-cyan-500',
+    image: 'https://images.unsplash.com/photo-1612349316228-5942a9b489c2?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Botoks uygulaması — yüz mimik kırışıklıkları için medikal estetik tedavi',
     shortDescription: 'Mimik kırışıklıkları, terleme tedavisi ve kas spazmları için güvenli botoks (botox / Btx) uygulamaları.',
     longDescription: 'Botoks (botox / Btx / botulinum toksin), mimik kaslarını kontrollü şekilde gevşeterek alın, kaş arası ve göz kenarı kırışıklıklarını yumuşatan, FDA onaylı medikal estetik uygulamasıdır.',
     intro: 'Beylikdüzü ve çevre ilçelerde botoks uygulaması — Dr. İzzet Gök kontrolünde, kişiye özel doz ile doğal sonuçlar.',
@@ -45,6 +49,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['lip filler', 'dudak filler', 'dudak büyütme'],
     iconName: 'Smile',
     color: 'from-pink-500 to-rose-500',
+    image: 'https://images.unsplash.com/photo-1583912267550-d6c2ac3196c0?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Dudak dolgusu uygulaması — doğal görünümlü lip filler',
     shortDescription: 'Doğal görünümlü, dengeli ve oranlı dudaklar için hyaluronik asit dudak dolgusu (lip filler).',
     longDescription: 'Dudak dolgusu (lip filler), hyaluronik asit içerikli dolgu maddeleri ile dudaklara hacim kazandıran, simetri sağlayan ve nem oranını arttıran medikal estetik uygulamasıdır.',
     intro: 'Beylikdüzü\'nde dudak dolgusu — şişkin değil, dengeli ve doğal sonuç. Yüz oranlarınıza uygun kişisel planlama.',
@@ -67,6 +73,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['filler', 'hyaluronik asit dolgu', 'yüz dolgu'],
     iconName: 'Droplets',
     color: 'from-fuchsia-500 to-pink-500',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Yüz dolgu uygulaması — hyaluronik asit filler ile hacim restorasyonu',
     shortDescription: 'Yanak, çene, elmacık ve nazolabial bölge için hyaluronik asit yüz dolgu (filler) uygulamaları.',
     longDescription: 'Yüz dolgu (filler / hyaluronik asit dolgu), yaşa bağlı hacim kayıplarını telafi eden, yüz hatlarına denge ve genç bir görünüm kazandıran medikal estetik uygulamasıdır.',
     intro: 'Yanak, elmacık, çene hattı ve nazolabial oluk dolgusu — dengeli yüz oranları için.',
@@ -88,6 +96,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['liquid facelift', 'cerrahisiz yüz germe', '8 nokta germe'],
     iconName: 'Wand2',
     color: 'from-violet-500 to-purple-500',
+    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Sıvı yüz germe — liquid facelift cerrahisiz yüz gençleştirme',
     shortDescription: 'Cerrahi gerektirmeyen, dolgu ve botoks kombinasyonu ile yüz germe etkisi yaratan sıvı yüz germe (liquid facelift).',
     longDescription: 'Sıvı yüz germe (liquid facelift), yüzdeki belirli noktalara uygulanan dolgu ve botoks kombinasyonu ile cerrahi olmadan yüz hatlarını yukarı çeken, hacim kazandıran ve genç bir görünüm sağlayan ileri düzey medikal estetik protokolüdür.',
     intro: '8 nokta tekniği ve yüz haritalaması ile cerrahisiz yüz germe — bıçaksız, hızlı, etkili.',
@@ -109,6 +119,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['tam yüz estetik', 'kapsamlı yüz estetiği', 'full face protocol'],
     iconName: 'Star',
     color: 'from-amber-500 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1607008829749-c0f284a49841?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Full face estetik — kapsamlı yüz gençleştirme protokolü',
     shortDescription: 'Yüzün tamamını ele alan, botoks + dolgu + mezoterapi + cilt bakımı kombinasyonlu kapsamlı medikal estetik protokolü.',
     longDescription: 'Full face estetik, yüzün tamamını bütünsel olarak değerlendiren, mimik kasları (botoks), hacim kayıpları (dolgu), cilt kalitesi (mezoterapi/PRP) ve ten tonu (peeling) gibi tüm bileşenleri birlikte ele alan kapsamlı medikal estetik protokolüdür.',
     intro: 'Tek tek değil, bütünsel yaklaşım — yüzünüzün tamamı için kişiye özel kombinasyon protokolü.',
@@ -130,6 +142,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['mesotherapy', 'cilt mezoterapi'],
     iconName: 'Sparkles',
     color: 'from-emerald-500 to-teal-500',
+    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Mezoterapi — vitamin ve mineral ile cilt canlandırma',
     shortDescription: 'Cildinize ihtiyacı olan vitamin, mineral ve hyaluronik asidi enjekte eden canlandırıcı mezoterapi tedavisi.',
     longDescription: 'Mezoterapi, ciltaltına ince iğnelerle uygulanan vitamin, mineral, amino asit ve hyaluronik asit kokteylleri ile cildi besleyen, canlandıran ve yenileyen tedavidir.',
     intro: 'Yüz, saç ve vücut mezoterapisi — cildinizi içten besleyin.',
@@ -150,6 +164,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['platelet rich plasma', 'trombositten zengin plazma', 'kök hücre'],
     iconName: 'Zap',
     color: 'from-rose-500 to-orange-500',
+    image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'PRP tedavisi — trombositten zengin plazma ile cilt yenileme',
     shortDescription: 'Kendi kanınızdan elde edilen trombositten zengin plazma ile cilt yenileme ve saç dökülmesi tedavisi.',
     longDescription: 'PRP (Platelet Rich Plasma), hastanın kendi kanından santrifüj ile elde edilen trombositten zengin plazmanın cilde veya saçlı deriye enjeksiyonu ile dokunun kendini onarmasını uyaran tedavidir.',
     intro: 'Kendi vücudunuzdan, doğal cilt yenileme — tamamen organik.',
@@ -170,6 +186,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['chemical peel', 'cilt soyma', 'glikolik asit', 'tca peeling'],
     iconName: 'FlaskConical',
     color: 'from-purple-500 to-violet-500',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Kimyasal peeling — cilt yenileme ve aydınlatma',
     shortDescription: 'Cildin üst tabakasını yenileyerek pürüzsüz, parlak ve lekesiz görünüm sağlayan kimyasal peeling tedavisi.',
     longDescription: 'Kimyasal peeling, ciltteki ölü hücreleri ve hasarlı tabakayı asit kombinasyonları ile soyarak yeni, sağlıklı cildin ortaya çıkmasını sağlayan tedavidir. Glikolik, salisilik, TCA ve fenol asitleri içerir.',
     intro: 'Yüzeysel, orta ve derin peeling seçenekleri — ihtiyacınıza özel ten tonu yenileme.',
@@ -190,6 +208,8 @@ export const SERVICES: ServiceData[] = [
     synonyms: ['facial', 'medikal cilt bakımı', 'derin temizlik'],
     iconName: 'ScanFace',
     color: 'from-indigo-500 to-blue-500',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80',
+    imageAlt: 'Profesyonel cilt bakımı — medikal facial tedavisi',
     shortDescription: 'Profesyonel ürünler ve tekniklerle derinlemesine cilt bakımı, temizliği ve nemlendirme tedavileri.',
     longDescription: 'Profesyonel cilt bakımı, klinik ortamda medikal kalitede ürünler ve cihazlar ile yapılan, cildin derinlemesine temizliği, nemlendirilmesi ve canlandırılmasını içeren rutin bakım uygulamasıdır.',
     intro: 'Düzenli cilt bakımı — kalıcı parlaklık ve sağlık için.',

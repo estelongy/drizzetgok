@@ -74,6 +74,23 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Clinic Image */}
+        <div className="mb-16 relative aspect-[21/9] rounded-3xl overflow-hidden shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?auto=format&fit=crop&w=1600&q=80"
+            alt="Dr. İzzet Gök Medikal Estetik Kliniği iç mekan — Beylikdüzü, İstanbul"
+            className="w-full h-full object-cover"
+            width="1600"
+            height="686"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/40 via-transparent to-transparent" />
+          <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
+            <p className="text-sm font-medium mb-1 opacity-90">Modern Klinik</p>
+            <p className="text-2xl md:text-3xl font-bold">Steril & Profesyonel Ortam</p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>

@@ -73,9 +73,21 @@ const Service = () => {
     <main className="min-h-screen bg-white">
       <Navigation />
 
-      {/* Hero */}
-      <section className={`relative bg-gradient-to-br ${service.color} pt-32 pb-16 px-4`}>
-        <div className="max-w-5xl mx-auto">
+      {/* Hero with image */}
+      <section className={`relative bg-gradient-to-br ${service.color} pt-24 overflow-hidden`}>
+        <div className="absolute inset-0 opacity-20">
+          <img
+            src={service.image}
+            alt={service.imageAlt}
+            className="w-full h-full object-cover"
+            width="1600"
+            height="600"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20" />
+        <div className="relative max-w-5xl mx-auto px-4 pt-8 pb-16">
           <Link to="/#hizmetler" className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-8 text-sm">
             <ArrowLeft className="w-4 h-4" /> Tüm Hizmetler
           </Link>
@@ -84,13 +96,13 @@ const Service = () => {
               <Icon className="w-10 h-10" />
             </div>
             <div>
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">{service.title}</h1>
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">{service.title}</h1>
               {service.synonyms.length > 0 && (
-                <p className="text-white/80 text-sm mb-4">
+                <p className="text-white/90 text-sm mb-4">
                   Diğer adları: {service.synonyms.join(' · ')}
                 </p>
               )}
-              <p className="text-lg text-white/90 max-w-2xl">{service.intro}</p>
+              <p className="text-lg text-white/95 max-w-2xl drop-shadow">{service.intro}</p>
             </div>
           </div>
         </div>

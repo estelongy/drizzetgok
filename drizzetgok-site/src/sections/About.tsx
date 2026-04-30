@@ -100,13 +100,17 @@ const About = () => {
                 ))}
               </ul>
             </div>
-            <div className="hidden md:flex justify-center">
-              <div className="w-64 h-64 bg-white/10 rounded-full flex items-center justify-center">
-                <div className="w-48 h-48 bg-white/20 rounded-full flex items-center justify-center">
-                  <div className="w-32 h-32 bg-white/30 rounded-full flex items-center justify-center">
-                    <Heart className="w-16 h-16 text-white" />
-                  </div>
-                </div>
+            <div className="hidden md:block">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/30">
+                <img
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1000&q=80"
+                  alt="Dr. İzzet Gök — Medikal estetik hekim, etik ve doğal yaklaşım"
+                  className="w-full h-full object-cover"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent" />
               </div>
             </div>
           </div>

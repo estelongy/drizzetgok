@@ -1,6 +1,7 @@
 import Hero from '../sections/Hero';
 import About from '../sections/About';
 import Services from '../sections/Services';
+import FAQ from '../sections/FAQ';
 import Contact from '../sections/Contact';
 import Navigation from '../sections/Navigation';
 import { useSeo } from '../hooks/useSeo';
@@ -18,6 +19,7 @@ function Home() {
       <Hero />
       <About />
       <Services />
+      <FAQ />
       <Contact />
     </main>
   );

@@ -9,10 +9,63 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.drizzetgok.com/" />
   </url>
   <url>
-    <loc>https://www.drizzetgok.com/pages/bio</loc>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/botoks</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/dudak-dolgusu</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/dolgu</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/sivi-yuz-germe</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/full-face-estetik</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/mezoterapi</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/prp</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/kimyasal-peeling</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/hizmetlerimiz/cilt-bakimi</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.drizzetgok.com/pages/bio" />
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/pages/bio</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

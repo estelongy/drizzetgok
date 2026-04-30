@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,10 +57,12 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="tel:+905524228485"
+              href="https://wa.me/905524228485?text=Merhaba%2C%20randevu%20almak%20istiyorum."
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-medium transition-all hover:shadow-lg"
             >
-              <Phone className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4" />
               <span>Randevu Al</span>
             </a>
           </div>
@@ -94,10 +96,12 @@ const Navigation = () => {
                 </Link>
               ))}
               <a
-                href="tel:+905524228485"
+                href="https://wa.me/905524228485?text=Merhaba%2C%20randevu%20almak%20istiyorum."
+              target="_blank"
+              rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-emerald-500 text-white px-4 py-3 rounded-xl font-medium mt-2"
               >
-                <Phone className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
                 <span>Randevu Al</span>
               </a>
             </div>

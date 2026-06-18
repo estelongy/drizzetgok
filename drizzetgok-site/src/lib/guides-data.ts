@@ -6,6 +6,7 @@
 
 export type GuideBlock =
   | { type: 'prose'; heading?: string; paragraphs: string[] }
+  | { type: 'image'; src: string; webp?: string; alt: string; caption?: string }
   | { type: 'diagram'; component: 'BotoxMechanism' | 'BotoxFaceMap'; caption?: string }
   | { type: 'list'; heading: string; ordered?: boolean; items: { title: string; text: string }[] }
   | { type: 'timeline'; heading: string; steps: { when: string; title: string; text: string }[] }
@@ -47,6 +48,13 @@ export const GUIDES: GuideData[] = [
           'Botoks, halk arasında bilinen ticari adıyla anılan botulinum toksin tip-A’nın medikal estetikteki kullanımıdır. “Toksin” kelimesi ürkütücü gelse de uygulanan miktar son derece düşük, saflaştırılmış ve standardize edilmiş bir proteindir — amacı kası ortadan kaldırmak değil, belirli bir mimik kasının sinyalini geçici olarak yumuşatmaktır.',
           'Kliniğimde en sık karşılaştığım yanlış inanış, botoksun yüzü “dondurduğu” düşüncesidir. Doğru doz ve doğru noktaya uygulandığında amaç tam tersidir: ifadeyi koruyup, o ifadenin cilde kalıcı çizgi olarak işlenmesini önlemek. İyi yapılmış botoks fark edilmez; sadece daha dinlenmiş bir görünüm bırakır.',
         ],
+      },
+      {
+        type: 'image',
+        src: '/images/botoks-uygulama.jpg',
+        webp: '/images/botoks-uygulama.webp',
+        alt: 'Klinik ortamda kadın hastaya ince uçlu iğneyle botoks uygulaması',
+        caption: 'Botoks, steril klinik ortamda ince uçlu iğnelerle, dakikalar içinde uygulanır.',
       },
       {
         type: 'diagram',

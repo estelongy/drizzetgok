@@ -25,6 +25,24 @@ function Block({ block }: { block: GuideBlock }) {
         </div>
       );
 
+    case 'image':
+      return (
+        <figure className="mb-12 -mx-4 md:mx-0">
+          <picture>
+            {block.webp && <source srcSet={block.webp} type="image/webp" />}
+            <img
+              src={block.src}
+              alt={block.alt}
+              loading="lazy"
+              className="w-full md:rounded-3xl object-cover max-h-[460px]"
+            />
+          </picture>
+          {block.caption && (
+            <figcaption className="text-sm text-slate-500 mt-3 text-center px-4">{block.caption}</figcaption>
+          )}
+        </figure>
+      );
+
     case 'diagram': {
       const Diagram = DIAGRAMS[block.component];
       return (

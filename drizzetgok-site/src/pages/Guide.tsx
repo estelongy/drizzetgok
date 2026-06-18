@@ -339,10 +339,18 @@ const Guide = () => {
             <p className="text-white/90 mb-8 max-w-xl mx-auto">
               Size özel değerlendirme ve tedavi planı için Dr. İzzet Gök ile WhatsApp üzerinden iletişime geçin.
             </p>
-            <a href="https://wa.me/905524228485" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:shadow-2xl transition">
-              <MessageCircle className="w-5 h-5" /> WhatsApp ile İletişim
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a href="https://wa.me/905524228485" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:shadow-2xl transition">
+                <MessageCircle className="w-5 h-5" /> WhatsApp ile İletişim
+              </a>
+              {relatedService && (
+                <Link to={`/hizmetlerimiz/${relatedService.slug}`}
+                  className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full font-medium hover:bg-white/15 transition">
+                  {relatedService.shortTitle} Hizmeti <ArrowRight className="w-5 h-5" />
+                </Link>
+              )}
+            </div>
           </div>
 
           {/* İlgili hizmet */}

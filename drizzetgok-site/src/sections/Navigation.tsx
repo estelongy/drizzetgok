@@ -18,6 +18,7 @@ const Navigation = () => {
     { label: 'Ana Sayfa', to: '/' },
     { label: 'Hakkımda', to: '/hakkimda' },
     { label: 'Hizmetler', to: '/hizmetler' },
+    { label: 'Rehber', to: '/rehber' },
     { label: 'İletişim', to: '/iletisim' },
   ];
 

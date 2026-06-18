@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Bio from './pages/Bio';
 import Service from './pages/Service';
 import Guide from './pages/Guide';
+import GuideList from './pages/GuideList';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/iletisim" element={<Home section="iletisim" />} />
         <Route path="/pages/bio" element={<Bio />} />
         <Route path="/hizmetlerimiz/:slug" element={<Service />} />
+        <Route path="/rehber" element={<GuideList />} />
         <Route path="/rehber/:slug" element={<Guide />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

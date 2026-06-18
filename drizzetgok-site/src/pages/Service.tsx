@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace,
   Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowLeft, ArrowRight,
-  ChevronRight, MessageCircle, Home as HomeIcon
+  ChevronRight, MessageCircle, Home as HomeIcon, BookOpen
 } from 'lucide-react';
 import { getServiceBySlug, SERVICES } from '../lib/services-data';
 import { GUIDES } from '../lib/guides-data';
@@ -155,14 +155,19 @@ const Service = () => {
           {relatedGuide && (
             <Link
               to={`/rehber/${relatedGuide.slug}`}
-              className="group flex items-center justify-between gap-4 mb-12 bg-gradient-to-r from-slate-50 to-cyan-50 border border-cyan-100 rounded-2xl p-5 hover:shadow-lg hover:border-cyan-300 transition-all"
+              className="group flex items-center gap-4 mb-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-5 shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:scale-[1.01] transition-all"
             >
-              <div>
-                <p className="text-xs font-medium text-cyan-600 mb-1">📖 Detaylı Rehber · {relatedGuide.readingMinutes} dk</p>
-                <h3 className="font-bold text-slate-800">{relatedGuide.title}</h3>
-                <p className="text-sm text-slate-500 line-clamp-1">{relatedGuide.excerpt}</p>
+              <div className="w-12 h-12 flex-shrink-0 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center text-white">
+                <BookOpen className="w-6 h-6" />
               </div>
-              <ArrowRight className="w-5 h-5 text-cyan-500 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+              <div className="flex-1 min-w-0">
+                <p className="text-[11px] font-bold text-white/90 uppercase tracking-wide mb-0.5">
+                  📖 Ücretsiz Detaylı Rehber · {relatedGuide.readingMinutes} dk okuma
+                </p>
+                <h3 className="font-bold text-white leading-snug">{relatedGuide.title}</h3>
+                <p className="text-sm text-white/85 line-clamp-1">{relatedGuide.excerpt}</p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-white flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </Link>
           )}
 
@@ -220,15 +225,26 @@ const Service = () => {
             <p className="text-white/90 mb-8 max-w-xl mx-auto">
               Detaylı değerlendirme ve size özel tedavi planı için WhatsApp üzerinden hemen ulaşın.
             </p>
-            <a
-              href="https://wa.me/905524228485"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:shadow-2xl transition"
-            >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp ile İletişim
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a
+                href="https://wa.me/905524228485"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:shadow-2xl transition"
+              >
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp ile İletişim
+              </a>
+              {relatedGuide && (
+                <Link
+                  to={`/rehber/${relatedGuide.slug}`}
+                  className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full font-medium hover:bg-white/15 transition"
+                >
+                  <BookOpen className="w-5 h-5" />
+                  Önce Rehberi Oku
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </section>

@@ -157,8 +157,8 @@ export const GUIDES: GuideData[] = [
         type: 'sources',
         heading: 'Kaynaklar ve bilimsel dayanak',
         items: [
-          { label: 'U.S. Food & Drug Administration (FDA) — onabotulinumtoxinA reçete bilgileri ve onay tarihçesi', url: 'https://www.fda.gov' },
-          { label: 'T.C. Sağlık Bakanlığı, TİTCK — botulinum toksin ürün ruhsatlandırma bilgileri', url: 'https://www.titck.gov.tr' },
+          { label: 'U.S. Food & Drug Administration (FDA) — onabotulinumtoxinA (BOTOX) reçete bilgileri ve onay tarihçesi.' },
+          { label: 'T.C. Sağlık Bakanlığı, Türkiye İlaç ve Tıbbi Cihaz Kurumu (TİTCK) — botulinum toksin ürün ruhsatlandırma bilgileri.' },
           { label: 'Schantz EJ, Johnson EA. Properties and Use of Botulinum Toxin. Microbiological Reviews, 1992.' },
           { label: 'Nigam PK, Nigam A. Botulinum Toxin. Indian Journal of Dermatology, 2010;55(1):8-14.' },
           { label: 'Carruthers JA, et al. Glabellar çizgilerde botulinum toksin tip-A — randomize kontrollü çalışma. J Am Acad Dermatol, 2002.' },

@@ -84,6 +84,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.drizzetgok.com/rehber</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.drizzetgok.com/rehber/botoks-nedir</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.drizzetgok.com/pages/bio</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>

@@ -6,6 +6,7 @@ import {
   ChevronRight, MessageCircle, Home as HomeIcon
 } from 'lucide-react';
 import { getServiceBySlug, SERVICES } from '../lib/services-data';
+import { GUIDES } from '../lib/guides-data';
 import { useSeo } from '../hooks/useSeo';
 import Navigation from '../sections/Navigation';
 
@@ -70,6 +71,7 @@ const Service = () => {
   }
 
   const Icon = ICONS[service.iconName];
+  const relatedGuide = GUIDES.find((g) => g.relatedServiceSlug === service.slug);
 
   return (
     <main className="min-h-screen bg-white">
@@ -148,7 +150,21 @@ const Service = () => {
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-slate-800 mb-4">Nedir?</h2>
-          <p className="text-slate-600 leading-relaxed mb-12">{service.longDescription}</p>
+          <p className="text-slate-600 leading-relaxed mb-6">{service.longDescription}</p>
+
+          {relatedGuide && (
+            <Link
+              to={`/rehber/${relatedGuide.slug}`}
+              className="group flex items-center justify-between gap-4 mb-12 bg-gradient-to-r from-slate-50 to-cyan-50 border border-cyan-100 rounded-2xl p-5 hover:shadow-lg hover:border-cyan-300 transition-all"
+            >
+              <div>
+                <p className="text-xs font-medium text-cyan-600 mb-1">📖 Detaylı Rehber · {relatedGuide.readingMinutes} dk</p>
+                <h3 className="font-bold text-slate-800">{relatedGuide.title}</h3>
+                <p className="text-sm text-slate-500 line-clamp-1">{relatedGuide.excerpt}</p>
+              </div>
+              <ArrowRight className="w-5 h-5 text-cyan-500 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          )}
 
           <h2 className="text-2xl font-bold text-slate-800 mb-4">Hangi Bölgelere/Sorunlara Uygulanır?</h2>
           <ul className="space-y-2 mb-12">

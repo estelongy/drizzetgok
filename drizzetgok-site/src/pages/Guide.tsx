@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Clock, Calendar, ChevronRight, Home as HomeIcon, ArrowRight,
   MessageCircle, CheckCircle, XCircle, Info, Lightbulb, ShieldCheck,
+  Microscope, BookOpen, ExternalLink,
 } from 'lucide-react';
 import { getGuideBySlug, GUIDES, type GuideBlock } from '../lib/guides-data';
 import { getServiceBySlug } from '../lib/services-data';
@@ -162,6 +163,45 @@ function Block({ block }: { block: GuideBlock }) {
         </div>
       );
     }
+
+    case 'science':
+      return (
+        <details className="group mb-12 bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+          <summary className="flex items-center gap-3 cursor-pointer select-none p-5 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none">
+            <span className="w-9 h-9 flex-shrink-0 bg-slate-800 text-white rounded-lg flex items-center justify-center">
+              <Microscope className="w-5 h-5" />
+            </span>
+            <span className="flex-1">{block.title ?? 'Bilimsel arka plan'}</span>
+            <ChevronRight className="w-5 h-5 text-slate-400 transition-transform group-open:rotate-90" />
+          </summary>
+          <div className="px-5 pb-5 pt-1 border-t border-slate-200">
+            {block.paragraphs.map((p, i) => (
+              <p key={i} className="text-sm text-slate-600 leading-relaxed mt-3">{p}</p>
+            ))}
+          </div>
+        </details>
+      );
+
+    case 'sources':
+      return (
+        <div className="mb-12 border-t border-slate-100 pt-8">
+          <h2 className="flex items-center gap-2 text-xl font-bold text-slate-800 mb-4">
+            <BookOpen className="w-5 h-5 text-slate-400" /> {block.heading}
+          </h2>
+          <ul className="space-y-2">
+            {block.items.map((s, i) => (
+              <li key={i} className="text-sm text-slate-500 leading-relaxed">
+                {s.url ? (
+                  <a href={s.url} target="_blank" rel="noopener noreferrer nofollow"
+                    className="inline-flex items-start gap-1 text-cyan-600 hover:text-cyan-700 hover:underline">
+                    {s.label} <ExternalLink className="w-3 h-3 flex-shrink-0 mt-1" />
+                  </a>
+                ) : s.label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
 
     case 'faq':
       return (

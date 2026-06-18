@@ -13,6 +13,8 @@ export type GuideBlock =
   | { type: 'comparison'; heading: string; leftTitle: string; rightTitle: string; left: string[]; right: string[] }
   | { type: 'myths'; heading: string; items: { myth: string; truth: string }[] }
   | { type: 'callout'; tone: 'info' | 'warn'; title: string; text: string }
+  | { type: 'science'; title?: string; paragraphs: string[] }
+  | { type: 'sources'; heading: string; items: { label: string; url?: string }[] }
   | { type: 'faq'; heading: string; items: { q: string; a: string }[] };
 
 export type GuideData = {
@@ -71,6 +73,15 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'science',
+        title: 'Moleküler düzeyde ne oluyor?',
+        paragraphs: [
+          'Botulinum toksin tip-A (BoNT/A), presinaptik kolinerjik sinir ucuna seçici olarak bağlanır ve hücre içine alınır (endositoz). İçeride, toksinin hafif zinciri SNARE kompleksinin bir parçası olan SNAP-25 proteinini proteolitik olarak keser.',
+          'SNAP-25 olmadan, asetilkolin taşıyan veziküller hücre zarıyla birleşemez; yani nörotransmitter sinaptik aralığa salınamaz. Bunun sonucu, kasın geçici olarak uyarılamaması — literatürde “geçici kimyasal denervasyon” olarak geçen durumdur.',
+          'Etkinin geçici olmasının nedeni, sinir ucunun zamanla yeni uç filizleri oluşturması (aksonal sprouting) ve orijinal terminalin işlevini yeniden kazanmasıdır; bu süreç tipik olarak 3-4 ay sürer. Dozaj, hacimden bağımsız olarak biyolojik aktivite temelli “Ünite (U)” cinsinden hesaplanır.',
+        ],
+      },
+      {
         type: 'diagram',
         component: 'BotoxFaceMap',
         caption: 'Botoks en çok bu üç bölgedeki mimik çizgilerinde tercih edilir.',
@@ -79,9 +90,9 @@ export const GUIDES: GuideData[] = [
         type: 'list',
         heading: 'Hangi bölgelere ve sorunlara uygulanır?',
         items: [
-          { title: 'Alın çizgileri', text: 'Yatay alın kırışıklıkları, kaş kaldırma hareketiyle belirginleşir.' },
-          { title: 'Kaş arası (glabella)', text: 'İki kaş arasındaki dikey “öfke çizgileri”.' },
-          { title: 'Kaz ayağı', text: 'Gülerken göz kenarında oluşan ince çizgiler.' },
+          { title: 'Alın çizgileri', text: 'Alın kasının (frontalis) tekrarlı kasılmasıyla oluşan yatay kırışıklıklar.' },
+          { title: 'Kaş arası (glabella)', text: 'Kaşları çatma kaslarının (corrugator ve procerus) yarattığı dikey “öfke çizgileri”.' },
+          { title: 'Kaz ayağı', text: 'Göz çevresi kasının (orbicularis oculi) gülerken oluşturduğu ince çizgiler.' },
           { title: 'Aşırı terleme (hiperhidroz)', text: 'Koltuk altı ve avuç içi terlemesinde ter bezlerinin sinyalini azaltır.' },
           { title: 'Migren ve diş sıkma', text: 'Belirli kas gruplarındaki aşırı gerginliği yumuşatarak şikâyetleri hafifletir.' },
         ],
@@ -140,6 +151,17 @@ export const GUIDES: GuideData[] = [
           { q: 'Kaç yaşında başlanır?', a: 'Sabit bir yaş yoktur; çizgiler mimikle belirginleşmeye başladığında, genellikle 25-30 yaş aralığında önleyici amaçlı düşünülebilir.' },
           { q: 'Etkisi geçince çizgilerim daha mı belirginleşir?', a: 'Hayır. Etki yavaşça azalır ve kas dinlendiği için çoğu kişide çizgiler başlangıçtan daha iyi durumdadır.' },
           { q: 'Botoksla dolgu aynı şey mi?', a: 'Hayır. Botoks kası gevşetir (mimik çizgileri); dolgu ise hacim ekler (çukurluk, hat belirginleştirme). Sıklıkla birlikte planlanır.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'U.S. Food & Drug Administration (FDA) — onabotulinumtoxinA reçete bilgileri ve onay tarihçesi', url: 'https://www.fda.gov' },
+          { label: 'T.C. Sağlık Bakanlığı, TİTCK — botulinum toksin ürün ruhsatlandırma bilgileri', url: 'https://www.titck.gov.tr' },
+          { label: 'Schantz EJ, Johnson EA. Properties and Use of Botulinum Toxin. Microbiological Reviews, 1992.' },
+          { label: 'Nigam PK, Nigam A. Botulinum Toxin. Indian Journal of Dermatology, 2010;55(1):8-14.' },
+          { label: 'Carruthers JA, et al. Glabellar çizgilerde botulinum toksin tip-A — randomize kontrollü çalışma. J Am Acad Dermatol, 2002.' },
         ],
       },
     ],

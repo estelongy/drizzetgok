@@ -65,7 +65,7 @@ export const GUIDES: GuideData[] = [
       {
         type: 'diagram',
         component: 'BotoxFaceMap',
-        caption: 'Botoksun en sık uygulandığı üç bölge: alın çizgileri, kaş arası ve göz kenarı (kaz ayağı).',
+        caption: 'Botoks en çok bu üç bölgedeki mimik çizgilerinde tercih edilir.',
       },
       {
         type: 'list',

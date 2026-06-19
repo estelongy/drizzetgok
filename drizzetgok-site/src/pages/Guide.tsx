@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Clock, Calendar, ChevronRight, Home as HomeIcon, ArrowRight,
   MessageCircle, CheckCircle, XCircle, Info, Lightbulb, ShieldCheck,
-  Microscope, BookOpen, ExternalLink,
+  Microscope, BookOpen, ExternalLink, List,
 } from 'lucide-react';
 import { getGuideBySlug, GUIDES, type GuideBlock } from '../lib/guides-data';
 import { getServiceBySlug } from '../lib/services-data';
@@ -14,14 +14,64 @@ import BotoxFaceMap from '../components/diagrams/BotoxFaceMap';
 
 const DIAGRAMS = { BotoxMechanism, BotoxFaceMap };
 
-function Block({ block }: { block: GuideBlock }) {
+// Türkçe karakter dostu slug (başlık anchor / içindekiler için)
+function slugify(s: string) {
+  return s
+    .replace(/[çÇ]/g, 'c').replace(/[ğĞ]/g, 'g').replace(/[ıİI]/g, 'i')
+    .replace(/[öÖ]/g, 'o').replace(/[şŞ]/g, 's').replace(/[üÜ]/g, 'u')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+// Bir bloğun (varsa) başlığını döndürür — içindekiler için
+function blockHeading(b: GuideBlock): string | null {
+  if (b.type === 'prose') return b.heading ?? null;
+  if (b.type === 'list' || b.type === 'timeline' || b.type === 'comparison' || b.type === 'myths' || b.type === 'faq' || b.type === 'sources') {
+    return b.heading;
+  }
+  return null;
+}
+
+const H2 = 'font-serif text-2xl md:text-[1.75rem] font-bold text-slate-900 leading-snug scroll-mt-24';
+
+// Okuma ilerleme çubuğu
+function ReadingProgress() {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const el = document.documentElement;
+      const max = el.scrollHeight - el.clientHeight;
+      setWidth(max > 0 ? Math.min(100, Math.max(0, (el.scrollTop / max) * 100)) : 0);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return (
+    <div className="fixed top-0 left-0 right-0 h-1 z-[60] pointer-events-none">
+      <div className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-[width] duration-75 ease-out" style={{ width: `${width}%` }} />
+    </div>
+  );
+}
+
+function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
   switch (block.type) {
     case 'prose':
       return (
         <div className="mb-12">
-          {block.heading && <h2 className="text-2xl font-bold text-slate-800 mb-4">{block.heading}</h2>}
+          {block.heading && <h2 id={slugify(block.heading)} className={`${H2} mb-5`}>{block.heading}</h2>}
           {block.paragraphs.map((p, i) => (
-            <p key={i} className="text-slate-600 leading-relaxed mb-4">{p}</p>
+            <p
+              key={i}
+              className={`text-[1.1875rem] leading-[1.8] text-slate-700 mb-5 ${
+                dropCap && i === 0
+                  ? 'first-letter:float-left first-letter:font-serif first-letter:text-[3.5rem] first-letter:font-bold first-letter:leading-[0.78] first-letter:mr-3 first-letter:mt-1 first-letter:text-cyan-600'
+                  : ''
+              }`}
+            >
+              {p}
+            </p>
           ))}
         </div>
       );
@@ -31,15 +81,10 @@ function Block({ block }: { block: GuideBlock }) {
         <figure className="mb-12 -mx-4 md:mx-0">
           <picture>
             {block.webp && <source srcSet={block.webp} type="image/webp" />}
-            <img
-              src={block.src}
-              alt={block.alt}
-              loading="lazy"
-              className="w-full md:rounded-3xl object-cover max-h-[460px]"
-            />
+            <img src={block.src} alt={block.alt} loading="lazy" className="w-full md:rounded-3xl object-cover max-h-[460px]" />
           </picture>
           {block.caption && (
-            <figcaption className="text-sm text-slate-500 mt-3 text-center px-4">{block.caption}</figcaption>
+            <figcaption className="text-sm text-slate-500 mt-3 text-center px-4 italic">{block.caption}</figcaption>
           )}
         </figure>
       );
@@ -50,9 +95,7 @@ function Block({ block }: { block: GuideBlock }) {
         <figure className="mb-12 bg-slate-50 rounded-3xl border border-slate-100 p-6 md:p-8">
           <Diagram />
           {block.caption && (
-            <figcaption className="text-sm text-slate-500 mt-4 text-center max-w-2xl mx-auto">
-              {block.caption}
-            </figcaption>
+            <figcaption className="text-sm text-slate-500 mt-4 text-center max-w-2xl mx-auto italic">{block.caption}</figcaption>
           )}
         </figure>
       );
@@ -61,7 +104,7 @@ function Block({ block }: { block: GuideBlock }) {
     case 'list':
       return (
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6">{block.heading}</h2>
+          <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {block.items.map((it, i) => (
               <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5 hover:border-cyan-200 transition-colors">
@@ -69,7 +112,7 @@ function Block({ block }: { block: GuideBlock }) {
                   <CheckCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-slate-800 mb-1">{it.title}</h3>
-                    <p className="text-sm text-slate-600">{it.text}</p>
+                    <p className="text-[15px] leading-relaxed text-slate-600">{it.text}</p>
                   </div>
                 </div>
               </div>
@@ -81,16 +124,14 @@ function Block({ block }: { block: GuideBlock }) {
     case 'timeline':
       return (
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6">{block.heading}</h2>
+          <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <ol className="relative border-l-2 border-cyan-100 ml-3 space-y-6">
             {block.steps.map((s, i) => (
               <li key={i} className="ml-6">
                 <span className="absolute -left-[11px] w-5 h-5 bg-cyan-500 rounded-full ring-4 ring-white" />
-                <span className="inline-block text-xs font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full mb-1">
-                  {s.when}
-                </span>
+                <span className="inline-block text-xs font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full mb-1">{s.when}</span>
                 <h3 className="font-semibold text-slate-800">{s.title}</h3>
-                <p className="text-sm text-slate-600">{s.text}</p>
+                <p className="text-[15px] leading-relaxed text-slate-600">{s.text}</p>
               </li>
             ))}
           </ol>
@@ -100,7 +141,7 @@ function Block({ block }: { block: GuideBlock }) {
     case 'comparison':
       return (
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6">{block.heading}</h2>
+          <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
               <h3 className="flex items-center gap-2 font-semibold text-emerald-800 mb-4">
@@ -108,9 +149,7 @@ function Block({ block }: { block: GuideBlock }) {
               </h3>
               <ul className="space-y-2">
                 {block.left.map((l, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                    <span className="text-emerald-500 mt-0.5">✓</span> {l}
-                  </li>
+                  <li key={i} className="flex items-start gap-2 text-[15px] text-slate-700"><span className="text-emerald-500 mt-0.5">✓</span> {l}</li>
                 ))}
               </ul>
             </div>
@@ -120,9 +159,7 @@ function Block({ block }: { block: GuideBlock }) {
               </h3>
               <ul className="space-y-2">
                 {block.right.map((r, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                    <span className="text-rose-500 mt-0.5">!</span> {r}
-                  </li>
+                  <li key={i} className="flex items-start gap-2 text-[15px] text-slate-700"><span className="text-rose-500 mt-0.5">!</span> {r}</li>
                 ))}
               </ul>
             </div>
@@ -133,7 +170,7 @@ function Block({ block }: { block: GuideBlock }) {
     case 'myths':
       return (
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6">{block.heading}</h2>
+          <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <div className="space-y-3">
             {block.items.map((m, i) => (
               <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5">
@@ -151,15 +188,13 @@ function Block({ block }: { block: GuideBlock }) {
 
     case 'callout': {
       const Icon = block.tone === 'warn' ? ShieldCheck : Info;
-      const cls = block.tone === 'warn'
-        ? 'bg-amber-50 border-amber-200 text-amber-900'
-        : 'bg-cyan-50 border-cyan-200 text-cyan-900';
+      const cls = block.tone === 'warn' ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-cyan-50 border-cyan-200 text-cyan-900';
       return (
         <div className={`mb-12 border rounded-2xl p-6 ${cls}`}>
           <h3 className="flex items-center gap-2 font-semibold mb-2">
             <Icon className="w-5 h-5" /> {block.title}
           </h3>
-          <p className="text-sm opacity-90">{block.text}</p>
+          <p className="text-[15px] leading-relaxed opacity-90">{block.text}</p>
         </div>
       );
     }
@@ -176,7 +211,7 @@ function Block({ block }: { block: GuideBlock }) {
           </summary>
           <div className="px-5 pb-5 pt-1 border-t border-slate-200">
             {block.paragraphs.map((p, i) => (
-              <p key={i} className="text-sm text-slate-600 leading-relaxed mt-3">{p}</p>
+              <p key={i} className="text-[15px] text-slate-600 leading-relaxed mt-3">{p}</p>
             ))}
           </div>
         </details>
@@ -185,15 +220,14 @@ function Block({ block }: { block: GuideBlock }) {
     case 'sources':
       return (
         <div className="mb-12 border-t border-slate-100 pt-8">
-          <h2 className="flex items-center gap-2 text-xl font-bold text-slate-800 mb-4">
+          <h2 id={slugify(block.heading)} className="flex items-center gap-2 font-serif text-xl font-bold text-slate-900 mb-4 scroll-mt-24">
             <BookOpen className="w-5 h-5 text-slate-400" /> {block.heading}
           </h2>
           <ul className="space-y-2">
             {block.items.map((s, i) => (
-              <li key={i} className="text-sm text-slate-500 leading-relaxed">
+              <li key={i} className="text-[15px] text-slate-500 leading-relaxed">
                 {s.url ? (
-                  <a href={s.url} target="_blank" rel="noopener noreferrer nofollow"
-                    className="inline-flex items-start gap-1 text-cyan-600 hover:text-cyan-700 hover:underline">
+                  <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-start gap-1 text-cyan-600 hover:text-cyan-700 hover:underline">
                     {s.label} <ExternalLink className="w-3 h-3 flex-shrink-0 mt-1" />
                   </a>
                 ) : s.label}
@@ -206,12 +240,12 @@ function Block({ block }: { block: GuideBlock }) {
     case 'faq':
       return (
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6">{block.heading}</h2>
+          <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <div className="space-y-4">
             {block.items.map((f, i) => (
               <article key={i} className="bg-slate-50 rounded-2xl p-6">
                 <h3 className="font-semibold text-slate-800 mb-2">{f.q}</h3>
-                <p className="text-slate-600">{f.a}</p>
+                <p className="text-[15px] leading-relaxed text-slate-600">{f.a}</p>
               </article>
             ))}
           </div>
@@ -295,8 +329,15 @@ const Guide = () => {
 
   if (!guide) return <Navigate to="/" replace />;
 
+  const firstProseIndex = guide.blocks.findIndex((b) => b.type === 'prose');
+  const toc = guide.blocks
+    .map((b) => blockHeading(b))
+    .filter((h): h is string => !!h)
+    .map((h) => ({ title: h, id: slugify(h) }));
+
   return (
     <main className="min-h-screen bg-white">
+      <ReadingProgress />
       <Navigation />
 
       {/* Hero */}
@@ -306,21 +347,21 @@ const Guide = () => {
           backgroundSize: '40px 40px, 28px 28px',
         }} />
         <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        <div className="relative max-w-3xl mx-auto px-4 pt-8 pb-14">
+        <div className="relative max-w-3xl mx-auto px-4 pt-8 pb-14 text-left">
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-sm text-white/80 mb-6">
             <Link to="/" className="inline-flex items-center gap-1 hover:text-white transition-colors">
               <HomeIcon className="w-3.5 h-3.5" /> <span>Ana Sayfa</span>
             </Link>
             <ChevronRight className="w-3.5 h-3.5 opacity-60" />
-            <span className="text-white font-medium">Rehber</span>
+            <Link to="/rehber" className="hover:text-white transition-colors">Rehber</Link>
           </nav>
           <span className="inline-flex items-center gap-1.5 text-xs font-medium text-white/90 bg-white/15 backdrop-blur px-3 py-1.5 rounded-full mb-5">
             <Lightbulb className="w-3.5 h-3.5" /> {guide.heroEyebrow}
           </span>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+          <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg leading-[1.1]">
             {guide.title}
           </h1>
-          <p className="text-lg text-white/95 drop-shadow mb-6">{guide.excerpt}</p>
+          <p className="text-lg text-white/95 drop-shadow mb-6 leading-relaxed">{guide.excerpt}</p>
           <div className="flex items-center gap-5 text-sm text-white/85">
             <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4" /> {guide.readingMinutes} dk okuma</span>
             <span className="inline-flex items-center gap-1.5"><Calendar className="w-4 h-4" /> Güncel</span>
@@ -329,14 +370,33 @@ const Guide = () => {
       </section>
 
       {/* Body */}
-      <article className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          {guide.blocks.map((block, i) => <Block key={i} block={block} />)}
+      <article className="py-16 px-4 text-left">
+        <div className="max-w-2xl mx-auto">
+          {/* İçindekiler */}
+          {toc.length > 2 && (
+            <nav aria-label="İçindekiler" className="mb-12 bg-slate-50 border border-slate-100 rounded-2xl p-6">
+              <p className="text-xs font-bold uppercase tracking-wide text-cyan-600 mb-3 flex items-center gap-2">
+                <List className="w-4 h-4" /> Bu rehberde
+              </p>
+              <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+                {toc.map((t, i) => (
+                  <li key={t.id} className="flex gap-2 text-[15px]">
+                    <span className="text-cyan-400 font-semibold">{String(i + 1).padStart(2, '0')}</span>
+                    <a href={`#${t.id}`} className="text-slate-600 hover:text-cyan-700 hover:underline">{t.title}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
+          {guide.blocks.map((block, i) => (
+            <Block key={i} block={block} dropCap={i === firstProseIndex} />
+          ))}
 
           {/* CTA */}
           <div className={`bg-gradient-to-r ${guide.color} rounded-3xl p-8 md:p-12 text-center mt-4`}>
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Sorularınız mı var?</h3>
-            <p className="text-white/90 mb-8 max-w-xl mx-auto">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-4">Sorularınız mı var?</h3>
+            <p className="text-white/90 mb-8 max-w-xl mx-auto leading-relaxed">
               Size özel değerlendirme ve tedavi planı için Dr. İzzet Gök ile WhatsApp üzerinden iletişime geçin.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">

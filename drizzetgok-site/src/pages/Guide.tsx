@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Clock, Calendar, ChevronRight, Home as HomeIcon, ArrowRight,
   MessageCircle, CheckCircle, XCircle, Info, Lightbulb, ShieldCheck,
-  Microscope, BookOpen, ExternalLink, List,
+  Microscope, BookOpen, ExternalLink, List, HelpCircle,
 } from 'lucide-react';
 import { getGuideBySlug, GUIDES, type GuideBlock } from '../lib/guides-data';
 import { getServiceBySlug } from '../lib/services-data';
@@ -174,10 +174,10 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           <div className="space-y-3">
             {block.items.map((m, i) => (
               <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5">
-                <p className="flex items-start gap-2 text-slate-500 italic mb-2">
-                  <XCircle className="w-5 h-5 text-rose-400 flex-shrink-0 mt-0.5" /> {m.myth}
+                <p className="flex items-start gap-2 text-slate-800 font-semibold mb-2">
+                  <HelpCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5" /> {m.myth}
                 </p>
-                <p className="flex items-start gap-2 text-slate-800 font-medium">
+                <p className="flex items-start gap-2 text-[15px] leading-relaxed text-slate-600">
                   <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" /> {m.truth}
                 </p>
               </div>

@@ -129,10 +129,10 @@ export const GUIDES: GuideData[] = [
         type: 'myths',
         heading: 'Mitler ve gerçekler',
         items: [
-          { myth: '“Botoks yüzü dondurur, ifadesiz bırakır.”', truth: 'Doğru dozda ifade korunur. Donuk görünüm aşırı veya yanlış uygulamanın sonucudur, botoksun doğası değil.' },
-          { myth: '“Bir kez yaptırınca bağımlı olursun.”', truth: 'Fizyolojik bağımlılık yoktur. Etki geçince kas eski haline döner; devam etmek tamamen tercih meselesidir.' },
-          { myth: '“Bırakınca çizgiler daha kötü olur.”', truth: 'Tam tersine, kas yıllarca dinlendiği için çizgiler genelde başladığınız noktadan daha iyi durumda olur.' },
-          { myth: '“Botoks kalıcıdır.”', truth: 'Geçicidir. Ortalama 4-6 ayda etki azalır; bu yüzden sonuç memnun etmezse zamanla kendiliğinden geri döner.' },
+          { myth: 'Botoks yüzü dondurur, ifadesiz mi bırakır?', truth: 'Hayır. Doğru dozda ifade korunur. Donuk görünüm aşırı veya yanlış uygulamanın sonucudur, botoksun doğası değil.' },
+          { myth: 'Botoks bağımlılık yapar mı?', truth: 'Hayır. Fizyolojik bağımlılık yoktur. Etki geçince kas eski haline döner; devam etmek tamamen tercih meselesidir.' },
+          { myth: 'Botoksu bırakınca çizgiler daha mı kötü olur?', truth: 'Hayır, tam tersine. Kas yıllarca dinlendiği için çizgiler genelde başladığınız noktadan daha iyi durumda olur.' },
+          { myth: 'Botoks kalıcı mıdır?', truth: 'Hayır, geçicidir. Ortalama 4-6 ayda etki azalır; bu yüzden sonuç memnun etmezse zamanla kendiliğinden geri döner.' },
         ],
       },
       {

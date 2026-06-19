@@ -313,6 +313,184 @@ export const GUIDES: GuideData[] = [
       },
     ],
   },
+  {
+    slug: 'terleme-botoksu',
+    title: 'Terleme Botoksu (Hiperhidroz): Bölgelere Göre Tedavi Rehberi',
+    metaTitle: 'Terleme Botoksu Nedir? Koltuk Altı, El, Ayak — Hiperhidroz | Dr. İzzet Gök',
+    excerpt:
+      'Aşırı terleme (hiperhidroz) botoks ile nasıl tedavi edilir? Koltuk altı, avuç içi, ayak tabanı ve yüz bölgelerine göre mekanizma, etki süresi ve sık sorulanlar — Dr. İzzet Gök kontrolünde, görsel anlatımla.',
+    heroEyebrow: 'Medikal Estetik Rehberi',
+    readingMinutes: 9,
+    updated: '2026-06-19',
+    relatedServiceSlug: 'botoks',
+    color: 'from-sky-500 to-cyan-500',
+    blocks: [
+      {
+        type: 'prose',
+        heading: 'Terleme botoksu nedir?',
+        paragraphs: [
+          'Terlemek normaldir — vücudun ısısını dengelemesinin doğal yoludur. Ancak bazı kişilerde terleme, sıcakla veya eforla orantısız biçimde, kontrolsüz şekilde artar; gömlek değiştirmek, el sıkışmaktan kaçınmak, kâğıda dokununca ıslatmak günlük bir soruna dönüşür. Tıpta bu duruma “hiperhidroz” (aşırı terleme) denir.',
+          'Terleme botoksu, aşırı terleyen bölgedeki ter bezlerine giden sinyali geçici olarak durduran bir uygulamadır. Amaç terlemeyi tamamen ortadan kaldırmak değil — vücut ısı dengesini başka bölgelerden korur — yalnızca o bölgedeki aşırı, sosyal hayatı zorlaştıran terlemeyi belirgin biçimde (çoğu çalışmada %80’in üzerinde) azaltmaktır.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/hiperhidroz-genel.png',
+        alt: 'Hiperhidrozun en sık görüldüğü dört bölge: koltuk altı, avuç içi, ayak tabanı ve yüz',
+        caption: 'Aşırı terleme en sık dört bölgede görülür: koltuk altı, avuç içi, ayak tabanı ve yüz/kafa derisi. Her bölgenin uygulaması ve etki süresi birbirinden farklıdır.',
+      },
+      {
+        type: 'prose',
+        heading: 'Aşırı terleme ne zaman tedavi gerektirir?',
+        paragraphs: [
+          'Hiperhidroz iki türlüdür. “Primer” (birincil) hiperhidroz, altta yatan bir hastalık olmadan, genellikle ergenlikte başlayan ve belirli bölgelere (koltuk altı, el, ayak, yüz) yerleşen simetrik terlemedir — en sık karşılaşılan biçimdir ve terleme botoksunun ana hedefidir. “Sekonder” (ikincil) hiperhidroz ise bir hastalık, hormonal durum veya ilaca bağlı, daha yaygın terlemedir; burada önce altta yatan neden araştırılır.',
+          'Terleme; iş hayatını, sosyal ilişkileri veya ruh halini etkiliyorsa, antiperspiranlar yetersiz kalıyorsa tedavi gündeme gelir. Bu yüzden hiperhidroz çoğu kişide yalnızca “estetik” değil, gerçek bir yaşam kalitesi sorunudur.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Botoks terlemeyi nasıl durdurur?',
+        paragraphs: [
+          'Ter bezlerini “salgıla” diye uyaran sinir uçları, tıpkı kaslara olduğu gibi, asetilkolin adlı kimyasal haberciyi salgılar. Bu haberci ter bezine ulaştığında bez terlemeye başlar. Botoks, sinir ucundaki bu asetilkolin salınımını geçici olarak bloke eder — sinyal iletilemez, ter bezi uyarılmaz ve o bölgedeki terleme durur.',
+          'Mekanizma, mimik kaslarına yapılan botoksla aynı molekül üzerinden işler; fark yalnızca hedeftedir: burada kas değil, ter bezini uyaran sinir uçları susturulur. Etki geçicidir; sinir uçları zamanla işlevini geri kazandığında terleme yeniden başlar ve uygulama tekrarlanır.',
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Bilimsel arka plan: ekrin bezler ve haritalama',
+        paragraphs: [
+          'Terlemeden sorumlu ekrin ter bezleri, sempatik sinir sistemi tarafından uyarılır; ancak bu sempatik liflerin uç kısmı istisnai olarak kolinerjiktir, yani asetilkolin salgılar. Botulinum toksin tip-A (BoNT/A) presinaptik sinir ucundaki SNAP-25 proteinini keserek asetilkolin salınımını engeller; böylece bez uyarılamaz hale gelir.',
+          'Uygulanacak alan, gerektiğinde Minor testi (iyot-nişasta testi) ile belirlenebilir: bölgeye iyot ve nişasta uygulanır, terleyen noktalar koyu mor renge döner ve enjeksiyon haritası bu “aktif” alana göre çıkarılır. Toksin, cilde yakın (yüzeysel/intradermal) ve çok sayıda küçük noktaya, yaklaşık 1-2 cm aralıklı bir ızgara şeklinde verilir.',
+          'Not: onabotulinumtoxinA, primer koltuk altı (aksiller) hiperhidrozu için ruhsatlı bir endikasyona sahiptir; avuç içi, ayak tabanı ve yüz uygulamaları birçok ülkede endikasyon dışı (off-label) olmakla birlikte geniş klinik deneyime dayanır.',
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Hangi bölgelere uygulanır?',
+        items: [
+          { title: 'Koltuk altı (aksiller)', text: 'En sık ve en kolay uygulanan bölge; ruhsatlı endikasyon. Etki genellikle uzun sürer (sıklıkla 6-12 ay).' },
+          { title: 'Avuç içi (palmar)', text: 'El terlemesi; daha hassas ve ağrılı olabildiğinden anestezi/soğutma tercih edilir. Etki koltuk altına göre biraz daha kısa olabilir.' },
+          { title: 'Ayak tabanı (plantar)', text: 'Ayak terlemesi ve buna bağlı koku/kayganlık şikâyetlerinde uygulanır.' },
+          { title: 'Yüz ve kafa derisi', text: 'Alın ve kafa derisi terlemesinde; doz ve nokta seçimi mimik kaslarını etkilememek için özenle planlanır.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Koltuk altı: en sık ve en kolay bölge',
+        paragraphs: [
+          'Koltuk altı, terleme botoksunun en çok uygulandığı ve sonuçların en tatmin edici olduğu bölgedir. Uygulama hızlıdır, ağrı azdır ve etki çoğu kişide diğer bölgelere kıyasla daha uzun sürer. Bu nedenle aşırı koltuk altı terlemesi, antiperspiranlardan fayda görmeyenlerde ilk tercih edilen tedavilerden biridir.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/hiperhidroz-koltukalti.jpg',
+        alt: 'Gömlekte belirgin koltuk altı ter lekesi — aksiller hiperhidroz örneği',
+        caption: 'Aşırı koltuk altı terlemesi, giysilerde belirgin lekelere ve sosyal kaygıya yol açabilir. Botoks bu bölgedeki ter bezlerinin sinyalini azaltır.',
+      },
+      {
+        type: 'prose',
+        heading: 'Avuç içi ve ayak tabanı',
+        paragraphs: [
+          'El ve ayak terlemesi, hem fiziksel (kayan kalem, ıslak el sıkışma, kayan ayakkabı) hem de sosyal açıdan zorlayıcıdır. Bu bölgelerde cilt daha kalın ve sinir uçları daha yoğun olduğundan uygulama biraz daha hassastır; konfor için bölgesel anestezi, sinir bloğu veya soğutma kullanılabilir.',
+          'Avuç içinde önemli bir incelik vardır: enjeksiyonun derinliği ve noktası, eldeki ince kasları etkileyip geçici bir kavrama zayıflığına yol açmayacak şekilde seçilmelidir. Bu da uygulamanın anatomiye hâkim bir hekim tarafından yapılmasını gerektirir.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/hiperhidroz-palmar.jpg',
+        alt: 'Aşırı terlemeden dolayı parlayan, ıslak avuç içleri — palmar hiperhidroz',
+        caption: 'Avuç içi (palmar) hiperhidrozda eller sürekli nemli ve kaygan olabilir; botoks terlemeyi belirgin biçimde azaltır.',
+      },
+      {
+        type: 'prose',
+        heading: 'Uygulama nasıl yapılır?',
+        paragraphs: [
+          'Önce terleyen alan değerlendirilir, gerekirse Minor testiyle haritalanır. Ardından bölgeye, cilde yakın ve çok sayıda küçük noktaya, yaklaşık 1-2 cm aralıklı bir ızgara düzeninde ince iğnelerle toksin uygulanır. İşlem genellikle 15-30 dakika sürer ve hemen günlük hayata dönülür.',
+          'Aşağıdaki görsellerde, uygulama öncesi çizilen ızgara haritası ve enjeksiyon tekniği görülmektedir — bu düzen, dozun bölgeye eşit ve eksiksiz dağılmasını sağlar.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/hiperhidroz-botox.png',
+        alt: 'Koltuk altına ızgara şeklinde işaretlenmiş noktalara botoks enjeksiyonu',
+        caption: 'Koltuk altı uygulaması: terleyen alan ızgara şeklinde işaretlenir ve eşit aralıklı noktalara yüzeysel enjeksiyon yapılır.',
+      },
+      {
+        type: 'image',
+        src: '/images/hiperhidroz-el.png',
+        alt: 'Avuç içine ızgara şeklinde işaretlenmiş noktalara botoks enjeksiyonu',
+        caption: 'Avuç içi uygulaması: aynı ızgara mantığı ele uygulanır; nokta ve derinlik, el kaslarını etkilememek için özenle seçilir.',
+      },
+      {
+        type: 'timeline',
+        heading: 'Etki ne zaman başlar, ne kadar sürer?',
+        steps: [
+          { when: '0. gün', title: 'Uygulama', text: 'Bölge işaretlenir, ince iğnelerle çok sayıda küçük noktaya uygulanır. Hemen günlük hayata dönülür.' },
+          { when: '2-4. gün', title: 'İlk etki', text: 'Terlemede belirgin azalma hissedilmeye başlar.' },
+          { when: '1. hafta', title: 'Tam etki', text: 'Sonuç tamamen oturur; bölge kurur.' },
+          { when: '4-12. ay', title: 'Yenileme', text: 'Etki bölgeye göre değişir (koltuk altında genellikle daha uzun). Azaldığında uygulama tekrarlanır.' },
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Kimlere uygun, kimlere uygun değil?',
+        leftTitle: 'Uygun adaylar',
+        rightTitle: 'Ertelenmesi / değerlendirilmesi gerekenler',
+        left: [
+          'Primer (bölgesel) aşırı terlemesi olanlar',
+          'Antiperspiran ve kremlerden fayda görmeyenler',
+          'Terlemesi iş/sosyal hayatını veya ruh halini etkileyenler',
+          'Koltuk altı, el, ayak veya yüz terlemesi belirgin olanlar',
+        ],
+        right: [
+          'Gebelik ve emzirme dönemindekiler',
+          'Nöromüsküler hastalığı olanlar (ör. myastenia gravis)',
+          'Yaygın terleme (sekonder hiperhidroz şüphesi) — önce nedeni araştırılmalı',
+          'Uygulama bölgesinde aktif cilt enfeksiyonu olanlar',
+        ],
+      },
+      {
+        type: 'myths',
+        heading: 'Mitler ve gerçekler',
+        items: [
+          { myth: 'Terleme botoksu terlemeyi tamamen durdurur mu?', truth: 'Hayır, gerek de yoktur. Uygulanan bölgedeki aşırı terlemeyi büyük oranda (çoğu çalışmada %80’in üzerinde) azaltır; vücut ısı dengesini diğer bölgelerden sürdürür.' },
+          { myth: 'O bölge terlemeyince vücudun başka yerinden aşırı terler miyim?', truth: 'Telafi edici terleme botoks uygulamasında çok nadirdir ve genellikle hafiftir; cerrahi yöntemlerdeki kadar belirgin değildir.' },
+          { myth: 'Terleyemezsem vücudum zarar görür mü?', truth: 'Hayır. Yalnızca küçük, sınırlı bir alan etkilenir; vücudun genel ısı düzenlemesi bozulmaz.' },
+          { myth: 'Etkisi kalıcı mıdır?', truth: 'Hayır, geçicidir. Bölgeye göre 4-12 ay sürer; etki azaldığında uygulama tekrarlanır.' },
+          { myth: 'Bu sadece estetik bir işlem mi?', truth: 'Hayır. Hiperhidroz çoğu kişide gerçek bir yaşam kalitesi sorunudur; koltuk altı için ruhsatlı bir tıbbi tedavi seçeneğidir.' },
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'info',
+        title: 'Bu içerik bilgilendirme amaçlıdır',
+        text: 'Aşırı terleme tıbbi değerlendirme gerektirir; yaygın terlemede önce altta yatan neden araştırılır. Buradaki bilgiler genel bir rehber niteliğindedir; karar öncesi mutlaka hekim muayenesi şarttır.',
+      },
+      {
+        type: 'faq',
+        heading: 'Sıkça sorulan sorular',
+        items: [
+          { q: 'Terleme botoksu acır mı?', a: 'Koltuk altında ağrı genellikle azdır. Avuç içi ve ayak tabanı daha hassastır; konfor için soğutma, krem veya sinir bloğu uygulanabilir.' },
+          { q: 'Etkisini ne zaman görürüm?', a: 'Genellikle 2-4 günde azalma başlar, bir hafta içinde sonuç tam oturur.' },
+          { q: 'Antiperspiran kullanmayı bırakır mıyım?', a: 'Çoğu kişi uygulanan bölgede antiperspirana ihtiyaç duymaz; bu, terlemenin şiddetine ve bölgeye göre değişir.' },
+          { q: 'Avuç içi uygulamasından sonra elimi normal kullanabilir miyim?', a: 'Evet. Nadiren geçici, hafif bir kavrama zayıflığı olabilir; doğru teknik bu riski en aza indirir.' },
+          { q: 'Spor, sauna veya hamama girebilir miyim?', a: 'İlk gün ağır efor ve aşırı sıcak ortamlardan kaçınmanız, bölgeye masaj yapmamanız önerilir.' },
+          { q: 'Ne kadar sürede tekrar gerekir?', a: 'Etki bölgeye göre 4-12 ay sürer; koltuk altında genellikle daha uzundur. Azaldığında uygulama yenilenir.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'U.S. Food & Drug Administration (FDA) — onabotulinumtoxinA (BOTOX), primer aksiller (koltuk altı) hiperhidroz endikasyonu (2004).' },
+          { label: 'Naumann M, Lowe NJ. Botulinum toxin type A in treatment of bilateral primary axillary hyperhidrosis: randomized, parallel group, double-blind, placebo-controlled trial. BMJ, 2001.' },
+          { label: 'Heckmann M, Ceballos-Baumann AO, Plewig G. Botulinum toxin A for axillary hyperhidrosis. New England Journal of Medicine, 2001.' },
+          { label: 'International Hyperhidrosis Society (sweathelp.org) — hiperhidroz tedavi rehberleri ve hasta bilgilendirmeleri.' },
+          { label: 'Minor testi (iyot-nişasta testi) — terleyen alanın haritalanmasında kullanılan klinik yöntem.' },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuideBySlug = (slug: string) => GUIDES.find((g) => g.slug === slug);

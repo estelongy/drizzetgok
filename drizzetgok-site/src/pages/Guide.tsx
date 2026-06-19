@@ -340,29 +340,24 @@ const Guide = () => {
       <ReadingProgress />
       <Navigation />
 
-      {/* Hero */}
-      <section className={`relative bg-gradient-to-br ${guide.color} pt-24 overflow-hidden`}>
-        <div className="absolute inset-0 opacity-15" style={{
-          backgroundImage: 'radial-gradient(circle at 20% 30%, white 1.5px, transparent 1.5px), radial-gradient(circle at 70% 60%, white 1px, transparent 1px)',
-          backgroundSize: '40px 40px, 28px 28px',
-        }} />
-        <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        <div className="relative max-w-3xl mx-auto px-4 pt-8 pb-14 text-left">
-          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-sm text-white/80 mb-6">
-            <Link to="/" className="inline-flex items-center gap-1 hover:text-white transition-colors">
+      {/* Hero — sade, açık zemin (üst beyaz, nav ile çakışmaz) */}
+      <section className="relative bg-gradient-to-b from-white via-cyan-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
+        <div className="relative max-w-3xl mx-auto px-4 text-center">
+          <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1 text-xs text-slate-400 mb-6">
+            <Link to="/" className="inline-flex items-center gap-1 hover:text-cyan-600 transition-colors">
               <HomeIcon className="w-3.5 h-3.5" /> <span>Ana Sayfa</span>
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 opacity-60" />
-            <Link to="/rehber" className="hover:text-white transition-colors">Rehber</Link>
+            <ChevronRight className="w-3.5 h-3.5" />
+            <Link to="/rehber" className="hover:text-cyan-600 transition-colors">Rehber</Link>
           </nav>
-          <span className="inline-flex items-center gap-1.5 text-xs font-medium text-white/90 bg-white/15 backdrop-blur px-3 py-1.5 rounded-full mb-5">
+          <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-cyan-700 bg-white border border-cyan-100 px-3.5 py-1.5 rounded-full mb-5 shadow-sm">
             <Lightbulb className="w-3.5 h-3.5" /> {guide.heroEyebrow}
           </span>
-          <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg leading-[1.1]">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-[1.1]">
             {guide.title}
           </h1>
-          <p className="text-lg text-white/95 drop-shadow mb-6 leading-relaxed">{guide.excerpt}</p>
-          <div className="flex items-center gap-5 text-sm text-white/85">
+          <p className="text-lg text-slate-600 max-w-xl mx-auto mb-6 leading-relaxed">{guide.excerpt}</p>
+          <div className="flex items-center justify-center gap-5 text-sm text-slate-400">
             <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4" /> {guide.readingMinutes} dk okuma</span>
             <span className="inline-flex items-center gap-1.5"><Calendar className="w-4 h-4" /> Güncel</span>
           </div>

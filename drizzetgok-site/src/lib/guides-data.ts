@@ -36,7 +36,7 @@ export const GUIDES: GuideData[] = [
     title: 'Botoks Nedir, Nasıl Çalışır? — Kapsamlı Rehber',
     metaTitle: 'Botoks Nedir, Nasıl Çalışır? Etki Süresi ve Uygulama | Dr. İzzet Gök',
     excerpt:
-      'Botoksun ne olduğu, sinir-kas iletimini nasıl gevşettiği, hangi bölgelere uygulandığı, etkisinin ne zaman başladığı ve sık sorulan mitlere kadar her şey — Dr. İzzet Gök kontrolünde, anlaşılır ve görsel anlatımla.',
+      'Botoksun ne olduğu, nasıl çalıştığı, hangi bölgelere uygulandığı ve sık sorulanlar — Dr. İzzet Gök kontrolünde, anlaşılır ve görsel anlatımla.',
     heroEyebrow: 'Medikal Estetik Rehberi',
     readingMinutes: 6,
     updated: '2026-06-18',

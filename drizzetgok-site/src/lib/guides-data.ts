@@ -189,6 +189,7 @@ export const GUIDES: GuideData[] = [
       {
         type: 'image',
         src: '/images/masseter-anatomi.png',
+        webp: '/images/masseter-anatomi.webp',
         alt: 'Kafatası üzerinde çiğneme kaslarını gösteren anatomik çizim: masseter (M) ve temporal kası (TK)',
         caption: 'Masseter (M), çene köşesini kaplayan ana çiğneme kasıdır; üstte temporal kası (TK) ile birlikte çalışır. Botoks doğrudan bu kasa, doğru derinlik ve noktalara uygulanır.',
       },
@@ -220,6 +221,7 @@ export const GUIDES: GuideData[] = [
       {
         type: 'image',
         src: '/images/masseter-enjeksiyon.jpg',
+        webp: '/images/masseter-enjeksiyon.webp',
         alt: 'Masseter botoksu enjeksiyon tekniği — güvenli bölge, parotis bezi, yüz arteri ve veni, 1 cm aralıklı enjeksiyon noktaları',
         caption:
           'Uygulama haritası: M (masseter kası), PG (parotis/tükürük bezi), PD (parotis kanalı), FA/FV (yüz arteri ve veni), R (risorius — gülümseme kası). Botoks, bu yapılardan kaçınılarak kasın güvenli alt bölümüne, yaklaşık 1 cm aralıklı noktalara uygulanır.',
@@ -336,6 +338,7 @@ export const GUIDES: GuideData[] = [
       {
         type: 'image',
         src: '/images/hiperhidroz-genel.png',
+        webp: '/images/hiperhidroz-genel.webp',
         alt: 'Hiperhidrozun en sık görüldüğü dört bölge: koltuk altı, avuç içi, ayak tabanı ve yüz',
         caption: 'Aşırı terleme en sık dört bölgede görülür: koltuk altı, avuç içi, ayak tabanı ve yüz/kafa derisi. Her bölgenin uygulaması ve etki süresi birbirinden farklıdır.',
       },
@@ -412,12 +415,14 @@ export const GUIDES: GuideData[] = [
       {
         type: 'image',
         src: '/images/hiperhidroz-botox.png',
+        webp: '/images/hiperhidroz-botox.webp',
         alt: 'Koltuk altına ızgara şeklinde işaretlenmiş noktalara botoks enjeksiyonu',
         caption: 'Koltuk altı uygulaması: terleyen alan ızgara şeklinde işaretlenir ve eşit aralıklı noktalara yüzeysel enjeksiyon yapılır.',
       },
       {
         type: 'image',
         src: '/images/hiperhidroz-el.png',
+        webp: '/images/hiperhidroz-el.webp',
         alt: 'Avuç içine ızgara şeklinde işaretlenmiş noktalara botoks enjeksiyonu',
         caption: 'Avuç içi uygulaması: aynı ızgara mantığı ele uygulanır; nokta ve derinlik, el kaslarını etkilememek için özenle seçilir.',
       },

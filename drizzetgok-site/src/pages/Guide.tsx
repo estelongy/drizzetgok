@@ -359,9 +359,17 @@ const Guide = () => {
             {guide.title}
           </h1>
           <p className="text-xl text-slate-600 max-w-xl mx-auto mb-6 leading-relaxed">{guide.excerpt}</p>
+          <div className="flex items-center justify-center gap-2 mb-4 text-base">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            <span className="text-slate-700">
+              <span className="font-semibold text-slate-900">Dr. İzzet Gök</span> tarafından hazırlandı
+            </span>
+          </div>
           <div className="flex items-center justify-center gap-5 text-base text-slate-400">
             <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4" /> {guide.readingMinutes} dk okuma</span>
-            <span className="inline-flex items-center gap-1.5"><Calendar className="w-4 h-4" /> Güncel</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Calendar className="w-4 h-4" /> Güncelleme: {new Date(guide.updated).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </span>
           </div>
         </div>
       </section>

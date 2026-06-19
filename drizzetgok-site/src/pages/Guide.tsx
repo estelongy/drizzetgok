@@ -51,7 +51,7 @@ function ReadingProgress() {
   }, []);
   return (
     <div className="fixed top-0 left-0 right-0 h-1 z-[60] pointer-events-none">
-      <div className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-[width] duration-75 ease-out" style={{ width: `${width}%` }} />
+      <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-[width] duration-75 ease-out" style={{ width: `${width}%` }} />
     </div>
   );
 }
@@ -67,7 +67,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
               key={i}
               className={`text-[1.1875rem] leading-[1.8] text-slate-700 mb-5 ${
                 dropCap && i === 0
-                  ? 'first-letter:float-left first-letter:font-serif first-letter:text-[3.5rem] first-letter:font-bold first-letter:leading-[0.78] first-letter:mr-3 first-letter:mt-1 first-letter:text-cyan-600'
+                  ? 'first-letter:float-left first-letter:font-serif first-letter:text-[3.5rem] first-letter:font-bold first-letter:leading-[0.78] first-letter:mr-3 first-letter:mt-1 first-letter:text-emerald-600'
                   : ''
               }`}
             >
@@ -108,9 +108,9 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {block.items.map((it, i) => (
-              <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5 hover:border-cyan-200 transition-colors">
+              <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5 hover:border-emerald-200 transition-colors">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-800 mb-1">{it.title}</h3>
                     <p className="text-base leading-relaxed text-slate-600">{it.text}</p>
@@ -126,11 +126,11 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
       return (
         <div className="mb-12">
           <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
-          <ol className="relative border-l-2 border-cyan-100 ml-3 space-y-6">
+          <ol className="relative border-l-2 border-emerald-100 ml-3 space-y-6">
             {block.steps.map((s, i) => (
               <li key={i} className="ml-6">
-                <span className="absolute -left-[11px] w-5 h-5 bg-cyan-500 rounded-full ring-4 ring-white" />
-                <span className="inline-block text-base font-bold text-cyan-700 bg-cyan-50 px-3 py-1 rounded-full mb-1.5">{s.when}</span>
+                <span className="absolute -left-[11px] w-5 h-5 bg-emerald-500 rounded-full ring-4 ring-white" />
+                <span className="inline-block text-base font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full mb-1.5">{s.when}</span>
                 <h3 className="font-semibold text-lg text-slate-800">{s.title}</h3>
                 <p className="text-base leading-relaxed text-slate-600">{s.text}</p>
               </li>
@@ -176,7 +176,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
             {block.items.map((m, i) => (
               <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5">
                 <p className="flex items-start gap-2 text-lg text-slate-800 font-semibold mb-2">
-                  <HelpCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-1" /> {m.myth}
+                  <HelpCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" /> {m.myth}
                 </p>
                 <p className="flex items-start gap-2 text-base leading-relaxed text-slate-600">
                   <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" /> {m.truth}
@@ -189,7 +189,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
 
     case 'callout': {
       const Icon = block.tone === 'warn' ? ShieldCheck : Info;
-      const cls = block.tone === 'warn' ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-cyan-50 border-cyan-200 text-cyan-900';
+      const cls = block.tone === 'warn' ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-emerald-50 border-emerald-200 text-emerald-900';
       return (
         <div className={`mb-12 border rounded-2xl p-6 ${cls}`}>
           <h3 className="flex items-center gap-2 font-semibold text-lg mb-2">
@@ -228,7 +228,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
             {block.items.map((s, i) => (
               <li key={i} className="text-base text-slate-500 leading-relaxed">
                 {s.url ? (
-                  <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-start gap-1 text-cyan-600 hover:text-cyan-700 hover:underline">
+                  <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-start gap-1 text-emerald-600 hover:text-emerald-700 hover:underline">
                     {s.label} <ExternalLink className="w-3.5 h-3.5 flex-shrink-0 mt-1" />
                   </a>
                 ) : s.label}
@@ -343,16 +343,16 @@ const Guide = () => {
       <Navigation />
 
       {/* Hero — sade, açık zemin (üst beyaz, nav ile çakışmaz) */}
-      <section className="relative bg-gradient-to-b from-white via-cyan-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
+      <section className="relative bg-gradient-to-b from-white via-emerald-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1.5 text-base text-slate-400 mb-6">
-            <Link to="/" className="inline-flex items-center gap-1 hover:text-cyan-600 transition-colors">
+            <Link to="/" className="inline-flex items-center gap-1 hover:text-emerald-600 transition-colors">
               <HomeIcon className="w-4 h-4" /> <span>Ana Sayfa</span>
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link to="/rehber" className="hover:text-cyan-600 transition-colors">Rehber</Link>
+            <Link to="/rehber" className="hover:text-emerald-600 transition-colors">Rehber</Link>
           </nav>
-          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-cyan-700 bg-white border border-cyan-100 px-4 py-1.5 rounded-full mb-5 shadow-sm">
+          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-emerald-700 bg-white border border-emerald-100 px-4 py-1.5 rounded-full mb-5 shadow-sm">
             <Lightbulb className="w-4 h-4" /> {guide.heroEyebrow}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-[1.1]">
@@ -372,14 +372,14 @@ const Guide = () => {
           {/* İçindekiler */}
           {toc.length > 2 && (
             <nav aria-label="İçindekiler" className="mb-12 bg-slate-50 border border-slate-100 rounded-2xl p-6">
-              <p className="text-base font-bold uppercase tracking-wide text-cyan-600 mb-3 flex items-center gap-2">
+              <p className="text-base font-bold uppercase tracking-wide text-emerald-600 mb-3 flex items-center gap-2">
                 <List className="w-5 h-5" /> Bu rehberde
               </p>
               <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
                 {toc.map((t, i) => (
                   <li key={t.id} className="flex gap-2 text-base">
-                    <span className="text-cyan-400 font-semibold">{String(i + 1).padStart(2, '0')}</span>
-                    <a href={`#${t.id}`} className="text-slate-600 hover:text-cyan-700 hover:underline">{t.title}</a>
+                    <span className="text-emerald-400 font-semibold">{String(i + 1).padStart(2, '0')}</span>
+                    <a href={`#${t.id}`} className="text-slate-600 hover:text-emerald-700 hover:underline">{t.title}</a>
                   </li>
                 ))}
               </ol>
@@ -413,18 +413,18 @@ const Guide = () => {
           {/* İlgili hizmet — belirgin kart */}
           {relatedService && (
             <Link to={`/hizmetlerimiz/${relatedService.slug}`}
-              className="group flex items-center gap-4 mt-4 bg-cyan-50 border-2 border-cyan-200 rounded-2xl p-5 hover:bg-cyan-100 hover:border-cyan-300 hover:shadow-md transition-all">
+              className="group flex items-center gap-4 mt-4 bg-emerald-50 border-2 border-emerald-200 rounded-2xl p-5 hover:bg-emerald-100 hover:border-emerald-300 hover:shadow-md transition-all">
               {RelatedIcon && (
-                <div className="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-white">
+                <div className="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center text-white">
                   <RelatedIcon className="w-7 h-7" />
                 </div>
               )}
               <div className="flex-1 min-w-0">
-                <p className="text-base font-semibold text-cyan-700 mb-0.5">İlgili hizmet</p>
+                <p className="text-base font-semibold text-emerald-700 mb-0.5">İlgili hizmet</p>
                 <h3 className="font-bold text-xl text-slate-900 leading-snug">{relatedService.title}</h3>
                 <p className="text-base text-slate-600 line-clamp-1">{relatedService.shortDescription}</p>
               </div>
-              <ArrowRight className="w-6 h-6 text-cyan-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-6 h-6 text-emerald-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </Link>
           )}
         </div>

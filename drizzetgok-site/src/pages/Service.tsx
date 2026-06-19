@@ -133,7 +133,7 @@ const Service = () => {
           {relatedGuide && (
             <Link
               to={`/rehber/${relatedGuide.slug}`}
-              className="group flex items-center gap-4 mb-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-5 shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:scale-[1.01] transition-all"
+              className="group flex items-center gap-4 mb-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl p-5 shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:scale-[1.01] transition-all"
             >
               <div className="w-12 h-12 flex-shrink-0 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center text-white">
                 <BookOpen className="w-6 h-6" />

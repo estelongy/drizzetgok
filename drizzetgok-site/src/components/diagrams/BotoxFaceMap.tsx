@@ -21,7 +21,7 @@ const ZONES = [
 
 const BotoxFaceMap = () => (
   <div>
-    <p className="text-center text-base font-semibold text-cyan-600 mb-6 uppercase tracking-wide">
+    <p className="text-center text-base font-semibold text-emerald-600 mb-6 uppercase tracking-wide">
       En sık uygulanan 3 bölge
     </p>
     <div className="grid sm:grid-cols-3 gap-4">
@@ -30,7 +30,7 @@ const BotoxFaceMap = () => (
           key={z.n}
           className="bg-white border border-slate-100 rounded-2xl p-6 text-center hover:border-cyan-200 hover:shadow-md transition-all"
         >
-          <span className="inline-flex w-12 h-12 mb-4 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-full items-center justify-center text-lg font-bold mx-auto">
+          <span className="inline-flex w-12 h-12 mb-4 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full items-center justify-center text-lg font-bold mx-auto">
             {z.n}
           </span>
           <h4 className="font-semibold text-slate-800 mb-2">{z.title}</h4>

@@ -17,16 +17,16 @@ const GuideList = () => {
       <Navigation />
 
       {/* Hero — sade açık zemin (üst beyaz, nav ile çakışmaz) */}
-      <section className="relative bg-gradient-to-b from-white via-cyan-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
+      <section className="relative bg-gradient-to-b from-white via-emerald-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1.5 text-base text-slate-400 mb-6">
-            <Link to="/" className="inline-flex items-center gap-1 hover:text-cyan-600 transition-colors">
+            <Link to="/" className="inline-flex items-center gap-1 hover:text-emerald-600 transition-colors">
               <HomeIcon className="w-4 h-4" /> <span>Ana Sayfa</span>
             </Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-slate-500 font-medium">Rehber</span>
           </nav>
-          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-cyan-700 bg-white border border-cyan-100 px-4 py-1.5 rounded-full mb-5 shadow-sm">
+          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-emerald-700 bg-white border border-emerald-100 px-4 py-1.5 rounded-full mb-5 shadow-sm">
             <Lightbulb className="w-4 h-4" /> Bilgi Rehberleri
           </span>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-[1.1]">Medikal Estetik Rehberi</h1>
@@ -48,20 +48,20 @@ const GuideList = () => {
                 <Link
                   key={g.slug}
                   to={`/rehber/${g.slug}`}
-                  className="group flex flex-col bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-200 transition-all"
+                  className="group flex flex-col bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-emerald-200 transition-all"
                 >
                   <div className={`h-2 bg-gradient-to-r ${g.color}`} />
                   <div className="p-6 flex flex-col flex-1">
-                    <span className="inline-flex items-center gap-1.5 text-base font-semibold text-cyan-600 mb-3">
+                    <span className="inline-flex items-center gap-1.5 text-base font-semibold text-emerald-600 mb-3">
                       <BookOpen className="w-4 h-4" /> {g.heroEyebrow}
                     </span>
-                    <h2 className="font-serif font-bold text-2xl text-slate-900 mb-2 leading-snug group-hover:text-cyan-700 transition-colors">
+                    <h2 className="font-serif font-bold text-2xl text-slate-900 mb-2 leading-snug group-hover:text-emerald-700 transition-colors">
                       {g.title}
                     </h2>
                     <p className="text-base text-slate-500 line-clamp-3 mb-4 flex-1 leading-relaxed">{g.excerpt}</p>
                     <div className="flex items-center justify-between text-base text-slate-400 pt-2 border-t border-slate-50">
                       <span className="inline-flex items-center gap-1"><Clock className="w-4 h-4" /> {g.readingMinutes} dk</span>
-                      <span className="inline-flex items-center gap-1 text-cyan-600 font-semibold">
+                      <span className="inline-flex items-center gap-1 text-emerald-600 font-semibold">
                         Oku <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>

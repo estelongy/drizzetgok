@@ -166,6 +166,153 @@ export const GUIDES: GuideData[] = [
       },
     ],
   },
+  {
+    slug: 'masseter-botoksu',
+    title: 'Masseter Botoksu: Çene İnceltme ve Diş Sıkma Tedavisi',
+    metaTitle: 'Masseter Botoksu Nedir? Çene İnceltme ve Diş Sıkma | Dr. İzzet Gök',
+    excerpt:
+      'Masseter (çiğneme) kası botoksu hem alt yüzü inceltir hem de diş sıkma ve çene ağrısını rahatlatır. Mekanizması, etki süreci, kimlere uygun olduğu — Dr. İzzet Gök kontrolünde, görsel anlatımla.',
+    heroEyebrow: 'Medikal Estetik Rehberi',
+    readingMinutes: 8,
+    updated: '2026-06-19',
+    relatedServiceSlug: 'botoks',
+    color: 'from-emerald-500 to-teal-600',
+    blocks: [
+      {
+        type: 'prose',
+        heading: 'Masseter botoksu nedir?',
+        paragraphs: [
+          'Masseter, çene köşesinde yer alan ve çiğneme hareketini sağlayan kastır — vücudun kütlesine oranla en güçlü kaslarından biridir. Bu kas genetik yapı, kronik diş sıkma ya da sürekli sert gıda/sakız çiğneme gibi nedenlerle aşırı çalışırsa kalınlaşır (hipertrofi) ve alt yüze köşeli, “kare” bir görünüm verir.',
+          'Masseter botoksu, bu kasın aşırı aktivitesini geçici olarak azaltan bir uygulamadır. Sonuç çift yönlüdür: bir yandan kas zamanla incelerek alt yüze daha yumuşak, oval bir hat (“V-line”) kazandırır; diğer yandan diş sıkma, çene yorgunluğu ve buna bağlı ağrıları belirgin biçimde hafifletir. Onu klasik mimik botoksundan ayıran şey de budur — aynı anda hem estetik hem fonksiyonel bir tedavidir.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/masseter-anatomi.png',
+        alt: 'Kafatası üzerinde çiğneme kaslarını gösteren anatomik çizim: masseter (M) ve temporal kası (TK)',
+        caption: 'Masseter (M), çene köşesini kaplayan ana çiğneme kasıdır; üstte temporal kası (TK) ile birlikte çalışır. Botoks doğrudan bu kasa, doğru derinlik ve noktalara uygulanır.',
+      },
+      {
+        type: 'prose',
+        heading: 'Çiğneme kası neden büyür?',
+        paragraphs: [
+          'Bir kas ne kadar çok ve ne kadar güçlü kasılırsa zamanla o kadar büyür — tıpkı düzenli ağırlık çalışan bir sporcunun kaslarının kalınlaşması gibi. Masseter de aynı kurala tabidir. Çoğu kişide farkında olmadan, özellikle uykuda yapılan diş sıkma ve gıcırdatma (bruksizm) kası gün boyu “antrenmanda” tutar.',
+          'Buna genetik yatkınlık, stres, sert gıdalar ve sürekli sakız çiğneme eklendiğinde masseter belirgin biçimde kalınlaşır. Bu, hem alt yüzün genişlemesine (yüzün üst kısmı zayıfken çenenin geniş kalması) hem de dişlerde aşınma, sabah çene ağrısı ve şakak bölgesine yayılan gerilim baş ağrılarına yol açar.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Nasıl çalışır? Mimik botoksundan farkı',
+        paragraphs: [
+          'Temel mekanizma aynıdır: botoks, sinirden kasa giden “kasıl” sinyalini taşıyan asetilkolinin salınımını geçici olarak engeller, böylece kas daha az ve daha zayıf kasılır. Ancak masseterde devreye ikinci ve belirleyici bir etki girer.',
+          'Masseter, alın veya kaş arasındaki ince mimik kaslarının aksine kalın ve hacimli bir kastır. Sinyali azalan kas artık tam güçle çalışmadığı için — alçıya alınmış bir kolun zamanla incelmesi gibi — kullanılmayarak hacim kaybeder (atrofi). İşte bu yüzden inceltme etkisi anında değil, haftalar içinde yavaşça ortaya çıkar. Diş sıkmaya bağlı rahatlama ise çok daha erken, ilk günlerde hissedilir.',
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Bilimsel arka plan: hipertrofi, atrofi ve dozaj',
+        paragraphs: [
+          'Botulinum toksin tip-A (BoNT/A), presinaptik sinir ucundaki SNAP-25 proteinini keserek asetilkolin salınımını bloke eder — bu, tüm botoks uygulamalarının ortak moleküler temelidir. Masseterde farklı olan, hedef kasın iskelet kası hipertrofisi göstermesi ve denervasyon sonrası belirgin hacim kaybına (kas atrofisi) uğramasıdır.',
+          'Masseter kalın ve güçlü bir kas olduğundan dozaj, ince mimik kaslarına kıyasla yüksektir; literatürde her bir tarafa yaklaşık 20-30 ünite aralığında, kasın alt-arka bölümüne ve uygun derinliğe uygulanması bildirilir. Doz ve nokta seçimi; gülümseme simetrisi, asimetri riski ve çiğneme fonksiyonunun korunması açısından kişiye özel planlanır.',
+          'Not: Masseter botoksunun estetik (alt yüz inceltme) endikasyonu birçok ülkede “endikasyon dışı (off-label)” kategorisindedir; bu, uygulamanın güvensiz olduğu anlamına gelmez, yalnızca ruhsatın bu spesifik kullanım için ayrıca düzenlenmediğini gösterir. Bruksizm ve kas hipertrofisi için kullanımı geniş klinik deneyime dayanır.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/masseter-enjeksiyon.jpg',
+        alt: 'Masseter botoksu enjeksiyon tekniği — güvenli bölge, parotis bezi, yüz arteri ve veni, 1 cm aralıklı enjeksiyon noktaları',
+        caption:
+          'Uygulama haritası: M (masseter kası), PG (parotis/tükürük bezi), PD (parotis kanalı), FA/FV (yüz arteri ve veni), R (risorius — gülümseme kası). Botoks, bu yapılardan kaçınılarak kasın güvenli alt bölümüne, yaklaşık 1 cm aralıklı noktalara uygulanır.',
+      },
+      {
+        type: 'prose',
+        heading: 'Neden uygulayan kişi kritik?',
+        paragraphs: [
+          'Yukarıdaki harita boşuna değil: masseterin hemen önünde yüz arteri ve veni (FA/FV), üstünde parotis tükürük bezi ve kanalı (PG/PD), ön kenarında ise gülümsemeyi sağlayan risorius (R) kası bulunur. Toksinin yanlış derinliğe veya yanlış noktaya verilmesi; geçici asimetrik gülümseme, çiğneme zayıflığı ya da istenmeyen sonuçlara yol açabilir.',
+          'Doğru uygulamada bu yapılardan özenle kaçınılır, kasın kalınlığı palpasyonla (elle muayene) doğrulanır ve doz her iki tarafa simetrik dağıtılır. Bu nedenle masseter botoksu, anatomiye hâkim bir hekim tarafından yapılması gereken bir uygulamadır.',
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Masseter botoksu ne işe yarar?',
+        items: [
+          { title: 'Alt yüz inceltme (V-line)', text: 'Kalınlaşmış çiğneme kasını inceltir; köşeli/kare alt yüzü daha oval ve yumuşak bir hatta dönüştürür.' },
+          { title: 'Diş sıkma ve gıcırdatma (bruksizm)', text: 'Kasın aşırı kasılma gücünü azaltır; uykuda diş sıkma kaynaklı şikâyetleri hafifletir.' },
+          { title: 'Çene ve yüz ağrısı', text: 'Kronik kas gerginliğini gevşeterek sabah çene yorgunluğunu ve ağrıyı azaltır.' },
+          { title: 'Gerilim tipi baş ağrısı', text: 'Çiğneme kası kaynaklı, şakaklara yayılan gerilim baş ağrılarında bazı kişilerde rahatlama sağlar.' },
+          { title: 'Diş ve dolguların korunması', text: 'Sıkma gücü azaldığı için diş aşınması ve dolgu/kaplama hasarı riski düşer.' },
+        ],
+      },
+      {
+        type: 'timeline',
+        heading: 'Etki ne zaman başlar, ne kadar sürer?',
+        steps: [
+          { when: '0. gün', title: 'Uygulama', text: 'Her iki çene köşesine ince iğnelerle birkaç dakikada yapılır. Hemen günlük hayata dönülür.' },
+          { when: '1-2. hafta', title: 'Fonksiyonel rahatlama', text: 'Diş sıkma ve çene gerginliği azalmaya başlar; sabah ağrıları hafifler.' },
+          { when: '4-6. hafta', title: 'İnceltme görünür', text: 'Kas hacim kaybetmeye başladıkça alt yüz hattı incelmeye başlar.' },
+          { when: '2-3. ay', title: 'Maksimum etki', text: 'İnceltme sonucu en belirgin halini alır; oval hat netleşir.' },
+          { when: '4-6. ay', title: 'Yenileme', text: 'Etki azalır. Düzenli tekrarda kas küçük kalmayı “öğrenir”, seans aralıkları uzayabilir.' },
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Kimlere uygun, kimlere uygun değil?',
+        leftTitle: 'Uygun adaylar',
+        rightTitle: 'Ertelenmesi / değerlendirilmesi gerekenler',
+        left: [
+          'Köşeli/kare alt yüzünü yumuşatmak isteyenler',
+          'Diş sıkma veya gıcırdatma (bruksizm) şikâyeti olanlar',
+          'Sabah çene yorgunluğu, kas ağrısı yaşayanlar',
+          'Çiğneme kası kaynaklı gerilim baş ağrısı olanlar',
+        ],
+        right: [
+          'Gebelik ve emzirme dönemindekiler',
+          'Nöromüsküler hastalığı olanlar (ör. myastenia gravis)',
+          'Uygulama bölgesinde aktif cilt enfeksiyonu olanlar',
+          'Çiğneme zorluğu/eklem sorunu önce hekimce değerlendirilmeli olanlar',
+        ],
+      },
+      {
+        type: 'myths',
+        heading: 'Mitler ve gerçekler',
+        items: [
+          { myth: 'Masseter botoksu yüzü sarkıtır mı?', truth: 'Doğru doz ve teknikle hayır. Sarkma riski genellikle aşırı/yanlış uygulamayla ilişkilidir; kontrollü dozda alt yüz incelir, dokular korunur.' },
+          { myth: 'Botokstan sonra çiğneyemez miyim?', truth: 'Hayır. Normal çiğnersiniz; yalnızca kasın aşırı/zorlayıcı sıkma gücü azalır. Günlük beslenme etkilenmez.' },
+          { myth: 'İnceltme etkisi hemen olur mu?', truth: 'Hayır. İnceltme kas hacmi azaldıkça haftalar içinde gelişir. Diş sıkma rahatlaması ise çok daha erken hissedilir.' },
+          { myth: 'İncelme kalıcı mıdır?', truth: 'Tek uygulamada geçicidir. Ancak düzenli tekrarlarda kas küçük kalmaya alışır ve seans aralıkları uzar.' },
+          { myth: 'Gece plağının yerini tutar mı?', truth: 'İkisi farklı işler. Botoks kas gücünü azaltır, plak dişi mekanik olarak korur; çoğu zaman birlikte planlanır.' },
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'info',
+        title: 'Bu içerik bilgilendirme amaçlıdır',
+        text: 'Masseter botoksu tıbbi bir uygulamadır ve kasın kalınlığı, çene fonksiyonu ve beklentiye göre kişiye özel planlanır. Buradaki bilgiler genel bir rehber niteliğindedir; karar öncesi mutlaka hekim muayenesi şarttır.',
+      },
+      {
+        type: 'faq',
+        heading: 'Sıkça sorulan sorular',
+        items: [
+          { q: 'Masseter botoksu acır mı?', a: 'İğneler çok incedir; çoğu kişi yalnızca kısa bir batma hisseder. İstenirse öncesinde uyuşturucu krem uygulanabilir.' },
+          { q: 'Kaç seans gerekir?', a: 'Genellikle tek seans yeterlidir. Çok kalın kaslarda 4-6 hafta sonra ek doz planlanabilir; etkiyi sürdürmek için yılda birkaç kez yenilenir.' },
+          { q: 'Konuşmam veya gülüşüm etkilenir mi?', a: 'Doğru noktalara, gülümseme kaslarından kaçınılarak uygulandığında etkilenmez. Bu, anatomiye hâkim uygulamanın önemini gösterir.' },
+          { q: 'Yüzüm asimetrik olur mu?', a: 'Doz iki tarafa simetrik dağıtıldığında risk düşüktür. Zaten var olan hafif doğal asimetriler değerlendirilerek doz dengelenir.' },
+          { q: 'Uygulamadan sonra nelere dikkat etmeliyim?', a: 'İlk gün bölgeye masaj yapmamak, ağır spor ve sıcak ortamlardan (sauna, hamam) kaçınmak, ilk saatlerde uzanmamak önerilir.' },
+          { q: 'Ne kadar sürede tekrar yaptırmalıyım?', a: 'Etki ortalama 4-6 ay sürer. Düzenli uygulamalarda kas inceldiği için aralıklar zamanla uzayabilir.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'Smyth AG. Botulinum toxin treatment of bilateral masseteric hypertrophy. British Journal of Oral and Maxillofacial Surgery, 1994.' },
+          { label: 'Kim NH, et al. The use of botulinum toxin type A in aesthetic mandibular contouring. Plastic and Reconstructive Surgery / Dermatologic Surgery literatürü.' },
+          { label: 'Long H, Liao Z, Wang Y, et al. Efficacy of botulinum toxins on bruxism: a systematic review. Journal of Oral Rehabilitation, 2012.' },
+          { label: 'U.S. Food & Drug Administration (FDA) — onabotulinumtoxinA (BOTOX) reçete bilgileri; masseter estetik kullanımı endikasyon dışı (off-label) kategorisindedir.' },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuideBySlug = (slug: string) => GUIDES.find((g) => g.slug === slug);

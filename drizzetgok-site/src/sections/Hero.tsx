@@ -13,12 +13,12 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-base font-medium mb-6">
               <Award className="w-4 h-4" />
               17 Yıllık Deneyim
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6">
               Doğal Güzelliğiniz İçin{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">
                 Profesyonel Bakım
@@ -54,15 +54,15 @@ const Hero = () => {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6">
               <div className="flex items-center gap-2 text-slate-600">
                 <Shield className="w-5 h-5 text-emerald-500" />
-                <span className="text-sm font-medium">Sertifikalı Uzman</span>
+                <span className="text-base font-medium">Sertifikalı Uzman</span>
               </div>
               <div className="flex items-center gap-2 text-slate-600">
                 <Award className="w-5 h-5 text-emerald-500" />
-                <span className="text-sm font-medium">17+ Yıl Deneyim</span>
+                <span className="text-base font-medium">17+ Yıl Deneyim</span>
               </div>
               <div className="flex items-center gap-2 text-slate-600">
                 <Calendar className="w-5 h-5 text-emerald-500" />
-                <span className="text-sm font-medium">1000+ Mutlu Hasta</span>
+                <span className="text-base font-medium">1000+ Mutlu Hasta</span>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Hero = () => {
                       <span className="text-white text-5xl font-bold">İG</span>
                     </div>
                     <p className="text-slate-600 font-medium">Dr. İzzet Gök</p>
-                    <p className="text-emerald-600 text-sm">Medikal Estetik</p>
+                    <p className="text-emerald-600 text-base">Medikal Estetik</p>
                   </div>
                 </div>
 
@@ -94,7 +94,7 @@ const Hero = () => {
                       <Award className="w-5 h-5 text-emerald-600" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500">Deneyim</p>
+                      <p className="text-base text-slate-500">Deneyim</p>
                       <p className="font-bold text-slate-800">17 Yıl</p>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const Hero = () => {
                       <Shield className="w-5 h-5 text-teal-600" />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500">Güven</p>
+                      <p className="text-base text-slate-500">Güven</p>
                       <p className="font-bold text-slate-800">%100</p>
                     </div>
                   </div>

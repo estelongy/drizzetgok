@@ -36,10 +36,10 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-base font-medium mb-4">
             Hakkımda
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
             Estetikte <span className="text-emerald-500">Etik ve Doğal</span> Yaklaşım
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">

@@ -64,10 +64,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-base font-medium mb-4">
             İletişim
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
             Bizimle <span className="text-emerald-500">İletişime</span> Geçin
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -91,7 +91,7 @@ const Contact = () => {
             </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 text-white">
-              <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Uzman Hekim</p>
+              <p className="text-base font-medium mb-1 opacity-90 uppercase tracking-wide">Uzman Hekim</p>
               <p className="text-xl font-bold">17 Yıllık Deneyim</p>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Contact = () => {
             </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 text-white">
-              <p className="text-xs font-medium mb-1 opacity-90 uppercase tracking-wide">Modern Klinik</p>
+              <p className="text-base font-medium mb-1 opacity-90 uppercase tracking-wide">Modern Klinik</p>
               <p className="text-xl font-bold">Steril & Profesyonel</p>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Contact = () => {
                     {item.icon}
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm text-slate-500 mb-1">{item.title}</p>
+                    <p className="text-base text-slate-500 mb-1">{item.title}</p>
                     {item.href ? (
                       <a
                         href={item.href}
@@ -245,7 +245,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="font-bold text-slate-800">Dr. İzzet Gök</p>
-                <p className="text-sm text-slate-500">Medikal Estetik</p>
+                <p className="text-base text-slate-500">Medikal Estetik</p>
               </div>
             </div>
 
@@ -260,8 +260,8 @@ const Contact = () => {
 
             {/* Copyright */}
             <div className="text-center md:text-right">
-              <p className="text-slate-500 text-sm">© 2026 Dr. İzzet Gök</p>
-              <p className="text-slate-400 text-xs">Tüm hakları saklıdır.</p>
+              <p className="text-slate-500 text-base">© 2026 Dr. İzzet Gök</p>
+              <p className="text-slate-400 text-base">Tüm hakları saklıdır.</p>
             </div>
           </div>
         </div>

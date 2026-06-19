@@ -12,10 +12,10 @@ const Services = () => {
     <section id="hizmetler" className="py-20 md:py-32 bg-slate-50" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-base font-medium mb-4">
             Hizmetlerimiz
           </span>
-          <h2 id="services-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+          <h2 id="services-heading" className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
             Profesyonel <span className="text-emerald-500">Medikal Estetik</span> Hizmetler
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ const Services = () => {
                   </div>
                   {/* Service short title pill */}
                   <div className="absolute bottom-3 left-3">
-                    <span className="text-xs uppercase tracking-wider text-white/90 font-semibold bg-black/15 backdrop-blur px-2.5 py-1 rounded-full">
+                    <span className="text-base uppercase tracking-wider text-white/90 font-semibold bg-black/15 backdrop-blur px-2.5 py-1 rounded-full">
                       {service.shortTitle}
                     </span>
                   </div>
@@ -59,7 +59,7 @@ const Services = () => {
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold text-slate-800 mb-3">{service.title}</h3>
                   {service.synonyms.length > 0 && (
-                    <p className="text-xs text-slate-400 mb-3 uppercase tracking-wide">
+                    <p className="text-base text-slate-400 mb-3 uppercase tracking-wide">
                       {service.synonyms.slice(0, 2).join(' · ')}
                     </p>
                   )}
@@ -67,7 +67,7 @@ const Services = () => {
 
                   <ul className="space-y-2 mb-6">
                     {service.features.slice(0, 3).map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-center gap-2 text-sm text-slate-500">
+                      <li key={fIndex} className="flex items-center gap-2 text-base text-slate-500">
                         <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${service.color}`} />
                         {feature}
                       </li>
@@ -86,7 +86,7 @@ const Services = () => {
                       href="https://wa.me/905524228485"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs text-slate-500 hover:text-emerald-600"
+                      className="text-base text-slate-500 hover:text-emerald-600"
                       aria-label={`${service.shortTitle} için WhatsApp`}
                     >
                       Bilgi Al

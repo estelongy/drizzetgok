@@ -35,11 +35,11 @@ const FAQ = () => {
     <section id="sss" className="py-20 md:py-32 bg-slate-50" aria-labelledby="faq-heading">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-base font-medium mb-4">
             <HelpCircle className="w-4 h-4" />
             Sıkça Sorulan Sorular
           </span>
-          <h2 id="faq-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+          <h2 id="faq-heading" className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
             Aklınızdaki <span className="text-emerald-500">Soruların Cevapları</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

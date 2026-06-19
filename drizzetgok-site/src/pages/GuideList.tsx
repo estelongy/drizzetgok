@@ -16,26 +16,21 @@ const GuideList = () => {
     <main className="min-h-screen bg-white">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative bg-gradient-to-br from-blue-500 to-cyan-500 pt-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-15" style={{
-          backgroundImage: 'radial-gradient(circle at 20% 30%, white 1.5px, transparent 1.5px), radial-gradient(circle at 70% 60%, white 1px, transparent 1px)',
-          backgroundSize: '40px 40px, 28px 28px',
-        }} />
-        <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        <div className="relative max-w-5xl mx-auto px-4 pt-8 pb-14">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-sm text-white/80 mb-6">
-            <Link to="/" className="inline-flex items-center gap-1 hover:text-white transition-colors">
-              <HomeIcon className="w-3.5 h-3.5" /> <span>Ana Sayfa</span>
+      {/* Hero — sade açık zemin (üst beyaz, nav ile çakışmaz) */}
+      <section className="relative bg-gradient-to-b from-white via-cyan-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
+        <div className="relative max-w-3xl mx-auto px-4 text-center">
+          <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1.5 text-base text-slate-400 mb-6">
+            <Link to="/" className="inline-flex items-center gap-1 hover:text-cyan-600 transition-colors">
+              <HomeIcon className="w-4 h-4" /> <span>Ana Sayfa</span>
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 opacity-60" />
-            <span className="text-white font-medium">Rehber</span>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-slate-500 font-medium">Rehber</span>
           </nav>
-          <span className="inline-flex items-center gap-1.5 text-xs font-medium text-white/90 bg-white/15 backdrop-blur px-3 py-1.5 rounded-full mb-5">
-            <Lightbulb className="w-3.5 h-3.5" /> Bilgi Rehberleri
+          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-cyan-700 bg-white border border-cyan-100 px-4 py-1.5 rounded-full mb-5 shadow-sm">
+            <Lightbulb className="w-4 h-4" /> Bilgi Rehberleri
           </span>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">Medikal Estetik Rehberi</h1>
-          <p className="text-lg text-white/95 drop-shadow max-w-2xl">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-[1.1]">Medikal Estetik Rehberi</h1>
+          <p className="text-xl text-slate-600 max-w-xl mx-auto leading-relaxed">
             Bilimsel dayanaklı, anlaşılır ve tarafsız bilgi. Uygulamaları merak ediyor ama nereden başlayacağınızı
             bilmiyorsanız, buradan başlayın.
           </p>
@@ -46,7 +41,7 @@ const GuideList = () => {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           {GUIDES.length === 0 ? (
-            <p className="text-center text-slate-500">Yakında yeni rehberler eklenecek.</p>
+            <p className="text-center text-lg text-slate-500">Yakında yeni rehberler eklenecek.</p>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {GUIDES.map((g) => (
@@ -57,17 +52,17 @@ const GuideList = () => {
                 >
                   <div className={`h-2 bg-gradient-to-r ${g.color}`} />
                   <div className="p-6 flex flex-col flex-1">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-cyan-600 mb-3">
-                      <BookOpen className="w-3.5 h-3.5" /> {g.heroEyebrow}
+                    <span className="inline-flex items-center gap-1.5 text-base font-semibold text-cyan-600 mb-3">
+                      <BookOpen className="w-4 h-4" /> {g.heroEyebrow}
                     </span>
-                    <h2 className="font-bold text-lg text-slate-800 mb-2 group-hover:text-cyan-700 transition-colors">
+                    <h2 className="font-serif font-bold text-2xl text-slate-900 mb-2 leading-snug group-hover:text-cyan-700 transition-colors">
                       {g.title}
                     </h2>
-                    <p className="text-sm text-slate-500 line-clamp-3 mb-4 flex-1">{g.excerpt}</p>
-                    <div className="flex items-center justify-between text-xs text-slate-400">
-                      <span className="inline-flex items-center gap-1"><Clock className="w-3.5 h-3.5" /> {g.readingMinutes} dk</span>
-                      <span className="inline-flex items-center gap-1 text-cyan-600 font-medium">
-                        Oku <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    <p className="text-base text-slate-500 line-clamp-3 mb-4 flex-1 leading-relaxed">{g.excerpt}</p>
+                    <div className="flex items-center justify-between text-base text-slate-400 pt-2 border-t border-slate-50">
+                      <span className="inline-flex items-center gap-1"><Clock className="w-4 h-4" /> {g.readingMinutes} dk</span>
+                      <span className="inline-flex items-center gap-1 text-cyan-600 font-semibold">
+                        Oku <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>
                   </div>

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace,
-  Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowLeft, ArrowRight,
+  Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowRight,
   ChevronRight, MessageCircle, Home as HomeIcon, BookOpen
 } from 'lucide-react';
 import { getServiceBySlug, SERVICES } from '../lib/services-data';
@@ -26,7 +26,6 @@ const Service = () => {
 
   useEffect(() => {
     if (!service) return;
-    // Inject MedicalProcedure JSON-LD per service
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'service-jsonld';
@@ -77,70 +76,49 @@ const Service = () => {
     <main className="min-h-screen bg-white">
       <Navigation />
 
-      {/* Hero — gradient + decorative pattern (no photo, anonymous & professional) */}
-      <section className={`relative bg-gradient-to-br ${service.color} pt-24 overflow-hidden`}>
-        {/* Soft dot pattern */}
-        <div className="absolute inset-0 opacity-15" style={{
-          backgroundImage: 'radial-gradient(circle at 20% 30%, white 1.5px, transparent 1.5px), radial-gradient(circle at 70% 60%, white 1px, transparent 1px)',
-          backgroundSize: '40px 40px, 28px 28px'
-        }} />
-        {/* Glow orbs */}
-        <div className="absolute -top-20 -right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-32 -left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        <div className="relative max-w-5xl mx-auto px-4 pt-8 pb-16">
-          {/* Visible breadcrumb */}
-          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1 text-sm text-white/80 mb-6">
-            <Link to="/" className="inline-flex items-center gap-1 hover:text-white transition-colors">
-              <HomeIcon className="w-3.5 h-3.5" />
-              <span>Ana Sayfa</span>
+      {/* Hero — sade açık zemin; renk kimliği ikon kutusunda */}
+      <section className="relative bg-gradient-to-b from-white via-slate-50 to-white pt-32 md:pt-36 pb-12 border-b border-slate-100">
+        <div className="relative max-w-3xl mx-auto px-4 text-center">
+          <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1.5 text-base text-slate-400 mb-6">
+            <Link to="/" className="inline-flex items-center gap-1 hover:text-emerald-600 transition-colors">
+              <HomeIcon className="w-4 h-4" /> <span>Ana Sayfa</span>
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 opacity-60" />
-            <Link to="/hizmetler" className="hover:text-white transition-colors">Hizmetler</Link>
-            <ChevronRight className="w-3.5 h-3.5 opacity-60" />
-            <span className="text-white font-medium">{service.shortTitle}</span>
+            <ChevronRight className="w-4 h-4" />
+            <Link to="/hizmetler" className="hover:text-emerald-600 transition-colors">Hizmetler</Link>
           </nav>
-          <Link to="/hizmetler" className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-8 text-sm">
-            <ArrowLeft className="w-4 h-4" /> Tüm Hizmetler
-          </Link>
-          <div className="flex flex-col md:flex-row items-start gap-8">
-            <div className="w-20 h-20 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center text-white flex-shrink-0">
-              <Icon className="w-10 h-10" />
-            </div>
-            <div>
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">{service.title}</h1>
-              {service.synonyms.length > 0 && (
-                <p className="text-white/90 text-sm mb-4">
-                  Diğer adları: {service.synonyms.join(' · ')}
-                </p>
-              )}
-              <p className="text-lg text-white/95 max-w-2xl drop-shadow">{service.intro}</p>
-            </div>
+          <div className={`w-20 h-20 mx-auto mb-6 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-white shadow-lg`}>
+            <Icon className="w-10 h-10" />
           </div>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-4 leading-[1.1]">{service.title}</h1>
+          {service.synonyms.length > 0 && (
+            <p className="text-base text-slate-500 mb-4">Diğer adları: {service.synonyms.join(' · ')}</p>
+          )}
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">{service.intro}</p>
         </div>
       </section>
 
       {/* Quick Facts */}
       <section className="border-b border-slate-100 bg-slate-50 py-8">
-        <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-3xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-center gap-3">
-            <Clock className="w-6 h-6 text-emerald-500" />
+            <Clock className="w-6 h-6 text-emerald-500 flex-shrink-0" />
             <div>
-              <p className="text-xs text-slate-500">Süre</p>
-              <p className="font-semibold text-slate-800">{service.duration}</p>
+              <p className="text-base text-slate-500">Süre</p>
+              <p className="font-semibold text-lg text-slate-800">{service.duration}</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <Calendar className="w-6 h-6 text-emerald-500" />
+            <Calendar className="w-6 h-6 text-emerald-500 flex-shrink-0" />
             <div>
-              <p className="text-xs text-slate-500">Etki Süresi</p>
-              <p className="font-semibold text-slate-800">{service.resultDuration}</p>
+              <p className="text-base text-slate-500">Etki Süresi</p>
+              <p className="font-semibold text-lg text-slate-800">{service.resultDuration}</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <CheckCircle className="w-6 h-6 text-emerald-500" />
+            <CheckCircle className="w-6 h-6 text-emerald-500 flex-shrink-0" />
             <div>
-              <p className="text-xs text-slate-500">Hizmet Bölgeleri</p>
-              <p className="font-semibold text-slate-800">Beylikdüzü, Bahçeşehir, Avcılar</p>
+              <p className="text-base text-slate-500">Hizmet Bölgeleri</p>
+              <p className="font-semibold text-lg text-slate-800">Beylikdüzü, Bahçeşehir, Avcılar</p>
             </div>
           </div>
         </div>
@@ -149,8 +127,8 @@ const Service = () => {
       {/* Body */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Nedir?</h2>
-          <p className="text-slate-600 leading-relaxed mb-6">{service.longDescription}</p>
+          <h2 className="font-serif text-2xl md:text-[1.75rem] font-bold text-slate-900 mb-4">Nedir?</h2>
+          <p className="text-[1.1875rem] leading-[1.8] text-slate-700 mb-6">{service.longDescription}</p>
 
           {relatedGuide && (
             <Link
@@ -161,56 +139,56 @@ const Service = () => {
                 <BookOpen className="w-6 h-6" />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[11px] font-bold text-white/90 uppercase tracking-wide mb-0.5">
+                <p className="text-base font-bold text-white/90 mb-0.5">
                   📖 Ücretsiz Detaylı Rehber · {relatedGuide.readingMinutes} dk okuma
                 </p>
-                <h3 className="font-bold text-white leading-snug">{relatedGuide.title}</h3>
-                <p className="text-sm text-white/85 line-clamp-1">{relatedGuide.excerpt}</p>
+                <h3 className="font-bold text-lg text-white leading-snug">{relatedGuide.title}</h3>
+                <p className="text-base text-white/85 line-clamp-1">{relatedGuide.excerpt}</p>
               </div>
-              <ArrowRight className="w-5 h-5 text-white flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-6 h-6 text-white flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </Link>
           )}
 
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Hangi Bölgelere/Sorunlara Uygulanır?</h2>
-          <ul className="space-y-2 mb-12">
+          <h2 className="font-serif text-2xl md:text-[1.75rem] font-bold text-slate-900 mb-4">Hangi Bölgelere/Sorunlara Uygulanır?</h2>
+          <ul className="space-y-2.5 mb-12">
             {service.features.map((f, i) => (
               <li key={i} className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700">{f}</span>
+                <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" />
+                <span className="text-lg text-slate-700">{f}</span>
               </li>
             ))}
           </ul>
 
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Faydaları</h2>
-          <ul className="space-y-2 mb-12">
+          <h2 className="font-serif text-2xl md:text-[1.75rem] font-bold text-slate-900 mb-4">Faydaları</h2>
+          <ul className="space-y-2.5 mb-12">
             {service.benefits.map((b, i) => (
               <li key={i} className="flex items-start gap-3">
-                <Sparkles className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700">{b}</span>
+                <Sparkles className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" />
+                <span className="text-lg text-slate-700">{b}</span>
               </li>
             ))}
           </ul>
 
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Uygulama Süreci</h2>
+          <h2 className="font-serif text-2xl md:text-[1.75rem] font-bold text-slate-900 mb-4">Uygulama Süreci</h2>
           <ol className="space-y-3 mb-12">
             {service.process.map((p, i) => (
               <li key={i} className="flex items-start gap-4">
-                <span className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                <span className="w-9 h-9 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
                   {i + 1}
                 </span>
-                <span className="text-slate-700 pt-1">{p}</span>
+                <span className="text-lg text-slate-700 pt-1">{p}</span>
               </li>
             ))}
           </ol>
 
           {service.faq.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">Sıkça Sorulan Sorular</h2>
+              <h2 className="font-serif text-2xl md:text-[1.75rem] font-bold text-slate-900 mb-4">Sıkça Sorulan Sorular</h2>
               <div className="space-y-4 mb-12">
                 {service.faq.map((f, i) => (
                   <article key={i} className="bg-slate-50 rounded-2xl p-6">
-                    <h3 className="font-semibold text-slate-800 mb-2">{f.q}</h3>
-                    <p className="text-slate-600">{f.a}</p>
+                    <h3 className="font-semibold text-lg text-slate-800 mb-2">{f.q}</h3>
+                    <p className="text-base leading-relaxed text-slate-600">{f.a}</p>
                   </article>
                 ))}
               </div>
@@ -219,10 +197,10 @@ const Service = () => {
 
           {/* CTA */}
           <div className={`bg-gradient-to-r ${service.color} rounded-3xl p-8 md:p-12 text-center`}>
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-4">
               {service.shortTitle} için Ücretsiz Konsültasyon
             </h3>
-            <p className="text-white/90 mb-8 max-w-xl mx-auto">
+            <p className="text-white/90 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Detaylı değerlendirme ve size özel tedavi planı için WhatsApp üzerinden hemen ulaşın.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -230,7 +208,7 @@ const Service = () => {
                 href="https://wa.me/905524228485"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:shadow-2xl transition"
+                className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp ile İletişim
@@ -238,7 +216,7 @@ const Service = () => {
               {relatedGuide && (
                 <Link
                   to={`/rehber/${relatedGuide.slug}`}
-                  className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full font-medium hover:bg-white/15 transition"
+                  className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/15 transition"
                 >
                   <BookOpen className="w-5 h-5" />
                   Önce Rehberi Oku
@@ -252,7 +230,7 @@ const Service = () => {
       {/* Related Services */}
       <section className="py-16 bg-slate-50 border-t border-slate-100" aria-labelledby="related-heading">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 id="related-heading" className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 text-center">
+          <h2 id="related-heading" className="font-serif text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
             İlgili Hizmetler
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -267,10 +245,10 @@ const Service = () => {
                   <div className={`w-12 h-12 bg-gradient-to-br ${s.color} rounded-xl flex items-center justify-center text-white mb-3`}>
                     <SIcon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-slate-800 mb-1">{s.title}</h3>
-                  <p className="text-sm text-slate-500 mb-2 line-clamp-2">{s.shortDescription}</p>
-                  <span className="inline-flex items-center gap-1 text-xs text-emerald-600 font-medium">
-                    Detaya bak <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  <h3 className="font-bold text-lg text-slate-800 mb-1">{s.title}</h3>
+                  <p className="text-base text-slate-500 mb-2 line-clamp-2">{s.shortDescription}</p>
+                  <span className="inline-flex items-center gap-1 text-base text-emerald-600 font-semibold">
+                    Detaya bak <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
               );

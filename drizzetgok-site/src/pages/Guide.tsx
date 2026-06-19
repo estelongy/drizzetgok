@@ -4,6 +4,7 @@ import {
   Clock, Calendar, ChevronRight, Home as HomeIcon, ArrowRight,
   MessageCircle, CheckCircle, XCircle, Info, Lightbulb, ShieldCheck,
   Microscope, BookOpen, ExternalLink, List, HelpCircle,
+  Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2,
 } from 'lucide-react';
 import { getGuideBySlug, GUIDES, type GuideBlock } from '../lib/guides-data';
 import { getServiceBySlug } from '../lib/services-data';
@@ -13,6 +14,7 @@ import BotoxMechanism from '../components/diagrams/BotoxMechanism';
 import BotoxFaceMap from '../components/diagrams/BotoxFaceMap';
 
 const DIAGRAMS = { BotoxMechanism, BotoxFaceMap };
+const SERVICE_ICONS = { Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2 };
 
 // Türkçe karakter dostu slug (başlık anchor / içindekiler için)
 function slugify(s: string) {
@@ -24,7 +26,6 @@ function slugify(s: string) {
     .replace(/(^-|-$)/g, '');
 }
 
-// Bir bloğun (varsa) başlığını döndürür — içindekiler için
 function blockHeading(b: GuideBlock): string | null {
   if (b.type === 'prose') return b.heading ?? null;
   if (b.type === 'list' || b.type === 'timeline' || b.type === 'comparison' || b.type === 'myths' || b.type === 'faq' || b.type === 'sources') {
@@ -84,7 +85,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
             <img src={block.src} alt={block.alt} loading="lazy" className="w-full md:rounded-3xl object-cover max-h-[460px]" />
           </picture>
           {block.caption && (
-            <figcaption className="text-sm text-slate-500 mt-3 text-center px-4 italic">{block.caption}</figcaption>
+            <figcaption className="text-base text-slate-500 mt-3 text-center px-4 italic">{block.caption}</figcaption>
           )}
         </figure>
       );
@@ -95,7 +96,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
         <figure className="mb-12 bg-slate-50 rounded-3xl border border-slate-100 p-6 md:p-8">
           <Diagram />
           {block.caption && (
-            <figcaption className="text-sm text-slate-500 mt-4 text-center max-w-2xl mx-auto italic">{block.caption}</figcaption>
+            <figcaption className="text-base text-slate-500 mt-4 text-center max-w-2xl mx-auto italic">{block.caption}</figcaption>
           )}
         </figure>
       );
@@ -109,10 +110,10 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
             {block.items.map((it, i) => (
               <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5 hover:border-cyan-200 transition-colors">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-slate-800 mb-1">{it.title}</h3>
-                    <p className="text-[15px] leading-relaxed text-slate-600">{it.text}</p>
+                    <p className="text-base leading-relaxed text-slate-600">{it.text}</p>
                   </div>
                 </div>
               </div>
@@ -129,9 +130,9 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
             {block.steps.map((s, i) => (
               <li key={i} className="ml-6">
                 <span className="absolute -left-[11px] w-5 h-5 bg-cyan-500 rounded-full ring-4 ring-white" />
-                <span className="inline-block text-xs font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full mb-1">{s.when}</span>
-                <h3 className="font-semibold text-slate-800">{s.title}</h3>
-                <p className="text-[15px] leading-relaxed text-slate-600">{s.text}</p>
+                <span className="inline-block text-base font-bold text-cyan-700 bg-cyan-50 px-3 py-1 rounded-full mb-1.5">{s.when}</span>
+                <h3 className="font-semibold text-lg text-slate-800">{s.title}</h3>
+                <p className="text-base leading-relaxed text-slate-600">{s.text}</p>
               </li>
             ))}
           </ol>
@@ -144,22 +145,22 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           <h2 id={slugify(block.heading)} className={`${H2} mb-6`}>{block.heading}</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
-              <h3 className="flex items-center gap-2 font-semibold text-emerald-800 mb-4">
+              <h3 className="flex items-center gap-2 font-semibold text-lg text-emerald-800 mb-4">
                 <CheckCircle className="w-5 h-5" /> {block.leftTitle}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {block.left.map((l, i) => (
-                  <li key={i} className="flex items-start gap-2 text-[15px] text-slate-700"><span className="text-emerald-500 mt-0.5">✓</span> {l}</li>
+                  <li key={i} className="flex items-start gap-2 text-base text-slate-700"><span className="text-emerald-500 mt-0.5">✓</span> {l}</li>
                 ))}
               </ul>
             </div>
             <div className="bg-rose-50 border border-rose-100 rounded-2xl p-6">
-              <h3 className="flex items-center gap-2 font-semibold text-rose-800 mb-4">
+              <h3 className="flex items-center gap-2 font-semibold text-lg text-rose-800 mb-4">
                 <XCircle className="w-5 h-5" /> {block.rightTitle}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {block.right.map((r, i) => (
-                  <li key={i} className="flex items-start gap-2 text-[15px] text-slate-700"><span className="text-rose-500 mt-0.5">!</span> {r}</li>
+                  <li key={i} className="flex items-start gap-2 text-base text-slate-700"><span className="text-rose-500 mt-0.5">!</span> {r}</li>
                 ))}
               </ul>
             </div>
@@ -174,10 +175,10 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           <div className="space-y-3">
             {block.items.map((m, i) => (
               <div key={i} className="bg-white border border-slate-100 rounded-2xl p-5">
-                <p className="flex items-start gap-2 text-slate-800 font-semibold mb-2">
-                  <HelpCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5" /> {m.myth}
+                <p className="flex items-start gap-2 text-lg text-slate-800 font-semibold mb-2">
+                  <HelpCircle className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-1" /> {m.myth}
                 </p>
-                <p className="flex items-start gap-2 text-[15px] leading-relaxed text-slate-600">
+                <p className="flex items-start gap-2 text-base leading-relaxed text-slate-600">
                   <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" /> {m.truth}
                 </p>
               </div>
@@ -191,10 +192,10 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
       const cls = block.tone === 'warn' ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-cyan-50 border-cyan-200 text-cyan-900';
       return (
         <div className={`mb-12 border rounded-2xl p-6 ${cls}`}>
-          <h3 className="flex items-center gap-2 font-semibold mb-2">
+          <h3 className="flex items-center gap-2 font-semibold text-lg mb-2">
             <Icon className="w-5 h-5" /> {block.title}
           </h3>
-          <p className="text-[15px] leading-relaxed opacity-90">{block.text}</p>
+          <p className="text-base leading-relaxed opacity-90">{block.text}</p>
         </div>
       );
     }
@@ -202,7 +203,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
     case 'science':
       return (
         <details className="group mb-12 bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
-          <summary className="flex items-center gap-3 cursor-pointer select-none p-5 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none">
+          <summary className="flex items-center gap-3 cursor-pointer select-none p-5 font-semibold text-lg text-slate-800 hover:bg-slate-100 transition-colors list-none">
             <span className="w-9 h-9 flex-shrink-0 bg-slate-800 text-white rounded-lg flex items-center justify-center">
               <Microscope className="w-5 h-5" />
             </span>
@@ -211,7 +212,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           </summary>
           <div className="px-5 pb-5 pt-1 border-t border-slate-200">
             {block.paragraphs.map((p, i) => (
-              <p key={i} className="text-[15px] text-slate-600 leading-relaxed mt-3">{p}</p>
+              <p key={i} className="text-base text-slate-600 leading-relaxed mt-3">{p}</p>
             ))}
           </div>
         </details>
@@ -225,10 +226,10 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           </h2>
           <ul className="space-y-2">
             {block.items.map((s, i) => (
-              <li key={i} className="text-[15px] text-slate-500 leading-relaxed">
+              <li key={i} className="text-base text-slate-500 leading-relaxed">
                 {s.url ? (
                   <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-start gap-1 text-cyan-600 hover:text-cyan-700 hover:underline">
-                    {s.label} <ExternalLink className="w-3 h-3 flex-shrink-0 mt-1" />
+                    {s.label} <ExternalLink className="w-3.5 h-3.5 flex-shrink-0 mt-1" />
                   </a>
                 ) : s.label}
               </li>
@@ -244,8 +245,8 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           <div className="space-y-4">
             {block.items.map((f, i) => (
               <article key={i} className="bg-slate-50 rounded-2xl p-6">
-                <h3 className="font-semibold text-slate-800 mb-2">{f.q}</h3>
-                <p className="text-[15px] leading-relaxed text-slate-600">{f.a}</p>
+                <h3 className="font-semibold text-lg text-slate-800 mb-2">{f.q}</h3>
+                <p className="text-base leading-relaxed text-slate-600">{f.a}</p>
               </article>
             ))}
           </div>
@@ -261,6 +262,7 @@ const Guide = () => {
   const { slug } = useParams<{ slug: string }>();
   const guide = slug ? getGuideBySlug(slug) : undefined;
   const relatedService = guide?.relatedServiceSlug ? getServiceBySlug(guide.relatedServiceSlug) : undefined;
+  const RelatedIcon = relatedService ? SERVICE_ICONS[relatedService.iconName] : null;
 
   useSeo({
     title: guide ? guide.metaTitle : 'Rehber bulunamadı',
@@ -343,21 +345,21 @@ const Guide = () => {
       {/* Hero — sade, açık zemin (üst beyaz, nav ile çakışmaz) */}
       <section className="relative bg-gradient-to-b from-white via-cyan-50/50 to-white pt-32 md:pt-36 pb-16 border-b border-slate-100">
         <div className="relative max-w-3xl mx-auto px-4 text-center">
-          <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1 text-xs text-slate-400 mb-6">
+          <nav aria-label="Breadcrumb" className="flex items-center justify-center gap-1.5 text-base text-slate-400 mb-6">
             <Link to="/" className="inline-flex items-center gap-1 hover:text-cyan-600 transition-colors">
-              <HomeIcon className="w-3.5 h-3.5" /> <span>Ana Sayfa</span>
+              <HomeIcon className="w-4 h-4" /> <span>Ana Sayfa</span>
             </Link>
-            <ChevronRight className="w-3.5 h-3.5" />
+            <ChevronRight className="w-4 h-4" />
             <Link to="/rehber" className="hover:text-cyan-600 transition-colors">Rehber</Link>
           </nav>
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-cyan-700 bg-white border border-cyan-100 px-3.5 py-1.5 rounded-full mb-5 shadow-sm">
-            <Lightbulb className="w-3.5 h-3.5" /> {guide.heroEyebrow}
+          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-cyan-700 bg-white border border-cyan-100 px-4 py-1.5 rounded-full mb-5 shadow-sm">
+            <Lightbulb className="w-4 h-4" /> {guide.heroEyebrow}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-[1.1]">
             {guide.title}
           </h1>
-          <p className="text-lg text-slate-600 max-w-xl mx-auto mb-6 leading-relaxed">{guide.excerpt}</p>
-          <div className="flex items-center justify-center gap-5 text-sm text-slate-400">
+          <p className="text-xl text-slate-600 max-w-xl mx-auto mb-6 leading-relaxed">{guide.excerpt}</p>
+          <div className="flex items-center justify-center gap-5 text-base text-slate-400">
             <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4" /> {guide.readingMinutes} dk okuma</span>
             <span className="inline-flex items-center gap-1.5"><Calendar className="w-4 h-4" /> Güncel</span>
           </div>
@@ -370,12 +372,12 @@ const Guide = () => {
           {/* İçindekiler */}
           {toc.length > 2 && (
             <nav aria-label="İçindekiler" className="mb-12 bg-slate-50 border border-slate-100 rounded-2xl p-6">
-              <p className="text-xs font-bold uppercase tracking-wide text-cyan-600 mb-3 flex items-center gap-2">
-                <List className="w-4 h-4" /> Bu rehberde
+              <p className="text-base font-bold uppercase tracking-wide text-cyan-600 mb-3 flex items-center gap-2">
+                <List className="w-5 h-5" /> Bu rehberde
               </p>
-              <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+              <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
                 {toc.map((t, i) => (
-                  <li key={t.id} className="flex gap-2 text-[15px]">
+                  <li key={t.id} className="flex gap-2 text-base">
                     <span className="text-cyan-400 font-semibold">{String(i + 1).padStart(2, '0')}</span>
                     <a href={`#${t.id}`} className="text-slate-600 hover:text-cyan-700 hover:underline">{t.title}</a>
                   </li>
@@ -391,33 +393,38 @@ const Guide = () => {
           {/* CTA */}
           <div className={`bg-gradient-to-r ${guide.color} rounded-3xl p-8 md:p-12 text-center mt-4`}>
             <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-4">Sorularınız mı var?</h3>
-            <p className="text-white/90 mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-white/90 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Size özel değerlendirme ve tedavi planı için Dr. İzzet Gök ile WhatsApp üzerinden iletişime geçin.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a href="https://wa.me/905524228485" target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-medium hover:shadow-2xl transition">
+                className="inline-flex items-center gap-2 bg-white text-slate-800 px-8 py-4 rounded-full font-semibold hover:shadow-2xl transition">
                 <MessageCircle className="w-5 h-5" /> WhatsApp ile İletişim
               </a>
               {relatedService && (
                 <Link to={`/hizmetlerimiz/${relatedService.slug}`}
-                  className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full font-medium hover:bg-white/15 transition">
+                  className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/15 transition">
                   {relatedService.shortTitle} Hizmeti <ArrowRight className="w-5 h-5" />
                 </Link>
               )}
             </div>
           </div>
 
-          {/* İlgili hizmet */}
+          {/* İlgili hizmet — belirgin kart */}
           {relatedService && (
             <Link to={`/hizmetlerimiz/${relatedService.slug}`}
-              className="group flex items-center justify-between gap-4 mt-6 bg-white border border-slate-100 rounded-2xl p-5 hover:border-cyan-200 hover:shadow-lg transition-all">
-              <div>
-                <p className="text-xs text-slate-500 mb-1">İlgili hizmet</p>
-                <h3 className="font-bold text-slate-800">{relatedService.title}</h3>
-                <p className="text-sm text-slate-500 line-clamp-1">{relatedService.shortDescription}</p>
+              className="group flex items-center gap-4 mt-4 bg-cyan-50 border-2 border-cyan-200 rounded-2xl p-5 hover:bg-cyan-100 hover:border-cyan-300 hover:shadow-md transition-all">
+              {RelatedIcon && (
+                <div className="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-white">
+                  <RelatedIcon className="w-7 h-7" />
+                </div>
+              )}
+              <div className="flex-1 min-w-0">
+                <p className="text-base font-semibold text-cyan-700 mb-0.5">İlgili hizmet</p>
+                <h3 className="font-bold text-xl text-slate-900 leading-snug">{relatedService.title}</h3>
+                <p className="text-base text-slate-600 line-clamp-1">{relatedService.shortDescription}</p>
               </div>
-              <ArrowRight className="w-5 h-5 text-cyan-500 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-6 h-6 text-cyan-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </Link>
           )}
         </div>

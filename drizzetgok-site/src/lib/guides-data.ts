@@ -530,6 +530,13 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'image',
+        src: '/images/dolgu-bolge.jpg',
+        webp: '/images/dolgu-bolge.webp',
+        alt: 'Yüz dolgusu bölge haritası: elmacık/yanak, göz altı, nazolabial, çene hattı, dudak, çene önü ve submental bölgeler numaralı şekilde işaretlenmiş',
+        caption: 'Yüz dolgusu bölge haritası. Dolgu, yüzün çok sayıda bölgesinde hacim ve denge için kullanılır; her bölgenin amacı, uygun maddesi ve tekniği farklıdır.',
+      },
+      {
         type: 'comparison',
         heading: 'İki temel dolgu mantığı: doldurucu mu, kollajen uyarıcı mı?',
         leftTitle: 'Doldurucu (hyaluronik asit)',

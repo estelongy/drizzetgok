@@ -544,7 +544,7 @@ export const GUIDES: GuideData[] = [
         right: [
           'Cildin kendi kollajenini üretmesini tetikler',
           'Sonuç kademeli oturur, daha uzun sürebilir (yıllar)',
-          'Geri alınamaz — enzimle çözülmez',
+          'Hyaluronidaz ile erimez; HA kadar kolay/öngörülebilir geri alınmaz',
           'Geniş alanlarda doku kalitesini iyileştirmeye uygun',
           'Kalsiyum hidroksiapatit, PLLA ve PCL bu gruptadır',
         ],
@@ -559,7 +559,7 @@ export const GUIDES: GuideData[] = [
           },
           {
             title: 'Kalsiyum hidroksiapatit (CaHA)',
-            text: 'Kemikte de bulunan bir mineralin mikro kürelerinden oluşur; hem anında hacim verir hem de kollajen üretimini uyarır. Daha çok derin oluklar ve yüz şekillendirmede kullanılır; etki çoğunlukla 12-18 ay. Geri alınamaz.',
+            text: 'Kemikte de bulunan bir mineralin mikro kürelerinden oluşur; hem anında hacim verir hem de kollajen üretimini uyarır. Daha çok derin oluklar ve yüz şekillendirmede kullanılır; etki çoğunlukla 12-18 ay. Hyaluronidaz ile erimez; istenmeyen sonuç masaj, salin (serum fizyolojik) ile dağıtma veya gerektiğinde ultrason (USG) eşliğinde müdahale gibi yöntemlerle yönetilir.',
           },
           {
             title: 'Poli-L-laktik asit (PLLA)',
@@ -567,7 +567,7 @@ export const GUIDES: GuideData[] = [
           },
           {
             title: 'Polikaprolakton (PCL)',
-            text: 'Uzun etkili bir kollajen uyarıcıdır; hem hacim verir hem doku desteğini güçlendirir. Etkisi türüne göre 1-4 yıla kadar uzayabilir. Geri alınamaz.',
+            text: 'Uzun etkili bir kollajen uyarıcıdır; hem hacim verir hem doku desteğini güçlendirir. Etkisi türüne göre 1-4 yıla kadar uzayabilir. Hyaluronidaz ile erimez; HA kadar kolay geri alınmaz.',
           },
           {
             title: 'Yağ enjeksiyonu (otolog yağ transferi)',
@@ -618,7 +618,7 @@ export const GUIDES: GuideData[] = [
           { myth: 'Dolgu yüzü mutlaka şişirir, “yapay” gösterir mi?', truth: 'Hayır. Abartılı görünüm doz ve teknik hatasından kaynaklanır. Doğru planlanan dolgu, yüzü şişirmeden dengeler ve doğal durur.' },
           { myth: 'Dolgu kalıcı mıdır?', truth: 'Hyaluronik asit dolgular geçicidir, zamanla emilir. Kalsiyum/PLLA/PCL daha uzun sürer ama onlar da süresizdir; gerçekten kalıcı seçenekler (ör. yağ enjeksiyonu) ayrıdır.' },
           { myth: 'Dolgu eriyince cilt sarkar, daha kötü olur mu?', truth: 'Hayır. Dolgu emildiğinde cilt, uygulama öncesi haline döner; dolgunun cildi “gerip bıraktığı” bir mekanizma yoktur.' },
-          { myth: 'Dolgudan memnun kalmazsam çaresiz miyim?', truth: 'HA dolgularda hayır — hyaluronidaz enzimiyle çözülebilir. Bu, HA’yı en esnek ve güvenli seçeneklerden biri yapar.' },
+          { myth: 'Dolgudan memnun kalmazsam çaresiz miyim?', truth: 'Hayır. HA dolgular hyaluronidaz enzimiyle çözülebilir — bu onları en esnek ve güvenli seçeneklerden biri yapar. Kollajen uyarıcı dolgular hyaluronidazla erimese de masaj, salin ile dağıtma, steroid veya USG eşliğinde müdahale gibi yöntemlerle bir ölçüde düzeltilebilir.' },
           { myth: 'Bir kez yaptırınca sürekli yaptırmak zorunda kalır mıyım?', truth: 'Hayır. Yenilemek tamamen tercihe bağlıdır; bırakıldığında yüz zamanla doğal seyrine döner.' },
         ],
       },
@@ -647,7 +647,7 @@ export const GUIDES: GuideData[] = [
           { q: 'Dolgu acır mı?', a: 'Çoğu dolgu, içeriğindeki anestezik madde ve uygulanan krem anestezi sayesinde hafif rahatsızlıkla yapılır. Kanül kullanımı da konforu artırır.' },
           { q: 'Sonuç hemen görünür mü?', a: 'Hyaluronik asit dolgularda hacim anında görülür; ancak şişlik inip dolgu oturduğunda (yaklaşık 2 hafta) gerçek sonuç ortaya çıkar.' },
           { q: 'Dolgu kaç ay/yıl kalır?', a: 'Maddeye ve bölgeye göre değişir: HA genellikle 6-18 ay, kalsiyum hidroksiapatit 12-18 ay, PLLA/PCL daha uzun (yıllar) sürebilir.' },
-          { q: 'Dolgu geri alınabilir mi?', a: 'Hyaluronik asit dolgular hyaluronidaz enzimiyle çözülebilir. Kollajen uyarıcı dolgular (CaHA, PLLA, PCL) geri alınamaz.' },
+          { q: 'Dolgu geri alınabilir mi?', a: 'Hyaluronik asit dolgular hyaluronidaz enzimiyle hızlı ve öngörülebilir biçimde çözülebilir — en büyük güvenlik avantajları budur. Kollajen uyarıcı dolgular (CaHA, PLLA, PCL) ise hyaluronidaz ile erimez; HA kadar kolay geri alınmaz. Ancak bu "hiç müdahale edilemez" demek değildir: masaj, salin (serum fizyolojik) ile dağıtma, gerektiğinde intralezyonel steroid veya ultrason (USG) eşliğinde müdahale gibi yöntemlerle istenmeyen sonuçlar bir ölçüde düzeltilebilir.' },
           { q: 'Morluk veya şişlik olur mu?', a: 'Olabilir; özellikle dudak ve göz altında geçici şişlik/morluk beklenen bir durumdur ve birkaç günde geçer.' },
           { q: 'Dolgu fiyatı neye göre değişir?', a: 'Kullanılan dolgu maddesi (HA mı, biostimülatör mü), miktarı ve uygulanan bölge sayısı belirleyicidir. Net plan ve fiyat, muayene sonrası kişiye özel çıkarılır.' },
         ],
@@ -660,7 +660,9 @@ export const GUIDES: GuideData[] = [
           { label: 'Guideline for the Management of Hyaluronic Acid Filler-induced Vascular Occlusion. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8211329/' },
           { label: 'Vascular Occlusion Following Dermal Filler Injections: A Systematic Review of Clinical Evidence and Emergency Management. 2025.', url: 'https://www.mdpi.com/2673-6373/6/3/51' },
           { label: 'Hyaluronidase Protocols — HA Filler Reversal (enzimatik geri alma mekanizması ve süresi).', url: 'https://www.doctormedica.co/blog/hyaluronidase-protocols-a-complete-guide-for-safe-and-effective-ha-filler-reversal' },
-          { label: 'Kollajen uyarıcı (biostimülatör) dolgular — CaHA, PLLA, PCL — hyaluronidaz ile çözülemez; zamanla biyolojik olarak parçalanır, komplikasyonları farmakolojik/cerrahi yönetim gerektirir. PLLA üzerine derleme, PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10939544/' },
+          { label: 'Kollajen uyarıcı (biostimülatör) dolgular — CaHA, PLLA, PCL — hyaluronidaz ile erimez; HA kadar kolay geri alınmaz. PLLA üzerine derleme, PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10939544/' },
+          { label: 'A Structured Approach for Treating Calcium Hydroxylapatite Focal Accumulations — masaj/mekanik dağıtma ve USG eşliğinde yaklaşım. Aesthetic Surgery Journal, 2024.', url: 'https://academic.oup.com/asj/article/44/8/869/7609149' },
+          { label: 'PLLA nodüllerinin yönetimi — steril su/salin enjeksiyonu + masaj, gerektiğinde intralezyonel steroid (inflamatuar nodülde). PLLA güvenlik/yönetim literatürü.', url: 'https://glowhealth.eu/sculptra-nodules-treatment-2/' },
           { label: 'U.S. Food & Drug Administration (FDA) — Dermal Fillers (Soft Tissue Fillers) hasta bilgilendirmesi ve onaylı endikasyonlar.' },
         ],
       },

@@ -660,6 +660,7 @@ export const GUIDES: GuideData[] = [
           { label: 'Guideline for the Management of Hyaluronic Acid Filler-induced Vascular Occlusion. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8211329/' },
           { label: 'Vascular Occlusion Following Dermal Filler Injections: A Systematic Review of Clinical Evidence and Emergency Management. 2025.', url: 'https://www.mdpi.com/2673-6373/6/3/51' },
           { label: 'Hyaluronidase Protocols — HA Filler Reversal (enzimatik geri alma mekanizması ve süresi).', url: 'https://www.doctormedica.co/blog/hyaluronidase-protocols-a-complete-guide-for-safe-and-effective-ha-filler-reversal' },
+          { label: 'Kollajen uyarıcı (biostimülatör) dolgular — CaHA, PLLA, PCL — hyaluronidaz ile çözülemez; zamanla biyolojik olarak parçalanır, komplikasyonları farmakolojik/cerrahi yönetim gerektirir. PLLA üzerine derleme, PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10939544/' },
           { label: 'U.S. Food & Drug Administration (FDA) — Dermal Fillers (Soft Tissue Fillers) hasta bilgilendirmesi ve onaylı endikasyonlar.' },
         ],
       },

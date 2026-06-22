@@ -19,6 +19,7 @@ export type GuideBlock =
 
 export type GuideData = {
   slug: string;
+  category: string;       // rehber kategorisi — /rehber listesini gruplar (ör. "Botoks", "Dolgu")
   title: string;          // <title> + H1
   metaTitle: string;      // SEO başlık
   excerpt: string;        // meta description + hero alt metin
@@ -33,6 +34,7 @@ export type GuideData = {
 export const GUIDES: GuideData[] = [
   {
     slug: 'botoks-nedir',
+    category: 'Botoks',
     title: 'Botoks Nedir, Nasıl Çalışır? — Kapsamlı Rehber',
     metaTitle: 'Botoks Nedir, Nasıl Çalışır? Etki Süresi ve Uygulama | Dr. İzzet Gök',
     excerpt:
@@ -168,6 +170,7 @@ export const GUIDES: GuideData[] = [
   },
   {
     slug: 'masseter-botoksu',
+    category: 'Botoks',
     title: 'Masseter Botoksu: Çene İnceltme ve Diş Sıkma Tedavisi',
     metaTitle: 'Masseter Botoksu Nedir? Çene İnceltme ve Diş Sıkma | Dr. İzzet Gök',
     excerpt:
@@ -317,6 +320,7 @@ export const GUIDES: GuideData[] = [
   },
   {
     slug: 'terleme-botoksu',
+    category: 'Botoks',
     title: 'Terleme Botoksu (Hiperhidroz): Bölgelere Göre Tedavi Rehberi',
     metaTitle: 'Terleme Botoksu Nedir? Koltuk Altı, El, Ayak — Hiperhidroz | Dr. İzzet Gök',
     excerpt:
@@ -492,6 +496,171 @@ export const GUIDES: GuideData[] = [
           { label: 'Heckmann M, Ceballos-Baumann AO, Plewig G. Botulinum toxin A for axillary hyperhidrosis. New England Journal of Medicine, 2001.' },
           { label: 'International Hyperhidrosis Society (sweathelp.org) — hiperhidroz tedavi rehberleri ve hasta bilgilendirmeleri.' },
           { label: 'Minor testi (iyot-nişasta testi) — terleyen alanın haritalanmasında kullanılan klinik yöntem.' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'dolgu',
+    category: 'Dolgu',
+    title: 'Yüz Dolgusu Nedir? Türleri, Bölgeleri ve Bilmeniz Gerekenler',
+    metaTitle: 'Yüz Dolgusu Nedir? Dolgu Çeşitleri, Bölgeler ve Etki Süresi | Dr. İzzet Gök',
+    excerpt:
+      'Yüz dolgusu (filler) nedir, hangi türleri vardır (hyaluronik asit, kalsiyum hidroksiapatit, kollajen uyarıcılar), hangi bölgelere uygulanır ve güvenli midir? Dr. İzzet Gök kontrolünde, bilimsel dayanaklı ve görsel anlatımla.',
+    heroEyebrow: 'Medikal Estetik Rehberi',
+    readingMinutes: 10,
+    updated: '2026-06-22',
+    relatedServiceSlug: 'dolgu',
+    color: 'from-fuchsia-500 to-pink-500',
+    blocks: [
+      {
+        type: 'prose',
+        heading: 'Yüz dolgusu nedir?',
+        paragraphs: [
+          'Yüz dolgusu (filler), zamanla veya yapısal olarak kaybedilen hacmi yerine koyan, yüz hatlarına denge ve dolgunluk kazandıran enjeksiyon bir uygulamadır. Yaşlanmayla birlikte cilt altındaki yağ yastıkçıkları azalır, kemik desteği geriler ve cilt daha az kollajen üretir; sonuçta yanaklar düşer, oluklar derinleşir, yüz “çöker” gibi görünür. Dolgu, bu hacmi seçilen noktalara kontrollü biçimde geri vererek yüzü dinlendirir.',
+          'Dolgu maddeleri iki temel iş yapar: bir kısmı doğrudan hacim verir (boşluğu fiziksel olarak doldurur), bir kısmı ise cildi kendi kollajenini üretmeye teşvik ederek zamanla destek oluşturur. Hangi maddenin, hangi bölgeye, ne miktarda uygulanacağı; sonucun doğal mı yoksa abartılı mı olacağını belirleyen asıl faktördür.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Dolgu sadece “dudak” demek değildir',
+        paragraphs: [
+          'Çoğu kişi dolguyu yalnızca dudakla ilişkilendirir; oysa yüz dolgusu, yüzün hemen her bölgesinde hacim ve denge için kullanılan geniş bir uygulama ailesidir. Elmacık ve yanak hacmini geri vermekten, çene ucunu ve çene hattını belirginleştirmeye, gülme çizgilerini yumuşatmaktan göz altı çukurunu doldurmaya kadar farklı amaçlar taşır.',
+          'Bu nedenle “dolgu yaptırmak” tek bir işlem değildir — hedefe göre bölge, madde ve teknik değişir. Bu rehber, dolgu evreninin tamamını tanıtır; tek tek bölgeleri (dudak, göz altı, çene hattı gibi) ayrı rehberlerde derinlemesine ele alıyoruz.',
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'İki temel dolgu mantığı: doldurucu mu, kollajen uyarıcı mı?',
+        leftTitle: 'Doldurucu (hyaluronik asit)',
+        rightTitle: 'Kollajen uyarıcı (biostimülatör)',
+        left: [
+          'Anında hacim verir — sonuç hemen görünür',
+          'Geri alınabilir (hyaluronidaz enzimi ile çözülür)',
+          'Genellikle 6-18 ay etkilidir',
+          'İnce ayar ve şekillendirmeye en uygun seçenek',
+          'Yeni başlayanlar ve hassas bölgeler için ilk tercih',
+        ],
+        right: [
+          'Cildin kendi kollajenini üretmesini tetikler',
+          'Sonuç kademeli oturur, daha uzun sürebilir (yıllar)',
+          'Geri alınamaz — enzimle çözülmez',
+          'Geniş alanlarda doku kalitesini iyileştirmeye uygun',
+          'Kalsiyum hidroksiapatit, PLLA ve PCL bu gruptadır',
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Dolgu türleri — sadece hyaluronik asit değil',
+        items: [
+          {
+            title: 'Hyaluronik asit (HA)',
+            text: 'En sık kullanılan dolgu maddesidir; vücutta doğal olarak da bulunan, su tutma kapasitesi çok yüksek bir moleküldür. Anında hacim verir, doğala en yakın sonucu sağlar ve en önemlisi hyaluronidaz enzimiyle geri alınabilir. Etki bölgeye göre genellikle 6-18 ay sürer.',
+          },
+          {
+            title: 'Kalsiyum hidroksiapatit (CaHA)',
+            text: 'Kemikte de bulunan bir mineralin mikro kürelerinden oluşur; hem anında hacim verir hem de kollajen üretimini uyarır. Daha çok derin oluklar ve yüz şekillendirmede kullanılır; etki çoğunlukla 12-18 ay. Geri alınamaz.',
+          },
+          {
+            title: 'Poli-L-laktik asit (PLLA)',
+            text: 'Doğrudan doldurmaz; cildi zaman içinde kendi kollajenini üretmeye teşvik eder. Sonuç birkaç seansta kademeli oturur ve uzun sürebilir (sıklıkla 2 yıl ve üzeri). Yaygın hacim kaybında tercih edilir.',
+          },
+          {
+            title: 'Polikaprolakton (PCL)',
+            text: 'Uzun etkili bir kollajen uyarıcıdır; hem hacim verir hem doku desteğini güçlendirir. Etkisi türüne göre 1-4 yıla kadar uzayabilir. Geri alınamaz.',
+          },
+          {
+            title: 'Yağ enjeksiyonu (otolog yağ transferi)',
+            text: 'Kişinin kendi vücudundan alınan yağ dokusunun yüze aktarılmasıdır. Doku uyumu yüksektir ve kalıcı olabilir; ancak bir kısmı emildiği için sonuç değişkendir ve ayrı bir cerrahi işlem gerektirir.',
+          },
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Bilimsel arka plan: hyaluronik asit neden geri alınabilir?',
+        paragraphs: [
+          'Hyaluronik asit, doğal halinde vücutta hızla parçalanır. Dolgu olarak kullanılabilmesi için moleküller birbirine “çapraz bağ” (cross-link) ile bağlanır; bu bağlar jeli daha dayanıklı ve uzun ömürlü yapar. HA molekülü, ağırlığının kat kat üzerinde su tutabildiği için bölgeye dolgunluk ve nem kazandırır.',
+          'HA dolgunun en büyük güvenlik avantajı geri alınabilmesidir. Hyaluronidaz adlı enzim, HA polimerindeki şeker birimlerini birbirine bağlayan glikozidik bağları hidroliz ederek (kopararak) dolguyu çözer. Klinik çalışmalarda enzim enjeksiyonundan sonra ilk 24 saat içinde hacimde belirgin azalma görülür; enzimin doku düzeyindeki etkisi yaklaşık 24-48 saat sürer. Bu sayede istenmeyen sonuç veya nadir bir damar komplikasyonunda dolgu hızla devre dışı bırakılabilir — kollajen uyarıcı dolgularda böyle bir “geri alma” imkânı yoktur.',
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Hangi bölgelere uygulanır?',
+        items: [
+          { title: 'Elmacık ve yanak', text: 'Düşen orta yüze hacim vererek yüzü yukarı taşır ve dinlendirir.' },
+          { title: 'Çene ucu ve çene hattı (jawline)', text: 'Profili dengeler, çene hattını netleştirir; özellikle alt yüz tanımında etkilidir.' },
+          { title: 'Nazolabial (dudak-burun) ve marionet çizgileri', text: 'Burun kenarından ağıza inen ve ağız kenarından aşağı uzanan derin çizgileri yumuşatır.' },
+          { title: 'Göz altı (tear trough)', text: 'Göz altı çukurunu doldurarak yorgun bakışı azaltır; ince ve hassas bir bölgedir, deneyim ister.' },
+          { title: 'Dudak', text: 'Hacim, simetri ve kontur için en sık uygulanan bölge.' },
+          { title: 'Şakak ve burun', text: 'Şakak çökmesinde hacim; burunda ise ameliyatsız şekillendirme (sınırlı, dikkatli endikasyon).' },
+        ],
+      },
+      {
+        type: 'timeline',
+        heading: 'Uygulama nasıl ilerler, sonuç ne zaman oturur?',
+        steps: [
+          { when: '0. gün', title: 'Uygulama', text: 'Yüz analizi ve planlama sonrası, anestezik krem/içeriğiyle iğne veya kanülle uygulanır. İşlem genellikle 20-45 dakika.' },
+          { when: '1-3. gün', title: 'Şişlik ve morluk', text: 'Hafif şişlik, kızarıklık veya morluk olabilir; özellikle dudak ve göz altında beklenen, geçici bir durumdur.' },
+          { when: '2. hafta', title: 'Sonuç oturur', text: 'Şişlik iner, dolgu dokuya yerleşir ve gerçek sonuç ortaya çıkar. Kontrol bu dönemde yapılır.' },
+          { when: 'Bölgeye göre 6-18 ay', title: 'Yenileme', text: 'HA dolgu zamanla vücutça emilir; etki azaldığında yenilenir. Çene/elmacık daha uzun, dudak/göz altı daha kısa sürer.' },
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'warn',
+        title: 'En kritik konu: damar güvenliği',
+        text: 'Dolgunun en ciddi (ama nadir) riski, maddenin bir damarı tıkaması — vasküler oklüzyon — durumudur. Bu yüzden dolgu, yüz anatomisine hâkim bir hekim tarafından; kanül kullanımı, küçük miktarlarla (mikrobolus) ve düşük basınçla uygulanmalıdır. Hyaluronik asit dolgularda, böyle bir durumda dolgunun hyaluronidaz ile hızla çözülebilmesi önemli bir güvenlik avantajıdır.',
+      },
+      {
+        type: 'myths',
+        heading: 'Mitler ve gerçekler',
+        items: [
+          { myth: 'Dolgu yüzü mutlaka şişirir, “yapay” gösterir mi?', truth: 'Hayır. Abartılı görünüm doz ve teknik hatasından kaynaklanır. Doğru planlanan dolgu, yüzü şişirmeden dengeler ve doğal durur.' },
+          { myth: 'Dolgu kalıcı mıdır?', truth: 'Hyaluronik asit dolgular geçicidir, zamanla emilir. Kalsiyum/PLLA/PCL daha uzun sürer ama onlar da süresizdir; gerçekten kalıcı seçenekler (ör. yağ enjeksiyonu) ayrıdır.' },
+          { myth: 'Dolgu eriyince cilt sarkar, daha kötü olur mu?', truth: 'Hayır. Dolgu emildiğinde cilt, uygulama öncesi haline döner; dolgunun cildi “gerip bıraktığı” bir mekanizma yoktur.' },
+          { myth: 'Dolgudan memnun kalmazsam çaresiz miyim?', truth: 'HA dolgularda hayır — hyaluronidaz enzimiyle çözülebilir. Bu, HA’yı en esnek ve güvenli seçeneklerden biri yapar.' },
+          { myth: 'Bir kez yaptırınca sürekli yaptırmak zorunda kalır mıyım?', truth: 'Hayır. Yenilemek tamamen tercihe bağlıdır; bırakıldığında yüz zamanla doğal seyrine döner.' },
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Kimlere uygun, kimlere uygun değil?',
+        leftTitle: 'Uygun adaylar',
+        rightTitle: 'Ertelenmesi / değerlendirilmesi gerekenler',
+        left: [
+          'Yaşa veya yapıya bağlı hacim kaybı olanlar',
+          'Çizgi, oluk veya asimetrisini dengelemek isteyenler',
+          'Doğal, geri alınabilir bir çözüm arayanlar (HA)',
+          'Cerrahi istemeyen, kısa sürede sonuç bekleyenler',
+        ],
+        right: [
+          'Gebelik ve emzirme dönemindekiler',
+          'Uygulama bölgesinde aktif cilt enfeksiyonu olanlar',
+          'Bilinen ciddi alerji veya otoimmün/nöromüsküler durumu olanlar',
+          'Gerçekçi olmayan beklentisi olanlar (önce konsültasyon)',
+        ],
+      },
+      {
+        type: 'faq',
+        heading: 'Sıkça sorulan sorular',
+        items: [
+          { q: 'Dolgu acır mı?', a: 'Çoğu dolgu, içeriğindeki anestezik madde ve uygulanan krem anestezi sayesinde hafif rahatsızlıkla yapılır. Kanül kullanımı da konforu artırır.' },
+          { q: 'Sonuç hemen görünür mü?', a: 'Hyaluronik asit dolgularda hacim anında görülür; ancak şişlik inip dolgu oturduğunda (yaklaşık 2 hafta) gerçek sonuç ortaya çıkar.' },
+          { q: 'Dolgu kaç ay/yıl kalır?', a: 'Maddeye ve bölgeye göre değişir: HA genellikle 6-18 ay, kalsiyum hidroksiapatit 12-18 ay, PLLA/PCL daha uzun (yıllar) sürebilir.' },
+          { q: 'Dolgu geri alınabilir mi?', a: 'Hyaluronik asit dolgular hyaluronidaz enzimiyle çözülebilir. Kollajen uyarıcı dolgular (CaHA, PLLA, PCL) geri alınamaz.' },
+          { q: 'Morluk veya şişlik olur mu?', a: 'Olabilir; özellikle dudak ve göz altında geçici şişlik/morluk beklenen bir durumdur ve birkaç günde geçer.' },
+          { q: 'Dolgu fiyatı neye göre değişir?', a: 'Kullanılan dolgu maddesi (HA mı, biostimülatör mü), miktarı ve uygulanan bölge sayısı belirleyicidir. Net plan ve fiyat, muayene sonrası kişiye özel çıkarılır.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'Lowe NJ ve ark. Hyaluronic Acid Dermal Filler–Associated Vascular Occlusion — A Review of Prevention and Management Strategies. Journal of Cosmetic Dermatology, 2026.', url: 'https://onlinelibrary.wiley.com/doi/10.1111/jocd.70884' },
+          { label: 'Guideline for the Management of Hyaluronic Acid Filler-induced Vascular Occlusion. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8211329/' },
+          { label: 'Vascular Occlusion Following Dermal Filler Injections: A Systematic Review of Clinical Evidence and Emergency Management. 2025.', url: 'https://www.mdpi.com/2673-6373/6/3/51' },
+          { label: 'Hyaluronidase Protocols — HA Filler Reversal (enzimatik geri alma mekanizması ve süresi).', url: 'https://www.doctormedica.co/blog/hyaluronidase-protocols-a-complete-guide-for-safe-and-effective-ha-filler-reversal' },
+          { label: 'U.S. Food & Drug Administration (FDA) — Dermal Fillers (Soft Tissue Fillers) hasta bilgilendirmesi ve onaylı endikasyonlar.' },
         ],
       },
     ],

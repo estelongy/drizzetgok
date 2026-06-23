@@ -603,6 +603,13 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'image',
+        src: '/images/dolgu-uygulama.jpeg',
+        webp: '/images/dolgu-uygulama.webp',
+        alt: 'Dr. İzzet Gök, klinik ortamda bir hastaya dudak dolgusu uygularken',
+        caption: 'Dolgu uygulaması, anatomiye hâkim bir hekim tarafından klinik ortamda, ince iğne veya kanülle yapılır. Görsel: Dr. İzzet Gök kliniğinden.',
+      },
+      {
         type: 'timeline',
         heading: 'Uygulama nasıl ilerler, sonuç ne zaman oturur?',
         steps: [

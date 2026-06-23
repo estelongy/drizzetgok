@@ -557,6 +557,13 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'image',
+        src: '/images/dolgu-turleri.png',
+        webp: '/images/dolgu-turleri.webp',
+        alt: 'Yaygın kullanılan dolgu ürünleri: hyaluronik asit, kalsiyum hidroksiapatit ve poli-L-laktik asit içerikli dolgular',
+        caption: 'Yaygın kullanılan bazı dolgu çeşitleri ve markaları — Hyaluronik asit (HA): Juvederm, Restylane, Stylage, Belotero · Kalsiyum hidroksiapatit (CaHA): Radiesse · Poli-L-laktik asit (PLLA): Sculptra. Hangi ürünün kullanılacağı bölgeye, hedefe ve cilt yapısına göre hekim tarafından belirlenir.',
+      },
+      {
         type: 'list',
         heading: 'Dolgu türleri — sadece hyaluronik asit değil',
         items: [

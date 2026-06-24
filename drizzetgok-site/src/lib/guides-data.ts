@@ -27,6 +27,7 @@ export type GuideData = {
   readingMinutes: number;
   updated: string;        // ISO tarih
   relatedServiceSlug?: string; // ilgili hizmet sayfası slug'ı
+  relatedGuides?: string[];    // iç linkleme — ilgili rehber slug'ları (konu kümesi); boşsa aynı kategoriden otomatik
   color: string;          // tailwind gradient (hizmetle uyumlu)
   blocks: GuideBlock[];
 };
@@ -43,6 +44,7 @@ export const GUIDES: GuideData[] = [
     readingMinutes: 6,
     updated: '2026-06-18',
     relatedServiceSlug: 'botoks',
+    relatedGuides: ['masseter-botoksu', 'terleme-botoksu', 'dolgu'],
     color: 'from-blue-500 to-cyan-500',
     blocks: [
       {
@@ -179,6 +181,7 @@ export const GUIDES: GuideData[] = [
     readingMinutes: 8,
     updated: '2026-06-19',
     relatedServiceSlug: 'botoks',
+    relatedGuides: ['botoks-nedir', 'terleme-botoksu'],
     color: 'from-emerald-500 to-teal-600',
     blocks: [
       {
@@ -329,6 +332,7 @@ export const GUIDES: GuideData[] = [
     readingMinutes: 9,
     updated: '2026-06-19',
     relatedServiceSlug: 'botoks',
+    relatedGuides: ['botoks-nedir', 'masseter-botoksu'],
     color: 'from-sky-500 to-cyan-500',
     blocks: [
       {
@@ -511,6 +515,7 @@ export const GUIDES: GuideData[] = [
     readingMinutes: 10,
     updated: '2026-06-22',
     relatedServiceSlug: 'dolgu',
+    relatedGuides: ['dudak-dolgusu', 'ha-biyostimulator-farki', 'botoks-nedir'],
     color: 'from-fuchsia-500 to-pink-500',
     blocks: [
       {
@@ -700,6 +705,7 @@ export const GUIDES: GuideData[] = [
     readingMinutes: 11,
     updated: '2026-06-24',
     relatedServiceSlug: 'dolgu',
+    relatedGuides: ['dolgu', 'dudak-dolgusu', 'botoks-nedir'],
     color: 'from-violet-500 to-fuchsia-500',
     blocks: [
       {
@@ -868,6 +874,7 @@ export const GUIDES: GuideData[] = [
     readingMinutes: 9,
     updated: '2026-06-24',
     relatedServiceSlug: 'dudak-dolgusu',
+    relatedGuides: ['dolgu', 'ha-biyostimulator-farki', 'botoks-nedir'],
     color: 'from-pink-500 to-rose-500',
     blocks: [
       {

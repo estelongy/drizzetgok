@@ -6,7 +6,7 @@ import {
   Microscope, BookOpen, ExternalLink, List, HelpCircle,
   Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2,
 } from 'lucide-react';
-import { getGuideBySlug, GUIDES, type GuideBlock } from '../lib/guides-data';
+import { getGuideBySlug, GUIDES, type GuideBlock, type GuideData } from '../lib/guides-data';
 import { getServiceBySlug } from '../lib/services-data';
 import { useSeo } from '../hooks/useSeo';
 import Navigation from '../sections/Navigation';
@@ -331,6 +331,16 @@ const Guide = () => {
 
   if (!guide) return <Navigate to="/" replace />;
 
+  // İlgili rehberler — küratörlü (relatedGuides) ya da aynı kategoriden otomatik
+  const relatedGuides = (
+    guide.relatedGuides && guide.relatedGuides.length
+      ? guide.relatedGuides
+      : GUIDES.filter((g) => g.category === guide.category && g.slug !== guide.slug).map((g) => g.slug)
+  )
+    .map((s) => getGuideBySlug(s))
+    .filter((g): g is GuideData => !!g && g.slug !== guide.slug)
+    .slice(0, 3);
+
   const firstProseIndex = guide.blocks.findIndex((b) => b.type === 'prose');
   const toc = guide.blocks
     .map((b) => blockHeading(b))
@@ -434,6 +444,33 @@ const Guide = () => {
               </div>
               <ArrowRight className="w-6 h-6 text-emerald-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </Link>
+          )}
+
+          {/* İlgili rehberler — rehberler arası iç linkleme (konu kümesi) */}
+          {relatedGuides.length > 0 && (
+            <section className="mt-12" aria-label="İlgili rehberler">
+              <h3 className="font-serif text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <BookOpen className="w-5 h-5 text-slate-400" /> İlgili rehberler
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {relatedGuides.map((rg) => (
+                  <Link key={rg.slug} to={`/rehber/${rg.slug}`}
+                    className="group flex flex-col bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-md hover:border-emerald-200 transition-all">
+                    <div className={`h-1.5 bg-gradient-to-r ${rg.color}`} />
+                    <div className="p-5 flex flex-col flex-1">
+                      <span className="inline-flex items-center gap-1.5 text-base font-semibold text-emerald-600 mb-1.5">
+                        <BookOpen className="w-4 h-4" /> {rg.category}
+                      </span>
+                      <h4 className="font-serif font-bold text-lg text-slate-900 leading-snug mb-1 group-hover:text-emerald-700 transition-colors">{rg.title}</h4>
+                      <p className="text-base text-slate-500 line-clamp-2 flex-1 leading-relaxed">{rg.excerpt}</p>
+                      <span className="inline-flex items-center gap-1 text-emerald-600 font-semibold text-base mt-3">
+                        Oku <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
           )}
         </div>
       </article>

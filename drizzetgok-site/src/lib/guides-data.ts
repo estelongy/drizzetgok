@@ -731,6 +731,13 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'image',
+        src: '/images/ha-vs-biyostimulator.png',
+        webp: '/images/ha-vs-biyostimulator.webp',
+        alt: 'Cilt kesitinde iki mekanizma: solda hyaluronik asit jeli boşluğu doldururken, sağda biyostimülatör yeni kollajen ağı oluşumunu tetikliyor',
+        caption: 'İki farklı mantık tek bakışta: solda hyaluronik asit (HA) dokuda boşluğu fiziksel olarak doldurur (anında hacim); sağda biyostimülatör, fibroblastları uyararak yeni kollajen ağı ürettirir (kademeli yenilenme).',
+      },
+      {
         type: 'science',
         title: 'HA’nın bilimi: çapraz bağ ve reoloji',
         paragraphs: [
@@ -747,6 +754,13 @@ export const GUIDES: GuideData[] = [
           'Literatürdeki en önemli bulgu, kalsiyum hidroksiapatit (CaHA) ile poli-L-laktik asidin (PLLA) aynı yolla çalışmamasıdır. CaHA’nın etki mekanizması büyük ölçüde inflamatuar olmayan bir yoldur; fibroblastın kasılma gücünü geri kazandırır ve hücre dışı matriksin (ECM) düzenli, organize biçimde yeniden yapılanmasını sağlar — minimal immün hücre katılımıyla. Bu nedenle CaHA, “rejeneratif” estetik başlığı altında değerlendirilir.',
           'PLLA ise inflamasyona bağlı, kontrollü bir yabancı cisim reaksiyonu üzerinden çalışır: makrofajlar PLLA mikrokürelerini sarar; M2 makrofaj polarizasyonu, TGF-β/Smad sinyal yolağı, Piezo1 mekanotransdüksiyonu ve laktat metabolizması devreye girer; çevredeki fibroblastlar yeni (de novo) tip I kollajen üretir. Çarpıcı olan, bu sürecin makrofajlar olmadan gerçekleşememesidir. Özetle: CaHA daha çok organize ECM rejenerasyonu sağlarken, PLLA enkapsülasyon ve fibroplazi tipi bir kollajen birikimi oluşturur — ikisi de kollajen yapar, ama yolak ve doku mimarisi farklıdır.',
         ],
+      },
+      {
+        type: 'image',
+        src: '/images/biyostimulator-kollajen.png',
+        webp: '/images/biyostimulator-kollajen.webp',
+        alt: 'Dermiste fibroblastların yeni kollajen lifleri üreterek organize bir ağ oluşturması — neokolajenez',
+        caption: 'Neokolajenez: biyostimülatör, dermisteki fibroblastları uyarır; hücreler yeni kollajen liflerini üreterek organize bir destek ağı kurar. Hacim, bu yeni dokudan gelir.',
       },
       {
         type: 'list',

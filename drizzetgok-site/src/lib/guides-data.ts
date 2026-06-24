@@ -843,6 +843,117 @@ export const GUIDES: GuideData[] = [
       },
     ],
   },
+  {
+    slug: 'dudak-dolgusu',
+    category: 'Dolgu',
+    title: 'Dudak Dolgusu: Doğal Sonuç, Süreç ve Güvenlik Rehberi',
+    metaTitle: 'Dudak Dolgusu Nedir? Nasıl Yapılır, Kaç Ay Kalır, Geri Alınır mı? | Dr. İzzet Gök',
+    excerpt:
+      'Dudak dolgusu (lip filler) nedir, nasıl uygulanır, kaç ay kalır ve güvenli midir? Doğal sonuç, etki süresi, şişlik-morluk süreci ve dudak anatomisinin güvenlik açısından önemi — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
+    heroEyebrow: 'Medikal Estetik Rehberi',
+    readingMinutes: 9,
+    updated: '2026-06-24',
+    relatedServiceSlug: 'dudak-dolgusu',
+    color: 'from-pink-500 to-rose-500',
+    blocks: [
+      {
+        type: 'prose',
+        heading: 'Dudak dolgusu nedir?',
+        paragraphs: [
+          'Dudak dolgusu (lip filler), genellikle hyaluronik asit (HA) içerikli bir jelin dudak dokusuna kontrollü biçimde uygulanarak hacim, simetri ve nem kazandırılmasıdır. Kullanılan madde, ciltte zaten doğal olarak bulunan hyaluronik asitle benzer yapıdadır; bu yüzden doğru uygulandığında dudak hem doğal görünür hem doğal hisseder.',
+          'Amaç “büyük dudak” değil, kişinin yüz oranlarına uygun, dengeli ve doğal bir dolgunluktur. İyi bir sonuçta dudak şişkin değil; dinlenmiş, oranlı ve kendi yüzüyle uyumlu görünür. Bu yüzden dudak dolgusu bir “miktar” işi değil, bir **oran ve teknik** işidir.',
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Dudak dolgusu ne için yapılır?',
+        items: [
+          { title: 'Hacim kazandırma', text: 'İnce veya yaşla incelmiş dudaklara dengeli dolgunluk.' },
+          { title: 'Simetri ve denge', text: 'Alt-üst dudak oranını ve sağ-sol simetriyi düzeltme.' },
+          { title: 'Kontur ve sınır belirginleştirme', text: 'Dudak kenarını (vermilyon sınırı) ve Cupid yayını netleştirme.' },
+          { title: 'Nem ve canlılık', text: 'HA su tuttuğu için dudağa nem ve pırıltı kazandırır.' },
+          { title: 'Yaşa bağlı değişimi yumuşatma', text: 'İncelmiş, çizgilenmiş üst dudak ve düşen ağız kenarlarını dengeleme.' },
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Bilimsel arka plan: dudak anatomisi neden güvenliğin merkezi?',
+        paragraphs: [
+          'Dudağın kan dolaşımı, yüz arterinin dalları olan üst (superior) ve alt (inferior) dudak arterleri tarafından sağlanır. Bu damarlar vermilyon sınırına paralel seyreder ve üst dudak arterinin vermilyon sınırındaki ortalama derinliği yaklaşık 3,3-3,9 mm’dir. Bu nedenle bu bölgede yüzeysel (4 mm’den sığ) plana uygulama yapmak, damar yaralanmasını önlemenin temel kuralıdır.',
+          'Philtrum (üst dudak ortasındaki oluk) ve Cupid yayı, üst dudak arterine yakın olduğu için özellikle dikkat gerektiren bölgelerdir; orta hatta damarlar arası bağlantılar azalır ve bazı dallar daha yüzeysel seyreder. Güvenliği artıran teknik tercihler arasında ince ve kısa iğne (ör. 4 mm 30G) veya ucu künt kanül kullanımı, doğru (cilt altı) plana yerleştirme ve damara doğrudan temas riskini azaltan ileri yönde (anterograd) enjeksiyon sayılır. Bu yüzden dudak dolgusu, dudak anatomisine hâkim bir hekim tarafından yapılmalıdır.',
+        ],
+      },
+      {
+        type: 'timeline',
+        heading: 'Uygulama ve iyileşme süreci',
+        steps: [
+          { when: '0. gün', title: 'Uygulama', text: 'Krem anestezi sonrası ince iğne veya kanülle uygulanır. İşlem genellikle 20-30 dakika sürer.' },
+          { when: '24-48 saat', title: 'Şişlik ve kızarıklık', text: 'Hafif şişlik ve kızarıklık beklenen, normal bir durumdur; bu dönemde dudaklar olduğundan dolgun görünebilir.' },
+          { when: '3-7 gün', title: 'Morluk geriler', text: 'Olası morluklar bu sürede solar; şişlik belirgin biçimde azalır.' },
+          { when: '7-10 gün', title: 'Nihai şekil', text: 'Dolgu yerine oturur ve gerçek sonuç ortaya çıkar; kontrol bu dönemde yapılır.' },
+          { when: '6-12 ay', title: 'Yenileme', text: 'HA zamanla emilir; etki azaldığında uygulama tercihe bağlı olarak yenilenir.' },
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Kimlere uygun, kimlere uygun değil?',
+        leftTitle: 'Uygun adaylar',
+        rightTitle: 'Ertelenmesi / değerlendirilmesi gerekenler',
+        left: [
+          'İnce, asimetrik veya hacim kaybı olan dudaklar',
+          'Doğal, dengeli bir dolgunluk isteyenler',
+          'Geri alınabilir (HA) bir çözüm tercih edenler',
+          'Gerçekçi beklentisi olanlar',
+        ],
+        right: [
+          'Gebelik ve emzirme dönemindekiler',
+          'Dudakta aktif uçuk (herpes) veya cilt enfeksiyonu olanlar',
+          'Bilinen ciddi alerji veya kanama bozukluğu olanlar',
+          'Aşırı/abartılı sonuç bekleyenler (önce konsültasyon)',
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'warn',
+        title: 'En kritik konu: damar güvenliği',
+        text: 'Dudak dolgusunun en ciddi (ama nadir) riski, dolgunun bir damarı tıkaması — vasküler oklüzyon — ve buna bağlı doku hasarıdır. Bu yüzden uygulama, anatomiye hâkim bir hekim tarafından; uygun derinlik, ince iğne/kanül ve dikkatli teknikle yapılmalıdır. HA dolguların önemli avantajı, sorun durumunda hyaluronidaz enzimiyle hızla çözülebilmesidir. Aktif uçuğu olanlarda işlem ertelenir. Bu içerik bilgilendirme amaçlıdır.',
+      },
+      {
+        type: 'myths',
+        heading: 'Mitler ve gerçekler',
+        items: [
+          { myth: 'Dudak dolgusu mutlaka “ördek dudak” yapar mı?', truth: 'Hayır. Abartılı görünüm doz ve teknik hatasıdır. Oranlı planlanan dolgu, dudağı şişirmeden dengeler ve doğal durur.' },
+          { myth: 'Dudak dolgusu kalıcı mıdır?', truth: 'Hayır. HA dudak dolguları geçicidir; genellikle 6-12 ayda vücut tarafından doğal olarak emilir.' },
+          { myth: 'Bir kez yaptırınca bırakamaz mıyım, dudak söner kalır mı?', truth: 'Hayır. Dolgu emildiğinde dudak uygulama öncesi haline döner; “söndürme” gibi bir mekanizma yoktur.' },
+          { myth: 'Memnun kalmazsam çaresiz miyim?', truth: 'Hayır. HA dudak dolgusu hyaluronidaz enzimiyle çözülebilir — bu en önemli güvenlik avantajlarından biridir.' },
+          { myth: 'İşlemden hemen sonra normal görünürüm.', truth: 'İlk 1-2 gün hafif şişlik olabilir; nihai doğal sonuç 7-10 günde oturur. Önemli bir etkinlik öncesi bunu hesaba katın.' },
+        ],
+      },
+      {
+        type: 'faq',
+        heading: 'Sıkça sorulan sorular',
+        items: [
+          { q: 'Dudak dolgusu acır mı?', a: 'Krem anestezi ve dolgunun içindeki anestezik madde sayesinde rahatsızlık genellikle azdır; çoğu kişi hafif basınç hisseder. Kanül kullanımı konforu artırır.' },
+          { q: 'Dudak dolgusu kaç ay kalır?', a: 'Genellikle 6-12 ay. Süre; kullanılan ürüne, metabolizmaya ve yaşam tarzına göre değişir.' },
+          { q: 'Geri alınabilir mi?', a: 'Evet. HA dudak dolgusu, sonuçtan memnun kalınmazsa veya gerektiğinde hyaluronidaz enzimiyle çözülebilir.' },
+          { q: 'Şişlik ne kadar sürer?', a: 'Belirgin şişlik genellikle 24-48 saatte azalır; olası morluk 3-7 günde geçer; nihai şekil 7-10 günde oturur.' },
+          { q: 'Doğal görünür mü?', a: 'Doz ve teknik doğru olduğunda evet. Hedef “büyük” değil, yüz oranlarına uygun dengeli bir dolgunluktur.' },
+          { q: 'İşlemden sonra nelere dikkat etmeliyim?', a: 'İlk gün bölgeye masaj yapmamak, ağır spor ve aşırı sıcak ortamlardan (sauna/hamam) kaçınmak, aktif uçuk varsa işlemi ertelemek önerilir.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'Lip Augmentation Using Hyaluronic Acid Filler and a 4-mm Needle: A Safer, More Natural and Predictable Approach. JCAD.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7869814/' },
+          { label: 'Microanatomical Location of Hyaluronic Acid Gel Following Injection of the Upper Lip Vermillion Border: Needle vs Microcannula. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5773414/' },
+          { label: '9-point Injection Technique for Lip Augmentation Using Sonographic Imaging of the Labial Artery Pathway. Aesthetic Surgery Journal, 2024.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11483566/' },
+          { label: 'Lip Filler: Anatomy, Techniques, and Management of Complications. IntechOpen.', url: 'https://www.intechopen.com/chapters/1217626' },
+          { label: 'U.S. Food & Drug Administration (FDA) — Dermal Fillers (Soft Tissue Fillers) hasta bilgilendirmesi.' },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuideBySlug = (slug: string) => GUIDES.find((g) => g.slug === slug);

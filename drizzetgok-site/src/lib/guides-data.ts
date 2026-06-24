@@ -890,12 +890,26 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'image',
+        src: '/images/dudak-anatomi.png',
+        webp: '/images/dudak-anatomi.webp',
+        alt: 'Dudak anatomisi: filtral kolon, filtrum, Cupid yayı, üst/alt dudak vermilyon hattı, dudak tüberkülleri, ağız komissürü, mentolabial sulkus ve ideal üst/alt oranı 1:1.6',
+        caption: 'Dudak anatomisinin temel noktaları. Doğal ve güvenli bir sonuç, bu yapıların (vermilyon sınırı, Cupid yayı, filtral kolonlar) ve ideal üst/alt dudak oranının korunmasına bağlıdır.',
+      },
+      {
         type: 'science',
         title: 'Bilimsel arka plan: dudak anatomisi neden güvenliğin merkezi?',
         paragraphs: [
           'Dudağın kan dolaşımı, yüz arterinin dalları olan üst (superior) ve alt (inferior) dudak arterleri tarafından sağlanır. Bu damarlar vermilyon sınırına paralel seyreder ve üst dudak arterinin vermilyon sınırındaki ortalama derinliği yaklaşık 3,3-3,9 mm’dir. Bu nedenle bu bölgede yüzeysel (4 mm’den sığ) plana uygulama yapmak, damar yaralanmasını önlemenin temel kuralıdır.',
           'Philtrum (üst dudak ortasındaki oluk) ve Cupid yayı, üst dudak arterine yakın olduğu için özellikle dikkat gerektiren bölgelerdir; orta hatta damarlar arası bağlantılar azalır ve bazı dallar daha yüzeysel seyreder. Güvenliği artıran teknik tercihler arasında ince ve kısa iğne (ör. 4 mm 30G) veya ucu künt kanül kullanımı, doğru (cilt altı) plana yerleştirme ve damara doğrudan temas riskini azaltan ileri yönde (anterograd) enjeksiyon sayılır. Bu yüzden dudak dolgusu, dudak anatomisine hâkim bir hekim tarafından yapılmalıdır.',
         ],
+      },
+      {
+        type: 'image',
+        src: '/images/dudak-uygulama.jpg',
+        webp: '/images/dudak-uygulama.webp',
+        alt: 'Dudak dolgusu sonrası doğal, dengeli ve dolgun görünümlü dudaklar',
+        caption: 'Hedef: şişkin değil, yüz oranlarına uygun, dengeli ve doğal bir dolgunluk. İyi bir sonuçta dudak kendi yüzüyle uyumlu görünür.',
       },
       {
         type: 'timeline',

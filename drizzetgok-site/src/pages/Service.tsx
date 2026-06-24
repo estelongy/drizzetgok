@@ -17,10 +17,14 @@ const Service = () => {
   const service = slug ? getServiceBySlug(slug) : undefined;
 
   useSeo({
+    // Yerel niyet: "[Hizmet] Beylikdüzü" kelime sırası öne çekildi (Search Console verisi:
+    // "beylikdüzü dudak dolgusu/botoks" yüksek gösterim alıyor). İlk sinonim korunur.
     title: service
-      ? `${service.title} ${service.synonyms.length ? '(' + service.synonyms.slice(0, 2).join(' / ') + ')' : ''} | Dr. İzzet Gök Beylikdüzü`
+      ? `${service.title} Beylikdüzü ${service.synonyms.length ? '(' + service.synonyms[0] + ')' : ''} | Dr. İzzet Gök`
       : 'Hizmet bulunamadı',
-    description: service?.shortDescription,
+    description: service
+      ? `${service.shortDescription} Beylikdüzü, Bahçeşehir ve Avcılar bölgesinde Dr. İzzet Gök ile.`
+      : undefined,
     canonical: service ? `https://www.drizzetgok.com/hizmetlerimiz/${service.slug}` : undefined,
   });
 

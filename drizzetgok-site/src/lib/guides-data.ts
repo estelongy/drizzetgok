@@ -689,6 +689,160 @@ export const GUIDES: GuideData[] = [
       },
     ],
   },
+  {
+    slug: 'ha-biyostimulator-farki',
+    category: 'Dolgu',
+    title: 'HA mı, Biyostimülatör mü? Dolgularda Bilimsel Fark',
+    metaTitle: 'HA mı Biyostimülatör mü? Hyaluronik Asit ve Kollajen Uyarıcı Dolgu Farkı | Dr. İzzet Gök',
+    excerpt:
+      'Hyaluronik asit (HA) dolgular ile biyostimülatör (kollajen uyarıcı) dolgular arasındaki fark mekanizma düzeyinde nedir? Çapraz bağ ve reolojiden neokolajeneze, sıvı yüz germedeki rollerine kadar — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
+    heroEyebrow: 'Medikal Estetik Rehberi',
+    readingMinutes: 11,
+    updated: '2026-06-24',
+    relatedServiceSlug: 'dolgu',
+    color: 'from-violet-500 to-fuchsia-500',
+    blocks: [
+      {
+        type: 'prose',
+        heading: 'İki farklı felsefe: doldurmak mı, yeniden yapmak mı?',
+        paragraphs: [
+          'Dolgular tek bir kategori değildir. Temelde iki bambaşka mantık vardır: bir grup, kaybedilen hacmi doğrudan ve anında “doldurur” (fiziksel/mekanik yaklaşım); diğer grup ise hacim eklemekten çok, cildi kendi yapı taşlarını — özellikle kollajeni — yeniden üretmeye “teşvik eder” (biyolojik yaklaşım).',
+          'İlk gruba hyaluronik asit (HA) dolgular, ikinci gruba biyostimülatörler (kollajen uyarıcılar: kalsiyum hidroksiapatit, poli-L-laktik asit, polikaprolakton) girer. İkisi de “dolgu” başlığı altında anılır ama farkları yüzeyde değil, doku düzeyinde başlar. Bu rehber, o farkı bilimsel temelleriyle açıklar.',
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Özet: HA ve biyostimülatör temel farkları',
+        leftTitle: 'Hyaluronik asit (HA)',
+        rightTitle: 'Biyostimülatör (kollajen uyarıcı)',
+        left: [
+          'Etki anında ve mekaniktir — jel boşluğu doldurur',
+          'Su tutarak hacim ve nem verir',
+          'Hyaluronidaz ile geri alınabilir',
+          'Etki genellikle 6-18 ay',
+          'Şekillendirme ve ince ayara en uygun',
+        ],
+        right: [
+          'Etki kademelidir — cilt kendi kollajenini üretir',
+          'Hacimden çok yapısal destek ve doku kalitesi',
+          'Hyaluronidaz ile erimez; hızlı antidotu yoktur',
+          'Etki daha uzun (18-24 ay ve üzeri)',
+          'Yaygın hacim kaybı ve cilt yenilenmesine uygun',
+        ],
+      },
+      {
+        type: 'science',
+        title: 'HA’nın bilimi: çapraz bağ ve reoloji',
+        paragraphs: [
+          'Hyaluronik asit, vücutta doğal olarak bulunan ve ağırlığının kat kat üzerinde su bağlayabilen bir moleküldür. Saf haliyle birkaç günde parçalandığı için, dolgu olarak dayanması amacıyla moleküller “çapraz bağ” (cross-link) ile birbirine bağlanır. Bugün ruhsatlı HA dolguların neredeyse tamamında çapraz bağ ajanı olarak BDDE (1,4-bütandiol diglisidil eter) kullanılır; alkali ortamda HA ile kurduğu eter bağı, amid veya ester bağlarına göre daha kararlıdır ve jelin enzimatik/oksidatif bozunmasını yavaşlatır.',
+          'HA dolguların davranışını belirleyen ikinci kavram reolojidir — yani jelin mekanik “kişiliği”. En çok konuşulan parametre G′ (elastik modül): yüksek G′ daha sert, kaldırma gücü yüksek bir jel demektir ve kemik üstü derin destek (elmacık, çene hattı) için tercih edilir; düşük G′ ise yumuşak, hassas bölgelere (dudak, göz altı) uygundur. Kohezivite ise jelin dağılmadan bütünlüğünü koruma kapasitesidir. Bu yüzden “tek bir HA” yoktur — bölgeye göre reolojik olarak farklı ürün seçmek işin teknik özüdür.',
+          'HA’nın en önemli güvenlik özelliği geri alınabilmesidir: hyaluronidaz enzimi, HA polimerindeki şeker birimlerini bağlayan glikozidik bağları hidroliz ederek jeli çözer; etkisi saatler içinde başlar. Biyostimülatörlerde böyle bir hızlı antidot yoktur.',
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Biyostimülatörlerin bilimi: neokolajenez ve kritik bir ayrım',
+        paragraphs: [
+          'Biyostimülatörler doğrudan doldurmaktan çok, cilt altına yerleştirilen parçacıklarla bir “yeniden yapım” süreci başlatır: fibroblastlar uyarılır ve yeni kollajen üretimi (neokolajenez) tetiklenir. Sonuç bu yüzden anında değil, haftalar-aylar içinde kademeli ortaya çıkar ve genellikle daha uzun sürer.',
+          'Literatürdeki en önemli bulgu, kalsiyum hidroksiapatit (CaHA) ile poli-L-laktik asidin (PLLA) aynı yolla çalışmamasıdır. CaHA’nın etki mekanizması büyük ölçüde inflamatuar olmayan bir yoldur; fibroblastın kasılma gücünü geri kazandırır ve hücre dışı matriksin (ECM) düzenli, organize biçimde yeniden yapılanmasını sağlar — minimal immün hücre katılımıyla. Bu nedenle CaHA, “rejeneratif” estetik başlığı altında değerlendirilir.',
+          'PLLA ise inflamasyona bağlı, kontrollü bir yabancı cisim reaksiyonu üzerinden çalışır: makrofajlar PLLA mikrokürelerini sarar; M2 makrofaj polarizasyonu, TGF-β/Smad sinyal yolağı, Piezo1 mekanotransdüksiyonu ve laktat metabolizması devreye girer; çevredeki fibroblastlar yeni (de novo) tip I kollajen üretir. Çarpıcı olan, bu sürecin makrofajlar olmadan gerçekleşememesidir. Özetle: CaHA daha çok organize ECM rejenerasyonu sağlarken, PLLA enkapsülasyon ve fibroplazi tipi bir kollajen birikimi oluşturur — ikisi de kollajen yapar, ama yolak ve doku mimarisi farklıdır.',
+        ],
+      },
+      {
+        type: 'list',
+        heading: 'Üç biyostimülatör, üç farklı karakter',
+        items: [
+          {
+            title: 'Kalsiyum hidroksiapatit (CaHA / Radiesse)',
+            text: 'Mikroküreler + jel taşıyıcıdan oluşur. Jel anında bir miktar hacim verir, mikroküreler kalıp kollajeni uyarır. İnflamatuar olmayan, organize ECM yenilenmesi sağlar; seyreltilmiş (hiperdilüe) formu cilt sıkılaştırma ve hafif kaldırma için kullanılır. Etki genellikle 12-18 ay.',
+          },
+          {
+            title: 'Poli-L-laktik asit (PLLA / Sculptra)',
+            text: 'Doğrudan hacim vermez; haftalar içinde tip I kollajen üretimini tetikler. Geniş alanlarda (şakak, orta yüz, genel yüz) kademeli hacim ve destek için tercih edilir. Sonuç 3-6 ayda olgunlaşır, 2 yıl ve üzeri sürebilir; genellikle birden fazla seans gerekir.',
+          },
+          {
+            title: 'Polikaprolakton (PCL / Ellansé)',
+            text: 'Mikroküreler + jel taşıyıcı; uzun ömürlü bir “iskele” (scaffold) kurarak neokolajenezi sürer halde tutar. En uzun etkili grup — türüne göre 1-4 yıla kadar.',
+          },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Yapısal kaldırma ve sıvı yüz germe ile ilişkisi',
+        paragraphs: [
+          'Bu malzeme farkı, “sıvı yüz germe” (liquid facelift) dediğimiz cerrahisiz kaldırma yaklaşımının da temelidir. Modern teknikte yüksek-G′ HA, kemik üstüne (periost) ve derin yanak yağ kompartmanlarına, zigoma (elmacık) boyunca yerleştirilerek orta yüze yapısal destek verir; bu derin çapa, komşu dokuları yukarı taşır ve nazolabial bölgenin ağırlığını azaltır. Biyostimülatörler ise hacmin “üzerine” eklenmek yerine yüzün kollajen iskelesini güçlendirerek sıkılık ve hafif kaldırma sağlar — bu yüzden “sadece hacim değil, yapı” yaklaşımının merkezindedir.',
+          'Önemli dürüst sınır: sıvı yüz germe, hafif-orta sarkması olan (çoğunlukla 30’lu–50’li yaş başı) kişilerde işe yarar; fazla deriyi almaz, ileri sarkmada cerrahi yüz germenin yerini tutmaz. Cerrahi sonuç daha dramatik ve daha uzun ömürlüdür (7-10 yıl); enjeksiyon yöntemi ise daha kısa iyileşme sunar ama bakım/yenileme gerektirir. Sıvı yüz germeyi ayrı bir rehberde, hizmet sayfamıza bağlı olarak ayrıca ele alıyoruz.',
+        ],
+      },
+      {
+        type: 'timeline',
+        heading: 'Etki zamanlaması: anında mı, kademeli mi?',
+        steps: [
+          { when: '0. gün', title: 'HA: anında', text: 'HA dolgu uygulandığı anda hacim verir; sonuç hemen görünür (şişlik inince netleşir).' },
+          { when: 'İlk haftalar', title: 'Biyostimülan: sessiz dönem', text: 'Biyostimülatörde başlangıçtaki hacmin bir kısmı (taşıyıcı jel/su) çekilir; asıl etki için kollajen yapımının başlaması beklenir.' },
+          { when: '3-6. ay', title: 'Biyostimülan: zirve', text: 'Yeni kollajen olgunlaştıkça yapısal dolgunluk ve sıkılık belirginleşir; sonuç doğal biçimde oturur.' },
+          { when: '18-24 ay+', title: 'Uzun vade', text: 'Biyostimülatör etkisi HA’ya göre daha uzun sürer; HA ise genellikle 6-18 ayda emilir.' },
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Hangi durumda hangisi mantıklı?',
+        leftTitle: 'HA daha mantıklı',
+        rightTitle: 'Biyostimülatör daha mantıklı',
+        left: [
+          'Belirli bir bölgeyi şekillendirmek (dudak, çene ucu)',
+          'Anında ve öngörülebilir sonuç isteyen',
+          'Geri alınabilirlik güvencesi isteyen',
+          'İlk kez dolgu yaptıracak veya hassas bölge',
+        ],
+        right: [
+          'Yaygın hacim kaybı ve genel cilt gevşemesi',
+          'Doğal, kademeli ve uzun süreli sonuç isteyen',
+          'Hacimden çok cilt kalitesi/yapısal destek hedefi',
+          'Şakak, orta yüz gibi geniş alanlar',
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'info',
+        title: 'Çoğu zaman en iyi cevap “ikisi birden”',
+        text: 'Klinik pratikte sık görülen yaklaşım kombinasyondur: HA ile anında denge ve şekillendirme, biyostimülatör ile uzun vadeli yapısal destek ve cilt kalitesi. Hangi maddenin, hangi bölgeye, hangi sırayla uygulanacağı kişiye özel bir karardır ve mutlaka muayene gerektirir. Bu içerik bilgilendirme amaçlıdır.',
+      },
+      {
+        type: 'myths',
+        heading: 'Mitler ve gerçekler',
+        items: [
+          { myth: 'Biyostimülatör de bir “dolgu” mu?', truth: 'Geniş anlamda evet, ama mekanizması farklıdır. HA gibi doğrudan doldurmaz; cildi kendi kollajenini üretmeye yönlendirir. Bu yüzden etkisi geç ama uzun gelir.' },
+          { myth: 'Biyostimülatör daha uzun sürdüğüne göre her zaman daha iyidir.', truth: 'Hayır. Uzun süre bir avantajdır ama geri alınamaması ve sonucun kademeli/öngörülemez oturması dezavantajdır. Hassas bölge ve ince ayar için HA çoğu zaman daha doğrudur.' },
+          { myth: 'Kollajen uyarıcı yaptırınca etki kalıcı olur.', truth: 'Hayır. Üretilen kollajen de zamanla doğal döngüsüne girer; etki uzun ama süresizdir, yenileme gerekebilir.' },
+          { myth: 'Sıvı yüz germe, ameliyatlı yüz germeyle aynı sonucu verir.', truth: 'Hayır. Hafif-orta gevşemede etkilidir; fazla deriyi almaz, ileri sarkmada cerrahinin yerini tutmaz. Beklenti gerçekçi olmalıdır.' },
+        ],
+      },
+      {
+        type: 'faq',
+        heading: 'Sıkça sorulan sorular',
+        items: [
+          { q: 'HA ile biyostimülatör aynı seansta yapılabilir mi?', a: 'Çoğu zaman planlı biçimde birlikte kullanılır; ancak sıralama ve bölge seçimi hekim tarafından kişiye özel planlanır.' },
+          { q: 'Biyostimülatör neden hemen sonuç vermiyor?', a: 'Çünkü hacmi kendisi değil, uyardığı yeni kollajen oluşturur. Bu biyolojik süreç haftalar alır; sonuç 3-6 ayda olgunlaşır.' },
+          { q: 'Biyostimülatör geri alınabilir mi?', a: 'Hyaluronidaz ile erimez. Yine de istenmeyen sonuçlar masaj, salin ile dağıtma, gerektiğinde steroid veya ultrason eşliğinde müdahale gibi yöntemlerle bir ölçüde yönetilebilir — ama HA kadar kolay değildir.' },
+          { q: 'Kalsiyum hidroksiapatit ile PLLA arasındaki fark nedir?', a: 'İkisi de kollajen uyarır ama farklı yolla: CaHA daha çok inflamatuar olmayan, organize doku yenilenmesi; PLLA ise makrofaj aracılı, inflamasyona dayalı tip I kollajen üretimi sağlar.' },
+          { q: 'Sıvı yüz germe için hangisi kullanılır?', a: 'Genellikle kombinasyon: yapısal destek için yüksek-G′ HA ve/veya biyostimülatör, dinamik kırışıklıklar için botoks. Aday seçimi ve sınırları önemlidir.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'Guida S ve ark. Skin biostimulation and hyaluronic acid: Current knowledge and new evidence. Journal of Cosmetic Dermatology, 2024.', url: 'https://onlinelibrary.wiley.com/doi/10.1111/jocd.16156' },
+          { label: 'Nowag B ve ark. Biostimulating fillers and induction of inflammatory pathways: macrophage response to calcium hydroxylapatite and poly-L-lactic acid. Journal of Cosmetic Dermatology, 2024.', url: 'https://onlinelibrary.wiley.com/doi/10.1111/jocd.15928' },
+          { label: 'Advanced Concepts in Rheology for the Evaluation of Hyaluronic Acid–Based Soft Tissue Fillers. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8078113/' },
+          { label: 'The Role of Calcium Hydroxylapatite (Radiesse) as a Regenerative Aesthetic Treatment: A Narrative Review. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11025388/' },
+          { label: 'Sculpting the Midface and Lower Face: A Novel Biostimulatory Technique Using Hyperdilute Calcium Hydroxylapatite. PMC.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12686807/' },
+          { label: 'BDDE çapraz bağ ve HA dolguların fizikokimyası üzerine derlemeler (cross-linking technology, rheology).' },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuideBySlug = (slug: string) => GUIDES.find((g) => g.slug === slug);

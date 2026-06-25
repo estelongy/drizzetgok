@@ -23,7 +23,7 @@ export const REVIEW_SUMMARY = {
   // Google İşletme Profili'nden teyit edildi (2026-06-25): 4,9 / 18 yorum.
   averageRating: 4.9,
   totalCount: 18,
-  googleProfileUrl: 'https://g.page/r/CSKVRsUJ8WCeEBM/review',
+  googleProfileUrl: 'https://share.google/XQ0Ml8ZKH2MbUAKIT',
 };
 
 export const reviews: Review[] = [

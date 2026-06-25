@@ -20,9 +20,9 @@ export interface Review {
  * Yanlış/şişirilmiş sayı koymak hem etik dışı hem de güveni zedeler.
  */
 export const REVIEW_SUMMARY = {
-  averageRating: 5.0,
-  // TODO(kullanıcı teyidi): gerçek Google yorum sayısını gir.
-  totalCount: 0,
+  // Google İşletme Profili'nden teyit edildi (2026-06-25): 4,9 / 18 yorum.
+  averageRating: 4.9,
+  totalCount: 18,
   googleProfileUrl: 'https://g.page/r/CSKVRsUJ8WCeEBM/review',
 };
 

@@ -29,6 +29,17 @@ export const REVIEW_SUMMARY = {
 
 export const reviews: Review[] = [
   {
+    author: 'Şengül Kaytanoğlu',
+    text:
+      'Klinik çalışanları, Nursen Hanım ve tabii ki İzzet hocam 🙏 muhteşem bir ekip; güvenilir, kaliteli. ' +
+      'Markaları, güler yüzleri, tereddütsüz gidilip gönül rahatlığıyla her işlem yaptırılabilir. Kontrol ' +
+      'sürecindeki ilgileri, işlem sırasında kullanılan anestezi kremleri mükemmel 🤩 Piyasadaki uçuk fiyatlı ' +
+      'işlemlere göre daha uygun ve harika sonuçlar. Birçok arkadaşıma tavsiye ettim, herkes çok memnun. İyi ki ' +
+      'tanımışız sizi İzzet hocam, iyi ki 🙏',
+    rating: 5,
+    date: 'Bugün',
+  },
+  {
     author: 'Senem Yağmur',
     text: 'Doktor bey ve çalışanlar çok ilgiliydi. Dudak dolgusu için gittim sonuç mükemmel 🥰',
     rating: 5,

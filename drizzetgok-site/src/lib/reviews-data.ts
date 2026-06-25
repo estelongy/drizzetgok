@@ -20,9 +20,9 @@ export interface Review {
  * Yanlış/şişirilmiş sayı koymak hem etik dışı hem de güveni zedeler.
  */
 export const REVIEW_SUMMARY = {
-  // Google İşletme Profili'nden teyit edildi (2026-06-25): 4,9 / 18 yorum.
+  // Google İşletme Profili'nden teyit edildi (2026-06-25): 4,9 / 19 yorum.
   averageRating: 4.9,
-  totalCount: 18,
+  totalCount: 19,
   googleProfileUrl:
     'https://www.google.com/search?sca_esv=f9ea728914227c9b&sxsrf=APpeQnszr2P-DYhFome5XRHy4ERsfoW5EQ:1782393763542&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rSGxlWOgVa94UJjoNIxJa62R0a3JrLVLMes-MVY8BJpDYiIPLIpGaKEdYOAF5OQmRwt_ceDo34WDf_IM9PQ0YOTaM5mDhZiqnoR6O6bg_3r2k5b1zh9ft0ypj6i6BLOkpD2GHri9UArCutA5XD7Pre0mMc4s&q=Dr.+%C4%B0zzet+G%C3%B6k+Medikal+Estetik+Yorumlar&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_y9oTceKhxdQgoo-RvnbdKtVGeiWz_BzgqrFSprNIcCB22rQhINSy-eqZwvSDr5DrrPec6l7MrojiWQ2rotIrxGpcYhPDqwFQBwEJGSlRmP_al--ucVoMB4GfMG4y73PcwYGYa4%3D&hl=tr-TR',
 };

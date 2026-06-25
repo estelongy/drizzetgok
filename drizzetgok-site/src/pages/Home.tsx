@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Hero from '../sections/Hero';
 import About from '../sections/About';
 import Services from '../sections/Services';
+import Reviews from '../sections/Reviews';
 import FAQ from '../sections/FAQ';
 import Contact from '../sections/Contact';
 import Navigation from '../sections/Navigation';
@@ -64,6 +65,7 @@ function Home({ section }: HomeProps) {
       <Hero />
       <About />
       <Services />
+      <Reviews />
       <FAQ />
       <Contact />
     </main>

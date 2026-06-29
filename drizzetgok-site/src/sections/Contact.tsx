@@ -42,7 +42,7 @@ const Contact = () => {
     {
       icon: <Instagram className="w-6 h-6" />,
       label: 'Instagram',
-      href: 'https://instagram.com/drizzetgok',
+      href: 'https://instagram.com/dr.izzetgok',
       color: 'hover:bg-pink-500 hover:text-white'
     },
     {

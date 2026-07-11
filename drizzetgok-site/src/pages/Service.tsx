@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace,
   Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowRight,
-  ChevronRight, MessageCircle, Home as HomeIcon, BookOpen
+  ChevronRight, MessageCircle, Home as HomeIcon, BookOpen, MapPin
 } from 'lucide-react';
 import { getServiceBySlug, SERVICES } from '../lib/services-data';
 import { GUIDES } from '../lib/guides-data';
@@ -150,6 +150,24 @@ const Service = () => {
                 <p className="text-base text-white/85 line-clamp-1">{relatedGuide.excerpt}</p>
               </div>
               <ArrowRight className="w-6 h-6 text-white flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          )}
+
+          {/* Yerel-niyet iç link — sadece dudak dolgusu için */}
+          {service.slug === 'dudak-dolgusu' && (
+            <Link
+              to="/beylikduzu-dudak-dolgusu"
+              className="group flex items-center gap-4 mb-12 bg-rose-50 border-2 border-rose-200 rounded-2xl p-5 hover:bg-rose-100 hover:border-rose-300 hover:shadow-md transition-all"
+            >
+              <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-rose-500 to-pink-500 rounded-xl flex items-center justify-center text-white">
+                <MapPin className="w-6 h-6" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-base font-semibold text-rose-600 mb-0.5">Beylikdüzü’nde misiniz?</p>
+                <h3 className="font-bold text-lg text-slate-900 leading-snug">Beylikdüzü Dudak Dolgusu — konum, süreç ve randevu</h3>
+                <p className="text-base text-slate-600 line-clamp-1">Kavaklı’daki kliniğimiz, hizmet bölgeleri ve sık sorulanlar</p>
+              </div>
+              <ArrowRight className="w-6 h-6 text-rose-500 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
             </Link>
           )}
 

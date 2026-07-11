@@ -7,6 +7,7 @@ import Bio from './pages/Bio';
 import Service from './pages/Service';
 import Guide from './pages/Guide';
 import GuideList from './pages/GuideList';
+import BeylikduzuDudakDolgusu from './pages/BeylikduzuDudakDolgusu';
 import NotFound from './pages/NotFound';
 
 // Anasayfa bölüm route'ları kendi scroll'unu (scrollIntoView) Home içinde yönetir.
@@ -37,6 +38,7 @@ function App() {
         <Route path="/hizmetlerimiz/:slug" element={<Service />} />
         <Route path="/rehber" element={<GuideList />} />
         <Route path="/rehber/:slug" element={<Guide />} />
+        <Route path="/beylikduzu-dudak-dolgusu" element={<BeylikduzuDudakDolgusu />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />

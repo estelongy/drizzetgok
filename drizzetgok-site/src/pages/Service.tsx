@@ -16,6 +16,7 @@ const ICONS = { Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile,
 const LOCAL_LANDING: Record<string, { to: string; title: string }> = {
   'dudak-dolgusu': { to: '/beylikduzu-dudak-dolgusu', title: 'Beylikdüzü Dudak Dolgusu — konum, süreç ve randevu' },
   'botoks': { to: '/beylikduzu-botoks', title: 'Beylikdüzü Botoks — konum, süreç ve randevu' },
+  'sivi-yuz-germe': { to: '/beylikduzu-sivi-yuz-germe', title: 'Beylikdüzü Sıvı Yüz Germe — konum, süreç ve randevu' },
 };
 
 const Service = () => {

@@ -12,6 +12,12 @@ import Navigation from '../sections/Navigation';
 
 const ICONS = { Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2 };
 
+// Hizmet slug'ı → ilgili Beylikdüzü yerel-niyet landing sayfası (varsa).
+const LOCAL_LANDING: Record<string, { to: string; title: string }> = {
+  'dudak-dolgusu': { to: '/beylikduzu-dudak-dolgusu', title: 'Beylikdüzü Dudak Dolgusu — konum, süreç ve randevu' },
+  'botoks': { to: '/beylikduzu-botoks', title: 'Beylikdüzü Botoks — konum, süreç ve randevu' },
+};
+
 const Service = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getServiceBySlug(slug) : undefined;
@@ -153,10 +159,10 @@ const Service = () => {
             </Link>
           )}
 
-          {/* Yerel-niyet iç link — sadece dudak dolgusu için */}
-          {service.slug === 'dudak-dolgusu' && (
+          {/* Yerel-niyet iç link — ilgili hizmetin Beylikdüzü landing sayfasına */}
+          {LOCAL_LANDING[service.slug] && (
             <Link
-              to="/beylikduzu-dudak-dolgusu"
+              to={LOCAL_LANDING[service.slug].to}
               className="group flex items-center gap-4 mb-12 bg-rose-50 border-2 border-rose-200 rounded-2xl p-5 hover:bg-rose-100 hover:border-rose-300 hover:shadow-md transition-all"
             >
               <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-rose-500 to-pink-500 rounded-xl flex items-center justify-center text-white">
@@ -164,7 +170,7 @@ const Service = () => {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-base font-semibold text-rose-600 mb-0.5">Beylikdüzü’nde misiniz?</p>
-                <h3 className="font-bold text-lg text-slate-900 leading-snug">Beylikdüzü Dudak Dolgusu — konum, süreç ve randevu</h3>
+                <h3 className="font-bold text-lg text-slate-900 leading-snug">{LOCAL_LANDING[service.slug].title}</h3>
                 <p className="text-base text-slate-600 line-clamp-1">Kavaklı’daki kliniğimiz, hizmet bölgeleri ve sık sorulanlar</p>
               </div>
               <ArrowRight className="w-6 h-6 text-rose-500 flex-shrink-0 group-hover:translate-x-1 transition-transform" />

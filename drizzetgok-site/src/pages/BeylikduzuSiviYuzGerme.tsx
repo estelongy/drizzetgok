@@ -437,17 +437,17 @@ const BeylikduzuSiviYuzGerme = () => {
           </div>
         </div>
 
-        {/* İç link — rehber (sıvı yüz germe rehberi henüz yok; dolgu rehberine yönlendir) */}
-        <Link to="/rehber/dolgu"
+        {/* İç link — rehber */}
+        <Link to="/rehber/sivi-yuz-germe"
           className="group flex items-center gap-4 mt-6 bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:bg-white hover:border-emerald-300 hover:shadow-md transition-all">
           <div className="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-violet-500 to-purple-500 rounded-2xl flex items-center justify-center text-white">
             <BookOpen className="w-7 h-7" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-base font-semibold text-emerald-700 mb-0.5">Detaylı rehber</p>
-            <h3 className="font-bold text-xl text-slate-900 leading-snug">Yüz Dolgusu Nedir? Dolgu Çeşitleri, Bölgeler ve Etki Süresi</h3>
+            <h3 className="font-bold text-xl text-slate-900 leading-snug">Sıvı Yüz Germe (Liquid Facelift): Nasıl Çalışır, Kimlere Uygun?</h3>
             <p className="text-base text-slate-600 flex items-center gap-1.5 mt-1">
-              <CheckCircle className="w-4 h-4 text-emerald-500" /> Sıvı yüz germenin temeli olan dolguyu yakından tanıyın
+              <CheckCircle className="w-4 h-4 text-emerald-500" /> Hacimsel yaşlanma, çok-noktalı teknik ve güvenlik
             </p>
           </div>
           <ArrowRight className="w-6 h-6 text-emerald-600 flex-shrink-0 group-hover:translate-x-1 transition-transform" />

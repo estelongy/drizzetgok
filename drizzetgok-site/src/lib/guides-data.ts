@@ -989,6 +989,140 @@ export const GUIDES: GuideData[] = [
       },
     ],
   },
+  {
+    slug: 'sivi-yuz-germe',
+    category: 'Yüz Germe',
+    title: 'Sıvı Yüz Germe (Liquid Facelift): Nasıl Çalışır, Kimlere Uygun?',
+    metaTitle: 'Sıvı Yüz Germe Nedir? Liquid Facelift Nasıl Yapılır, Kaç Ay Kalır? | Dr. İzzet Gök',
+    excerpt:
+      'Sıvı yüz germe (liquid facelift) nedir, cerrahisiz nasıl “germe” etkisi yaratır, kimlere uygundur ve ameliyatın yerini tutar mı? Yüzün hacimsel yaşlanması, çok-noktalı dolgu-botoks tekniği ve güvenlik — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
+    heroEyebrow: 'Medikal Estetik Rehberi',
+    readingMinutes: 10,
+    updated: '2026-07-11',
+    relatedServiceSlug: 'sivi-yuz-germe',
+    relatedGuides: ['dolgu', 'botoks-nedir', 'ha-biyostimulator-farki'],
+    color: 'from-violet-500 to-purple-500',
+    blocks: [
+      {
+        type: 'prose',
+        heading: 'Sıvı yüz germe nedir?',
+        paragraphs: [
+          'Sıvı yüz germe (liquid facelift), cilt kesip germe yerine; yüzün belirli anatomik noktalarına yerleştirilen dolgu ve botoksun birlikte kullanılmasıyla yüz hatlarını destekleyen, yukarı taşıyan ve dinlendiren cerrahisiz bir protokoldür. “Sıvı” adı, işlemin bir bıçak değil, enjeksiyon temelli olmasından gelir.',
+          'Önemli bir ayrım: sıvı yüz germe tek bir işlem değil, bir plandır. Amaç bir kırışıklığı doldurmak değil; yüzü bir bütün olarak okuyup, kaybolan desteği doğru noktalardan geri vermektir. Bu yüzden sonucu belirleyen ürün miktarı değil, hangi noktaya, hangi derinliğe, ne kadar uygulanacağının doğru tasarlanmasıdır.',
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Yüz nasıl yaşlanır? — Sadece sarkma değil, hacim kaybı',
+        paragraphs: [
+          'Uzun süre yüz yaşlanması yalnızca “sarkma” olarak düşünüldü. Oysa modern anatomi çalışmaları, yaşlanmanın büyük ölçüde hacimsel olduğunu gösterdi: yüz yağı, birbirinden ayrı “yağ bölmeleri” (fat compartments) halinde dizilidir ve bu bölmeler yaşla birlikte hem erir (deflasyon) hem de aşağı kayar.',
+          'Rohrich ve Pessa’nın çığır açan kadavra çalışması, yüz yağının medial, orta ve lateral yanak gibi ayrı bölmelere ayrıldığını ortaya koydu. Bu bölmeler eridikçe elmacık desteği azalır, nazolabial oluk derinleşir ve yüz “iner” gibi görünür. Buna kemik erimesi (özellikle üst çene ve göz çukuru kenarı) ve tutucu bağların gevşemesi eklenir.',
+          'Sıvı yüz germenin mantığı tam da buradan doğar: eğer sorun büyük ölçüde kaybolan hacimse, çözüm o hacmi doğru katmandan geri vermektir. Cilt fazlasını kesmek yerine, altındaki desteği yeniden kurmak — “germe” etkisi bu destekten gelir.',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/dolgu-bolge.jpg',
+        webp: '/images/dolgu-bolge.webp',
+        alt: 'Yüz bölge haritası: elmacık/yanak, göz altı, nazolabial, çene hattı, çene önü ve submental bölgeler numaralı şekilde işaretlenmiş — sıvı yüz germenin çok-noktalı tekniği',
+        caption: 'Sıvı yüz germe, yüzü tek noktadan değil, birbiriyle ilişkili birçok destek noktasından ele alır. Her noktanın amacı, derinliği ve uygun ürünü farklıdır.',
+      },
+      {
+        type: 'list',
+        heading: 'Hangi bölgelerde ne hedeflenir?',
+        items: [
+          { title: 'Elmacık / orta yüz', text: 'Yüzün “çadır direği”. Buraya verilen destek, yanağı yukarı taşır ve alt yüzdeki gevşemeyi hafifletir.' },
+          { title: 'Göz altı (tear trough)', text: 'Elmacık desteğiyle birlikte yorgun, çökük göz altı görünümünü dengeler.' },
+          { title: 'Nazolabial ve ağız kenarı', text: 'Burun-dudak oluğu ve düşen ağız kenarları (marionette), doğrudan değil çoğu zaman elmacığı destekleyerek yumuşatılır.' },
+          { title: 'Çene hattı ve çene ucu', text: 'Net bir çene hattı ve dengeli çene, alt yüzü toparlar ve profili düzeltir.' },
+          { title: 'Üst yüz (botoks)', text: 'Alın, kaş arası ve göz kenarı mimik çizgileri botoksla yumuşatılır; hafif bir kaş yükselmesi de sağlanabilir.' },
+        ],
+      },
+      {
+        type: 'science',
+        title: 'Cerrahisiz nasıl “germe” etkisi oluyor? — Biyomekanik',
+        paragraphs: [
+          'Sıvı yüz germede kullanılan yapısal dolgular, yüksek esneklik katsayısına (G′) sahip, yani baskı altında şeklini koruyan jellerdir. Bu jeller yüzeye değil, çoğunlukla kemik üstü (supraperiosteal) derin plana yerleştirilir; böylece bir kırışıklığı doldurmaktan çok, dokuya alttan sütun/destek görevi görür.',
+          'de Maio’nun yaygın kullanılan MD Codes yaklaşımında, belirli çıpa (anchor) noktalarına kemik seviyesine kadar uygulanan küçük hacimlerin, üstteki SMAS tabakasını yukarı taşıyarak “lifting” etkisi yarattığı tarif edilir. Yani germe hissi, cildi çekmekten değil, altındaki mimari desteği yeniden kurmaktan doğar.',
+          'Botoks ise farklı bir mekanizmayla katkı verir: üst yüzdeki mimik kaslarını yumuşatarak dinamik çizgileri azaltır ve dolgunun yükünü paylaşır. Dolgu (hacim) ve botoks (mimik) birlikte kullanıldığında, tek başına ulaşılamayan dengeli ve bütüncül bir sonuç ortaya çıkar.',
+        ],
+      },
+      {
+        type: 'timeline',
+        heading: 'Süreç: planlamadan sonuca',
+        steps: [
+          { when: 'Konsültasyon', title: 'Yüz analizi', text: 'Sarkma derecesi, hacim kaybı ve oranlar değerlendirilir; fotoğraflanır ve kişiye özel nokta haritası çıkarılır.' },
+          { when: '0. gün', title: 'Uygulama', text: 'Üst yüze botoks, belirlenen noktalara çoklu dolgu uygulanır. Toplam işlem genellikle 60-90 dakika sürer.' },
+          { when: '24-48 saat', title: 'Şişlik ve kızarıklık', text: 'Hafif şişlik/kızarıklık beklenen ve geçici bir durumdur; çoğu kişi ertesi gün günlük hayatına döner.' },
+          { when: '2 hafta', title: 'Oturma ve kontrol', text: 'Botoksun tam etkisi ve dolgunun yerine oturması bu dönemde tamamlanır; kontrol muayenesi yapılır.' },
+          { when: '12-18 ay', title: 'Yenileme', text: 'HA dolgular zamanla emilir; etki azaldığında protokol tercihe bağlı olarak tazelenir.' },
+        ],
+      },
+      {
+        type: 'comparison',
+        heading: 'Sıvı yüz germe mi, cerrahi yüz germe mi?',
+        leftTitle: 'Sıvı yüz germe uygun olabilir',
+        rightTitle: 'Cerrahi daha uygun olabilir',
+        left: [
+          'Erken-orta düzey hacim kaybı ve hafif gevşeme',
+          'Genellikle 35-55 yaş aralığı',
+          'Ameliyat, anestezi ve uzun iyileşme istemeyenler',
+          'Geri alınabilir (HA) ve kademeli bir çözüm arayanlar',
+        ],
+        right: [
+          'İleri düzey cilt fazlası ve belirgin sarkma',
+          'Yer çekimine bağlı ağır doku düşmesi',
+          'Kalıcı ve daha büyük ölçekli değişim beklentisi',
+          'Hacim eklemenin yüzü ağırlaştıracağı durumlar',
+        ],
+      },
+      {
+        type: 'image',
+        src: '/images/dolgu-uygulama.jpeg',
+        webp: '/images/dolgu-uygulama.webp',
+        alt: 'Dr. İzzet Gök, klinik ortamda bir hastaya dolgu uygularken',
+        caption: 'Sıvı yüz germe, yüz anatomisine ve derinlik planlarına hâkim bir hekim tarafından uygulanmalıdır. Görsel: Dr. İzzet Gök kliniğinden.',
+      },
+      {
+        type: 'myths',
+        heading: 'Mitler ve gerçekler',
+        items: [
+          { myth: 'Sıvı yüz germe ameliyatın yerini tam olarak tutar.', truth: 'Her zaman değil. Erken-orta düzey değişimde ameliyata güçlü bir alternatiftir; ancak ileri sarkmada cerrahi daha doğru sonuç verir. Dürüst değerlendirme konsültasyonda yapılır.' },
+          { myth: 'Ne kadar çok dolgu, o kadar genç görünüm.', truth: 'Hayır. Aşırı hacim yüzü doğallıktan uzaklaştırır ve “şişkin” gösterir. Hedef az ama doğru noktaya uygulamaktır.' },
+          { myth: 'Sonuç kalıcıdır.', truth: 'Hayır. HA dolgular 12-18 ayda doğal olarak emilir; botoksun etkisi 4-6 aydır. Bu geçicilik, aynı zamanda bir güvenlik avantajıdır.' },
+          { myth: 'İşlemden hemen sonra sosyal hayata dönerim, iz kalmaz.', truth: 'İlk 24-48 saat hafif şişlik/morluk olabilir. Önemli bir etkinlik öncesi işlemi birkaç gün önceden planlamak akıllıcadır.' },
+          { myth: 'Yüzümü “dondurur”.', truth: 'Doğru dozda botoks ifadeyi korur. Amaç mimiği yok etmek değil, aşırı çizgi oluşumunu frenlemektir.' },
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'warn',
+        title: 'Güvenliğin merkezi: anatomi ve hekim deneyimi',
+        text: 'Sıvı yüz germe ileri düzey bir işlemdir; yüzün damar haritasına hâkimiyet gerektirir. En ciddi (ama nadir) risk, dolgunun bir damarı tıkamasıdır (vasküler oklüzyon). Bu yüzden uygulama; doğru derinlik, uygun ürün ve dikkatli teknikle, deneyimli bir hekim tarafından yapılmalıdır. HA dolguların önemli avantajı, gerektiğinde hyaluronidaz enzimiyle çözülebilmesidir. Bu içerik bilgilendirme amaçlıdır; kişiye özel değerlendirme muayene ile yapılır.',
+      },
+      {
+        type: 'faq',
+        heading: 'Sıkça sorulan sorular',
+        items: [
+          { q: 'Sıvı yüz germe kaç ay kalır?', a: 'Dolgu etkisi genellikle 12-18 ay, botoks etkisi 4-6 ay sürer. Süre; kullanılan ürüne, uygulanan bölgeye ve metabolizmaya göre değişir.' },
+          { q: 'İşlem ağrılı mı?', a: 'Krem anestezi ve dolguların içindeki anestezik madde sayesinde rahatsızlık genellikle azdır. Kanül kullanımı konforu artırır.' },
+          { q: 'Ne kadar dinlenmem gerekir?', a: 'İyileşme süresi minimumdur. Hafif kızarıklık ve şişlik çoğunlukla 24-48 saatte geçer; çoğu hasta ertesi gün normal yaşamına döner.' },
+          { q: 'Kaç yaşında yaptırılır?', a: 'Genellikle 35-55 yaş aralığında, erken-orta düzey hacim kaybı ve hafif gevşemede en iyi sonucu verir. Karar, sarkma derecesine göre kişiye özel verilir.' },
+          { q: 'Sonuç doğal görünür mü?', a: 'Doğru planlama ve doz ile evet. Amaç “başka biri” değil, kendi yüzünüzün daha dinlenmiş ve dengeli hali olmaktır.' },
+          { q: 'Memnun kalmazsam geri alınabilir mi?', a: 'HA esaslı dolgular hyaluronidaz enzimiyle çözülebilir; botoksun etkisi ise zaten zamanla kendiliğinden geçer. Bu, işlemi geri dönüşü olan bir seçenek yapar.' },
+        ],
+      },
+      {
+        type: 'sources',
+        heading: 'Kaynaklar ve bilimsel dayanak',
+        items: [
+          { label: 'Rohrich RJ, Pessa JE. The Fat Compartments of the Face: Anatomy and Clinical Implications for Cosmetic Surgery. Plast Reconstr Surg. 2007.', url: 'https://pubmed.ncbi.nlm.nih.gov/17519724/' },
+          { label: 'de Maio M. MD Codes™: A Methodological Approach to Facial Aesthetic Treatment with Injectable Hyaluronic Acid Fillers. Aesthetic Plast Surg. 2021.', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8012343/' },
+          { label: 'U.S. Food & Drug Administration (FDA) — Dermal Fillers (Soft Tissue Fillers) hasta bilgilendirmesi.' },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuideBySlug = (slug: string) => GUIDES.find((g) => g.slug === slug);

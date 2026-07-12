@@ -7,7 +7,7 @@ import Navigation from '../sections/Navigation';
 
 // Kategori gösterim sırası — listede bu sırayla bölümlenir.
 // Listede olmayan (yeni) kategoriler en sona, ekleniş sırasıyla düşer.
-const CATEGORY_ORDER = ['Botoks', 'Dolgu', 'Yüz Germe', 'Cilt & Yenileme'];
+const CATEGORY_ORDER = ['Botoks', 'Dolgu', 'Cilt & Yenileme'];
 
 // Rehberleri kategoriye göre grupla, kategorileri CATEGORY_ORDER sırasına diz.
 function groupGuidesByCategory(guides: GuideData[]): [string, GuideData[]][] {

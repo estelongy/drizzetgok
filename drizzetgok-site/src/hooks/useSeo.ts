@@ -5,6 +5,7 @@ type SeoOptions = {
   description?: string;
   canonical?: string;
   ogImage?: string;
+  noindex?: boolean;
 };
 
 function setMeta(selector: string, attr: 'name' | 'property', key: string, value: string) {
@@ -27,10 +28,23 @@ function setLink(rel: string, href: string) {
   el.setAttribute('href', href);
 }
 
-export function useSeo({ title, description, canonical, ogImage }: SeoOptions) {
+export function useSeo({ title, description, canonical, ogImage, noindex }: SeoOptions) {
   useEffect(() => {
     const prevTitle = document.title;
     document.title = title;
+
+    // noindex: arama motorlarından gizle (özel/şifreli sayfalar için).
+    // Sayfadan çıkınca temizlenir (cleanup).
+    let robotsEl: HTMLMetaElement | null = null;
+    if (noindex) {
+      robotsEl = document.head.querySelector<HTMLMetaElement>('meta[name="robots"]');
+      if (!robotsEl) {
+        robotsEl = document.createElement('meta');
+        robotsEl.setAttribute('name', 'robots');
+        document.head.appendChild(robotsEl);
+      }
+      robotsEl.setAttribute('content', 'noindex, nofollow');
+    }
 
     if (description) {
       setMeta('meta[name="description"]', 'name', 'description', description);
@@ -53,6 +67,8 @@ export function useSeo({ title, description, canonical, ogImage }: SeoOptions) {
 
     return () => {
       document.title = prevTitle;
+      // noindex meta'yı bu sayfadan çıkınca kaldır (diğer sayfalar indexlenebilsin).
+      if (robotsEl) robotsEl.remove();
     };
-  }, [title, description, canonical, ogImage]);
+  }, [title, description, canonical, ogImage, noindex]);
 }

@@ -51,14 +51,14 @@ const REASONS = [
   {
     icon: NavIcon,
     title: 'Beylikdüzü’nün merkezinde',
-    text: 'Kavaklı’daki kliniğimiz Beylikdüzü ve çevre ilçelerden kolay ulaşılır. İşlem 60-90 dakika; çoğu hasta ertesi gün günlük hayatına döner.',
+    text: 'Kavaklı’daki kliniğimiz Beylikdüzü ve çevre ilçelerden kolay ulaşılır. İşlem 45-60 dakika; çoğu hasta ertesi gün günlük hayatına döner.',
   },
 ];
 
 const PROCESS = [
   { step: '1', title: 'Yüz analizi', text: 'Detaylı yüz analizi ve fotoğraflama ile sarkma, hacim kaybı ve oranlar değerlendirilir.' },
   { step: '2', title: 'Protokol planı', text: 'Size özel 8 nokta haritası çıkarılır; hangi bölgeye botoks, hangisine dolgu netleşir.' },
-  { step: '3', title: 'Uygulama', text: 'Üst yüze botoks, belirlenen noktalara çoklu dolgu uygulanır (toplam 60-90 dk).' },
+  { step: '3', title: 'Uygulama', text: 'Üst yüze botoks, belirlenen noktalara çoklu dolgu uygulanır (toplam 45-60 dk).' },
   { step: '4', title: 'Kontrol', text: 'Buz kompresi sonrası sonuç birlikte değerlendirilir; hafif şişlik 24-48 saatte geçer.' },
 ];
 
@@ -277,7 +277,7 @@ const BeylikduzuSiviYuzGerme = () => {
           Uygulama nasıl ilerliyor?
         </h2>
         <p className="text-lg text-slate-600 text-center max-w-2xl mx-auto mb-12 leading-relaxed">
-          Toplam işlem süresi 60-90 dakika. Planlama gerektiren bütüncül bir protokol;
+          Toplam işlem süresi 45-60 dakika. Planlama gerektiren bütüncül bir protokol;
           iyileşme süresi ise minimumdur.
         </p>
         <ol className="grid sm:grid-cols-2 gap-5">

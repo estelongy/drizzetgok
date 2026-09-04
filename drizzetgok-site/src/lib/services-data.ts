@@ -104,7 +104,7 @@ export const SERVICES: ServiceData[] = [
     features: ['8 nokta yüz germe tekniği', 'Elmacık-yanak yukarı çekme', 'Çene hattı tanımlama', 'Boyun ve gerdan iyileştirme', 'Mimik kırışıklıkları yumuşatma', 'Genel yüz dengesi'],
     benefits: ['Cerrahi gerektirmez', 'Anında belirgin sonuç', 'İyileşme süresi minimum', 'Botoks + dolgu sinerjisi', '12-18 ay etki', 'Risk düşük, geri dönüşümlü'],
     process: ['Detaylı yüz analizi ve fotoğraflama', 'Kişiye özel protokol planlama', 'Botoks uygulaması (üst yüz)', 'Çoklu nokta dolgu uygulaması', 'Buz kompresi ve sonuç kontrolü'],
-    duration: '60-90 dakika',
+    duration: '45-60 dakika',
     resultDuration: '12-18 ay',
     faq: [
       { q: 'Sıvı yüz germe ameliyatın yerini tutar mı?', a: 'Belirli yaş grubunda (35-55) ve sarkma derecesinde ameliyata alternatif olabilir. İleri sarkmalarda cerrahi tercih edilebilir.' },

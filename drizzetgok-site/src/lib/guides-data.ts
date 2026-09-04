@@ -1073,7 +1073,7 @@ export const GUIDES: GuideData[] = [
         heading: 'Süreç: konsültasyondan sonuca',
         steps: [
           { when: 'Konsültasyon', title: 'Yüz analizi ve planlama', text: 'Yüz bir bütün olarak değerlendirilir, fotoğraflanır; hangi noktaya hangi ürünün gireceği kişiye özel planlanır. Beklenti yönetimi bu aşamada yapılır.' },
-          { when: '0. gün', title: 'Uygulama', text: 'İnce iğne veya künt uçlu kanülle, planlanan noktalara uygulama yapılır. Toplam süre genellikle 60-90 dakikadır.' },
+          { when: '0. gün', title: 'Uygulama', text: 'İnce iğne veya künt uçlu kanülle, planlanan noktalara uygulama yapılır. Toplam süre genellikle 45-60 dakikadır.' },
           { when: '24-48 saat', title: 'Şişlik ve olası morluk', text: 'Hafif şişlik, kızarıklık ve bazen morluk beklenen, normal bir durumdur. Çoğu kişi ertesi gün günlük hayatına döner.' },
           { when: '1-2 hafta', title: 'Dolgu yerine oturur', text: 'HA dolguların şişliği geriler ve gerçek sonuç ortaya çıkar. Kontrol muayenesi için ideal dönem budur.' },
           { when: '2-3 ay', title: 'Biyostimülatör etkisi başlar', text: 'Kolajen uyarımı içeren protokollerde cilt kalitesindeki iyileşme kademeli olarak belirginleşir; sonuç aylar içinde olgunlaşır.' },

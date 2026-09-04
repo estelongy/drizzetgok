@@ -202,20 +202,19 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
 
     case 'science':
       return (
-        <details className="group mb-12 bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
-          <summary className="flex items-center gap-3 cursor-pointer select-none p-5 font-semibold text-lg text-slate-800 hover:bg-slate-100 transition-colors list-none">
+        <div className="mb-12 bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+          <div className="flex items-center gap-3 p-5 font-semibold text-lg text-slate-800">
             <span className="w-9 h-9 flex-shrink-0 bg-slate-800 text-white rounded-lg flex items-center justify-center">
               <Microscope className="w-5 h-5" />
             </span>
             <span className="flex-1">{block.title ?? 'Bilimsel arka plan'}</span>
-            <ChevronRight className="w-5 h-5 text-slate-400 transition-transform group-open:rotate-90" />
-          </summary>
+          </div>
           <div className="px-5 pb-5 pt-1 border-t border-slate-200">
             {block.paragraphs.map((p, i) => (
               <p key={i} className="text-base text-slate-600 leading-relaxed mt-3">{p}</p>
             ))}
           </div>
-        </details>
+        </div>
       );
 
     case 'sources':

@@ -1196,10 +1196,20 @@ export const GUIDES: GuideData[] = [
         ],
       },
       {
+        type: 'list',
+        heading: 'CaHA hangi markalarda bulunur? (Türkiye’de bilinirlik sırasıyla)',
+        items: [
+          { title: 'Radiesse', text: 'Saf CaHA. Türkiye’de ve dünyada en bilinen, literatürde en çok çalışılmış referans üründür.' },
+          { title: 'Novuma', text: 'Saf CaHA içeren biyostimülatör; son yıllarda yaygınlaşan bir üründür.' },
+          { title: 'HArmonyCa', text: 'CaHA’yı çapraz bağlı hyaluronik asitle birleştiren hibrit ürün — hem anında hacim hem kolajen uyarımı.' },
+          { title: 'Calhydra', text: 'CaHA + hyaluronik asit içeren yerli üretim (Türkiye) hibrit ürün.' },
+        ],
+      },
+      {
         type: 'callout',
         tone: 'info',
-        title: 'CaHA hangi markalar altında bulunur?',
-        text: 'Kalsiyum hidroksiapatit (CaHA) tek bir markaya ait değildir; farklı ürünlerde bulunur. Türkiye’de en bilinen örnek Radiesse’dir; ayrıca Novuma da saf CaHA içerir. Bunların yanında CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa ile yerli üretim Calhydra gibi ürünler de mevcuttur. Marka seçimi; ürünün ruhsat/CE durumu, formülasyonu (saf CaHA mı, CaHA + HA hibrit mi) ve hedeflenen bölgeye göre hekim tarafından kişiye özel yapılır. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
+        title: 'Marka seçimi kişiye özeldir',
+        text: 'Hangi ürünün kullanılacağı; ürünün ruhsat/CE durumu, formülasyonu (saf CaHA mı, CaHA + HA hibrit mi) ve hedeflenen bölgeye göre hekim tarafından belirlenir. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
       },
       {
         type: 'science',

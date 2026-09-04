@@ -1066,7 +1066,7 @@ export const GUIDES: GuideData[] = [
         type: 'callout',
         tone: 'info',
         title: 'Biyostimülatörler ayrı bir dünya',
-        text: 'CaHA (Radiesse), PLLA (Sculptra) ve PCL (Ellansé) farklı moleküller, farklı mekanizmalar ve farklı sürelerdir. Her birini ayrı rehberlerde derinlemesine ele alıyoruz; sıvı yüz germe planında hangisinin ne zaman seçileceği kişiye özeldir.',
+        text: 'CaHA (ör. Radiesse, Novuma), PLLA (ör. Sculptra, Lanluma) ve PCL (ör. Ellansé, Gouri) farklı moleküller, farklı mekanizmalar ve farklı sürelerdir. Her birini ayrı rehberlerde derinlemesine ele alıyoruz; sıvı yüz germe planında hangisinin ne zaman seçileceği kişiye özeldir.',
       },
       {
         type: 'timeline',
@@ -1336,7 +1336,7 @@ export const GUIDES: GuideData[] = [
       'PLLA (poli-L-laktik asit / Sculptra) nedir, nasıl kademeli kolajen uyarır ve neden anında hacim vermez? Makrofaj-fibroblast mekanizması, çoklu seans mantığı, etki süresi ve CaHA-PCL farkı — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
     heroEyebrow: 'Medikal Estetik Rehberi',
     readingMinutes: 10,
-    updated: '2026-09-01',
+    updated: '2026-09-04',
     relatedServiceSlug: 'sivi-yuz-germe',
     relatedGuides: ['caha-radiesse-nedir', 'pcl-ellanse-nedir', 'sivi-yuz-germe-nedir'],
     color: 'from-amber-500 to-orange-500',
@@ -1348,6 +1348,21 @@ export const GUIDES: GuideData[] = [
           'PLLA, açılımıyla poli-L-laktik asit; en bilinen ticari adıyla Sculptra olarak anılan bir biyostimülatördür. Klasik dolgulardan temel farkı şudur: PLLA yüzü doldurmak için değil, cildin kendi kolajenini yeniden üretmesini tetiklemek için tasarlanmıştır. Yani PLLA bir “dolgu” değil, bir “kolajen uyarıcı”dır.',
           'PLLA, tıpta uzun yıllardır kullanılan, vücutta zamanla suya ve karbondioksite parçalanan (biyobozunur) bir maddedir; aynı polimer erimeyen cerrahi dikişlerde de kullanılır. Sıvı olarak enjekte edildiğinde ilk günlerde hafif bir dolgunluk görülebilir, ancak bu taşıyıcı sıvının etkisidir ve kısa sürede kaybolur. Asıl sonuç, haftalar-aylar içinde cildin ürettiği yeni kolajenle ortaya çıkar.',
         ],
+      },
+      {
+        type: 'list',
+        heading: 'PLLA hangi markalarda bulunur?',
+        items: [
+          { title: 'Sculptra', text: 'PLLA’nın en bilinen, en köklü ve literatürde en çok çalışılmış referans ürünüdür.' },
+          { title: 'Lanluma', text: 'Yüz ve vücut için farklı formülasyonları (V ve X) olan bir PLLA ürünüdür.' },
+          { title: 'AestheFill', text: 'Kolajen üretimini uyaran bir başka PLLA bazlı üründür.' },
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'info',
+        title: 'Marka seçimi kişiye özeldir',
+        text: 'Hangi PLLA ürününün kullanılacağı; ürünün ruhsat/CE durumu, formülasyonu ve hedeflenen bölgeye göre hekim tarafından belirlenir. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
       },
       {
         type: 'science',
@@ -1444,6 +1459,7 @@ export const GUIDES: GuideData[] = [
           { q: 'PLLA kaç ay kalır?', a: 'Kolajen etkisi 8-24 ay korunabilir; ürün yaklaşık 28 ayda tamamen parçalanır ve kalıntı bırakmaz.' },
           { q: 'CaHA ile farkı nedir?', a: 'İkisi de kolajen uyarır ama yolları farklıdır: CaHA fibroblastla doğrudan temasla (mekanotransdüksiyon), PLLA ise kontrollü bir doku onarım yanıtıyla çalışır. CaHA’da hafif anında etki olabilir; PLLA daha kademelidir.' },
           { q: 'PLLA geri alınabilir mi?', a: 'HA gibi kolayca çözülemez. Bu nedenle deneyimli bir hekim tarafından, doğru teknikle uygulanması önemlidir.' },
+          { q: 'PLLA hangi markalarda bulunur?', a: 'En bilinen ve literatürde en çok çalışılmış örnek Sculptra’dır. Ayrıca Lanluma ve AestheFill gibi PLLA bazlı ürünler de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon ve hedef bölgeye göre hekim tarafından belirlenir.' },
         ],
       },
       {
@@ -1455,6 +1471,7 @@ export const GUIDES: GuideData[] = [
           { label: 'A morphological analysis of calcium hydroxylapatite and poly-l-lactic acid biostimulator particles. PMC.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11163027/' },
           { label: 'Safety of the Immediate Reconstitution of Poly-l-Lactic Acid for Facial and Body Treatment — A Multicenter Retrospective Study. PMC.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11626369/' },
           { label: 'U.S. Food & Drug Administration (FDA) — Sculptra (poly-L-lactic acid) ürün bilgileri.' },
+          { label: 'Lanluma vs Sculptra — PLLA biyostimülatörlerin karşılaştırması (ürün bilgileri).', url: 'https://www.medicadepot.com/blog/lanluma-vs-sculptra.html' },
         ],
       },
     ],
@@ -1468,7 +1485,7 @@ export const GUIDES: GuideData[] = [
       'PCL (polikaprolakton / Ellansé) nedir, nasıl hem anında hacim hem uzun süreli kolajen sağlar? Mikroküre-jel yapısı, Ellansé S/M süre farkı, etki mekanizması ve CaHA-PLLA karşılaştırması — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
     heroEyebrow: 'Medikal Estetik Rehberi',
     readingMinutes: 9,
-    updated: '2026-09-01',
+    updated: '2026-09-04',
     relatedServiceSlug: 'sivi-yuz-germe',
     relatedGuides: ['caha-radiesse-nedir', 'plla-sculptra-nedir', 'sivi-yuz-germe-nedir'],
     color: 'from-rose-500 to-red-500',
@@ -1480,6 +1497,20 @@ export const GUIDES: GuideData[] = [
           'PCL, açılımıyla polikaprolakton; en bilinen ticari adıyla Ellansé olarak anılan bir biyostimülatördür. Yapısı iki bileşenlidir: yaklaşık %30 oranında polikaprolakton mikroküreleri, %70 oranında bir taşıyıcı jel (karboksimetilselüloz) içinde asılı durur. PCL de tıpta uzun süredir kullanılan, vücutta zamanla parçalanabilen (biyobozunur) bir polimerdir.',
           'PCL’i diğer biyostimülatörlerden ayıran temel özellik, tek üründe iki etkiyi birleştirmesidir: taşıyıcı jel sayesinde uygulama anında hacim verir; mikroküreler ise zamanla cildin kendi kolajenini uyararak bu etkinin uzun süre korunmasını sağlar. Yani hem “anında” hem “kalıcı-uzun” etkinin bir arada istendiği durumlarda öne çıkar.',
         ],
+      },
+      {
+        type: 'list',
+        heading: 'PCL hangi markalarda bulunur?',
+        items: [
+          { title: 'Ellansé', text: 'PCL’nin en bilinen, en köklü referans ürünüdür; mikroküre-jel yapısında ve farklı süre seçenekleriyle (S/M) sunulur.' },
+          { title: 'Gouri', text: 'Dünyanın ilk tam sıvı PCL ürünüdür; mikroküre yerine sıvı formda, tüm yüze yayılarak kolajen uyarımı hedefler.' },
+        ],
+      },
+      {
+        type: 'callout',
+        tone: 'info',
+        title: 'Marka seçimi kişiye özeldir',
+        text: 'Hangi PCL ürününün kullanılacağı; ürünün ruhsat/CE durumu, formülasyonu (mikroküre mi, sıvı mı) ve hedeflenen bölgeye göre hekim tarafından belirlenir. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
       },
       {
         type: 'science',
@@ -1576,6 +1607,7 @@ export const GUIDES: GuideData[] = [
           { q: 'PCL kaç ay kalır?', a: 'Formülasyona göre yaklaşık 12-24 ay. Süre dolduğunda etki azalır ve yenileme planlanabilir.' },
           { q: 'PCL ile CaHA/PLLA arasında nasıl seçim yapılır?', a: 'Anında + uzun etki bir arada isteniyorsa PCL; kademeli geniş alan kolajeni isteniyorsa PLLA; doğrudan kolajen uyarımı ve cilt kalitesi isteniyorsa CaHA öne çıkabilir. Seçim muayene ile kişiye özel yapılır.' },
           { q: 'PCL geri alınabilir mi?', a: 'HA gibi hyaluronidaz ile çözülemez. Bu yüzden deneyimli bir hekim tarafından doğru teknikle uygulanması önemlidir.' },
+          { q: 'PCL hangi markalarda bulunur?', a: 'En bilinen ve köklü örnek Ellansé’dir (mikroküre-jel, S/M süre seçenekleri). Ayrıca dünyanın ilk tam sıvı PCL ürünü Gouri de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon (mikroküre mi, sıvı mı) ve hedef bölgeye göre hekim tarafından belirlenir.' },
         ],
       },
       {
@@ -1587,6 +1619,7 @@ export const GUIDES: GuideData[] = [
           { label: 'iCare Technique of Dissolving Ellanse M Nodules Using Collagenase: A Case Series and Experimental Study. PMC.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12038313/' },
           { label: 'A morphological analysis of calcium hydroxylapatite and poly-l-lactic acid biostimulator particles. PMC.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11163027/' },
           { label: 'U.S. Food & Drug Administration (FDA) / CE — polikaprolakton bazlı dolgu ürün bilgileri.' },
+          { label: 'Gouri (Dexlevo) — dünyanın ilk sıvı PCL enjektabl ürünü; ürün ve CE bilgileri.', url: 'https://nordicmss.com/brands/gouri' },
         ],
       },
     ],

@@ -1330,8 +1330,8 @@ export const GUIDES: GuideData[] = [
   {
     slug: 'plla-sculptra-nedir',
     category: 'Biyostimülatör',
-    title: 'PLLA (Sculptra) Nedir? — Poli-L-Laktik Asit Kolajen Uyarıcı Rehberi',
-    metaTitle: 'PLLA / Sculptra Nedir? Kolajen Uyarıcı Etkisi, Kaç Seans, Kaç Ay Kalır? | Dr. İzzet Gök',
+    title: 'Poli-L-Laktik Asit Rehberi — PLLA Nedir? Biyostimülatörler (Sculptra, Lanluma, AestheFill vb.)',
+    metaTitle: 'PLLA Nedir? Sculptra, Lanluma, AestheFill — Kolajen Uyarıcı, Kaç Seans, Kaç Ay Kalır? | Dr. İzzet Gök',
     excerpt:
       'PLLA (poli-L-laktik asit / Sculptra) nedir, nasıl kademeli kolajen uyarır ve neden anında hacim vermez? Makrofaj-fibroblast mekanizması, çoklu seans mantığı, etki süresi ve CaHA-PCL farkı — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
     heroEyebrow: 'Medikal Estetik Rehberi',
@@ -1343,7 +1343,7 @@ export const GUIDES: GuideData[] = [
     blocks: [
       {
         type: 'prose',
-        heading: 'PLLA (Sculptra) nedir?',
+        heading: 'PLLA nedir? Biyostimülatörler (Sculptra, Lanluma, AestheFill vb.)',
         paragraphs: [
           'PLLA, açılımıyla poli-L-laktik asit; en bilinen ticari adıyla Sculptra olarak anılan bir biyostimülatördür. Klasik dolgulardan temel farkı şudur: PLLA yüzü doldurmak için değil, cildin kendi kolajenini yeniden üretmesini tetiklemek için tasarlanmıştır. Yani PLLA bir “dolgu” değil, bir “kolajen uyarıcı”dır.',
           'PLLA, tıpta uzun yıllardır kullanılan, vücutta zamanla suya ve karbondioksite parçalanan (biyobozunur) bir maddedir; aynı polimer erimeyen cerrahi dikişlerde de kullanılır. Sıvı olarak enjekte edildiğinde ilk günlerde hafif bir dolgunluk görülebilir, ancak bu taşıyıcı sıvının etkisidir ve kısa sürede kaybolur. Asıl sonuç, haftalar-aylar içinde cildin ürettiği yeni kolajenle ortaya çıkar.',
@@ -1391,7 +1391,7 @@ export const GUIDES: GuideData[] = [
       {
         type: 'comparison',
         heading: 'PLLA mı, HA dolgu mu? — Temel fark',
-        leftTitle: 'PLLA (Sculptra) — kolajen uyarıcı',
+        leftTitle: 'PLLA — kolajen uyarıcı',
         rightTitle: 'HA dolgu — hyaluronik asit',
         left: [
           'Anında hacim vermez; kademeli kolajen üretir',
@@ -1479,8 +1479,8 @@ export const GUIDES: GuideData[] = [
   {
     slug: 'pcl-ellanse-nedir',
     category: 'Biyostimülatör',
-    title: 'PCL (Ellansé) Nedir? — Polikaprolakton Kolajen Uyarıcı Rehberi',
-    metaTitle: 'PCL / Ellansé Nedir? Hem Anında Hacim Hem Kolajen, Kaç Ay Kalır? | Dr. İzzet Gök',
+    title: 'Polikaprolakton Rehberi — PCL Nedir? Biyostimülatörler (Ellansé, Gouri vb.)',
+    metaTitle: 'PCL Nedir? Ellansé, Gouri — Hem Anında Hacim Hem Kolajen, Kaç Ay Kalır? | Dr. İzzet Gök',
     excerpt:
       'PCL (polikaprolakton / Ellansé) nedir, nasıl hem anında hacim hem uzun süreli kolajen sağlar? Mikroküre-jel yapısı, Ellansé S/M süre farkı, etki mekanizması ve CaHA-PLLA karşılaştırması — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
     heroEyebrow: 'Medikal Estetik Rehberi',
@@ -1492,7 +1492,7 @@ export const GUIDES: GuideData[] = [
     blocks: [
       {
         type: 'prose',
-        heading: 'PCL (Ellansé) nedir?',
+        heading: 'PCL nedir? Biyostimülatörler (Ellansé, Gouri vb.)',
         paragraphs: [
           'PCL, açılımıyla polikaprolakton; en bilinen ticari adıyla Ellansé olarak anılan bir biyostimülatördür. Yapısı iki bileşenlidir: yaklaşık %30 oranında polikaprolakton mikroküreleri, %70 oranında bir taşıyıcı jel (karboksimetilselüloz) içinde asılı durur. PCL de tıpta uzun süredir kullanılan, vücutta zamanla parçalanabilen (biyobozunur) bir polimerdir.',
           'PCL’i diğer biyostimülatörlerden ayıran temel özellik, tek üründe iki etkiyi birleştirmesidir: taşıyıcı jel sayesinde uygulama anında hacim verir; mikroküreler ise zamanla cildin kendi kolajenini uyararak bu etkinin uzun süre korunmasını sağlar. Yani hem “anında” hem “kalıcı-uzun” etkinin bir arada istendiği durumlarda öne çıkar.',
@@ -1539,7 +1539,7 @@ export const GUIDES: GuideData[] = [
       {
         type: 'comparison',
         heading: 'PCL, CaHA ve PLLA — hızlı kıyas',
-        leftTitle: 'PCL (Ellansé)',
+        leftTitle: 'PCL',
         rightTitle: 'CaHA / PLLA',
         left: [
           'Hem anında hacim hem uzun süreli kolajen (çift etki)',

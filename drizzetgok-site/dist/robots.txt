@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# AI / LLM bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.drizzetgok.com/sitemap.xml
+Host: https://www.drizzetgok.com

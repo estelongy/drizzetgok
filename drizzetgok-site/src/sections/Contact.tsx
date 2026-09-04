@@ -48,7 +48,7 @@ const Contact = () => {
     {
       icon: <Facebook className="w-6 h-6" />,
       label: 'Facebook',
-      href: 'https://facebook.com/drizzetgok',
+      href: 'https://www.facebook.com/profile.php?id=61577506800890',
       color: 'hover:bg-blue-600 hover:text-white'
     },
     {

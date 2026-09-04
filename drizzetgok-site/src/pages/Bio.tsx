@@ -57,7 +57,7 @@ const Bio = () => {
     {
       icon: <Facebook className="w-6 h-6" />,
       title: 'Facebook',
-      href: 'https://facebook.com/drizzetgok',
+      href: 'https://www.facebook.com/profile.php?id=61577506800890',
       color: 'bg-blue-600 hover:bg-blue-700'
     }
   ];

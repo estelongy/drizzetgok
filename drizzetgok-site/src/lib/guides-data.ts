@@ -1176,8 +1176,8 @@ export const GUIDES: GuideData[] = [
   {
     slug: 'caha-radiesse-nedir',
     category: 'Biyostimülatör',
-    title: 'CaHA (Radiesse) Nedir? — Kalsiyum Hidroksiapatit Biyostimülatör Rehberi',
-    metaTitle: 'CaHA / Radiesse Nedir? Kolajen Uyarıcı Etkisi, Kaç Ay Kalır? | Dr. İzzet Gök',
+    title: 'CaHA (Radiesse, Novuma, HArmonyCa, Calhydra) Nedir? — Kalsiyum Hidroksiapatit Rehberi',
+    metaTitle: 'CaHA Nedir? Radiesse, Novuma, HArmonyCa, Calhydra — Kolajen Uyarıcı Dolgu | Dr. İzzet Gök',
     excerpt:
       'CaHA (kalsiyum hidroksiapatit / Radiesse) nedir, nasıl kolajen uyarır ve HA dolgudan farkı nedir? Mekanotransdüksiyon, hiperdilüe uygulama, etki süresi ve kimlere uygun olduğu — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
     heroEyebrow: 'Medikal Estetik Rehberi',
@@ -1189,7 +1189,7 @@ export const GUIDES: GuideData[] = [
     blocks: [
       {
         type: 'prose',
-        heading: 'CaHA (Radiesse) nedir?',
+        heading: 'CaHA (Radiesse, Novuma, HArmonyCa, Calhydra) nedir?',
         paragraphs: [
           'CaHA, açılımıyla kalsiyum hidroksiapatit; en bilinen örneği Radiesse olan, ancak farklı markalar altında da bulunan bir biyostimülatör ürün grubudur. Yapısı, jel bir taşıyıcı içinde asılı duran mikroskobik kalsiyum hidroksiapatit kürelerinden oluşur. Önemli nokta şudur: kalsiyum hidroksiapatit, vücutta zaten doğal olarak bulunan bir mineraldir (kemik ve dişin ana bileşenlerinden biri); dışarıdan yabancı bir madde değildir.',
           'CaHA’yı klasik hyaluronik asit (HA) dolgudan ayıran temel özellik, yalnızca hacim eklemekle kalmayıp cildin kendi kolajenini yeniden üretmesini uyarmasıdır. Yani CaHA bir “dolgu”dan çok bir “biyostimülatör” — cildi içeriden yeniden yapılandırmaya teşvik eden bir üründür.',

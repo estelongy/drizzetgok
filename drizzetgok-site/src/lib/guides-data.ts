@@ -1176,8 +1176,8 @@ export const GUIDES: GuideData[] = [
   {
     slug: 'caha-radiesse-nedir',
     category: 'Biyostimülatör',
-    title: 'CaHA (Radiesse, Novuma, HArmonyCa, Calhydra) Nedir? — Kalsiyum Hidroksiapatit Rehberi',
-    metaTitle: 'CaHA Nedir? Radiesse, Novuma, HArmonyCa, Calhydra — Kolajen Uyarıcı Dolgu | Dr. İzzet Gök',
+    title: 'CaHA (Radiesse, Novuma, HArmonyCa, Facetem, Calhydra) Nedir? — Kalsiyum Hidroksiapatit Rehberi',
+    metaTitle: 'CaHA Nedir? Radiesse, Novuma, HArmonyCa, Facetem, Calhydra — Kolajen Uyarıcı Dolgu | Dr. İzzet Gök',
     excerpt:
       'CaHA (kalsiyum hidroksiapatit / Radiesse) nedir, nasıl kolajen uyarır ve HA dolgudan farkı nedir? Mekanotransdüksiyon, hiperdilüe uygulama, etki süresi ve kimlere uygun olduğu — Dr. İzzet Gök kontrolünde, bilimsel dayanaklı.',
     heroEyebrow: 'Medikal Estetik Rehberi',
@@ -1189,7 +1189,7 @@ export const GUIDES: GuideData[] = [
     blocks: [
       {
         type: 'prose',
-        heading: 'CaHA (Radiesse, Novuma, HArmonyCa, Calhydra) nedir?',
+        heading: 'CaHA (Radiesse, Novuma, HArmonyCa, Facetem, Calhydra) nedir?',
         paragraphs: [
           'CaHA, açılımıyla kalsiyum hidroksiapatit; en bilinen örneği Radiesse olan, ancak farklı markalar altında da bulunan bir biyostimülatör ürün grubudur. Yapısı, jel bir taşıyıcı içinde asılı duran mikroskobik kalsiyum hidroksiapatit kürelerinden oluşur. Önemli nokta şudur: kalsiyum hidroksiapatit, vücutta zaten doğal olarak bulunan bir mineraldir (kemik ve dişin ana bileşenlerinden biri); dışarıdan yabancı bir madde değildir.',
           'CaHA’yı klasik hyaluronik asit (HA) dolgudan ayıran temel özellik, yalnızca hacim eklemekle kalmayıp cildin kendi kolajenini yeniden üretmesini uyarmasıdır. Yani CaHA bir “dolgu”dan çok bir “biyostimülatör” — cildi içeriden yeniden yapılandırmaya teşvik eden bir üründür.',
@@ -1202,6 +1202,7 @@ export const GUIDES: GuideData[] = [
           { title: 'Radiesse', text: 'Saf CaHA. Türkiye’de ve dünyada en bilinen, literatürde en çok çalışılmış referans üründür.' },
           { title: 'Novuma', text: 'Saf CaHA içeren biyostimülatör; son yıllarda yaygınlaşan bir üründür.' },
           { title: 'HArmonyCa', text: 'CaHA’yı çapraz bağlı hyaluronik asitle birleştiren hibrit ürün — hem anında hacim hem kolajen uyarımı.' },
+          { title: 'Facetem', text: 'CaHA bazlı biyostimülatör ürünlerden biridir.' },
           { title: 'Calhydra', text: 'CaHA + hyaluronik asit içeren yerli üretim (Türkiye) hibrit ürün.' },
         ],
       },
@@ -1305,7 +1306,7 @@ export const GUIDES: GuideData[] = [
           { q: 'Hiperdilüe CaHA nedir?', a: 'Ürünün yüksek oranda seyreltilerek (ör. 1:2) geniş bir alana yayılacak biçimde uygulanmasıdır. Amaç hacim değil, yaygın kolajen uyarımı ve cilt kalitesidir.' },
           { q: 'CaHA acır mı, iyileşmesi uzun mu?', a: 'Krem anestezi ile rahatsızlık genellikle azdır. Hafif şişlik/kızarıklık birkaç günde geriler; asıl etki için haftalarca sabır gerekir.' },
           { q: 'CaHA sıvı yüz germede nerede kullanılır?', a: 'Hiperdilüe formu geniş alanda cilt kalitesi ve toparlanma için; standart formu çene hattı gibi yapısal destek gereken noktalarda tercih edilebilir. Seçim kişiye özeldir.' },
-          { q: 'CaHA hangi markalarda bulunur?', a: 'Türkiye’de en bilinen örnek Radiesse’dir; Novuma da saf CaHA içeren bir üründür. Ayrıca CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa ve yerli üretim Calhydra gibi ürünler de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon (saf CaHA mı, hibrit mi) ve hedef bölgeye göre hekim tarafından belirlenir.' },
+          { q: 'CaHA hangi markalarda bulunur?', a: 'Türkiye’de en bilinen örnek Radiesse’dir; Novuma ve Facetem de saf CaHA içeren ürünlerdir. Ayrıca CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa ve yerli üretim Calhydra gibi ürünler de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon (saf CaHA mı, hibrit mi) ve hedef bölgeye göre hekim tarafından belirlenir.' },
         ],
       },
       {

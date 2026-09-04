@@ -1191,9 +1191,15 @@ export const GUIDES: GuideData[] = [
         type: 'prose',
         heading: 'CaHA (Radiesse) nedir?',
         paragraphs: [
-          'CaHA, açılımıyla kalsiyum hidroksiapatit; en bilinen ticari adıyla Radiesse olarak anılan bir biyostimülatör üründür. Yapısı, jel bir taşıyıcı içinde asılı duran mikroskobik kalsiyum hidroksiapatit kürelerinden oluşur. Önemli nokta şudur: kalsiyum hidroksiapatit, vücutta zaten doğal olarak bulunan bir mineraldir (kemik ve dişin ana bileşenlerinden biri); dışarıdan yabancı bir madde değildir.',
+          'CaHA, açılımıyla kalsiyum hidroksiapatit; en bilinen örneği Radiesse olan, ancak farklı markalar altında da bulunan bir biyostimülatör ürün grubudur. Yapısı, jel bir taşıyıcı içinde asılı duran mikroskobik kalsiyum hidroksiapatit kürelerinden oluşur. Önemli nokta şudur: kalsiyum hidroksiapatit, vücutta zaten doğal olarak bulunan bir mineraldir (kemik ve dişin ana bileşenlerinden biri); dışarıdan yabancı bir madde değildir.',
           'CaHA’yı klasik hyaluronik asit (HA) dolgudan ayıran temel özellik, yalnızca hacim eklemekle kalmayıp cildin kendi kolajenini yeniden üretmesini uyarmasıdır. Yani CaHA bir “dolgu”dan çok bir “biyostimülatör” — cildi içeriden yeniden yapılandırmaya teşvik eden bir üründür.',
         ],
+      },
+      {
+        type: 'callout',
+        tone: 'info',
+        title: 'CaHA hangi markalar altında bulunur?',
+        text: 'Kalsiyum hidroksiapatit (CaHA) tek bir markaya ait değildir; farklı üreticilerin ürünlerinde bulunur. En köklü ve literatürde en çok çalışılmış örnek Radiesse’dir (Merz). Bunun yanında CaHA’yı çapraz bağlı hyaluronik asitle birleştiren hibrit HArmonyCa (Allergan) ile Facetem (CGBio) ve Novuma gibi başka CaHA bazlı ürünler de mevcuttur. Marka seçimi; ürünün ruhsat/CE durumu, formülasyonu ve hedeflenen bölgeye göre hekim tarafından kişiye özel yapılır. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
       },
       {
         type: 'science',
@@ -1289,6 +1295,7 @@ export const GUIDES: GuideData[] = [
           { q: 'Hiperdilüe CaHA nedir?', a: 'Ürünün yüksek oranda seyreltilerek (ör. 1:2) geniş bir alana yayılacak biçimde uygulanmasıdır. Amaç hacim değil, yaygın kolajen uyarımı ve cilt kalitesidir.' },
           { q: 'CaHA acır mı, iyileşmesi uzun mu?', a: 'Krem anestezi ile rahatsızlık genellikle azdır. Hafif şişlik/kızarıklık birkaç günde geriler; asıl etki için haftalarca sabır gerekir.' },
           { q: 'CaHA sıvı yüz germede nerede kullanılır?', a: 'Hiperdilüe formu geniş alanda cilt kalitesi ve toparlanma için; standart formu çene hattı gibi yapısal destek gereken noktalarda tercih edilebilir. Seçim kişiye özeldir.' },
+          { q: 'CaHA hangi markalarda bulunur?', a: 'En bilinen ve literatürde en çok çalışılmış örnek Radiesse’dir (Merz). Ayrıca CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa (Allergan) ile Facetem (CGBio) ve Novuma gibi başka CaHA bazlı ürünler de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon ve hedef bölgeye göre hekim tarafından belirlenir.' },
         ],
       },
       {
@@ -1301,6 +1308,9 @@ export const GUIDES: GuideData[] = [
           { label: 'Consensus Recommendations for the Use of Hyperdiluted Calcium Hydroxyapatite (Radiesse) as a Face and Body Biostimulatory Agent. PubMed, 2019.', url: 'https://pubmed.ncbi.nlm.nih.gov/31044123/' },
           { label: 'Sculpting the Midface and Lower Face: A Novel Biostimulatory Technique Using Hyperdilute Calcium Hydroxylapatite. PMC.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12686807/' },
           { label: 'U.S. Food & Drug Administration (FDA) — Radiesse (calcium hydroxylapatite) ürün bilgileri.' },
+          { label: 'HArmonyCa: a first-in-class, hybrid, dual-functioning hyaluronic acid/calcium hydroxyapatite dermal filler. Journal of Aesthetic Nursing, 2023.', url: 'https://www.magonlinelibrary.com/doi/full/10.12968/joan.2023.12.Sup8.S6' },
+          { label: 'Three Calcium Hydroxylapatite-Based Dermal Fillers: Comparison of Particle Size and Shape Using Electron Microscopy. J Cosmetic Dermatology / PMC, 2025.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11877991/' },
+          { label: 'NOVUMA® (Vivacy) — CaHA bazlı biyostimülatör enjektabl ürün bilgileri (üretici).', url: 'https://vivacy.com/en/novuma-caha-injectable-biostimulator-skin-regeneration' },
         ],
       },
     ],

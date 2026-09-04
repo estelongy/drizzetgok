@@ -1199,7 +1199,7 @@ export const GUIDES: GuideData[] = [
         type: 'callout',
         tone: 'info',
         title: 'CaHA hangi markalar altında bulunur?',
-        text: 'Kalsiyum hidroksiapatit (CaHA) tek bir markaya ait değildir; farklı üreticilerin ürünlerinde bulunur. En köklü ve literatürde en çok çalışılmış örnek Radiesse’dir (Merz). Bunun yanında CaHA’yı çapraz bağlı hyaluronik asitle birleştiren hibrit HArmonyCa (Allergan) ile Facetem (CGBio) ve Novuma gibi başka CaHA bazlı ürünler de mevcuttur. Marka seçimi; ürünün ruhsat/CE durumu, formülasyonu ve hedeflenen bölgeye göre hekim tarafından kişiye özel yapılır. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
+        text: 'Kalsiyum hidroksiapatit (CaHA) tek bir markaya ait değildir; farklı ürünlerde bulunur. En köklü ve literatürde en çok çalışılmış örnek Radiesse’dir. Bunun yanında saf CaHA içeren Crystalys ve Rennova Diamond; CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa ile yerli üretim Calhydra gibi ürünler de mevcuttur. Marka seçimi; ürünün ruhsat/CE durumu, formülasyonu (saf CaHA mı, CaHA + HA hibrit mi) ve hedeflenen bölgeye göre hekim tarafından kişiye özel yapılır. Bu içerik bilgilendirme amaçlıdır, marka önerisi değildir.',
       },
       {
         type: 'science',
@@ -1295,7 +1295,7 @@ export const GUIDES: GuideData[] = [
           { q: 'Hiperdilüe CaHA nedir?', a: 'Ürünün yüksek oranda seyreltilerek (ör. 1:2) geniş bir alana yayılacak biçimde uygulanmasıdır. Amaç hacim değil, yaygın kolajen uyarımı ve cilt kalitesidir.' },
           { q: 'CaHA acır mı, iyileşmesi uzun mu?', a: 'Krem anestezi ile rahatsızlık genellikle azdır. Hafif şişlik/kızarıklık birkaç günde geriler; asıl etki için haftalarca sabır gerekir.' },
           { q: 'CaHA sıvı yüz germede nerede kullanılır?', a: 'Hiperdilüe formu geniş alanda cilt kalitesi ve toparlanma için; standart formu çene hattı gibi yapısal destek gereken noktalarda tercih edilebilir. Seçim kişiye özeldir.' },
-          { q: 'CaHA hangi markalarda bulunur?', a: 'En bilinen ve literatürde en çok çalışılmış örnek Radiesse’dir (Merz). Ayrıca CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa (Allergan) ile Facetem (CGBio) ve Novuma gibi başka CaHA bazlı ürünler de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon ve hedef bölgeye göre hekim tarafından belirlenir.' },
+          { q: 'CaHA hangi markalarda bulunur?', a: 'En bilinen ve literatürde en çok çalışılmış örnek Radiesse’dir. Ayrıca saf CaHA içeren Crystalys ve Rennova Diamond; CaHA’yı hyaluronik asitle birleştiren hibrit HArmonyCa ve yerli üretim Calhydra gibi ürünler de vardır. Hangi ürünün kullanılacağı; ruhsat/CE durumu, formülasyon (saf CaHA mı, hibrit mi) ve hedef bölgeye göre hekim tarafından belirlenir.' },
         ],
       },
       {
@@ -1310,7 +1310,9 @@ export const GUIDES: GuideData[] = [
           { label: 'U.S. Food & Drug Administration (FDA) — Radiesse (calcium hydroxylapatite) ürün bilgileri.' },
           { label: 'HArmonyCa: a first-in-class, hybrid, dual-functioning hyaluronic acid/calcium hydroxyapatite dermal filler. Journal of Aesthetic Nursing, 2023.', url: 'https://www.magonlinelibrary.com/doi/full/10.12968/joan.2023.12.Sup8.S6' },
           { label: 'Three Calcium Hydroxylapatite-Based Dermal Fillers: Comparison of Particle Size and Shape Using Electron Microscopy. J Cosmetic Dermatology / PMC, 2025.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11877991/' },
-          { label: 'NOVUMA® (Vivacy) — CaHA bazlı biyostimülatör enjektabl ürün bilgileri (üretici).', url: 'https://vivacy.com/en/novuma-caha-injectable-biostimulator-skin-regeneration' },
+          { label: 'CaHA-Based Fillers in Facial Rejuvenation: Comparative Study of Radiesse vs. Rennova Diamond Intense. PMC.', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12193805/' },
+          { label: 'Post Marketing Study of Safety and Efficacy of Crystalys, a CaHA-Based Filler for Facial Soft Tissue Augmentation. Cosmetic Medicine.', url: 'https://www.cosmeticmedicine-online.com/reviews/post-marketing-study-safety-efficacy-crystalys-calcium-hydroxyapatite-based-filler-facial-soft-tissue-augmentation/' },
+          { label: 'Calhydra (CaHA + HA kombine dolgu) — Burgeon Biyoteknoloji (Ankara) ürün bilgileri.', url: 'https://burgeon.me/tr/calhydra-tr/' },
         ],
       },
     ],

@@ -1197,7 +1197,7 @@ export const GUIDES: GuideData[] = [
       },
       {
         type: 'list',
-        heading: 'CaHA hangi markalarda bulunur? (Türkiye’de bilinirlik sırasıyla)',
+        heading: 'CaHA hangi markalarda bulunur?',
         items: [
           { title: 'Radiesse', text: 'Saf CaHA. Türkiye’de ve dünyada en bilinen, literatürde en çok çalışılmış referans üründür.' },
           { title: 'Novuma', text: 'Saf CaHA içeren biyostimülatör; son yıllarda yaygınlaşan bir üründür.' },

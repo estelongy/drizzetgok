@@ -263,7 +263,10 @@ const Service = () => {
             İlgili Hizmetler
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {SERVICES.filter(s => s.slug !== service.slug).slice(0, 3).map((s) => {
+            {(service.relatedSlugs
+              ? service.relatedSlugs.map(sl => SERVICES.find(x => x.slug === sl)).filter((x): x is typeof SERVICES[number] => Boolean(x))
+              : SERVICES.filter(s => s.slug !== service.slug).slice(0, 3)
+            ).map((s) => {
               const SIcon = ICONS[s.iconName];
               return (
                 <Link

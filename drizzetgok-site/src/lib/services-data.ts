@@ -16,6 +16,7 @@ export type ServiceData = {
   duration: string;
   resultDuration: string;
   faq: { q: string; a: string }[];
+  relatedSlugs?: string[]; // "İlgili Hizmetler" için özel seçim; tanımlı değilse ilk 3 hizmet gösterilir
 };
 
 export const SERVICES: ServiceData[] = [
@@ -64,7 +65,8 @@ export const SERVICES: ServiceData[] = [
       { q: 'Dudak dolgusu ağrılı mı?', a: 'Krem anestezi sonrası neredeyse ağrısızdır. Çoğu hasta sadece hafif basınç hisseder.' },
       { q: 'Dolgu çözülebilir mi?', a: 'Evet, sonuçtan memnun kalmazsanız hyaluronidaz enzimi ile dolgu eritilebilir.' },
       { q: 'Şişkin görünür müyüm?', a: 'Doz kontrolü ile doğal sonuç hedeflenir. İlk 48 saat hafif şişme normaldir, sonra son şeklini alır.' }
-    ]
+    ],
+    relatedSlugs: ['dolgu', 'sivi-yuz-germe', 'mezoterapi']
   },
   {
     slug: 'dolgu',
@@ -98,7 +100,7 @@ export const SERVICES: ServiceData[] = [
     color: 'from-violet-500 to-purple-500',
     image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=80',
     imageAlt: 'Sıvı yüz germe — liquid facelift cerrahisiz yüz gençleştirme',
-    shortDescription: 'Cerrahi gerektirmeyen, dolgu ve botoks kombinasyonu ile yüz germe etkisi yaratan sıvı yüz germe (liquid facelift).',
+    shortDescription: 'Cerrahi gerektirmeyen, dolgu ve kas gevşetici uygulamaların kombinasyonu ile yüz germe etkisi yaratan sıvı yüz germe (liquid facelift).',
     longDescription: 'Sıvı yüz germe (liquid facelift), yüzdeki belirli noktalara uygulanan dolgu ve botoks kombinasyonu ile cerrahi olmadan yüz hatlarını yukarı çeken, hacim kazandıran ve genç bir görünüm sağlayan ileri düzey medikal estetik protokolüdür.',
     intro: '8 nokta tekniği ve yüz haritalaması ile cerrahisiz yüz germe — bıçaksız, hızlı, etkili.',
     features: ['8 nokta yüz germe tekniği', 'Elmacık-yanak yukarı çekme', 'Çene hattı tanımlama', 'Boyun ve gerdan iyileştirme', 'Mimik kırışıklıkları yumuşatma', 'Genel yüz dengesi'],

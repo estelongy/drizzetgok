@@ -12,6 +12,13 @@ import BeylikduzuBotoks from './pages/BeylikduzuBotoks';
 import BeylikduzuSiviYuzGerme from './pages/BeylikduzuSiviYuzGerme';
 import NotFound from './pages/NotFound';
 
+// gtag global (Google Ads gtag.js index.html'de yüklenir).
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 // Anasayfa bölüm route'ları kendi scroll'unu (scrollIntoView) Home içinde yönetir.
 const SECTION_PATHS = new Set(['/anasayfa', '/hakkimda', '/hizmetler', '/sss', '/iletisim']);
 
@@ -25,10 +32,30 @@ function ScrollToTop() {
   return null;
 }
 
+// Google Ads dönüşüm izleme: herhangi bir WhatsApp/Randevu (wa.me) linkine tıklama
+// dönüşüm olarak gönderilir. Tek global dinleyici tüm butonları kapsar (11 dosyaya
+// dokunmadan); capture aşamasında yakalanır, böylece yeni sekme açılmadan önce çalışır.
+function ConversionTracker() {
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      const link = target?.closest?.('a[href*="wa.me/"]');
+      if (!link) return;
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', { send_to: 'AW-18433594915/AOtYCJGmzvAcEKOs6dVE' });
+      }
+    };
+    document.addEventListener('click', onClick, true);
+    return () => document.removeEventListener('click', onClick, true);
+  }, []);
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ConversionTracker />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/anasayfa" element={<Home section="anasayfa" />} />

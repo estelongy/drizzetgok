@@ -33,6 +33,14 @@ const Service = () => {
       ? `${service.shortDescription} Beylikdüzü, Bahçeşehir ve Avcılar bölgesinde Dr. İzzet Gök ile.`
       : undefined,
     canonical: service ? `https://www.drizzetgok.com/hizmetlerimiz/${service.slug}` : undefined,
+    // Sayfaya özel keywords: index.html'deki genel (botoks içeren) keywords'ü ezer.
+    // Google Ads reklam politikası sayfa HTML'indeki "kısıtlı ilaç terimleri"ni tarar;
+    // hizmet sayfası kendi terimlerini verir (botoks hizmeti hariç, o kendi terimini korur).
+    keywords: service
+      ? [service.title, ...service.synonyms, `${service.title.toLowerCase()} beylikdüzü`,
+         'medikal estetik beylikdüzü', 'medikal estetik bahçeşehir', 'dr izzet gök',
+         'estetik doktoru beylikdüzü'].join(', ')
+      : undefined,
   });
 
   useEffect(() => {

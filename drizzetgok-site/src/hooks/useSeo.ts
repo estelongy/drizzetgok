@@ -6,6 +6,7 @@ type SeoOptions = {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
+  keywords?: string; // verilirse sayfaya özel meta keywords ile index.html'deki genel değeri ezer
 };
 
 function setMeta(selector: string, attr: 'name' | 'property', key: string, value: string) {
@@ -28,10 +29,26 @@ function setLink(rel: string, href: string) {
   el.setAttribute('href', href);
 }
 
-export function useSeo({ title, description, canonical, ogImage, noindex }: SeoOptions) {
+export function useSeo({ title, description, canonical, ogImage, noindex, keywords }: SeoOptions) {
   useEffect(() => {
     const prevTitle = document.title;
     document.title = title;
+
+    // keywords: sayfaya özel arama terimleri (index.html'deki genel keywords'ü ezer).
+    // Örn. reklam sayfalarında kısıtlı terimleri (botoks vb.) içermeyen liste vermek için.
+    // Sayfadan çıkınca önceki değere geri döner.
+    let prevKeywords: string | null = null;
+    let keywordsEl: HTMLMetaElement | null = null;
+    if (keywords) {
+      keywordsEl = document.head.querySelector<HTMLMetaElement>('meta[name="keywords"]');
+      if (!keywordsEl) {
+        keywordsEl = document.createElement('meta');
+        keywordsEl.setAttribute('name', 'keywords');
+        document.head.appendChild(keywordsEl);
+      }
+      prevKeywords = keywordsEl.getAttribute('content');
+      keywordsEl.setAttribute('content', keywords);
+    }
 
     // noindex: arama motorlarından gizle (özel/şifreli sayfalar için).
     // Sayfadan çıkınca temizlenir (cleanup).
@@ -69,6 +86,8 @@ export function useSeo({ title, description, canonical, ogImage, noindex }: SeoO
       document.title = prevTitle;
       // noindex meta'yı bu sayfadan çıkınca kaldır (diğer sayfalar indexlenebilsin).
       if (robotsEl) robotsEl.remove();
+      // keywords'ü önceki (genel) değere geri döndür.
+      if (keywordsEl && prevKeywords !== null) keywordsEl.setAttribute('content', prevKeywords);
     };
-  }, [title, description, canonical, ogImage, noindex]);
+  }, [title, description, canonical, ogImage, noindex, keywords]);
 }

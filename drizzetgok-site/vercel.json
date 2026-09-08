@@ -21,6 +21,10 @@
       "continue": true
     },
     {
+      "src": "/dudak-dolgusu-randevu/?",
+      "dest": "/dudak-dolgusu-randevu.html"
+    },
+    {
       "src": "/pages/bio/?",
       "dest": "/index.html"
     },

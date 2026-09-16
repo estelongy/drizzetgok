@@ -26,15 +26,15 @@
     },
     {
       "src": "/pages/bio/?",
-      "dest": "/index.html"
+      "dest": "/pages/bio.html"
+    },
+    {
+      "handle": "filesystem"
     },
     {
       "src": "/pages/(.*)",
       "status": 410,
       "dest": "/410.html"
-    },
-    {
-      "handle": "filesystem"
     },
     {
       "src": "/(.*)",

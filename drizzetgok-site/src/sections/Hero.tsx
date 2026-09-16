@@ -76,15 +76,13 @@ const Hero = () => {
                 <div className="absolute inset-4 bg-gradient-to-br from-emerald-300 to-teal-500 rounded-full opacity-20" />
                 <div className="absolute inset-8 bg-gradient-to-br from-emerald-200 to-teal-400 rounded-full opacity-30" />
 
-                {/* Center Content */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-2xl">
-                      <span className="text-white text-5xl font-bold">İG</span>
-                    </div>
-                    <p className="text-slate-600 font-medium">Dr. İzzet Gök</p>
-                    <p className="text-emerald-600 text-base">Medikal Estetik</p>
-                  </div>
+                {/* Center Content — fotoğraf dairenin ~%82'sini kaplar, isim/ünvan yok */}
+                <div className="absolute inset-[9%] rounded-full p-3 bg-gradient-to-br from-emerald-200 to-teal-300 shadow-2xl">
+                  <img
+                    src="/pages/profil-foto.png"
+                    alt="Dr. İzzet Gök"
+                    className="w-full h-full rounded-full object-cover border-[6px] border-white"
+                  />
                 </div>
 
                 {/* Floating Badges */}

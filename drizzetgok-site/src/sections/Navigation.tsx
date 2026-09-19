@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle, Sparkles } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,8 +55,15 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <Link
+              to="/rehber/dogal-estetik-nedir"
+              className="flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 px-5 py-2.5 rounded-full font-medium transition-all"
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>Doğal Estetik</span>
+            </Link>
             <a
               href="https://wa.me/905524228485?text=Merhaba%2C%20randevu%20almak%20istiyorum."
               target="_blank"
@@ -96,11 +103,19 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                to="/rehber/dogal-estetik-nedir"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-3 rounded-xl font-medium mt-2"
+              >
+                <Sparkles className="w-4 h-4" />
+                <span>Doğal Estetik</span>
+              </Link>
               <a
                 href="https://wa.me/905524228485?text=Merhaba%2C%20randevu%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-emerald-500 text-white px-4 py-3 rounded-xl font-medium mt-2"
+                className="flex items-center justify-center gap-2 bg-emerald-500 text-white px-4 py-3 rounded-xl font-medium mt-1"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Randevu Al</span>

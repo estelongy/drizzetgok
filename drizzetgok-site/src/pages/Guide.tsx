@@ -65,7 +65,7 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
           {block.paragraphs.map((p, i) => (
             <p
               key={i}
-              className={`text-[1.1875rem] leading-[1.8] text-slate-700 mb-5 ${
+              className={`text-[1.1875rem] leading-[1.8] text-slate-700 mb-5 max-w-[54ch] [text-wrap:pretty] ${
                 dropCap && i === 0
                   ? 'first-letter:float-left first-letter:font-serif first-letter:text-[3.5rem] first-letter:font-bold first-letter:leading-[0.78] first-letter:mr-3 first-letter:mt-1 first-letter:text-emerald-600'
                   : ''
@@ -385,7 +385,7 @@ const Guide = () => {
 
       {/* Body */}
       <article className="py-16 px-4 text-left">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* İçindekiler */}
           {toc.length > 2 && (
             <nav aria-label="İçindekiler" className="mb-12 bg-slate-50 border border-slate-100 rounded-2xl p-6">

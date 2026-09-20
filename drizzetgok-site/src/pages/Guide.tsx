@@ -12,7 +12,7 @@ import { useSeo } from '../hooks/useSeo';
 import Navigation from '../sections/Navigation';
 import BotoxMechanism from '../components/diagrams/BotoxMechanism';
 import BotoxFaceMap from '../components/diagrams/BotoxFaceMap';
-import { DeepDiveList, type DeepDiveSection } from '../components/DeepDive';
+import { DeepDiveList, DeepDiveModal, type DeepDiveSection } from '../components/DeepDive';
 
 // "Doğal Estetik Nedir?" pillar'ına özel derinleşme bölümleri.
 // Şimdilik tek başlık hazır; diğerleri içerik yazıldıkça eklenecek.
@@ -20,6 +20,7 @@ const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
   {
     slug: 'dogal-estetikte-guzellik-algisi',
     title: 'Güzellik Algısı Nasıl Oluşur?',
+    matchHeading: '1. Güzellik nasıl algılanır?',
     ready: true,
     body: (
       <>
@@ -87,12 +88,19 @@ function ReadingProgress() {
   );
 }
 
-function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
+function Block({ block, dropCap, onDeepDive }: { block: GuideBlock; dropCap?: boolean; onDeepDive?: () => void }) {
   switch (block.type) {
-    case 'prose':
-      return (
-        <div className="mb-12">
-          {block.heading && <h2 id={slugify(block.heading)} className={`${H2} mb-5`}>{block.heading}</h2>}
+    case 'prose': {
+      const inner = (
+        <>
+          {block.heading && (
+            <h2
+              id={slugify(block.heading)}
+              className={`${H2} mb-5 ${onDeepDive ? 'group-hover:text-emerald-700 transition-colors' : ''}`}
+            >
+              {block.heading}
+            </h2>
+          )}
           {block.paragraphs.map((p, i) => (
             <p
               key={i}
@@ -105,8 +113,24 @@ function Block({ block, dropCap }: { block: GuideBlock; dropCap?: boolean }) {
               {p}
             </p>
           ))}
-        </div>
+        </>
       );
+      // Bir uyduya bağlıysa: tüm özet bloğu tıklanabilir kart (ana sayfa foto çerçevesi tarzı)
+      if (onDeepDive) {
+        return (
+          <button
+            onClick={onDeepDive}
+            className="group block text-left w-full mb-12 rounded-3xl border-2 border-slate-200 bg-white p-6 sm:p-8 transition-all hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1 cursor-pointer"
+          >
+            {inner}
+            <span className="inline-flex items-center gap-1.5 text-emerald-600 font-medium text-base">
+              Detaylı oku <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </span>
+          </button>
+        );
+      }
+      return <div className="mb-12">{inner}</div>;
+    }
 
     case 'image':
       return (
@@ -294,6 +318,14 @@ const Guide = () => {
   const relatedService = guide?.relatedServiceSlug ? getServiceBySlug(guide.relatedServiceSlug) : undefined;
   const RelatedIcon = relatedService ? SERVICE_ICONS[relatedService.iconName] : null;
 
+  // Derinleşme (deep-dive) modal durumu — yalnızca doğal estetik pillar'ında kullanılır
+  const [deepDive, setDeepDive] = useState<DeepDiveSection | null>(null);
+  const isDogalEstetik = guide?.slug === 'dogal-estetik-nedir';
+  const deepDiveByHeading = (heading?: string) =>
+    isDogalEstetik && heading
+      ? DOGAL_ESTETIK_DEEPDIVE.find((d) => d.ready && d.matchHeading === heading)
+      : undefined;
+
   useSeo({
     title: guide ? guide.metaTitle : 'Rehber bulunamadı',
     description: guide?.excerpt,
@@ -435,13 +467,21 @@ const Guide = () => {
           )}
 
           {/* Detaylı bölümler — "BU REHBERDE" kutusunun hemen altında, aynı formatta */}
-          {guide.slug === 'dogal-estetik-nedir' && (
-            <DeepDiveList sections={DOGAL_ESTETIK_DEEPDIVE} />
+          {isDogalEstetik && (
+            <DeepDiveList sections={DOGAL_ESTETIK_DEEPDIVE} onOpen={setDeepDive} />
           )}
 
-          {guide.blocks.map((block, i) => (
-            <Block key={i} block={block} dropCap={i === firstProseIndex} />
-          ))}
+          {guide.blocks.map((block, i) => {
+            const dd = block.type === 'prose' ? deepDiveByHeading(block.heading) : undefined;
+            return (
+              <Block
+                key={i}
+                block={block}
+                dropCap={i === firstProseIndex}
+                onDeepDive={dd ? () => setDeepDive(dd) : undefined}
+              />
+            );
+          })}
 
           {/* CTA */}
           <div className={`bg-gradient-to-r ${guide.color} rounded-3xl p-8 md:p-12 text-center mt-4`}>
@@ -509,6 +549,9 @@ const Guide = () => {
           )}
         </div>
       </article>
+
+      {/* Derinleşme modalı — yalnızca doğal estetik pillar'ında */}
+      {isDogalEstetik && <DeepDiveModal open={deepDive} onClose={() => setDeepDive(null)} />}
     </main>
   );
 };

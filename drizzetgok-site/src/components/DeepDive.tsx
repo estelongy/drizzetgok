@@ -1,13 +1,16 @@
 import { useEffect } from 'react';
-import { X, Layers, ChevronRight } from 'lucide-react';
+import { X, Layers, MousePointerClick, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // Bir "uydu" (derinleşme konusu) tanımı
 export type DeepDiveSection = {
-  slug: string;              // /rehber/<slug> — ileride ayrı sayfa/modal URL'i
+  slug: string;              // /rehber/<slug> — ayrı sayfa + modal URL'i
   title: string;             // SEO-dostu başlık (aranan sorguya göre)
   ready: boolean;            // içeriği hazır mı (değilse "yakında")
-  body?: React.ReactNode;    // modal içinde gösterilecek içerik (hazırsa)
+  body?: React.ReactNode;    // modal/sayfa içinde gösterilecek içerik (hazırsa)
   matchHeading?: string;     // pillar'daki hangi özet başlığına bağlı (o blok da tıklanabilir olur)
+  metaTitle?: string;        // ayrı sayfa <title>
+  excerpt?: string;          // ayrı sayfa meta description
   subItems?: { title: string }[];
 };
 
@@ -25,18 +28,28 @@ export function DeepDiveList({
       <p className="text-base font-bold uppercase tracking-wide text-emerald-600 mb-3 flex items-center gap-2">
         <Layers className="w-5 h-5" /> Doğal Estetik Rehberi (Detaylı)
       </p>
-      <ol className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+      <ol className="space-y-3">
         {sections.map((s, i) => (
-          <li key={s.slug} className="flex gap-2 text-base">
+          <li key={s.slug} className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <span className="text-emerald-400 font-semibold">{String(i + 1).padStart(2, '0')}</span>
             {s.ready ? (
-              <button
-                onClick={() => onOpen(s)}
-                className="group text-left text-slate-600 hover:text-emerald-700 flex items-center gap-1"
-              >
-                <span className="group-hover:underline">{s.title}</span>
-                <ChevronRight className="w-4 h-4 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </button>
+              <>
+                <span className="text-slate-700 font-medium mr-1">{s.title}</span>
+                <button
+                  onClick={() => onOpen(s)}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-3 py-1.5 rounded-full transition-colors"
+                >
+                  <MousePointerClick className="w-4 h-4" /> Tıkla Aç
+                </button>
+                <Link
+                  to={`/rehber/${s.slug}`}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 hover:border-emerald-300 px-3 py-1.5 rounded-full transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4" /> Farklı Sayfada Aç
+                </Link>
+              </>
             ) : (
               <span className="text-slate-400">{s.title} <span className="text-xs">(yakında)</span></span>
             )}

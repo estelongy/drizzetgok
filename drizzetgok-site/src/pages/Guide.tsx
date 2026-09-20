@@ -13,37 +13,7 @@ import Navigation from '../sections/Navigation';
 import BotoxMechanism from '../components/diagrams/BotoxMechanism';
 import BotoxFaceMap from '../components/diagrams/BotoxFaceMap';
 import { DeepDiveList, DeepDiveModal, type DeepDiveSection } from '../components/DeepDive';
-
-// "Doğal Estetik Nedir?" pillar'ına özel derinleşme bölümleri.
-// Şimdilik tek başlık hazır; diğerleri içerik yazıldıkça eklenecek.
-const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
-  {
-    slug: 'dogal-estetikte-guzellik-algisi',
-    title: 'Güzellik Algısı Nasıl Oluşur?',
-    matchHeading: '1. Güzellik nasıl algılanır?',
-    ready: true,
-    body: (
-      <>
-        <p>
-          Bir yüzü "güzel" bulmamız yalnızca o yüzün ölçüleriyle açıklanamaz. Güzellik,
-          yüzün fiziksel özellikleriyle başlayan ve beynin bu özellikleri birlikte
-          işlemesiyle anlam kazanan çok boyutlu bir algı sürecidir.
-        </p>
-        <p>
-          Yüzün oranları, simetrisi, ortalamalığı, cinsiyete özgü özellikleri, yaşla
-          ilişkili işaretleri ve cilt gibi yüzey özellikleri değerlendirmede birlikte
-          rol oynar. Araştırmalar, bu özelliklerin hiçbirinin tek başına evrensel bir
-          "ideal yüz" formülü oluşturmadığını; güzellik algısının hem insanlar arasında
-          paylaşılan bazı örüntülerden hem de kişisel ve kültürel farklılıklardan
-          etkilendiğini gösteriyor.
-        </p>
-        <p className="text-slate-500 italic">
-          Bu bölümün bilimsel dayanaklı tam içeriği yakında yayımlanacak.
-        </p>
-      </>
-    ),
-  },
-];
+import { DOGAL_ESTETIK_DEEPDIVE, getDeepDiveBySlug } from '../lib/deepdive-data';
 
 const DIAGRAMS = { BotoxMechanism, BotoxFaceMap };
 const SERVICE_ICONS = { Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2 };
@@ -314,22 +284,61 @@ function Block({ block, dropCap, onDeepDive }: { block: GuideBlock; dropCap?: bo
 
 const Guide = () => {
   const { slug } = useParams<{ slug: string }>();
-  const guide = slug ? getGuideBySlug(slug) : undefined;
+
+  // Slug bir "derinleşme uydusu" mu?
+  const deepDiveFromUrl = slug ? getDeepDiveBySlug(slug) : undefined;
+  const effectiveSlug = deepDiveFromUrl ? 'dogal-estetik-nedir' : slug;
+
+  const guide = effectiveSlug ? getGuideBySlug(effectiveSlug) : undefined;
   const relatedService = guide?.relatedServiceSlug ? getServiceBySlug(guide.relatedServiceSlug) : undefined;
   const RelatedIcon = relatedService ? SERVICE_ICONS[relatedService.iconName] : null;
 
-  // Derinleşme (deep-dive) modal durumu — yalnızca doğal estetik pillar'ında kullanılır
-  const [deepDive, setDeepDive] = useState<DeepDiveSection | null>(null);
   const isDogalEstetik = guide?.slug === 'dogal-estetik-nedir';
+
+  // İki mod:
+  //  • Pillar'dan "Tıkla Aç" → MODAL (scroll korunur, URL sessizce değişir)
+  //  • Doğrudan uydu URL'ine gelme / "Farklı Sayfada Aç" → TAM SAYFA (fullPage)
+  const fullPage = deepDiveFromUrl ?? null;
+
+  // Modal, pillar üzerinde açılıp kapanır. URL'i history.pushState ile sessizce değiştiririz.
+  const [deepDive, setDeepDive] = useState<DeepDiveSection | null>(null);
+
+  // Tarayıcı geri/ileri tuşu → modal URL'iyle senkron (yalnızca modal modunda)
+  useEffect(() => {
+    const onPop = () => {
+      const m = window.location.pathname.match(/^\/rehber\/(.+)$/);
+      const dd = m ? getDeepDiveBySlug(m[1]) : undefined;
+      // Sadece pillar üstündeki modalı yönet; tam-sayfa modda Guide baştan render olur
+      if (window.location.pathname.startsWith('/rehber/dogal-estetik')) setDeepDive(dd ?? null);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  const openDeepDive = (d: DeepDiveSection) => {
+    setDeepDive(d);
+    window.history.pushState({ deepDive: d.slug }, '', `/rehber/${d.slug}`);
+  };
+  const closeDeepDive = () => {
+    setDeepDive(null);
+    window.history.pushState({}, '', '/rehber/dogal-estetik-nedir');
+  };
+
   const deepDiveByHeading = (heading?: string) =>
     isDogalEstetik && heading
       ? DOGAL_ESTETIK_DEEPDIVE.find((d) => d.ready && d.matchHeading === heading)
       : undefined;
 
+  // SEO: uydu (tam sayfa VEYA modal) açıkken uydunun kendi başlığı/açıklaması geçerli
+  const activeDeep = fullPage ?? deepDive;
   useSeo({
-    title: guide ? guide.metaTitle : 'Rehber bulunamadı',
-    description: guide?.excerpt,
-    canonical: guide ? `https://www.drizzetgok.com/rehber/${guide.slug}` : undefined,
+    title: activeDeep?.metaTitle ?? (guide ? guide.metaTitle : 'Rehber bulunamadı'),
+    description: activeDeep?.excerpt ?? guide?.excerpt,
+    canonical: activeDeep
+      ? `https://www.drizzetgok.com/rehber/${activeDeep.slug}`
+      : guide
+        ? `https://www.drizzetgok.com/rehber/${guide.slug}`
+        : undefined,
   });
 
   useEffect(() => {
@@ -392,6 +401,39 @@ const Guide = () => {
   }, [guide]);
 
   if (!guide) return <Navigate to="/" replace />;
+
+  // TAM SAYFA modu — doğrudan uydu URL'ine gelindiğinde / "Farklı Sayfada Aç"
+  if (fullPage) {
+    return (
+      <main className="min-h-screen bg-white">
+        <ReadingProgress />
+        <Navigation />
+        <article className="pt-28 pb-16 px-4">
+          <div className="max-w-3xl mx-auto">
+            <nav className="flex items-center gap-1.5 text-base text-slate-400 mb-6" aria-label="breadcrumb">
+              <Link to="/" className="hover:text-emerald-600 flex items-center gap-1"><HomeIcon className="w-4 h-4" /> Ana Sayfa</Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link to="/rehber" className="hover:text-emerald-600">Rehber</Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link to="/rehber/dogal-estetik-nedir" className="hover:text-emerald-600">Doğal Estetik</Link>
+            </nav>
+            <span className="inline-flex items-center gap-2 text-emerald-700 font-medium text-sm mb-3">
+              <BookOpen className="w-4 h-4" /> Doğal Estetik Rehberi — Detaylı Bölüm
+            </span>
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-[1.15]">{fullPage.title}</h1>
+            <div className="text-[1.1875rem] leading-[1.8] text-slate-700 [text-wrap:pretty] space-y-5 [&>p]:max-w-[60ch]">
+              {fullPage.body}
+            </div>
+            <div className="mt-12 pt-8 border-t border-slate-100">
+              <Link to="/rehber/dogal-estetik-nedir" className="inline-flex items-center gap-2 text-emerald-700 font-medium hover:gap-3 transition-all">
+                <ChevronRight className="w-5 h-5 rotate-180" /> Doğal Estetik Rehberi'ne dön
+              </Link>
+            </div>
+          </div>
+        </article>
+      </main>
+    );
+  }
 
   // İlgili rehberler — küratörlü (relatedGuides) ya da aynı kategoriden otomatik
   const relatedGuides = (
@@ -468,7 +510,7 @@ const Guide = () => {
 
           {/* Detaylı bölümler — "BU REHBERDE" kutusunun hemen altında, aynı formatta */}
           {isDogalEstetik && (
-            <DeepDiveList sections={DOGAL_ESTETIK_DEEPDIVE} onOpen={setDeepDive} />
+            <DeepDiveList sections={DOGAL_ESTETIK_DEEPDIVE} onOpen={openDeepDive} />
           )}
 
           {guide.blocks.map((block, i) => {
@@ -478,7 +520,7 @@ const Guide = () => {
                 key={i}
                 block={block}
                 dropCap={i === firstProseIndex}
-                onDeepDive={dd ? () => setDeepDive(dd) : undefined}
+                onDeepDive={dd ? () => openDeepDive(dd) : undefined}
               />
             );
           })}
@@ -550,8 +592,8 @@ const Guide = () => {
         </div>
       </article>
 
-      {/* Derinleşme modalı — yalnızca doğal estetik pillar'ında */}
-      {isDogalEstetik && <DeepDiveModal open={deepDive} onClose={() => setDeepDive(null)} />}
+      {/* Derinleşme modalı — uydu URL'indeyken açık (pillar arkada) */}
+      {isDogalEstetik && <DeepDiveModal open={deepDive} onClose={closeDeepDive} />}
     </main>
   );
 };

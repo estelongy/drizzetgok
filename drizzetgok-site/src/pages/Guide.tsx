@@ -20,7 +20,6 @@ const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
   {
     slug: 'dogal-estetikte-guzellik-algisi',
     title: 'Güzellik Algısı Nasıl Oluşur?',
-    teaser: 'Beyin bir yüzü neden "güzel" bulur? Algının fiziksel özelliklerle nasıl başlayıp anlamla nasıl tamamlandığına bakıyoruz.',
     ready: true,
     body: (
       <>

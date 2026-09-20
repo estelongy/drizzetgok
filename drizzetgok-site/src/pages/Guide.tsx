@@ -12,6 +12,38 @@ import { useSeo } from '../hooks/useSeo';
 import Navigation from '../sections/Navigation';
 import BotoxMechanism from '../components/diagrams/BotoxMechanism';
 import BotoxFaceMap from '../components/diagrams/BotoxFaceMap';
+import { DeepDiveList, type DeepDiveSection } from '../components/DeepDive';
+
+// "Doğal Estetik Nedir?" pillar'ına özel derinleşme bölümleri.
+// Şimdilik tek başlık hazır; diğerleri içerik yazıldıkça eklenecek.
+const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
+  {
+    slug: 'dogal-estetikte-guzellik-algisi',
+    title: 'Güzellik Algısı Nasıl Oluşur?',
+    teaser: 'Beyin bir yüzü neden "güzel" bulur? Algının fiziksel özelliklerle nasıl başlayıp anlamla nasıl tamamlandığına bakıyoruz.',
+    ready: true,
+    body: (
+      <>
+        <p>
+          Bir yüzü "güzel" bulmamız yalnızca o yüzün ölçüleriyle açıklanamaz. Güzellik,
+          yüzün fiziksel özellikleriyle başlayan ve beynin bu özellikleri birlikte
+          işlemesiyle anlam kazanan çok boyutlu bir algı sürecidir.
+        </p>
+        <p>
+          Yüzün oranları, simetrisi, ortalamalığı, cinsiyete özgü özellikleri, yaşla
+          ilişkili işaretleri ve cilt gibi yüzey özellikleri değerlendirmede birlikte
+          rol oynar. Araştırmalar, bu özelliklerin hiçbirinin tek başına evrensel bir
+          "ideal yüz" formülü oluşturmadığını; güzellik algısının hem insanlar arasında
+          paylaşılan bazı örüntülerden hem de kişisel ve kültürel farklılıklardan
+          etkilendiğini gösteriyor.
+        </p>
+        <p className="text-slate-500 italic">
+          Bu bölümün bilimsel dayanaklı tam içeriği yakında yayımlanacak.
+        </p>
+      </>
+    ),
+  },
+];
 
 const DIAGRAMS = { BotoxMechanism, BotoxFaceMap };
 const SERVICE_ICONS = { Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2 };
@@ -401,6 +433,11 @@ const Guide = () => {
                 ))}
               </ol>
             </nav>
+          )}
+
+          {/* Detaylı bölümler — "BU REHBERDE" kutusunun hemen altında, aynı formatta */}
+          {guide.slug === 'dogal-estetik-nedir' && (
+            <DeepDiveList sections={DOGAL_ESTETIK_DEEPDIVE} />
           )}
 
           {guide.blocks.map((block, i) => (

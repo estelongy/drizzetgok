@@ -34,7 +34,12 @@ export function DeepDiveList({
             <span className="text-emerald-400 font-semibold">{String(i + 1).padStart(2, '0')}</span>
             {s.ready ? (
               <>
-                <span className="text-slate-700 font-medium mr-1">{s.title}</span>
+                <button
+                  onClick={() => onOpen(s)}
+                  className="text-slate-700 font-medium mr-1 text-left hover:text-emerald-700 hover:underline transition-colors"
+                >
+                  {s.title}
+                </button>
                 <button
                   onClick={() => onOpen(s)}
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-3 py-1.5 rounded-full transition-colors"

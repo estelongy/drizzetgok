@@ -121,8 +121,8 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           Bu iki pigment yüze ne kadar eşit ve düzgün dağılırsa — yani leke, kızarıklık, ton farkı ne kadar azsa — o
           yüz genellikle o kadar genç, sağlıklı ve çekici algılanıyor. Bu örüntü hem kadın hem erkek yüzlerinde görüldü;
           hatta bazı deneylerde yüzün şekli hiç değiştirilmeden yalnızca cildin renk dağılımı düzenlendiğinde bile,
-          algılanan yaş, sağlık ve çekicilik değişebildi. Yani cildin bıraktığı izlenim, yüzün hatlarından bir ölçüde
-          bağımsız olarak da çalışıyor.
+          algılanan yaş, sağlık ve çekicilik değişebildi. Yani cilt, yüzün biçimsel özelliklerinden ayrı, kendine ait
+          bir algısal katkı da sağlayabiliyor.
         </p>
         <p>
           Yine de dürüst bir parantez şart: "Cilt kalitesi güzelliğin en güçlü belirleyicisidir" demek için yeterli
@@ -144,18 +144,19 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Güzellik gerçekten "bakan gözde" mi?</h3>
         <p>
           Buraya kadar hep insanların ortak eğilimlerinden söz ettik. Bu ortaklıklar gerçek — ama tablonun yalnızca
-          yarısı. Güzellik yargısının ne kadarının "herkeste ortak", ne kadarının "kişiye özel" olduğunu ölçen
-          araştırmalar, yüz çekiciliğinde bu iki bileşenin yaklaşık dengede olduğunu buluyor: beğenimizin kabaca
-          yarısı paylaşılan, yarısı bize ait.
+          yarısı. Güzellik yargısının ne kadarının "herkeste ortak", ne kadarının "kişiye özel" olduğunu ölçmeye
+          çalışan araştırmalar, yüz çekiciliğinde bu iki bileşenin birbirine yakın ağırlıkta olabildiğine işaret
+          ediyor: beğenimizin bir bölümü paylaşılan, önemli bir bölümü ise kişisel görünüyor.
         </p>
         <p>
-          Bunun en çarpıcı kanıtı ikizler üzerinde yapılan bir çalışmadan geldi. Eğer güzellik zevki büyük ölçüde
-          genlerimizde yazılı olsaydı, aynı genleri taşıyan özdeş ikizlerin bu konuda neredeyse aynı fikirde olması
-          beklenirdi. Oysa sonuç tersiydi: özdeş ikizler bile hangi yüzün güzel olduğu konusunda tam anlaşmıyordu.
-          Çalışma, yüz zevkindeki farklılıkların çoğunlukla genlerden değil, her insanın kendine özgü yaşam
-          deneyimlerinden — tanıdığı insanlar, arkadaş çevresi, gördüğü yüzler, sosyal medyada karşılaştıkları —
-          kaynaklandığını gösterdi. Kültürler arası çalışmalar da aynı ikili tabloyu doğruluyor: çekici yüz
-          özelliklerinin bir kısmı kültürler arasında ortak, bir kısmı kültüre özgü, bir kısmı ise tamamen bireysel.
+          Bunun dikkat çekici bir örneği, ikizler üzerinde yapılan bir çalışmadan geldi. Eğer güzellik zevki büyük
+          ölçüde genlerimizde yazılı olsaydı, aynı genleri taşıyan özdeş ikizlerin bu konuda birbirine çok yakın
+          olması beklenirdi. Oysa bu çalışmada özdeş ikizler bile hangi yüzün çekici olduğu konusunda tam anlaşmadı.
+          Araştırmacılar, bu örneklemdeki yüz beğenisi farklılıklarının önemli ölçüde ortak genlerden çok, her
+          kişinin kendine özgü yaşam deneyimleriyle — tanıdığı insanlar, arkadaş çevresi, gördüğü yüzler, medyada
+          karşılaştıkları — ilişkili göründüğünü bildirdi. Tek bir çalışmanın bulgusunu evrensel bir orana çevirmek
+          doğru olmaz; ama farklı kültürleri karşılaştıran araştırmalar da benzer bir ikili tabloya işaret ediyor:
+          çekici yüz özelliklerinin bir kısmı kültürler arasında ortak, bir kısmı kültüre özgü, bir kısmı ise bireysel.
         </p>
         <p>
           Tam da bu yüzden doğal estetikte "herkese uyan tek bir güzel yüz" diye bir şey yoktur. Bir kişiye yakışan,
@@ -183,31 +184,32 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Özetle: Güzellik bir tepkidir — ve doğallık bu tepkinin merkezinde</h3>
         <p>
           Bu bölümde bir yüzü "güzel" bulmanın ne demek olduğunu izledik ve şuraya vardık: güzellik, dışarıda hazır
-          duran bir özellik değil, büyük ölçüde beynin ürettiği bir tepki. Beyin bir yüzü hızlı ve çoğunlukla otomatik
-          değerlendirir; kolay okuduğu, tanıdık ve dengeli yüzlerden hoşlanır; ortalamaya yakın olanı çekici bulur ama
-          kusursuzu değil; simetriyi sanıldığı kadar önemsemez, hatta aşırısını tuhaf bulur; buna karşılık cilt ve doku
-          kalitesine beklenenden çok daha duyarlıdır; ve tüm bunların üzerine herkesin kendi kişisel beğenisini ekler.
+          duran tek bir özellik değil, büyük ölçüde beynin ürettiği bir tepki. Araştırmalar bir arada bakıldığında
+          birkaç eğilime işaret ediyor: beyin bir yüzü hızlı ve çoğunlukla otomatik değerlendiriyor; tanıdık ve
+          dengeli yüzleri daha kolay işleyip olumlu bulma eğiliminde; ortalamaya yakın yüzler çekici bulunabiliyor
+          ama en çekici yüz her zaman en ortalama olan değil; simetrinin katkısı sanıldığından zayıf görünüyor ve
+          kusursuz simetri her durumda daha çekici çıkmıyor; buna karşılık cilt ve doku kalitesi güçlü bir görsel
+          ipucu olarak öne çıkıyor; ve tüm bunların üzerine herkes kendi kişisel beğenisini ekliyor.
         </p>
         <p>
-          Dikkat ederseniz bu imzanın tamamı aynı şeye işaret ediyor: beyin abartıyı, zorlamayı ve kusursuzluğu değil;
-          dengeyi, canlılığı ve tanıdıklığı ödüllendiriyor. Yani "doğal görünüm" bir slogan ya da moda değil — beynin
-          güzellik olarak okuduğu şeyin ta kendisi. Doğal estetiğin amacı da bu yüzden kişiyi hazır bir güzellik kalıbına
+          Bu eğilimlerin ortak yönü şu: hiçbiri abartıyı, zorlamayı ya da kusursuzluğu değil; dengeyi, canlılığı ve
+          tanıdıklığı işaret ediyor. Yani "doğal görünüm" yalnızca bir slogan ya da moda değil — güzellik algısının
+          dayandığı zeminle uyumlu bir yaklaşım. Doğal estetiğin amacı da bu yüzden kişiyi hazır bir güzellik kalıbına
           sokmak değil; onun kendi yüzünün taşıdığı dengeyi bozmadan, en canlı ve en kendisi hâline yaklaştırmaktır.
-          Çünkü beynin "güzel" dediği de çoğu zaman tam olarak budur.
         </p>
 
         <h3 className="font-serif text-lg font-bold text-slate-900 mt-8 mb-3">Kaynaklar</h3>
         <ul className="text-base text-slate-500 space-y-1.5 list-disc pl-5">
-          <li>Willis J, Todorov A. First impressions: making up your mind after a 100-ms exposure to a face. Psychological Science. 2006.</li>
-          <li>O'Doherty J ve ark. Beauty in a smile: the role of medial orbitofrontal cortex in facial attractiveness. Neuropsychologia. 2003.</li>
-          <li>Reber R, Schwarz N, Winkielman P. Processing fluency and aesthetic pleasure. Personality and Social Psychology Review. 2004.</li>
-          <li>Langlois JH, Roggman LA. Attractive faces are only average. Psychological Science. 1990.</li>
-          <li>Perrett DI, May KA, Yoshikawa S. Facial shape and judgements of female attractiveness. Nature. 1994.</li>
-          <li>Van Dongen S. Associations between asymmetry and human attractiveness: signatures of publication bias. (meta-analiz, 2011).</li>
-          <li>Matts PJ, Fink B ve ark. Color homogeneity and visual perception of age, health, and attractiveness of female facial skin. J Am Acad Dermatol. 2007.</li>
-          <li>Jones BC, Little AC, Burt DM, Perrett DI. When facial attractiveness is only skin deep. Perception. 2004.</li>
-          <li>Voegeli R ve ark. Predictors of female age, health and attractiveness perception... five ethnic groups. Int J Cosmet Sci. 2023.</li>
-          <li>Germine L ve ark. Individual aesthetic preferences for faces are shaped mostly by environments, not genes. Current Biology. 2015.</li>
+          <li>Willis J, Todorov A. First impressions: making up your mind after a 100-ms exposure to a face. <em>Psychological Science.</em> 2006;17(7):592-598.</li>
+          <li>O'Doherty J, Winston J, Critchley H, Perrett D, Burt DM, Dolan RJ. Beauty in a smile: the role of medial orbitofrontal cortex in facial attractiveness. <em>Neuropsychologia.</em> 2003;41(2):147-155.</li>
+          <li>Reber R, Schwarz N, Winkielman P. Processing fluency and aesthetic pleasure: is beauty in the perceiver's processing experience? <em>Personality and Social Psychology Review.</em> 2004;8(4):364-382.</li>
+          <li>Langlois JH, Roggman LA. Attractive faces are only average. <em>Psychological Science.</em> 1990;1(2):115-121.</li>
+          <li>Perrett DI, May KA, Yoshikawa S. Facial shape and judgements of female attractiveness. <em>Nature.</em> 1994;368:239-242.</li>
+          <li>Van Dongen S. Associations between asymmetry and human attractiveness: possible direct effects of asymmetry and signatures of publication bias. <em>Annals of Human Biology.</em> 2011;38(3):317-323.</li>
+          <li>Matts PJ, Fink B, Grammer K, Burquest M. Color homogeneity and visual perception of age, health, and attractiveness of female facial skin. <em>J Am Acad Dermatol.</em> 2007;57(6):977-984.</li>
+          <li>Jones BC, Little AC, Burt DM, Perrett DI. When facial attractiveness is only skin deep. <em>Perception.</em> 2004;33(5):569-576.</li>
+          <li>Voegeli R, Rawlings AV, Shackelford TK, Fink B ve ark. Predictors of female age, health and attractiveness perception from skin feature analysis of digital portraits in five ethnic groups. <em>Int J Cosmet Sci.</em> 2023;45(5):672-687.</li>
+          <li>Germine L, Russell R, Bronstad PM ve ark. Individual aesthetic preferences for faces are shaped mostly by environments, not genes. <em>Current Biology.</em> 2015;25(20):2684-2689.</li>
         </ul>
       </>
     ),

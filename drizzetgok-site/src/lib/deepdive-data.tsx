@@ -26,10 +26,11 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           hem de kısmen otomatiktir — ama üzerine düşünmeye kapalı değildir.
         </p>
         <p>
-          Peki beyin bir yüzü çekici bulduğunda ne oluyor? Beyin görüntüleme çalışmaları, çekici
-          yüzleri değerlendirirken ödül değeri ve öznel beğeniyle ilişkili bölgelerin — özellikle
-          "bir şeyin ne kadar değerli olduğunu" hesaplayan orbitofrontal korteksin — etkinleşebildiğini
-          ortaya koyuyor. Bir yüz ne kadar çekici bulunuyorsa, bu ödül işleme ağındaki etkinliğin de
+          Peki beyin bir yüzü çekici bulduğunda ne oluyor? Bu soruyu inceleyen bir bilim dalı var:
+          güzellik algısının beyindeki karşılığını araştıran <strong>nöroestetik</strong> (neuroaesthetics).
+          Bu alandaki beyin görüntüleme çalışmaları, çekici yüzleri değerlendirirken ödül değeri ve öznel
+          beğeniyle ilişkili bölgelerin — özellikle "bir şeyin ne kadar değerli olduğunu" hesaplayan
+          orbitofrontal korteksin — etkinleşebildiğini ortaya koyuyor. Bir yüz ne kadar çekici bulunuyorsa, bu ödül işleme ağındaki etkinliğin de
           arttığı bildirilmiş. Ama önemli bir nüans var: bu bölgeler yalnızca "güzellik merkezleri"
           değil; yediğimiz güzel bir yemekten aldığımız hazdan sevdiğimiz bir sese kadar pek çok
           şeyin değerini tartan geniş bir sistemin parçası. Yani çekici bir yüz beyinde bir tür ödül

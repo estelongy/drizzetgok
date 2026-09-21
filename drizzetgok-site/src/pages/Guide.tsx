@@ -58,7 +58,7 @@ function ReadingProgress() {
   );
 }
 
-function Block({ block, dropCap, onDeepDive }: { block: GuideBlock; dropCap?: boolean; onDeepDive?: () => void }) {
+function Block({ block, dropCap, onDeepDive, deepDiveTitle }: { block: GuideBlock; dropCap?: boolean; onDeepDive?: () => void; deepDiveTitle?: string }) {
   switch (block.type) {
     case 'prose': {
       const inner = (
@@ -93,8 +93,14 @@ function Block({ block, dropCap, onDeepDive }: { block: GuideBlock; dropCap?: bo
             className="group block text-left w-full mb-12 rounded-3xl border-2 border-slate-200 bg-white p-6 sm:p-8 transition-all hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1 cursor-pointer"
           >
             {inner}
-            <span className="inline-flex items-center gap-1.5 text-emerald-600 font-medium text-base">
-              Detaylı oku <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            <span className="inline-flex items-center gap-2 text-emerald-600 font-medium text-base flex-wrap">
+              Detaylı oku
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              {deepDiveTitle && (
+                <span className="text-emerald-700 font-semibold underline decoration-emerald-300 underline-offset-2">
+                  {deepDiveTitle}
+                </span>
+              )}
             </span>
           </button>
         );
@@ -521,6 +527,7 @@ const Guide = () => {
                 block={block}
                 dropCap={i === firstProseIndex}
                 onDeepDive={dd ? () => openDeepDive(dd) : undefined}
+                deepDiveTitle={dd?.title}
               />
             );
           })}

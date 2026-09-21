@@ -596,6 +596,18 @@ const Guide = () => {
               </div>
             </section>
           )}
+
+          {/* Telif & içerik koruma notu */}
+          <div className="mt-14 pt-6 border-t border-slate-100 text-sm text-slate-400 leading-relaxed">
+            <p>
+              © {new Date().getFullYear()} Dr. İzzet Gök. Bu içerik özgün bir derleme ve yazım çalışmasıdır;
+              tüm hakları saklıdır. Metnin tamamı veya bir bölümü, kaynak gösterilmeden kopyalanamaz,
+              çoğaltılamaz veya başka bir mecrada yayımlanamaz. İzin ve atıf için iletişime geçebilirsiniz.
+            </p>
+            <p className="mt-2">
+              Bu yazı yalnızca bilgilendirme amaçlıdır; tıbbi tanı, tedavi veya kişiye özel öneri yerine geçmez.
+            </p>
+          </div>
         </div>
       </article>
 

@@ -160,10 +160,22 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           çekici yüz özelliklerinin bir kısmı kültürler arasında ortak, bir kısmı kültüre özgü, bir kısmı ise bireysel.
         </p>
         <p>
+          Bunun sezgisel bir örneği "dünya güzelleri" sorusudur: madem güzellik bu kadar kişisel, neden dünyanın dört
+          bir yanından seçilen kadınlarda ortak bir izlenim var? Yarışmacıları sıradan kadınlarla karşılaştıran
+          ölçümlü çalışmalar, kazananların rastgele "uç" hatlara değil; dengeli oranlara, görece simetriye ve homojen,
+          canlı bir cilde daha yakın olduğunu gösteriyor — yani bu bölümde saydığımız aynı ortak sinyallere. Ama
+          işin dürüst yanı şu: bu kadınlar birbirine benzemez. Farklı ırktan, farklı hatlardan, farklı ülkelerdendir.
+          Ortak olan şey <em>hatları</em> değil, <em>sinyalleridir</em> — hepsi sağlıklı ve dengeli <em>görünür</em>.
+          Üstelik kimin kazandığı çağa, kıtaya ve jüriye göre değişir; bu seçimler saf biyolojiyi değil, dönemin
+          kültürel beğenisini de yansıtır. Yani "herkesçe güzel" diye bir yüz yoktur; herkesçe okunan birkaç
+          sinyal vardır.
+        </p>
+        <p>
           Tam da bu yüzden doğal estetikte "herkese uyan tek bir güzel yüz" diye bir şey yoktur. Bir kişiye yakışan,
           onu tamamlayan bir dokunuş, bir başkasında aynı etkiyi yaratmayabilir. Bir ünlünün ya da bir "trend"in yüzünü
           birebir hedef almak çoğu zaman hayal kırıklığıyla sonuçlanır. Doğru olan, kişinin kendi hatları ve kendi
-          hikâyesiyle uyumlu olandır.
+          hikâyesiyle uyumlu olandır — yani bir başkasının hatlarını değil, kendi denge ve canlılık sinyallerini
+          güçlendirmektir.
         </p>
 
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Ve unutulan gerçek: dudak bir iletişim organıdır</h3>
@@ -211,6 +223,8 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <li>Jones BC, Little AC, Burt DM, Perrett DI. When facial attractiveness is only skin deep. <em>Perception.</em> 2004;33(5):569-576.</li>
           <li>Voegeli R, Rawlings AV, Shackelford TK, Fink B ve ark. Predictors of female age, health and attractiveness perception from skin feature analysis of digital portraits in five ethnic groups. <em>Int J Cosmet Sci.</em> 2023;45(5):672-687.</li>
           <li>Germine L, Russell R, Bronstad PM ve ark. Individual aesthetic preferences for faces are shaped mostly by environments, not genes. <em>Current Biology.</em> 2015;25(20):2684-2689.</li>
+          <li>Kim SC, Kim HB, Jeong WS ve ark. Comparison of facial proportions between beauty pageant contestants and ordinary young women of Korean ethnicity: a three-dimensional photogrammetric analysis. <em>Aesthetic Plastic Surgery.</em> 2018;42(3):748-758.</li>
+          <li>Burusapat C, Lekdaeng P. What is the most beautiful facial proportion in the 21st century? Comparative study among Miss Universe, Miss Universe Thailand, neoclassical canons, and facial golden ratios. <em>Plastic and Reconstructive Surgery – Global Open.</em> 2019;7(2):e2044.</li>
         </ul>
       </>
     ),

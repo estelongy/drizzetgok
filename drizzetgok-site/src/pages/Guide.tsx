@@ -351,20 +351,27 @@ const Guide = () => {
     if (!guide) return;
     const faqBlock = guide.blocks.find((b) => b.type === 'faq');
 
+    const deepForSeo = fullPage;
     const article = document.createElement('script');
     article.type = 'application/ld+json';
     article.id = 'guide-jsonld';
     article.textContent = JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'MedicalWebPage',
-      headline: guide.title,
-      description: guide.excerpt,
+      '@type': deepForSeo ? 'ScholarlyArticle' : 'MedicalWebPage',
+      headline: deepForSeo ? deepForSeo.title : guide.title,
+      description: deepForSeo?.excerpt ?? guide.excerpt,
       datePublished: guide.updated,
       dateModified: guide.updated,
       inLanguage: 'tr-TR',
-      url: `https://www.drizzetgok.com/rehber/${guide.slug}`,
-      author: { '@type': 'Person', name: 'Dr. İzzet Gök' },
+      url: deepForSeo
+        ? `https://www.drizzetgok.com/rehber/${deepForSeo.slug}`
+        : `https://www.drizzetgok.com/rehber/${guide.slug}`,
+      author: { '@type': 'Person', name: 'Dr. İzzet Gök', url: 'https://www.drizzetgok.com/hakkimda' },
       publisher: { '@id': 'https://www.drizzetgok.com/#clinic' },
+      copyrightHolder: { '@type': 'Person', name: 'Dr. İzzet Gök' },
+      copyrightYear: new Date().getFullYear(),
+      copyrightNotice: 'Bu içerik özgün bir derleme ve yazım çalışmasıdır; izinsiz çoğaltılamaz.',
+      isAccessibleForFree: true,
     });
     document.head.appendChild(article);
 
@@ -404,7 +411,7 @@ const Guide = () => {
       document.getElementById('guide-breadcrumb')?.remove();
       document.getElementById('guide-faq')?.remove();
     };
-  }, [guide]);
+  }, [guide, fullPage]);
 
   if (!guide) return <Navigate to="/" replace />;
 
@@ -430,7 +437,14 @@ const Guide = () => {
             <div className="text-left text-[1.1875rem] leading-[1.8] text-slate-700 [text-wrap:pretty] space-y-5">
               {fullPage.body}
             </div>
-            <div className="mt-12 pt-8 border-t border-slate-100">
+            <div className="mt-12 rounded-2xl bg-slate-50 border border-slate-200 p-5 text-base text-slate-500 leading-relaxed">
+              © {new Date().getFullYear()} Dr. İzzet Gök. Bu içerik, güncel bilimsel literatürden
+              özgün olarak derlenmiş ve yazılmış bir çalışmadır; izinsiz kopyalanamaz, çoğaltılamaz
+              veya başka bir mecrada yayımlanamaz. Alıntı yapılırken kaynak olarak
+              drizzetgok.com gösterilmelidir. Bu yazı genel bilgilendirme amaçlıdır; kişiye özel tıbbi
+              tavsiye yerine geçmez.
+            </div>
+            <div className="mt-8 pt-8 border-t border-slate-100">
               <Link to="/rehber/dogal-estetik-nedir" className="inline-flex items-center gap-2 text-emerald-700 font-medium hover:gap-3 transition-all">
                 <ChevronRight className="w-5 h-5 rotate-180" /> Doğal Estetik Rehberi'ne dön
               </Link>

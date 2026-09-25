@@ -14,204 +14,230 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
       'Beyin bir yüzü neden "güzel" bulur? Güzellik algısının fiziksel özelliklerle nasıl başlayıp beyinde nasıl anlam kazandığına bilimsel bir bakış.',
     body: (
       <>
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-2 mb-3">Beyin, bir yüzü çok hızlı değerlendirir</h3>
-        <p>
-          Bir yüzün "güzel" olup olmadığına dair ilk izlenimimiz, sandığımızdan çok daha kısa
-          sürede oluşabilir. Araştırmalar, bir yüze yalnızca saniyenin onda biri kadar (yaklaşık
-          100 milisaniye) bakmanın bile çekicilik gibi bazı özellikler hakkında bir ilk izlenim
-          oluşturmaya yetebildiğini gösteriyor. Bu kadar kısa sürede oluşan yargılar, daha uzun
-          süreli değerlendirmelerle belirli ölçüde örtüşüyor. Ama bu, kararın "değişmez" ya da
-          tamamen bilinçdışı olduğu anlamına gelmez: ilk izlenim hızlı oluşsa da dikkat, bağlam,
-          deneyim ve daha uzun bakış algıyı yine de etkileyebilir. Yani güzellik yargısı hem hızlı
-          hem de kısmen otomatiktir — ama üzerine düşünmeye kapalı değildir.
-        </p>
-        <p>
-          Peki beyin bir yüzü çekici bulduğunda ne oluyor? Bu soruyu inceleyen bir bilim dalı var:
-          güzellik algısının beyindeki karşılığını araştıran <strong>nöroestetik</strong> (neuroaesthetics).
-          Bu alandaki beyin görüntüleme çalışmaları, çekici yüzleri değerlendirirken ödül değeri ve öznel
-          beğeniyle ilişkili bölgelerin — özellikle "bir şeyin ne kadar değerli olduğunu" hesaplayan
-          orbitofrontal korteksin — etkinleşebildiğini ortaya koyuyor. Bir yüz ne kadar çekici bulunuyorsa, bu ödül işleme ağındaki etkinliğin de
-          arttığı bildirilmiş. Ama önemli bir nüans var: bu bölgeler yalnızca "güzellik merkezleri"
-          değil; yediğimiz güzel bir yemekten aldığımız hazdan sevdiğimiz bir sese kadar pek çok
-          şeyin değerini tartan geniş bir sistemin parçası. Yani çekici bir yüz beyinde bir tür ödül
-          karşılığı oluşturabiliyor — güzelliği tümüyle "beynin verdiği bir ödül"e indirgemek doğru
-          olmasa da, bu karşılığın gerçek olduğunu söyleyebiliriz.
+        <p className="text-lg text-slate-600 mb-6">
+          Beyin bir yüze baktığında onu neye göre "güzel" ya da "sıradan" buluyor? Bu bölümde,
+          güzellik algısının fiziksel özelliklerle nasıl başlayıp beyinde nasıl bir tepkiye
+          dönüştüğünü — ve her adımın kanıt gücünü — birlikte inceliyoruz.
         </p>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Beyin, kolay "okuduğu" yüzü sever</h3>
+        {/* Açılış şeması: güzellik algısının katmanları */}
+        <div className="my-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <p className="text-center text-sm font-semibold uppercase tracking-wide text-slate-500 mb-5">
+            Güzellik algısı: bir zincir gibi çalışır
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            {[
+              { t: 'Hızlı yargı', d: '~100 ms içinde' },
+              { t: 'Kolay işleme', d: 'tanıdık = hoş' },
+              { t: 'Denge + cilt', d: 'sağlık sinyali' },
+              { t: 'Kişisel kat', d: 'herkeste farklı' },
+            ].map((x) => (
+              <div key={x.t} className="rounded-xl bg-white border border-slate-200 p-3">
+                <p className="font-semibold text-slate-800 text-sm">{x.t}</p>
+                <p className="text-slate-500 text-sm mt-1">{x.d}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-slate-600 text-sm mt-5 max-w-lg mx-auto">
+            Sonuçta güzellik dışarıda hazır duran bir özellik değil, <strong>beynin ürettiği bir
+            tepkidir</strong> — ve bu tepkinin merkezinde denge, canlılık ve tanıdıklık var.
+          </p>
+        </div>
+
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">1. Beyin, bir yüzü çok hızlı değerlendirir</h3>
         <p>
-          Peki beyin neden bazı yüzleri hızlı ve zahmetsizce olumlu değerlendirebiliyor? Bu soruya
-          getirilen açıklamalardan biri, psikolojide işlem akıcılığı (processing fluency) denen
-          kavrama dayanıyor. Fikir şu: beynimiz gördüğü her şeyi işlemek için bir miktar zihinsel çaba
-          harcar — ama bu çaba her görüntüde aynı değildir. Bazı görüntüler beyni yorar; onları tanımak,
-          çözmek, bir yere oturtmak enerji ister. Bazıları ise adeta kendiliğinden akar; beyin onları
-          hiç zorlanmadan işler. İşte "işlem akıcılığı" bu kolaylık hissini anlatır. Ve araştırmalara
-          göre, beynimiz kolay işlediği şeylerden daha çok hoşlanma eğilimindedir: tanıdık, dengeli,
-          beklediğimiz kalıba yakın görüntüler beyni şaşırtmaz, ekstra mesai istemez — ve bu zahmetsizlik,
-          hafif bir hoşnutluğa dönüşür.
+          Bir yüzün "güzel" olup olmadığına dair ilk izlenimimiz şaşırtıcı derecede hızlı oluşur:
+          araştırmalar, saniyenin onda biri kadar (yaklaşık <strong>100 milisaniye</strong>) bir
+          bakışın bile çekicilik hakkında bir ilk izlenim yaratmaya yetebildiğini gösteriyor. Bu hızlı
+          yargılar, daha uzun süreli değerlendirmelerle belirli ölçüde örtüşüyor — ama "değişmez"
+          değiller; dikkat, bağlam ve deneyim algıyı yine de etkiler. Yani güzellik yargısı hem hızlı
+          hem kısmen otomatik, ama düşünmeye kapalı değil.
         </p>
         <p>
-          Ne var ki yüzler söz konusu olduğunda bu açıklamayı bir kesin kural değil, bir eğilim olarak
-          görmek gerekir. Çünkü tablo göründüğü kadar basit değil. Bazı araştırmalar, çekici ya da
-          ortalamaya yakın yüzlerin gerçekten daha akıcı işlendiğine işaret ederken; bazıları, yüzlerde
-          "kolay işleme" ile "beğenme" arasındaki bağın her zaman aynı yöne gitmediğini gösteriyor.
-          İlginç bir örnek: bir çalışmada insanlar bir yüze daha uzun baktıkça onu tanıma kolaylığı ve
-          "karar verdim" hissi artmış — ama beğeni artmamış, hatta bazı durumlarda azalmış. Yani "beyin
-          bir yüzü ne kadar kolay işlerse o kadar güzel bulur" demek fazla iddialı olur. İşlem akıcılığı,
-          yüz çekiciliğini etkileyebilen mekanizmalardan biri — tek başına açıklaması değil.
+          Peki beyin bir yüzü çekici bulduğunda ne oluyor? Bunu inceleyen bilim dalı
+          <strong> nöroestetik</strong> (neuroaesthetics). Beyin görüntüleme çalışmaları, çekici
+          yüzleri değerlendirirken ödül ve beğeniyle ilişkili bölgelerin — özellikle bir şeyin
+          "değerini" tartan <em>orbitofrontal korteksin</em> — etkinleşebildiğini gösteriyor.
+        </p>
+        <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
+          <p className="font-semibold text-amber-900 mb-1">Ama indirgemeyelim</p>
+          <p className="text-slate-700">
+            Bu bölgeler yalnızca "güzellik merkezleri" değil; güzel bir yemekten sevdiğimiz bir sese
+            kadar pek çok şeyin değerini tartan geniş bir sistemin parçası. Çekici bir yüz beyinde bir
+            ödül karşılığı oluşturur — ama güzelliği tümüyle "beynin verdiği ödül"e indirgemek doğru olmaz.
+          </p>
+        </div>
+
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">2. Beyin, kolay "okuduğu" yüzü sever</h3>
+        <p>
+          Beyin neden bazı yüzleri zahmetsizce olumlu bulur? Bir açıklama <strong>işlem akıcılığı</strong>
+          (processing fluency): beyin bazı görüntüleri hiç zorlanmadan işler, ve bu kolaylık hafif bir
+          hoşnutluğa dönüşür. Tanıdık, dengeli, beklenen kalıba yakın yüzler beyni yormaz — ve bu
+          zahmetsizlik "hoşuma gitti"ye dönüşebilir.
+        </p>
+        <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
+          <p className="font-semibold text-amber-900 mb-1">Kesin kural değil, eğilim</p>
+          <p className="text-slate-700">
+            Bir çalışmada insanlar bir yüze uzun baktıkça onu <em>tanıma</em> kolaylığı artmış — ama
+            <em> beğeni</em> artmamış, hatta bazen azalmış. Yani "beyin ne kadar kolay işlerse o kadar
+            güzel bulur" demek fazla iddialı. İşlem akıcılığı, çekiciliği etkileyen mekanizmalardan
+            biri — tek açıklaması değil.
+          </p>
+        </div>
+
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">3. Ortalama bir yüz neden çekici gelebilir?</h3>
+        <p>
+          Şaşırtıcı bir bulgu: farklı yüzleri bilgisayarda üst üste bindirip bir "ortalama yüz"
+          oluşturduğunuzda, bu ortalama yüz çoğu zaman onu oluşturan bireysel yüzlerin çoğundan
+          <strong> daha çekici</strong> bulunur. Sebep bir önceki başlıkla bağlantılı: ortalama yüz,
+          aşırı uçları törpülenmiş, beynin kolay işlediği bir yüzdür.
+        </p>
+        <p>
+          Ama kritik bir ayrım var. Sonraki çalışmalar gösterdi ki en çekici yüzler <em>tam olarak
+          ortalama değil</em>; çekici özellikleri ölçülü biçimde belirginleştirilmiş yüzler. Yani:
+        </p>
+        <div className="my-5 rounded-2xl bg-slate-900 text-white p-5 text-center">
+          <p className="text-lg font-medium">Ortalama olmak ≠ ideal olmak ≠ güzel olmak</p>
+          <p className="text-slate-300 text-sm mt-2">Ortalamalık çekiciliğin tabanını kurar; ama tavanını belirlemez.</p>
+        </div>
+
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">4. Simetri gerçekten güzelliğin anahtarı mı?</h3>
+        <p>
+          "Güzel yüz = simetrik yüz" neredeyse tartışılmaz bir gerçek gibi kabul edilir. Ama gerçek
+          insan yüzlerine bakınca tablo hiç de sanıldığı kadar net değil — ve en çarpıcı uyarı,
+          alandaki araştırmaların kendisinden geldi:
+        </p>
+        <ul className="my-4 space-y-2 list-none pl-0">
+          {[
+            ['Yayın yanlılığı var', '"Simetri güzeldir" bulan çalışmalar yayımlanmış, bulamayanlar çekmecede kalmış — bu, etkiyi olduğundan büyük göstermiş.'],
+            ['Etki küçülüyor', 'Yanlılık düzeltilince simetrinin katkısı bu meta-analizde ~%30-50 azaldı; büyük çalışmalarda neredeyse sıfıra indi.'],
+            ['Kusursuz = yapay', 'Bazı deneylerde tümüyle simetrik hale getirilmiş yüz, doğal halinden daha az çekici bulundu.'],
+          ].map(([a, b]) => (
+            <li key={a} className="flex gap-3 items-start rounded-xl bg-slate-50 border border-slate-100 p-3">
+              <span className="text-emerald-500 font-bold flex-shrink-0">•</span>
+              <span><strong className="text-slate-800">{a}:</strong> <span className="text-slate-600">{b}</span></span>
+            </li>
+          ))}
+        </ul>
+        <p>
+          Sağlam sonuç: insan yüzleri zaten tam bir sağ-sol simetriye sahip değildir; küçük asimetriler
+          normal yüz yapısının parçasıdır. Bu yüzden asimetriyi değerlendirirken hedef, iki tarafı
+          milimetrik olarak eşitlemek <em>değildir</em> — bazı küçük farklılıklar yüzü "yapay" değil,
+          gerçek ve canlı kılan şeylerin ta kendisidir.
         </p>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Ortalama bir yüz neden çekici gelebilir?</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">5. Az konuşulan asıl mesele: cilt ve doku kalitesi</h3>
         <p>
-          Şimdi kulağa şaşırtıcı gelebilecek bir bulgu: elimizde farklı insanların yüz fotoğrafları
-          olduğunu ve bunları bilgisayarda üst üste bindirerek ortak özelliklerini taşıyan bir "ortalama
-          yüz" oluşturduğumuzu düşünün. Sezgimiz, böyle bir yüzün sıradan ve dikkat çekmeyen bir görüntü
-          olacağını söyler. Oysa araştırmalar, bazı koşullarda bu ortalama yüzlerin, onları oluşturan
-          bireysel yüzlerden daha çekici değerlendirilebildiğini gösteriyor; birden fazla yüzün
-          birleştirilmesiyle oluşan kompozitler, tek tek bileşenlerinden daha yüksek çekicilik puanları
-          alabiliyor. Ama bu, ortalama olan her yüzün her bireysel yüzden daha güzel olduğu anlamına gelmez.
+          Şimdiye kadar hep yüzün <em>biçiminden</em> söz ettik. Oysa yüzü kaplayan derinin görünümü de
+          en az onun kadar güçlü bir ipucu taşır. Cildin renk düzgünlüğü, ton farkları ve dokusu —
+          algılanan yaş, sağlık ve çekicilikle yakından ilişkili.
         </p>
         <p>
-          Bu bulgu bir önceki başlıkla bağlantılı: ortalama bir yüz, aşırı uçları törpülenmiş, dengeli ve
-          "beklenen kalıba" yakın bir yüzdür — yani beynin nispeten kolay işlediği bir yüz. Ancak burada
-          kritik bir ayrım var. Sonraki çalışmalar gösterdi ki en çekici yüzler tam olarak ortalama değildir;
-          çekici özellikleri ölçülü biçimde belirginleştirilmiş yüzlerdir. Yani ortalamalık çekiciliğin
-          tabanını kurar — sizi "sıra dışı" olmaktan çıkarır — ama tavanı o değildir. Kısacası ortalama
-          olmak, ideal olmak ve güzel olmak aynı şey değildir.
+          En iyi kanıt cildin <strong>renk homojenliği</strong> üzerine. Cilt rengi iki pigmentin
+          dağılımıyla oluşur: <em>melanin</em> (kahverengi tonlar) ve <em>hemoglobin</em> (kanlanmayla
+          ilgili kırmızı tonlar). Bunlar ne kadar eşit dağılırsa — leke, kızarıklık, ton farkı ne kadar
+          azsa — yüz o kadar genç, sağlıklı ve canlı algılanır. Bazı deneylerde yüzün şekli hiç
+          değiştirilmeden, yalnızca cilt renk dağılımı düzenlendiğinde bile algı değişebildi.
+        </p>
+        <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
+          <p className="font-semibold text-amber-900 mb-1">Yine de "tek anahtar" değil</p>
+          <p className="text-slate-700">
+            "Cilt kalitesi güzelliğin en güçlü belirleyicisidir" demek için yeterli kanıt yok. Hangi
+            özelliğin baskın olduğu yaşa, cinsiyete ve etnik gruba göre değişir. Cilt çok önemli bir
+            etken — ama evrensel bir "güzellik anahtarı" değil.
+          </p>
+        </div>
+        <div className="my-5 rounded-2xl border border-emerald-100 bg-emerald-50/60 p-5">
+          <p className="text-slate-700">
+            <strong>Doğal estetik açısından kritik sonuç:</strong> Oran ve simetri büyük ölçüde
+            doğuştandır, kökten değiştirilemez; cilt ve doku kalitesi ise <em>iyileştirilebilir.</em>
+            Bu yüzden bazı kişilerde en doğal ve belirgin fark, yüzün şeklini değiştirmekten değil,
+            önce cildin kalitesini geri kazandırmaktan gelir. (Bunu bir "kural" değil, bulgulardan
+            çıkardığım klinik bir yaklaşım olarak belirtiyorum.)
+          </p>
+        </div>
+
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">6. Güzellik gerçekten "bakan gözde" mi?</h3>
+        <p>
+          Buraya kadarki ortaklıklar gerçek — ama tablonun yalnızca yarısı. Güzellik yargısının ne
+          kadarının ortak, ne kadarının kişisel olduğunu ölçen araştırmalar, iki bileşenin birbirine
+          yakın ağırlıkta olabildiğine işaret ediyor: <strong>beğenimizin bir bölümü paylaşılan, önemli
+          bir bölümü kişisel.</strong>
+        </p>
+        <p>
+          Çarpıcı bir kanıt ikiz çalışmasından geldi: güzellik zevki büyük ölçüde genlerde yazılı
+          olsaydı, özdeş ikizlerin bu konuda çok benzemesi beklenirdi. Oysa özdeş ikizler bile hangi
+          yüzün çekici olduğunda tam anlaşmadı — farklılıklar büyük ölçüde her kişinin kendi yaşam
+          deneyimiyle (tanıdığı insanlar, gördüğü yüzler, medya) ilişkili görünüyor.
+        </p>
+        <div className="my-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <p className="font-semibold text-slate-800 mb-1">"Dünya güzelleri" paradoksu</p>
+          <p className="text-slate-700">
+            Madem güzellik bu kadar kişisel, neden dünyanın dört bir yanından seçilen kadınlarda ortak
+            bir izlenim var? Ölçümlü çalışmalar, kazananların dengeli oranlara, görece simetriye ve
+            canlı cilde yakın olduğunu gösteriyor. Ama bu kadınlar birbirine <em>benzemez</em> — farklı
+            ırktan, farklı hatlardan. Ortak olan <strong>hatları değil, sinyalleridir:</strong> hepsi
+            sağlıklı ve dengeli <em>görünür</em>. Üstelik kimin kazandığı çağa, kıtaya ve jüriye göre
+            değişir. Yani "herkesçe güzel" bir yüz yoktur; herkesçe okunan birkaç sinyal vardır.
+          </p>
+        </div>
+        <p>
+          Tam da bu yüzden doğal estetikte "herkese uyan tek güzel yüz" diye bir şey yoktur. Bir ünlünün
+          ya da bir "trend"in yüzünü birebir hedef almak çoğu zaman hayal kırıklığıyla sonuçlanır. Doğru
+          olan, kişinin kendi hatları ve hikâyesiyle uyumlu olandır — bir başkasının hatlarını değil,
+          <strong> kendi denge ve canlılık sinyallerini güçlendirmek.</strong>
         </p>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Simetri gerçekten güzelliğin anahtarı mı?</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">7. Ve unutulan gerçek: dudak bir iletişim organıdır</h3>
         <p>
-          Estetik üzerine en sık duyduğunuz cümlelerden biri şudur: "Güzel yüz, simetrik yüzdür." Bu fikir
-          o kadar yaygınlaştı ki neredeyse tartışılmaz bir gerçek gibi kabul görüyor. Arkasındaki mantık da
-          ilk bakışta ikna edici: simetri, gelişimin düzenli ilerlediğinin bir göstergesi sayılmış; dolayısıyla
-          daha simetrik bir yüzün biyolojik kalite hakkında bilgi taşıyabileceği öne sürülmüş. Ama gelin bu
-          varsayımı gerçek insan yüzlerine uygulayınca araştırmaların ne söylediğine bakalım. Çünkü tablo,
-          sanıldığı kadar net değil.
+          Şimdiye kadar dudağı hep bir "görünüş" olarak konuştuk. Oysa dudağın çok daha temel bir işlevi
+          var: yüzün en çok "konuştuğu" yerlerden biri olması. Yüze baktığımızda gözlerimiz sürekli göz
+          ile ağız arasında gidip gelir; duyguları okurken ağız bölgesi belirleyicidir — mutluluğu ve
+          tiksintiyi en çok ağızdan okuruz. Yani dudak, yalnızca <em>bakılan</em> değil, aynı zamanda
+          <em> okunan</em> bir organdır.
         </p>
-        <p>
-          En dikkat çekici uyarı, alandaki araştırmaların kendisinden geldi. Simetri ile çekicilik ilişkisini
-          inceleyen çalışmaları bir arada değerlendiren bir meta-analizde yayın yanlılığı (publication bias)
-          saptandı — yani "simetri güzeldir" sonucunu bulan çalışmaların yayımlanma, bulamayanların çekmecede
-          kalma eğilimi, literatürdeki etkiyi olduğundan büyük gösteriyordu. Bu meta-analizde, yanlılık
-          düzeltildiğinde simetrinin etkisi yaklaşık %30-50 oranında küçüldü; katılımcı sayısı 100'ün üzerinde
-          olan görece büyük çalışmalarda ise ilişki neredeyse sıfıra indi. Üstelik kusursuz simetri her durumda
-          daha çekici de görünmüyor: bazı klasik deneylerde bir yüzün tamamen simetrik hale getirilmiş versiyonu,
-          doğal halinden daha az çekici bulundu — ancak daha yeni çalışmalar bu sonucu her koşulda tekrarlamıyor.
-          Buradan çıkan sağlam sonuç şu: insan yüzleri zaten tam kusursuz bir sağ-sol simetriye sahip değildir;
-          küçük asimetriler normal yüz yapısının bir parçasıdır ve tek başına birer "kusur" olarak görülmemelidir.
-        </p>
-        <p>
-          Tam da bu yüzden, bir yüzdeki asimetriyi değerlendirirken hedef iki tarafı milimetrik olarak birbirinin
-          aynısı yapmak değildir — bu hem gereksiz hem de doğal olmayan bir sonuç doğurur. Önce asimetrinin nereden
-          kaynaklandığına, ne kadar belirgin olduğuna ve yüzün genel dengesini gerçekten etkileyip etkilemediğine
-          bakmak gerekir. Bazı asimetriler düzeltilmek istenen belirgin özelliklerdir; bazı küçük farklılıklar ise
-          yüzü "yapay" değil, gerçek ve canlı kılan şeylerin ta kendisidir.
-        </p>
+        <div className="my-5 rounded-2xl border-l-4 border-emerald-400 bg-emerald-50/60 p-5">
+          <p className="text-slate-700">
+            Bunun pratik sonucu: ağız kenarları yıllar içinde hafifçe aşağı döndüğünde, kişi kendini iyi
+            hissetse bile yüzüne istemsiz bir "yorgun" ifade yerleşebilir. Bu yüzden ağza yapılan bir
+            müdahalenin asıl meselesi çoğu zaman "büyütmek" değil, <strong>o bölgenin doğru duyguyu
+            yansıtmaya devam etmesini sağlamaktır.</strong> Kötü bir uygulamanın gerçek zararı da budur:
+            kişiyi "çirkin" değil, <em>ifadesiz</em> yapar.
+          </p>
+        </div>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Az konuşulan asıl mesele: cilt ve doku kalitesi</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Özetle: Güzellik bir tepkidir — doğallık bu tepkinin merkezinde</h3>
         <p>
-          Şimdiye kadar hep yüzün biçiminden söz ettik — oranlar, simetri, hatların dizilişi. Oysa bir yüzün nasıl
-          algılandığını belirleyen yalnızca bu yapısal özellikler değil. O yüzü kaplayan derinin nasıl göründüğü de
-          en az onlar kadar güçlü bir görsel ipucu taşıyor: cildin renk düzgünlüğü, üzerindeki ton farkları, yüzey
-          dokusu — hepsi algılanan yaş, sağlık ve çekicilikle yakından ilişkili.
+          Bir yüzü "güzel" bulmanın ne demek olduğunu izledik ve şuraya vardık: güzellik, dışarıda hazır
+          duran bir özellik değil, büyük ölçüde beynin ürettiği bir tepki. Araştırmalar birkaç eğilime
+          işaret ediyor:
         </p>
-        <p>
-          Bunu en iyi gösteren araştırmalar, cildin renk homojenliği üzerine yapılanlar. Cildimizin rengi iki temel
-          pigmentin dağılımıyla oluşur: melanin (kahverengi tonlar) ve hemoglobin (kanlanmayla ilgili kırmızı tonlar).
-          Bu iki pigment yüze ne kadar eşit ve düzgün dağılırsa — yani leke, kızarıklık, ton farkı ne kadar azsa — o
-          yüz genellikle o kadar genç, sağlıklı ve çekici algılanıyor. Bu örüntü hem kadın hem erkek yüzlerinde görüldü;
-          hatta bazı deneylerde yüzün şekli hiç değiştirilmeden yalnızca cildin renk dağılımı düzenlendiğinde bile,
-          algılanan yaş, sağlık ve çekicilik değişebildi. Yani cilt, yüzün biçimsel özelliklerinden ayrı, kendine ait
-          bir algısal katkı da sağlayabiliyor.
-        </p>
-        <p>
-          Yine de dürüst bir parantez şart: "Cilt kalitesi güzelliğin en güçlü belirleyicisidir" demek için yeterli
-          kanıt yok. Hangi özelliğin daha baskın olduğu; yaşa, cinsiyete, etnik gruba ve neyin ölçüldüğüne göre değişiyor.
-          Örneğin farklı etnik grupları inceleyen bir çalışmada kırışıklık ve sarkma, yaş ve çekicilik değerlendirmelerinin
-          en güçlü belirleyicileri olurken; renk homojenliği ve parlaklık özellikle sağlık algısına ek katkı sağladı.
-          Cilt rengiyle çekicilik arasındaki ilişki her toplumda da aynı çıkmıyor. Yani cilt kalitesi çok önemli bir
-          etken, ama tek ve evrensel bir "güzellik anahtarı" değil.
-        </p>
-        <p>
-          Bu bulgunun doğal estetik açısından önemli bir sonucu var. Oran ve simetri büyük ölçüde doğuştandır ve kökten
-          değiştirilemez; cilt ve doku kalitesi ise iyileştirilebilir. Bu yüzden bazı kişilerde en doğal ve en belirgin
-          fark, yüzün şeklini değiştirmekten değil, önce cildin ve dokunun kalitesini geri kazandırmaktan gelir.
-          Yıpranmış, donuk, ton farkları olan bir cilde hacim eklemek çoğu zaman beklenen sonucu vermez; asıl mesele,
-          müdahaleye gerçekten ihtiyaç duyulan katmandan başlamaktır. (Bunu bir "kural" olarak değil, bulgulardan
-          çıkardığım klinik bir yaklaşım olarak belirtmek isterim.)
-        </p>
+        <ul className="my-4 space-y-2 list-none pl-0">
+          {[
+            'Beyin bir yüzü hızlı ve çoğunlukla otomatik değerlendirir',
+            'Tanıdık ve dengeli yüzleri daha kolay işleyip olumlu bulma eğilimindedir',
+            'Ortalamaya yakın yüzler çekici bulunabilir — ama en çekici yüz her zaman en ortalama değildir',
+            'Simetrinin katkısı sanıldığından zayıftır; kusursuz simetri her zaman daha çekici değildir',
+            'Cilt ve doku kalitesi güçlü bir görsel ipucudur',
+            'Tüm bunların üzerine herkes kendi kişisel beğenisini ekler',
+          ].map((t) => (
+            <li key={t} className="flex gap-3 items-start">
+              <span className="text-emerald-500 font-bold flex-shrink-0">✓</span>
+              <span className="text-slate-600">{t}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="my-5 rounded-2xl bg-slate-900 text-white p-6">
+          <p className="text-lg leading-relaxed">
+            Bu eğilimlerin ortak yönü şu: hiçbiri abartıyı, zorlamayı ya da kusursuzluğu değil;
+            <strong> dengeyi, canlılığı ve tanıdıklığı</strong> işaret ediyor. Yani "doğal görünüm" bir
+            slogan değil — güzellik algısının dayandığı zeminle uyumlu bir yaklaşım. Doğal estetiğin
+            amacı da kişiyi hazır bir kalıba sokmak değil; kendi yüzünün dengesini bozmadan, en canlı ve
+            en kendisi hâline yaklaştırmaktır.
+          </p>
+        </div>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Güzellik gerçekten "bakan gözde" mi?</h3>
-        <p>
-          Buraya kadar hep insanların ortak eğilimlerinden söz ettik. Bu ortaklıklar gerçek — ama tablonun yalnızca
-          yarısı. Güzellik yargısının ne kadarının "herkeste ortak", ne kadarının "kişiye özel" olduğunu ölçmeye
-          çalışan araştırmalar, yüz çekiciliğinde bu iki bileşenin birbirine yakın ağırlıkta olabildiğine işaret
-          ediyor: beğenimizin bir bölümü paylaşılan, önemli bir bölümü ise kişisel görünüyor.
-        </p>
-        <p>
-          Bunun dikkat çekici bir örneği, ikizler üzerinde yapılan bir çalışmadan geldi. Eğer güzellik zevki büyük
-          ölçüde genlerimizde yazılı olsaydı, aynı genleri taşıyan özdeş ikizlerin bu konuda birbirine çok yakın
-          olması beklenirdi. Oysa bu çalışmada özdeş ikizler bile hangi yüzün çekici olduğu konusunda tam anlaşmadı.
-          Araştırmacılar, bu örneklemdeki yüz beğenisi farklılıklarının önemli ölçüde ortak genlerden çok, her
-          kişinin kendine özgü yaşam deneyimleriyle — tanıdığı insanlar, arkadaş çevresi, gördüğü yüzler, medyada
-          karşılaştıkları — ilişkili göründüğünü bildirdi. Tek bir çalışmanın bulgusunu evrensel bir orana çevirmek
-          doğru olmaz; ama farklı kültürleri karşılaştıran araştırmalar da benzer bir ikili tabloya işaret ediyor:
-          çekici yüz özelliklerinin bir kısmı kültürler arasında ortak, bir kısmı kültüre özgü, bir kısmı ise bireysel.
-        </p>
-        <p>
-          Bunun sezgisel bir örneği "dünya güzelleri" sorusudur: madem güzellik bu kadar kişisel, neden dünyanın dört
-          bir yanından seçilen kadınlarda ortak bir izlenim var? Yarışmacıları sıradan kadınlarla karşılaştıran
-          ölçümlü çalışmalar, kazananların rastgele "uç" hatlara değil; dengeli oranlara, görece simetriye ve homojen,
-          canlı bir cilde daha yakın olduğunu gösteriyor — yani bu bölümde saydığımız aynı ortak sinyallere. Ama
-          işin dürüst yanı şu: bu kadınlar birbirine benzemez. Farklı ırktan, farklı hatlardan, farklı ülkelerdendir.
-          Ortak olan şey <em>hatları</em> değil, <em>sinyalleridir</em> — hepsi sağlıklı ve dengeli <em>görünür</em>.
-          Üstelik kimin kazandığı çağa, kıtaya ve jüriye göre değişir; bu seçimler saf biyolojiyi değil, dönemin
-          kültürel beğenisini de yansıtır. Yani "herkesçe güzel" diye bir yüz yoktur; herkesçe okunan birkaç
-          sinyal vardır.
-        </p>
-        <p>
-          Tam da bu yüzden doğal estetikte "herkese uyan tek bir güzel yüz" diye bir şey yoktur. Bir kişiye yakışan,
-          onu tamamlayan bir dokunuş, bir başkasında aynı etkiyi yaratmayabilir. Bir ünlünün ya da bir "trend"in yüzünü
-          birebir hedef almak çoğu zaman hayal kırıklığıyla sonuçlanır. Doğru olan, kişinin kendi hatları ve kendi
-          hikâyesiyle uyumlu olandır — yani bir başkasının hatlarını değil, kendi denge ve canlılık sinyallerini
-          güçlendirmektir.
-        </p>
-
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Ve unutulan gerçek: dudak bir iletişim organıdır</h3>
-        <p>
-          Şimdiye kadar dudağı hep bir "görünüş" olarak konuştuk. Oysa dudağın çok daha temel bir işlevi var: yüzün en
-          çok konuştuğu yerlerden biri olması. Bir insanın yüzüne baktığımızda gözlerimiz sürekli göz ile ağız arasında
-          gidip gelir; ve duyguları okurken ağız bölgesi belirleyici rol oynar — mutluluğu ve tiksintiyi en çok ağızdan
-          okuruz. Yani dudak, yalnızca bakılan değil, aynı zamanda okunan bir organdır.
-        </p>
-        <p>
-          Bunun pratik bir sonucu var. Bir dudağın hareketsiz hâli bile bir mesaj taşır. Ağız kenarları yıllar içinde
-          hafifçe aşağı döndüğünde, kişi kendini gayet iyi hissetse bile yüzüne istemsiz bir "yorgun" ya da "mutsuz"
-          ifade yerleşebilir. İşte bu yüzden ağız bölgesine yapılan bir müdahalenin asıl meselesi çoğu zaman "büyütmek"
-          değil, o bölgenin doğru duyguyu yansıtmaya devam etmesini sağlamaktır. Kötü bir uygulamanın gerçek zararı da
-          buradadır: kişiyi "çirkin" yapmaktan çok ifadesiz yapar — gülümsemesi doğallığını yitirmiş, mimikleri
-          donuklaşmış bir görüntü bırakır. Oysa bir yüzü canlı ve inandırıcı kılan şey, tam da o ifade zenginliğidir.
-        </p>
-
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Özetle: Güzellik bir tepkidir — ve doğallık bu tepkinin merkezinde</h3>
-        <p>
-          Bu bölümde bir yüzü "güzel" bulmanın ne demek olduğunu izledik ve şuraya vardık: güzellik, dışarıda hazır
-          duran tek bir özellik değil, büyük ölçüde beynin ürettiği bir tepki. Araştırmalar bir arada bakıldığında
-          birkaç eğilime işaret ediyor: beyin bir yüzü hızlı ve çoğunlukla otomatik değerlendiriyor; tanıdık ve
-          dengeli yüzleri daha kolay işleyip olumlu bulma eğiliminde; ortalamaya yakın yüzler çekici bulunabiliyor
-          ama en çekici yüz her zaman en ortalama olan değil; simetrinin katkısı sanıldığından zayıf görünüyor ve
-          kusursuz simetri her durumda daha çekici çıkmıyor; buna karşılık cilt ve doku kalitesi güçlü bir görsel
-          ipucu olarak öne çıkıyor; ve tüm bunların üzerine herkes kendi kişisel beğenisini ekliyor.
-        </p>
-        <p>
-          Bu eğilimlerin ortak yönü şu: hiçbiri abartıyı, zorlamayı ya da kusursuzluğu değil; dengeyi, canlılığı ve
-          tanıdıklığı işaret ediyor. Yani "doğal görünüm" yalnızca bir slogan ya da moda değil — güzellik algısının
-          dayandığı zeminle uyumlu bir yaklaşım. Doğal estetiğin amacı da bu yüzden kişiyi hazır bir güzellik kalıbına
-          sokmak değil; onun kendi yüzünün taşıdığı dengeyi bozmadan, en canlı ve en kendisi hâline yaklaştırmaktır.
-        </p>
-
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Kaynaklar</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Kaynaklar</h3>
         <ul className="text-base text-slate-500 space-y-1.5 list-disc pl-5">
           <li>Willis J, Todorov A. First impressions: making up your mind after a 100-ms exposure to a face. <em>Psychological Science.</em> 2006;17(7):592-598.</li>
           <li>O'Doherty J, Winston J, Critchley H, Perrett D, Burt DM, Dolan RJ. Beauty in a smile: the role of medial orbitofrontal cortex in facial attractiveness. <em>Neuropsychologia.</em> 2003;41(2):147-155.</li>

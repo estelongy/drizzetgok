@@ -384,25 +384,50 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p>
           Bir sonucun doğal olup olmadığı, çoğu zaman durağan bir fotoğrafta değil; kişi
           <strong> gülerken, konuşurken, kaşını kaldırırken</strong> ortaya çıkar. Yüz bir maske değil,
-          hareketli bir ifade organıdır. Bu yüzden son yıllarda doğallık artık yalnızca fotoğrafla
-          değil, <strong>video ve mimik</strong> üzerinden de değerlendiriliyor.
+          hareketli bir ifade organıdır — ve bir müdahale, dururken kusursuz görünüp harekete geçince
+          "yapay"laşabilir. İşte bu yüzden son yıllarda doğallık artık yalnızca fotoğrafla değil,
+          <strong> video ve mimik</strong> üzerinden değerlendiriliyor.
+        </p>
+        <p>
+          Neden bu kadar önemli? Çünkü yüzümüzdeki en güçlü sosyal mesajlar hareketle verilir:
+          samimi bir gülümseme, bir kaş hareketi, bir şaşkınlık ifadesi. Bir bölge fazla
+          doldurulduğunda ya da bir kas gereğinden çok gevşetildiğinde, sorun kişinin "çirkinleşmesi"
+          değildir — <strong>ifadesizleşmesidir.</strong> Gülümsemesi eskisi kadar okunmaz, yüzü
+          "duygu iletmeyen" bir hâl alır. Oysa bir yüzü canlı ve inandırıcı kılan şey, tam da o ifade
+          zenginliğidir.
         </p>
         <div className="my-5 overflow-hidden rounded-xl border border-slate-200">
           <table className="w-full text-left text-base">
             <thead className="bg-slate-100 text-slate-700">
               <tr>
-                <th className="px-4 py-3 font-semibold">Durağan (fotoğraf)</th>
-                <th className="px-4 py-3 font-semibold">Hareketli (video/mimik)</th>
+                <th className="px-4 py-3 font-semibold">Durağan bakış (fotoğraf)</th>
+                <th className="px-4 py-3 font-semibold">Hareketli bakış (video/mimik)</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="divide-y divide-slate-100">
               <tr className="divide-x divide-slate-100">
                 <td className="px-4 py-3 text-slate-600">Tek bir andaki görünüm güzel olabilir</td>
                 <td className="px-4 py-3 text-slate-600">Asıl soru: gülünce doğal mı, ifade donuyor mu?</td>
               </tr>
+              <tr className="divide-x divide-slate-100">
+                <td className="px-4 py-3 text-slate-600">Hacim ve kontur değerlendirilir</td>
+                <td className="px-4 py-3 text-slate-600">Kasların birlikte çalışması değerlendirilir</td>
+              </tr>
+              <tr className="divide-x divide-slate-100">
+                <td className="px-4 py-3 text-slate-600">"Nasıl görünüyor?"</td>
+                <td className="px-4 py-3 text-slate-600">"Kendisi gibi mi hareket ediyor?"</td>
+              </tr>
             </tbody>
           </table>
         </div>
+        <p>
+          Araştırmacılar bunu ölçmek için standart yöntemler geliştirdi: kişinin farklı ifadeleri
+          (gülme, şaşırma, öpücük) hem fotoğraf hem <strong>video</strong> ile kaydediliyor ve
+          bağımsız değerlendiriciler "bu ifade doğal mı?" diye puanlıyor. Dolgu çalışmalarında olduğu
+          gibi, üst yüz botoksu çalışmalarında da amaç aynı: değişimin kişinin duygu ifadesini
+          bozmadan yapılabilmesi. Yani mesele "hareketi durdurmak" değil, <strong>gereğinden fazla
+          durdurmamak.</strong>
+        </p>
         <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
           <p className="font-semibold text-amber-900 mb-1">Kaynakların sınırı</p>
           <p className="text-slate-700">
@@ -443,6 +468,14 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           </table>
         </div>
         <p>
+          Doğal-olmayan sonuç yalnızca "fazla dolgun" bir görünümle sınırlı değil. Dolgu
+          komplikasyonlarını inceleyen derlemeler, kötü estetik sonucun yanında kontur bozukluğu,
+          nodül (elle hissedilen sertlik), granülom ve dokunun yer değiştirmesi gibi durumları da
+          tanımlıyor. Bunların ortak noktası, yüzün doğal yüzeyini ve dengesini bozmaları. İyi haber
+          şu: bu tabloların çoğu <strong>önlenebilir</strong> — doğru planlama, doğru miktar ve doğru
+          katman seçimiyle.
+        </p>
+        <p>
           İlginç bir gelişme de şu: aşırı doldurulmuş yüzlerin sosyal medyada çok görünür olması,
           bazı kişilerde dolguya karşı belirgin bir çekince yarattı. Uzmanlar bunu, dijital dünyanın
           ürettiği yeni bir tepki olarak tartışıyor. Bu bir "hastalık" değil; ama şunu gösteriyor:
@@ -462,11 +495,58 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">5. "Doğal", herkes için aynı değildir</h3>
         <p>
           İlk bölümde güzellik algısının tek bir evrensel formüle sığmadığını görmüştük. Bunun klinik
-          karşılığı nettir: <strong>evrensel bir "doğal yüz" standardı da yoktur.</strong> Farklı
-          kültür ve etnik yapılarda yüz estetiği tercihleri değişebiliyor; kapsamlı bir derleme, Batı
-          merkezli ölçütlerin herkese uygulanamayacağını ve estetik yaklaşımın amacının kişiyi
-          "Batılılaştırmak" değil, kendi özelliklerini <em>optimize etmek</em> olması gerektiğini
-          vurguluyor. Doğal sonuç, kişinin kendi yüzüyle uyumlu olandır — bir başkasının yüzüyle değil.
+          karşılığı nettir: <strong>evrensel bir "doğal yüz" standardı da yoktur.</strong> Bir yüz
+          hattı bir kültürde "doğal ve dengeli" sayılırken, bir başkasında olağan görünmeyebilir;
+          çünkü "tanıdık" ve "olağan" olan, kişinin içinde yaşadığı topluma göre değişir.
+        </p>
+        <p>
+          Bilim de bunu doğruluyor. Farklı kültür ve etnik grupları inceleyen kapsamlı bir derleme
+          (60'tan fazla çalışmayı değerlendiren), yüz estetiği tercihlerinin gruplar arasında
+          değiştiğini ve <strong>Batı merkezli güzellik ölçütlerinin herkese uygulanamayacağını</strong>
+          ortaya koydu. Aynı derlemenin en çarpıcı sonucu şu: çalışmaların çoğu, estetik yaklaşımın
+          amacının kişiyi "Batılılaştırmak" değil, kendi etnik özelliklerini <em>optimize etmek</em>
+          olması gerektiğini vurguluyor.
+        </p>
+        <div className="my-5 rounded-2xl border border-emerald-100 bg-emerald-50/60 p-5">
+          <p className="text-slate-700">
+            Pratikte bunun anlamı şu: doğal sonuç, bir moda ikonuna ya da bir "ideal yüz" şablonuna
+            benzemek değildir. <strong>Doğal sonuç, kişinin kendi yüzüyle — kendi etnik hatları, kendi
+            ifadesi, kendi hikâyesiyle — uyumlu olandır.</strong> Bir başkasının burnu, bir ünlünün
+            dudağı hedef alındığında sonuç neredeyse her zaman "yapay" okunur; çünkü o hat, o yüze ait
+            değildir.
+          </p>
+        </div>
+
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">6. Doğal sonuç sadece "görünüş" mü? Aynanın arkasındaki etki</h3>
+        <p>
+          Şimdiye kadar hep <em>görünen</em> doğallıktan söz ettik. Ama estetik bir sonucun bir boyutu
+          daha var: kişinin kendini nasıl <em>hissettiği.</em> Doğal bir sonuç, çoğu zaman yalnızca
+          "iyi görünmek" değil, kişinin aynada kendini rahat, huzurlu ve "kendisi" gibi hissetmesidir.
+          Peki bilim bu konuda ne diyor?
+        </p>
+        <p>
+          Minimal invaziv yüz işlemlerinin ruhsal ve sosyal etkilerini inceleyen derlemeler, çoğu
+          çalışmada <strong>yaşam kalitesi ve psikolojik iyi oluşta bir iyileşme</strong> bildirildiğine
+          işaret ediyor — en sık ölçülen boyutlar psikolojik iyi oluş ve öz-algı. Ancak burada dürüst
+          olmak şart:
+        </p>
+        <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
+          <p className="font-semibold text-amber-900 mb-1">Kanıt olumlu — ama zayıf ve dağınık</p>
+          <p className="text-slate-700">
+            Bu konudaki derlemeleri toplu değerlendiren bir çalışmada, incelenen yedi derlemeden
+            yalnızca <strong>biri "güçlü", ikisi "orta", dördü "zayıf"</strong> kalitede bulundu. Yani
+            "estetik işlem mutluluğu artırır" gibi kesin bir cümle kurmak için kanıt henüz yeterince
+            sağlam değil. Ayrıca depresyon gibi ruh sağlığı ölçütlerine özel çalışmalar çok az. Doğru
+            ifade şu: <strong>işlemler kişinin görünüşten duyduğu memnuniyeti artırabiliyor; ama bunun
+            derin psikolojik etkileri henüz net değil.</strong>
+          </p>
+        </div>
+        <p>
+          Bu, doğal estetik açısından önemli bir uyarı taşıyor: Estetik bir müdahale, gerçek bir
+          psikolojik sıkıntının çözümü değildir. Bir kişi kendini kötü hissettiği için değil, kendini
+          iyi hissettiği hâlini <em>korumak</em> ya da <em>tazelemek</em> için geldiğinde, sonuç çoğu
+          zaman daha sağlıklı ve daha doğaldır. (Bu ayrımın neden bu kadar kritik olduğunu, beklenti ve
+          ruh hâli üzerine ayrı bir bölümde ele alacağız.)
         </p>
 
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Sonuç: bilim doğalı ölçmeye başladı — ama ortak bir cetvel henüz yok</h3>
@@ -505,8 +585,11 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <li>Jaeger B, Bucker B, van der Meulen J, van Vugt M. Face value: the effect of facial aesthetic treatment on first impressions and partner preferences. <em>Perception.</em> 2025. [preregistered, N=3201]</li>
           <li>Philipp-Dormston WG ve ark. Evaluating perceived naturalness of facial expression after fillers with standardized video and photography. <em>Dermatologic Surgery.</em> 2018;44(6):826-832.</li>
           <li>Solish N ve ark. Dynamics of hyaluronic acid fillers formulated to maintain natural facial expression. <em>Journal of Cosmetic Dermatology.</em> 2019;18(3):738-746.</li>
-          <li>[Facial overfilled syndrome — narrative reviews.] PMID 37977678.</li>
-          <li>Oliveira RRC. The fear of overfilling (FOF): preserving facial identity. <em>Journal of Cosmetic Dermatology.</em> 2026.</li>
+          <li>Woodward J, Khan T, Martin J. Facial filler complications. <em>Facial Plastic Surgery Clinics of North America.</em> 2015;23(4):447-458.</li>
+          <li>Facial overfilled syndrome — narrative clinical reviews. <em>Clinical, Cosmetic and Investigational Dermatology.</em> (PMID 37977678 ve devamı).</li>
+          <li>Oliveira RRC. The fear of overfilling (FOF): a clinically significant response to digital aesthetics and the dermatologist's imperative to preserve facial identity. <em>Journal of Cosmetic Dermatology.</em> 2026.</li>
+          <li>Imadojemu S, Sarwer DB, Percec I ve ark. Influence of surgical and minimally invasive facial cosmetic procedures on psychosocial outcomes: a systematic review. <em>JAMA Dermatology.</em> 2013;149(11):1325-1333.</li>
+          <li>Hemsworth B, Hemsworth C, Richmond SA. Nonsurgical medical aesthetics and patient quality of life: an umbrella review. <em>Aesthetic Surgery Journal Open Forum.</em> 2024;6:ojae096.</li>
           <li>Cosmetic surgery and the diversity of cultural and ethnic perceptions of facial aesthetics: a comprehensive review. <em>Clinical, Cosmetic and Investigational Dermatology.</em> 2023.</li>
           <li>Heterogeneity in clinical outcomes reporting in minimally-invasive facial rejuvenation: is it time for a core outcomes set? <em>Plastic and Reconstructive Surgery.</em> 2026.</li>
           <li>Suwanchinda A ve ark. See, touch, feel, and express: achieving safe and natural outcomes with HA fillers — an international consensus. <em>Journal of Cosmetic Dermatology.</em> 2026;25(3):e70784.</li>

@@ -104,7 +104,7 @@ export function DeepDiveModal({
         </div>
         <div className="px-6 sm:px-10 py-8">
           <h2 className="font-serif text-3xl font-bold text-slate-900 mb-6">{open.title}</h2>
-          <div className="text-[1.1875rem] leading-[1.8] text-slate-700 [text-wrap:pretty] space-y-5 max-w-[60ch]">
+          <div className="text-[1.1875rem] leading-[1.8] text-slate-700 [text-wrap:pretty] space-y-5">
             {open.body ?? <p>{open.title}</p>}
           </div>
         </div>

@@ -427,7 +427,7 @@ const Guide = () => {
               <BookOpen className="w-4 h-4" /> Doğal Estetik Rehberi — Detaylı Bölüm
             </span>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-[1.15]">{fullPage.title}</h1>
-            <div className="text-[1.1875rem] leading-[1.8] text-slate-700 [text-wrap:pretty] space-y-5 [&>p]:max-w-[60ch]">
+            <div className="text-left text-[1.1875rem] leading-[1.8] text-slate-700 [text-wrap:pretty] space-y-5">
               {fullPage.body}
             </div>
             <div className="mt-12 pt-8 border-t border-slate-100">

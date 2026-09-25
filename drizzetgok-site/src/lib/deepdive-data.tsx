@@ -211,7 +211,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           sokmak değil; onun kendi yüzünün taşıdığı dengeyi bozmadan, en canlı ve en kendisi hâline yaklaştırmaktır.
         </p>
 
-        <h3 className="font-serif text-lg font-bold text-slate-900 mt-8 mb-3">Kaynaklar</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-8 mb-3">Kaynaklar</h3>
         <ul className="text-base text-slate-500 space-y-1.5 list-disc pl-5">
           <li>Willis J, Todorov A. First impressions: making up your mind after a 100-ms exposure to a face. <em>Psychological Science.</em> 2006;17(7):592-598.</li>
           <li>O'Doherty J, Winston J, Critchley H, Perrett D, Burt DM, Dolan RJ. Beauty in a smile: the role of medial orbitofrontal cortex in facial attractiveness. <em>Neuropsychologia.</em> 2003;41(2):147-155.</li>
@@ -497,7 +497,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           bir sonraki bölümün konusu bu.
         </p>
 
-        <h3 className="font-serif text-lg font-bold text-slate-900 mt-10 mb-3">Kaynaklar</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Kaynaklar</h3>
         <ul className="text-base text-slate-500 space-y-1.5 list-disc pl-5">
           <li>Klassen AF, Cano SJ, Mansouri J ve ark. "I want it to look natural": development and validation of the FACE-Q Aesthetics Natural module. <em>Aesthetic Surgery Journal.</em> 2024;44(7):733-743.</li>
           <li>Pusic AL, Klassen AF, Scott AM, Cano SJ. Development and psychometric evaluation of the FACE-Q satisfaction with appearance scale. <em>Clinics in Plastic Surgery.</em> 2013;40(2):249-260.</li>

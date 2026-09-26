@@ -17,7 +17,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p className="text-lg text-slate-600 mb-6">
           Beyin bir yüze baktığında onu neye göre "güzel" ya da "sıradan" buluyor? Bu bölümde,
           güzellik algısının fiziksel özelliklerle nasıl başlayıp beyinde nasıl bir tepkiye
-          dönüştüğünü — ve her adımın kanıt gücünü — birlikte inceliyoruz.
+          dönüştüğünü ve her adımın kanıt gücünü birlikte inceliyoruz.
         </p>
 
         {/* Açılış şeması: güzellik algısının katmanları */}
@@ -40,7 +40,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           </div>
           <p className="text-center text-slate-600 text-sm mt-5 max-w-lg mx-auto">
             Sonuçta güzellik dışarıda hazır duran bir özellik değil, <strong>beynin ürettiği bir
-            tepkidir</strong> — ve bu tepkinin merkezinde denge, canlılık ve tanıdıklık var.
+            tepkidir</strong>. Bu tepkinin merkezinde ise denge, canlılık ve tanıdıklık var.
           </p>
         </div>
 
@@ -49,39 +49,39 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           Bir yüzün "güzel" olup olmadığına dair ilk izlenimimiz şaşırtıcı derecede hızlı oluşur:
           araştırmalar, saniyenin onda biri kadar (yaklaşık <strong>100 milisaniye</strong>) bir
           bakışın bile çekicilik hakkında bir ilk izlenim yaratmaya yetebildiğini gösteriyor. Bu hızlı
-          yargılar, daha uzun süreli değerlendirmelerle belirli ölçüde örtüşüyor — ama "değişmez"
-          değiller; dikkat, bağlam ve deneyim algıyı yine de etkiler. Yani güzellik yargısı hem hızlı
-          hem kısmen otomatik, ama düşünmeye kapalı değil.
+          yargılar, daha uzun süreli değerlendirmelerle belirli ölçüde örtüşür. Ama bu, ilk izlenimin
+          "değişmez" olduğu anlamına gelmez: dikkat, bağlam ve deneyim algıyı yine de etkiler. Yani
+          güzellik yargısı hem hızlı hem kısmen otomatiktir, ama düşünmeye kapalı değildir.
         </p>
         <p>
           Peki beyin bir yüzü çekici bulduğunda ne oluyor? Bunu inceleyen bilim dalı
           <strong> nöroestetik</strong> (neuroaesthetics). Beyin görüntüleme çalışmaları, çekici
-          yüzleri değerlendirirken ödül ve beğeniyle ilişkili bölgelerin — özellikle bir şeyin
-          "değerini" tartan <em>orbitofrontal korteksin</em> — etkinleşebildiğini gösteriyor.
+          yüzleri değerlendirirken ödül ve beğeniyle ilişkili bölgelerin, özellikle bir şeyin
+          "değerini" tartan <em>orbitofrontal korteksin</em>, etkinleşebildiğini gösteriyor.
         </p>
         <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
           <p className="font-semibold text-amber-900 mb-1">Ama indirgemeyelim</p>
           <p className="text-slate-700">
             Bu bölgeler yalnızca "güzellik merkezleri" değil; güzel bir yemekten sevdiğimiz bir sese
             kadar pek çok şeyin değerini tartan geniş bir sistemin parçası. Çekici bir yüz beyinde bir
-            ödül karşılığı oluşturur — ama güzelliği tümüyle "beynin verdiği ödül"e indirgemek doğru olmaz.
+            ödül karşılığı oluşturur; ama güzelliği tümüyle "beynin verdiği ödül"e indirgemek doğru olmaz.
           </p>
         </div>
 
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">2. Beyin, kolay "okuduğu" yüzü sever</h3>
         <p>
           Beyin neden bazı yüzleri zahmetsizce olumlu bulur? Bir açıklama <strong>işlem akıcılığı</strong>
-          (processing fluency): beyin bazı görüntüleri hiç zorlanmadan işler, ve bu kolaylık hafif bir
-          hoşnutluğa dönüşür. Tanıdık, dengeli, beklenen kalıba yakın yüzler beyni yormaz — ve bu
+          (processing fluency): beyin bazı görüntüleri hiç zorlanmadan işler ve bu kolaylık hafif bir
+          hoşnutluğa dönüşür. Tanıdık, dengeli, beklenen kalıba yakın yüzler beyni yormaz; bu
           zahmetsizlik "hoşuma gitti"ye dönüşebilir.
         </p>
         <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
           <p className="font-semibold text-amber-900 mb-1">Kesin kural değil, eğilim</p>
           <p className="text-slate-700">
-            Bir çalışmada insanlar bir yüze uzun baktıkça onu <em>tanıma</em> kolaylığı artmış — ama
+            Bir çalışmada insanlar bir yüze uzun baktıkça onu <em>tanıma</em> kolaylığı artmış; ama
             <em> beğeni</em> artmamış, hatta bazen azalmış. Yani "beyin ne kadar kolay işlerse o kadar
             güzel bulur" demek fazla iddialı. İşlem akıcılığı, çekiciliği etkileyen mekanizmalardan
-            biri — tek açıklaması değil.
+            yalnızca biridir; tek açıklaması değildir.
           </p>
         </div>
 
@@ -104,12 +104,12 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">4. Simetri gerçekten güzelliğin anahtarı mı?</h3>
         <p>
           "Güzel yüz = simetrik yüz" neredeyse tartışılmaz bir gerçek gibi kabul edilir. Ama gerçek
-          insan yüzlerine bakınca tablo hiç de sanıldığı kadar net değil — ve en çarpıcı uyarı,
+          insan yüzlerine bakınca tablo hiç de sanıldığı kadar net değil. En çarpıcı uyarı da
           alandaki araştırmaların kendisinden geldi:
         </p>
         <ul className="my-4 space-y-2 list-none pl-0">
           {[
-            ['Yayın yanlılığı var', '"Simetri güzeldir" bulan çalışmalar yayımlanmış, bulamayanlar çekmecede kalmış — bu, etkiyi olduğundan büyük göstermiş.'],
+            ['Yayın yanlılığı var', '"Simetri güzeldir" bulan çalışmalar yayımlanmış, bulamayanlar çekmecede kalmış; bu da etkiyi olduğundan büyük göstermiş.'],
             ['Etki küçülüyor', 'Yanlılık düzeltilince simetrinin katkısı bu meta-analizde ~%30-50 azaldı; büyük çalışmalarda neredeyse sıfıra indi.'],
             ['Kusursuz = yapay', 'Bazı deneylerde tümüyle simetrik hale getirilmiş yüz, doğal halinden daha az çekici bulundu.'],
           ].map(([a, b]) => (
@@ -122,29 +122,29 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p>
           Sağlam sonuç: insan yüzleri zaten tam bir sağ-sol simetriye sahip değildir; küçük asimetriler
           normal yüz yapısının parçasıdır. Bu yüzden asimetriyi değerlendirirken hedef, iki tarafı
-          milimetrik olarak eşitlemek <em>değildir</em> — bazı küçük farklılıklar yüzü "yapay" değil,
-          gerçek ve canlı kılan şeylerin ta kendisidir.
+          milimetrik olarak eşitlemek <em>değildir</em>. Çünkü bazı küçük farklılıklar yüzü "yapay"
+          değil, gerçek ve canlı kılan şeylerin ta kendisidir.
         </p>
 
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">5. Az konuşulan asıl mesele: cilt ve doku kalitesi</h3>
         <p>
           Şimdiye kadar hep yüzün <em>biçiminden</em> söz ettik. Oysa yüzü kaplayan derinin görünümü de
-          en az onun kadar güçlü bir ipucu taşır. Cildin renk düzgünlüğü, ton farkları ve dokusu —
-          algılanan yaş, sağlık ve çekicilikle yakından ilişkili.
+          en az onun kadar güçlü bir ipucu taşır. Cildin renk düzgünlüğü, ton farkları ve dokusu;
+          hepsi algılanan yaş, sağlık ve çekicilikle yakından ilişkilidir.
         </p>
         <p>
           En iyi kanıt cildin <strong>renk homojenliği</strong> üzerine. Cilt rengi iki pigmentin
           dağılımıyla oluşur: <em>melanin</em> (kahverengi tonlar) ve <em>hemoglobin</em> (kanlanmayla
-          ilgili kırmızı tonlar). Bunlar ne kadar eşit dağılırsa — leke, kızarıklık, ton farkı ne kadar
-          azsa — yüz o kadar genç, sağlıklı ve canlı algılanır. Bazı deneylerde yüzün şekli hiç
-          değiştirilmeden, yalnızca cilt renk dağılımı düzenlendiğinde bile algı değişebildi.
+          ilgili kırmızı tonlar). Bu iki pigment ne kadar eşit dağılırsa, yani leke, kızarıklık ve ton
+          farkı ne kadar azsa, yüz o kadar genç, sağlıklı ve canlı algılanır. Bazı deneylerde yüzün
+          şekli hiç değiştirilmeden, yalnızca cilt renk dağılımı düzenlendiğinde bile algı değişebildi.
         </p>
         <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
           <p className="font-semibold text-amber-900 mb-1">Yine de "tek anahtar" değil</p>
           <p className="text-slate-700">
             "Cilt kalitesi güzelliğin en güçlü belirleyicisidir" demek için yeterli kanıt yok. Hangi
             özelliğin baskın olduğu yaşa, cinsiyete ve etnik gruba göre değişir. Cilt çok önemli bir
-            etken — ama evrensel bir "güzellik anahtarı" değil.
+            etkendir; ama evrensel bir "güzellik anahtarı" değildir.
           </p>
         </div>
         <div className="my-5 rounded-2xl border border-emerald-100 bg-emerald-50/60 p-5">
@@ -159,7 +159,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
 
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">6. Güzellik gerçekten "bakan gözde" mi?</h3>
         <p>
-          Buraya kadarki ortaklıklar gerçek — ama tablonun yalnızca yarısı. Güzellik yargısının ne
+          Buraya kadarki ortaklıklar gerçek, ama tablonun yalnızca yarısı. Güzellik yargısının ne
           kadarının ortak, ne kadarının kişisel olduğunu ölçen araştırmalar, iki bileşenin birbirine
           yakın ağırlıkta olabildiğine işaret ediyor: <strong>beğenimizin bir bölümü paylaşılan, önemli
           bir bölümü kişisel.</strong>
@@ -167,7 +167,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p>
           Çarpıcı bir kanıt ikiz çalışmasından geldi: güzellik zevki büyük ölçüde genlerde yazılı
           olsaydı, özdeş ikizlerin bu konuda çok benzemesi beklenirdi. Oysa özdeş ikizler bile hangi
-          yüzün çekici olduğunda tam anlaşmadı — farklılıklar büyük ölçüde her kişinin kendi yaşam
+          yüzün çekici olduğunda tam anlaşmadı. Bu farklılıklar büyük ölçüde her kişinin kendi yaşam
           deneyimiyle (tanıdığı insanlar, gördüğü yüzler, medya) ilişkili görünüyor.
         </p>
         <div className="my-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
@@ -175,8 +175,8 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <p className="text-slate-700">
             Madem güzellik bu kadar kişisel, neden dünyanın dört bir yanından seçilen kadınlarda ortak
             bir izlenim var? Ölçümlü çalışmalar, kazananların dengeli oranlara, görece simetriye ve
-            canlı cilde yakın olduğunu gösteriyor. Ama bu kadınlar birbirine <em>benzemez</em> — farklı
-            ırktan, farklı hatlardan. Ortak olan <strong>hatları değil, sinyalleridir:</strong> hepsi
+            canlı cilde yakın olduğunu gösteriyor. Ama bu kadınlar birbirine <em>benzemez</em>; farklı
+            ırktan, farklı hatlardandır. Ortak olan <strong>hatları değil, sinyalleridir:</strong> hepsi
             sağlıklı ve dengeli <em>görünür</em>. Üstelik kimin kazandığı çağa, kıtaya ve jüriye göre
             değişir. Yani "herkesçe güzel" bir yüz yoktur; herkesçe okunan birkaç sinyal vardır.
           </p>
@@ -184,15 +184,15 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p>
           Tam da bu yüzden doğal estetikte "herkese uyan tek güzel yüz" diye bir şey yoktur. Bir ünlünün
           ya da bir "trend"in yüzünü birebir hedef almak çoğu zaman hayal kırıklığıyla sonuçlanır. Doğru
-          olan, kişinin kendi hatları ve hikâyesiyle uyumlu olandır — bir başkasının hatlarını değil,
-          <strong> kendi denge ve canlılık sinyallerini güçlendirmek.</strong>
+          olan, kişinin kendi hatları ve hikâyesiyle uyumlu olandır. Yani bir başkasının hatlarını
+          değil, <strong>kendi denge ve canlılık sinyallerini güçlendirmek.</strong>
         </p>
 
         <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">7. Ve unutulan gerçek: dudak bir iletişim organıdır</h3>
         <p>
           Şimdiye kadar dudağı hep bir "görünüş" olarak konuştuk. Oysa dudağın çok daha temel bir işlevi
           var: yüzün en çok "konuştuğu" yerlerden biri olması. Yüze baktığımızda gözlerimiz sürekli göz
-          ile ağız arasında gidip gelir; duyguları okurken ağız bölgesi belirleyicidir — mutluluğu ve
+          ile ağız arasında gidip gelir; duyguları okurken ağız bölgesi belirleyicidir. Mutluluğu ve
           tiksintiyi en çok ağızdan okuruz. Yani dudak, yalnızca <em>bakılan</em> değil, aynı zamanda
           <em> okunan</em> bir organdır.
         </p>
@@ -206,7 +206,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           </p>
         </div>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Özetle: Güzellik bir tepkidir — doğallık bu tepkinin merkezinde</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Özetle: Güzellik bir tepkidir, doğallık bu tepkinin merkezinde</h3>
         <p>
           Bir yüzü "güzel" bulmanın ne demek olduğunu izledik ve şuraya vardık: güzellik, dışarıda hazır
           duran bir özellik değil, büyük ölçüde beynin ürettiği bir tepki. Araştırmalar birkaç eğilime
@@ -216,7 +216,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           {[
             'Beyin bir yüzü hızlı ve çoğunlukla otomatik değerlendirir',
             'Tanıdık ve dengeli yüzleri daha kolay işleyip olumlu bulma eğilimindedir',
-            'Ortalamaya yakın yüzler çekici bulunabilir — ama en çekici yüz her zaman en ortalama değildir',
+            'Ortalamaya yakın yüzler çekici bulunabilir, ama en çekici yüz her zaman en ortalama değildir',
             'Simetrinin katkısı sanıldığından zayıftır; kusursuz simetri her zaman daha çekici değildir',
             'Cilt ve doku kalitesi güçlü bir görsel ipucudur',
             'Tüm bunların üzerine herkes kendi kişisel beğenisini ekler',
@@ -231,7 +231,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <p className="text-lg leading-relaxed">
             Bu eğilimlerin ortak yönü şu: hiçbiri abartıyı, zorlamayı ya da kusursuzluğu değil;
             <strong> dengeyi, canlılığı ve tanıdıklığı</strong> işaret ediyor. Yani "doğal görünüm" bir
-            slogan değil — güzellik algısının dayandığı zeminle uyumlu bir yaklaşım. Doğal estetiğin
+            slogan değil, güzellik algısının dayandığı zeminle uyumlu bir yaklaşımdır. Doğal estetiğin
             amacı da kişiyi hazır bir kalıba sokmak değil; kendi yüzünün dengesini bozmadan, en canlı ve
             en kendisi hâline yaklaştırmaktır.
           </p>
@@ -268,7 +268,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p className="text-lg text-slate-600 mb-6">
           Bir estetik sonuca bakıp "çok doğal olmuş" ya da "belli oluyor" dediğimizde aslında ne
           ölçüyoruz? Bu bölümde, uzun süre bir hissiyat sanılan "doğal"ın bilimin elinde nasıl
-          ölçülebilir bir kavrama dönüştüğünü — ve bu ölçümün sınırlarını — birlikte inceliyoruz.
+          ölçülebilir bir kavrama dönüştüğünü ve bu ölçümün sınırlarını birlikte inceliyoruz.
         </p>
 
         {/* Açılış şeması: doğal sonuç birden çok pencereden değerlendirilir */}
@@ -290,7 +290,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
             ))}
           </div>
           <p className="text-center text-slate-600 text-sm mt-5 max-w-lg mx-auto">
-            Bu pencerelerin hepsi "doğal"a bakar — ama <strong>hiçbiri tek başına</strong> onu tam
+            Bu pencerelerin hepsi "doğal"a bakar, ama <strong>hiçbiri tek başına</strong> onu tam
             tarif edemez. Bölüm boyunca bu dört pencereyi tek tek açacağız.
           </p>
         </div>
@@ -314,16 +314,16 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           ))}
         </ul>
         <p>
-          Bu bir kelime oyunu değil — doğal estetiğin bütün meselesi burada. "Güzelleştirmeyi"
+          Bu bir kelime oyunu değil; doğal estetiğin bütün meselesi burada. "Güzelleştirmeyi"
           hedefleyen bir yaklaşım başka bir yere varır, "doğallığı korumayı" hedefleyen başka bir yere.
           Bu rehberde <strong>doğal estetik</strong> derken kastedilen, "en güzel" ya da "en genç" yüz
           değil; kişinin, müdahaleden sonra da kendi tanıdık dengesini koruyarak <em>hâlâ kendisi gibi</em> görünmesidir.
         </p>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">1. Doğallık artık ölçülebiliyor — ilk sözü kişinin kendisi söylüyor</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">1. Doğallık artık ölçülebiliyor: ilk sözü kişinin kendisi söylüyor</h3>
         <p>
           Yıllarca "doğal mı olmuş?" sorusu göz kararıydı: hekim bakar, hasta memnun kalır ya da
-          kalmazdı. 2024'te önemli bir eşik aşıldı — bilim doğallığı doğrudan ölçmek için, üstelik ilk
+          kalmazdı. 2024'te önemli bir eşik aşıldı: bilim doğallığı doğrudan ölçmek için, üstelik ilk
           olarak <strong>hastanın gözünden</strong> ölçmek için tasarlanmış bir araç geliştirdi. Adı
           bile hastaların cümlesinden geliyor: <em>"Doğal görünmesini istiyorum."</em> Bu araç
           doğallığı üç ayrı açıdan ele alıyor:
@@ -364,7 +364,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <p className="font-semibold text-amber-900 mb-1">Ama dürüst bir uyarı</p>
           <p className="text-slate-700">
             Böyle bir aracın olması "doğallık artık kesin ölçülüyor" demek değil. Bu araç doğallığın
-            <em> bazı</em> yönlerini, <em>hastanın kendi ağzından</em> ölçüyor — hepsini değil. Dahası,
+            <em> bazı</em> yönlerini, <em>hastanın kendi ağzından</em> ölçüyor; hepsini değil. Dahası,
             bu tür anketleri kullanan çalışmaların önemli bir kısmı yöntemsel olarak hatalı yapılmış.
             Yani <strong>"hastalar memnun çıktı" demek, sonucun gerçekten doğal olduğunu tek başına
             kanıtlamaz.</strong> Memnun olmak ayrı, doğal görünmek ayrı.
@@ -392,7 +392,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           Peki dışarıdan bakan insanlar için ne değişiyor? Bunu inceleyen çalışmalar var. Geniş
           katılımlı, önceden kayıtlı iki araştırmada binlerce kişi, estetik işlem görmüş ve görmemiş
           yüzlerin fotoğraflarını değerlendirdi. Sonuç ilginç ve <strong>ölçülü</strong> çıktı: işlem,
-          algılanan çekicilikte <em>küçük</em> bir artış sağladı — ama "güvenilir" ya da "yetkin"
+          algılanan çekicilikte <em>küçük</em> bir artış sağladı, ama "güvenilir" ya da "yetkin"
           görünme gibi diğer sosyal izlenimlerde anlamlı bir değişiklik yaratmadı.
         </p>
         <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
@@ -400,7 +400,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <p className="text-slate-700">
             "Estetik işlem sizi bambaşka biri gibi gösterir, herkes farkı görür" demek doğru değil.
             Kanıtlar daha alçakgönüllü bir tabloyu işaret ediyor: iyi yapılmış, ölçülü bir işlem
-            dışarıdan çoğu zaman <em>küçük</em> ve olumlu bir etki bırakır — kişiliğinize dair
+            dışarıdan çoğu zaman <em>küçük</em> ve olumlu bir etki bırakır; kişiliğinize dair
             yargıları kökten değiştirmez. (Ayrıca bu çalışmaların bir kısmı ürün üreticileri
             tarafından desteklenmiştir; bu, sonuçları geçersiz kılmaz ama temkinle okumayı gerektirir.)
           </p>
@@ -410,7 +410,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p>
           Bir sonucun doğal olup olmadığı, çoğu zaman durağan bir fotoğrafta değil; kişi
           <strong> gülerken, konuşurken, kaşını kaldırırken</strong> ortaya çıkar. Yüz bir maske değil,
-          hareketli bir ifade organıdır — ve bir müdahale, dururken kusursuz görünüp harekete geçince
+          hareketli bir ifade organıdır. Bir müdahale, dururken kusursuz görünüp harekete geçince
           "yapay"laşabilir. İşte bu yüzden son yıllarda doğallık artık yalnızca fotoğrafla değil,
           <strong> video ve mimik</strong> üzerinden değerlendiriliyor.
         </p>
@@ -418,7 +418,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           Neden bu kadar önemli? Çünkü yüzümüzdeki en güçlü sosyal mesajlar hareketle verilir:
           samimi bir gülümseme, bir kaş hareketi, bir şaşkınlık ifadesi. Bir bölge fazla
           doldurulduğunda ya da bir kas gereğinden çok gevşetildiğinde, sorun kişinin "çirkinleşmesi"
-          değildir — <strong>ifadesizleşmesidir.</strong> Gülümsemesi eskisi kadar okunmaz, yüzü
+          değil, <strong>ifadesizleşmesidir.</strong> Gülümsemesi eskisi kadar okunmaz, yüzü
           "duygu iletmeyen" bir hâl alır. Oysa bir yüzü canlı ve inandırıcı kılan şey, tam da o ifade
           zenginliğidir.
         </p>
@@ -460,7 +460,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
             Bu konudaki filler çalışmalarının çoğu belirli bir ürünle ve belirli yüz bölgeleriyle
             yapılmış, üstelik bir kısmı aynı üretici tarafından desteklenmiştir. Yani "filler doğal
             hareketi korur" gibi genel bir sonuç çıkarmak için henüz erken. Doğru cümle şu:
-            <strong> doğallık artık hareket üzerinden de ölçülmeye başlandı</strong> — ve bu, doğru
+            <strong> doğallık artık hareket üzerinden de ölçülmeye başlandı.</strong> Bu da doğru
             değerlendirmenin fotoğrafla sınırlı kalamayacağını gösteriyor.
           </p>
         </div>
@@ -498,7 +498,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           komplikasyonlarını inceleyen derlemeler, kötü estetik sonucun yanında kontur bozukluğu,
           nodül (elle hissedilen sertlik), granülom ve dokunun yer değiştirmesi gibi durumları da
           tanımlıyor. Bunların ortak noktası, yüzün doğal yüzeyini ve dengesini bozmaları. İyi haber
-          şu: bu tabloların çoğu <strong>önlenebilir</strong> — doğru planlama, doğru miktar ve doğru
+          şu: bu tabloların çoğu <strong>önlenebilir;</strong> doğru planlama, doğru miktar ve doğru
           katman seçimiyle.
         </p>
         <p>
@@ -536,8 +536,8 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <div className="my-5 rounded-2xl border border-emerald-100 bg-emerald-50/60 p-5">
           <p className="text-slate-700">
             Pratikte bunun anlamı şu: doğal sonuç, bir moda ikonuna ya da bir "ideal yüz" şablonuna
-            benzemek değildir. <strong>Doğal sonuç, kişinin kendi yüzüyle — kendi etnik hatları, kendi
-            ifadesi, kendi hikâyesiyle — uyumlu olandır.</strong> Bir başkasının burnu, bir ünlünün
+            benzemek değildir. <strong>Doğal sonuç, kişinin kendi yüzüyle, yani kendi etnik hatları,
+            kendi ifadesi ve kendi hikâyesiyle uyumlu olandır.</strong> Bir başkasının burnu, bir ünlünün
             dudağı hedef alındığında sonuç neredeyse her zaman "yapay" okunur; çünkü o hat, o yüze ait
             değildir.
           </p>
@@ -553,11 +553,11 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
         <p>
           Minimal invaziv yüz işlemlerinin ruhsal ve sosyal etkilerini inceleyen derlemeler, çoğu
           çalışmada <strong>yaşam kalitesi ve psikolojik iyi oluşta bir iyileşme</strong> bildirildiğine
-          işaret ediyor — en sık ölçülen boyutlar psikolojik iyi oluş ve öz-algı. Ancak burada dürüst
+          işaret ediyor; en sık ölçülen boyutlar psikolojik iyi oluş ve öz-algı. Ancak burada dürüst
           olmak şart:
         </p>
         <div className="my-5 rounded-2xl border-l-4 border-amber-400 bg-amber-50/60 p-5">
-          <p className="font-semibold text-amber-900 mb-1">Kanıt olumlu — ama zayıf ve dağınık</p>
+          <p className="font-semibold text-amber-900 mb-1">Kanıt olumlu, ama zayıf ve dağınık</p>
           <p className="text-slate-700">
             Bu konudaki derlemeleri toplu değerlendiren bir çalışmada, incelenen yedi derlemeden
             yalnızca <strong>biri "güçlü", ikisi "orta", dördü "zayıf"</strong> kalitede bulundu. Yani
@@ -575,7 +575,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           ruh hâli üzerine ayrı bir bölümde ele alacağız.)
         </p>
 
-        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Sonuç: bilim doğalı ölçmeye başladı — ama ortak bir cetvel henüz yok</h3>
+        <h3 className="font-serif text-xl font-bold text-slate-900 mt-10 mb-3">Sonuç: bilim doğalı ölçmeye başladı, ama ortak bir cetvel henüz yok</h3>
         <p>
           Bütün bu tabloyu tek bir cümlede toplayabiliriz:
         </p>
@@ -584,17 +584,17 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
             Doğal sonuç artık yalnızca hekimin gözüyle tarif edilen belirsiz bir hedef değil; bazı
             boyutları <strong>hastanın kendi değerlendirmesiyle</strong>, bazıları <strong>bağımsız
             gözlemcilerle</strong>, bazıları da <strong>hareketli yüz ifadeleriyle</strong>
-            ölçülebiliyor. Ancak bu yöntemlerin hiçbiri tek başına doğal sonucu bütünüyle tanımlamıyor
-            — ve alan hâlâ herkesin kullandığı <strong>ortak bir ölçüt</strong> üzerinde birleşmiş değil.
+            ölçülebiliyor. Ancak bu yöntemlerin hiçbiri tek başına doğal sonucu bütünüyle tanımlamıyor;
+            alan hâlâ herkesin kullandığı <strong>ortak bir ölçüt</strong> üzerinde birleşmiş değil.
           </p>
         </div>
         <p>
           Nitekim 2026'da yayımlanan geniş bir inceleme, minimal invaziv yüz işlemlerinde sonuçların
           nasıl ölçüldüğünün çalışmadan çalışmaya büyük farklılık gösterdiğini ortaya koydu ve ortak
           bir "çekirdek sonuç seti" oluşturulması gerektiğini savundu. Aynı yıl uluslararası bir uzman
-          grubu da (bir üretici desteğiyle) doğal sonucu <em>gör–dokun–hisset–ifade et</em> gibi
-          boyutlarla değerlendiren bir çerçeve önerdi — ama bunun evrensel, doğrulanmış bir "puan" değil,
-          bir uzman görüş birliği olduğunu özellikle belirtmek gerekir.
+          grubu da (bir üretici desteğiyle) doğal sonucu <em>gör-dokun-hisset-ifade et</em> gibi
+          boyutlarla değerlendiren bir çerçeve önerdi. Ancak bunun evrensel, doğrulanmış bir "puan"
+          değil, bir uzman görüş birliği olduğunu özellikle belirtmek gerekir.
         </p>
         <p>
           Buradan çıkan dürüst sonuç şu: <strong>Bilim bugün doğal sonucu farklı açılardan ölçmeye
@@ -612,7 +612,7 @@ export const DOGAL_ESTETIK_DEEPDIVE: DeepDiveSection[] = [
           <li>Philipp-Dormston WG ve ark. Evaluating perceived naturalness of facial expression after fillers with standardized video and photography. <em>Dermatologic Surgery.</em> 2018;44(6):826-832.</li>
           <li>Solish N ve ark. Dynamics of hyaluronic acid fillers formulated to maintain natural facial expression. <em>Journal of Cosmetic Dermatology.</em> 2019;18(3):738-746.</li>
           <li>Woodward J, Khan T, Martin J. Facial filler complications. <em>Facial Plastic Surgery Clinics of North America.</em> 2015;23(4):447-458.</li>
-          <li>Facial overfilled syndrome — narrative clinical reviews. <em>Clinical, Cosmetic and Investigational Dermatology.</em> (PMID 37977678 ve devamı).</li>
+          <li>Facial overfilled syndrome: narrative clinical reviews. <em>Clinical, Cosmetic and Investigational Dermatology.</em> (PMID 37977678 ve devamı).</li>
           <li>Oliveira RRC. The fear of overfilling (FOF): a clinically significant response to digital aesthetics and the dermatologist's imperative to preserve facial identity. <em>Journal of Cosmetic Dermatology.</em> 2026.</li>
           <li>Imadojemu S, Sarwer DB, Percec I ve ark. Influence of surgical and minimally invasive facial cosmetic procedures on psychosocial outcomes: a systematic review. <em>JAMA Dermatology.</em> 2013;149(11):1325-1333.</li>
           <li>Hemsworth B, Hemsworth C, Richmond SA. Nonsurgical medical aesthetics and patient quality of life: an umbrella review. <em>Aesthetic Surgery Journal Open Forum.</em> 2024;6:ojae096.</li>

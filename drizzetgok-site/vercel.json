@@ -37,8 +37,17 @@
       "dest": "/410.html"
     },
     {
-      "src": "/(.*)",
+      "src": "/(anasayfa|hakkimda|hizmetler|sss|iletisim)/?",
       "dest": "/index.html"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
     }
   ]
 }

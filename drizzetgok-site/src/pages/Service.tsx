@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {
   Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace,
   Smile, Star, Wand2, Clock, Calendar, CheckCircle, ArrowRight,
@@ -9,6 +9,7 @@ import { getServiceBySlug, SERVICES } from '../lib/services-data';
 import { GUIDES } from '../lib/guides-data';
 import { useSeo } from '../hooks/useSeo';
 import Navigation from '../sections/Navigation';
+import NotFound from './NotFound';
 
 const ICONS = { Syringe, Droplets, Sparkles, Zap, FlaskConical, ScanFace, Smile, Star, Wand2 };
 
@@ -85,7 +86,7 @@ const Service = () => {
   }, [service]);
 
   if (!service) {
-    return <Navigate to="/" replace />;
+    return <NotFound />;
   }
 
   const Icon = ICONS[service.iconName];

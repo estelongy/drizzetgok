@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {
   Clock, Calendar, ChevronRight, Home as HomeIcon, ArrowRight,
   MessageCircle, CheckCircle, XCircle, Info, Lightbulb, ShieldCheck,
@@ -13,6 +13,7 @@ import Navigation from '../sections/Navigation';
 import BotoxMechanism from '../components/diagrams/BotoxMechanism';
 import BotoxFaceMap from '../components/diagrams/BotoxFaceMap';
 import { DeepDiveList, DeepDiveModal, type DeepDiveSection } from '../components/DeepDive';
+import NotFound from './NotFound';
 import { DOGAL_ESTETIK_DEEPDIVE, getDeepDiveBySlug } from '../lib/deepdive-data';
 
 const DIAGRAMS = { BotoxMechanism, BotoxFaceMap };
@@ -413,7 +414,7 @@ const Guide = () => {
     };
   }, [guide, fullPage]);
 
-  if (!guide) return <Navigate to="/" replace />;
+  if (!guide) return <NotFound />;
 
   // TAM SAYFA modu — doğrudan uydu URL'ine gelindiğinde / "Farklı Sayfada Aç"
   if (fullPage) {

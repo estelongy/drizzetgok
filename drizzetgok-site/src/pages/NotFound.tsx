@@ -6,7 +6,7 @@ const NotFound = () => {
   useSeo({
     title: 'Sayfa bulunamadı (404) | Dr. İzzet Gök',
     description: 'Aradığınız sayfa bulunamadı. Ana sayfaya dönün veya WhatsApp üzerinden bize ulaşın.',
-    canonical: 'https://www.drizzetgok.com/',
+    noindex: true,
   });
 
   return (
